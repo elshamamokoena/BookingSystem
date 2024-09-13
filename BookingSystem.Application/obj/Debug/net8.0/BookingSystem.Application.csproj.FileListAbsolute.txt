@@ -1,0 +1,15 @@
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\bin\Debug\net8.0\BookingSystem.Application.deps.json
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\bin\Debug\net8.0\BookingSystem.Application.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\bin\Debug\net8.0\BookingSystem.Application.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\bin\Debug\net8.0\BookingSystem.Domain.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\bin\Debug\net8.0\BookingSystem.Domain.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\BookingSystem.Application.csproj.AssemblyReference.cache
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\BookingSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\BookingSystem.Application.AssemblyInfoInputs.cache
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\BookingSystem.Application.AssemblyInfo.cs
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\BookingSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\BookingS.5EAA46C0.Up2Date
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\BookingSystem.Application.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\refint\BookingSystem.Application.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\BookingSystem.Application.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\ref\BookingSystem.Application.dll

@@ -1,0 +1,74 @@
+2024-09-01 01:14:00.004 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-01 01:14:00.027 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-01 01:14:00.029 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-01 01:14:00.031 +02:00 [INF] Hosting environment: Development
+2024-09-01 01:14:00.032 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-01 01:18:02.299 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-01 01:18:02.318 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-01 01:18:02.320 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-01 01:18:02.323 +02:00 [INF] Hosting environment: Development
+2024-09-01 01:18:02.323 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-01 01:23:52.642 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-01 01:23:52.664 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-01 01:23:52.667 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-01 01:23:52.668 +02:00 [INF] Hosting environment: Development
+2024-09-01 01:23:52.669 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-01 01:26:34.427 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-01 01:26:34.481 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-01 01:26:34.486 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-01 01:26:34.488 +02:00 [INF] Hosting environment: Development
+2024-09-01 01:26:34.490 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-01 01:26:40.559 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 01:26:40.564 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 01:41:38.733 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-01 01:41:38.749 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-01 01:41:38.752 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-01 01:41:38.754 +02:00 [INF] Hosting environment: Development
+2024-09-01 01:41:38.755 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-01 01:41:45.374 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 01:41:45.378 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 01:44:50.856 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-01 01:44:50.903 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-01 01:44:50.917 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-01 01:44:51.100 +02:00 [INF] Hosting environment: Development
+2024-09-01 01:44:51.225 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-01 01:44:55.182 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 01:44:55.185 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 01:55:25.529 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-01 01:55:25.554 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-01 01:55:25.556 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-01 01:55:25.558 +02:00 [INF] Hosting environment: Development
+2024-09-01 01:55:25.559 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-01 01:55:31.675 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 01:55:31.679 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 01:56:58.568 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-01 01:56:58.639 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-01 01:56:58.641 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-01 01:56:58.642 +02:00 [INF] Hosting environment: Development
+2024-09-01 01:56:58.643 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-01 01:57:03.036 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 01:57:03.041 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 02:07:13.917 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-01 02:07:13.954 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-01 02:07:13.959 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-01 02:07:13.972 +02:00 [INF] Hosting environment: Development
+2024-09-01 02:07:13.974 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-01 02:07:18.208 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 02:07:18.211 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 23:36:45.692 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-01 23:36:45.712 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-01 23:36:45.715 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-01 23:36:45.717 +02:00 [INF] Hosting environment: Development
+2024-09-01 23:36:45.719 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-01 23:36:49.907 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 23:36:49.911 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-09-01 23:41:54.657 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-01 23:41:54.678 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-01 23:41:54.680 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-01 23:41:54.681 +02:00 [INF] Hosting environment: Development
+2024-09-01 23:41:54.682 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-01 23:53:09.927 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-01 23:53:09.953 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-01 23:53:09.957 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-01 23:53:09.958 +02:00 [INF] Hosting environment: Development
+2024-09-01 23:53:09.960 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api

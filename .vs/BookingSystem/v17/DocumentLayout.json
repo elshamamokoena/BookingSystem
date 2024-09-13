@@ -1,0 +1,400 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\wwwroot\\modules\\one.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\wwwroot\\modules\\one.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\models\\bookings\\bookingviewmodel.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\models\\bookings\\bookingviewmodel.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\models\\bookings\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\models\\bookings\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\models\\events\\eventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\models\\events\\eventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\wwwroot\\modules\\advance-ajax-table.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\wwwroot\\modules\\advance-ajax-table.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\components\\pages\\conferencerooms\\conferenceroomlist.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\components\\pages\\conferencerooms\\conferenceroomlist.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5049EB-0CA0-468C-8541-7E49432F321E}|BookingSystem.Web.Wasm\\BookingSystem.Web.Wasm.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.web.wasm\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF5049EB-0CA0-468C-8541-7E49432F321E}|BookingSystem.Web.Wasm\\BookingSystem.Web.Wasm.csproj|solutionrelative:bookingsystem.web.wasm\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\components\\pages\\conferencerooms\\conferenceroomlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\components\\pages\\conferencerooms\\conferenceroomlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\components\\pages\\bookings\\bookinglist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\components\\pages\\bookings\\bookinglist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\jsinterop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\jsinterop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\components\\pages\\bookings\\bookinglist.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\components\\pages\\bookings\\bookinglist.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\wwwroot\\modules\\advance-ajax-table.js||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\wwwroot\\modules\\advance-ajax-table.js||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\ijsinterop.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\ijsinterop.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\wwwroot\\assets\\js\\theme.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\wwwroot\\assets\\js\\theme.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\services\\bookingdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\services\\bookingdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\contracts\\ibookingdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\contracts\\ibookingdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E49C58D-0D26-43A9-AD17-AA3941BAFAAA}|BookingSystem.Api\\BookingSystem.Api.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.api\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E49C58D-0D26-43A9-AD17-AA3941BAFAAA}|BookingSystem.Api\\BookingSystem.Api.csproj|solutionrelative:bookingsystem.api\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\services\\eventdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\services\\eventdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\contracts\\ieventdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\contracts\\ieventdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\profiles\\bookingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\profiles\\bookingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|c:\\users\\elsha\\source\\repos\\bookingsystem\\bookingsystem.shared\\services\\base\\serviceclient.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E}|BookingSystem.Shared\\BookingSystem.Shared.csproj|solutionrelative:bookingsystem.shared\\services\\base\\serviceclient.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Models\\Bookings\\BookingViewModel.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Models\\Bookings\\BookingViewModel.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Models\\Bookings\\BookingViewModel.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\Models\\Bookings\\BookingViewModel.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA3wBgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:20:23.744Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IBookingDataService.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Contracts\\IBookingDataService.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Contracts\\IBookingDataService.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Contracts\\IBookingDataService.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\Contracts\\IBookingDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:30:21.975Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Badge.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Models\\Bookings\\Badge.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Models\\Bookings\\Badge.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Models\\Bookings\\Badge.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\Models\\Bookings\\Badge.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T13:56:15.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Models\\Events\\EventViewModel.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Models\\Events\\EventViewModel.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Models\\Events\\EventViewModel.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\Models\\Events\\EventViewModel.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T13:35:31.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConferenceRoomList.razor.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Components\\Pages\\ConferenceRooms\\ConferenceRoomList.razor.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Components\\Pages\\ConferenceRooms\\ConferenceRoomList.razor.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Components\\Pages\\ConferenceRooms\\ConferenceRoomList.razor.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\Components\\Pages\\ConferenceRooms\\ConferenceRoomList.razor.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T12:41:34.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "one.js",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\modules\\one.js",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\wwwroot\\modules\\one.js",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\modules\\one.js",
+              "RelativeToolTip": "BookingSystem.Shared\\wwwroot\\modules\\one.js",
+              "ViewState": "AgIAANIAAAAAAAAAAAAYwNsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-13T11:08:02.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "advance-ajax-table.js",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\modules\\advance-ajax-table.js",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\wwwroot\\modules\\advance-ajax-table.js",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\modules\\advance-ajax-table.js",
+              "RelativeToolTip": "BookingSystem.Shared\\wwwroot\\modules\\advance-ajax-table.js",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAKYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-13T00:39:13.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IJsInterop.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\IJsInterop.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\IJsInterop.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\IJsInterop.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\IJsInterop.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA5wBcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T00:30:32.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "JsInterop.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\JsInterop.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\JsInterop.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\JsInterop.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\JsInterop.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T00:29:36.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookingList.razor",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Components\\Pages\\Bookings\\BookingList.razor",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Components\\Pages\\Bookings\\BookingList.razor",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Components\\Pages\\Bookings\\BookingList.razor",
+              "RelativeToolTip": "BookingSystem.Shared\\Components\\Pages\\Bookings\\BookingList.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T23:28:15.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookingList.razor.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Components\\Pages\\Bookings\\BookingList.razor.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Components\\Pages\\Bookings\\BookingList.razor.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Components\\Pages\\Bookings\\BookingList.razor.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\Components\\Pages\\Bookings\\BookingList.razor.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T23:27:47.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Web.Wasm\\Components\\App.razor",
+              "RelativeDocumentMoniker": "BookingSystem.Web.Wasm\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Web.Wasm\\Components\\App.razor",
+              "RelativeToolTip": "BookingSystem.Web.Wasm\\Components\\App.razor",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T23:26:50.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "advance-ajax-table.js",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\modules\\advance-ajax-table.js",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\wwwroot\\modules\\advance-ajax-table.js",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\modules\\advance-ajax-table.js",
+              "RelativeToolTip": "BookingSystem.Shared\\wwwroot\\modules\\advance-ajax-table.js",
+              "ViewState": "AgIAAEgCAAAAAAAAAAAgwFsCAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-12T23:21:17.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "theme.js",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\assets\\js\\theme.js",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\wwwroot\\assets\\js\\theme.js",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\assets\\js\\theme.js",
+              "RelativeToolTip": "BookingSystem.Shared\\wwwroot\\assets\\js\\theme.js",
+              "ViewState": "AgIAAPoQAAAAAAAAAAAkwAkRAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-12T23:06:28.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "BookingSystem.Shared\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T22:54:35.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConferenceRoomList.razor",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Components\\Pages\\ConferenceRooms\\ConferenceRoomList.razor",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Components\\Pages\\ConferenceRooms\\ConferenceRoomList.razor",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Components\\Pages\\ConferenceRooms\\ConferenceRoomList.razor",
+              "RelativeToolTip": "BookingSystem.Shared\\Components\\Pages\\ConferenceRooms\\ConferenceRoomList.razor",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T22:45:48.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EventDataService.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Services\\EventDataService.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Services\\EventDataService.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Services\\EventDataService.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\Services\\EventDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:35:19.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BookingDataService.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Services\\BookingDataService.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Services\\BookingDataService.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Services\\BookingDataService.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\Services\\BookingDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBQwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:34:26.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IEventDataService.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Contracts\\IEventDataService.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Contracts\\IEventDataService.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Contracts\\IEventDataService.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\Contracts\\IEventDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T22:27:24.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Services\\Base\\ServiceClient.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Services\\Base\\ServiceClient.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Services\\Base\\ServiceClient.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\Services\\Base\\ServiceClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:54:27.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Api\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Api\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Api\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "BookingSystem.Api\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwBYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:53:12.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BookingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Profiles\\BookingProfile.cs",
+              "RelativeDocumentMoniker": "BookingSystem.Shared\\Profiles\\BookingProfile.cs",
+              "ToolTip": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Profiles\\BookingProfile.cs",
+              "RelativeToolTip": "BookingSystem.Shared\\Profiles\\BookingProfile.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:51:03.408Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

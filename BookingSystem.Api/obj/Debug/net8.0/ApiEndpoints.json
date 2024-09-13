@@ -1,0 +1,789 @@
+[
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.RootController",
+    "Method": "GetRoot",
+    "RelativePath": "api",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Domain.Entities.Events.EventStatus",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetRoot"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.AmenityController",
+    "Method": "CreateAmenityAsync",
+    "RelativePath": "api/amenities",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createAmenityCommand",
+        "Type": "BookingSystem.Application.Features.Amenities.Commands.CreateAmenity.CreateAmenityCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.Amenities.Commands.CreateAmenity.CreateAmenityCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateAmenityAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.AmenityController",
+    "Method": "UpdateAmenityRoomAsync",
+    "RelativePath": "api/amenities",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateAmenityRoomCommand",
+        "Type": "BookingSystem.Application.Features.Amenities.Commands.AddAmenityToRoom.AddAmenityToRoomCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.Amenities.Commands.AddAmenityToRoom.AddAmenityToRoomCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "UpdateAmenityRoomAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.AmenityController",
+    "Method": "CreateAmenityCategoryAsync",
+    "RelativePath": "api/amenities/categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createAmenityCategoryCommand",
+        "Type": "BookingSystem.Application.Features.Amenities.Commands.CreateAmenityCategory.CreateAmenityCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.Amenities.Commands.CreateAmenityCategory.CreateAmenityCategoryCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateAmenityCategoryAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.BookingController",
+    "Method": "GetBookings",
+    "RelativePath": "api/bookings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EventId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookingSystem.Application.Features.Bookings.Queries.GetBookings.BookingVm, BookingSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetBookingsAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.ConferenceRoomController",
+    "Method": "CreateConferenceRoomAsync",
+    "RelativePath": "api/conferencerooms",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createConferenceRoomCommand",
+        "Type": "BookingSystem.Application.Features.ConferenceRooms.Commands.CreateConferenceRoom.CreateConferenceRoomCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.ConferenceRooms.Commands.CreateConferenceRoom.CreateConferenceRoomCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateConferenceRoomAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.ConferenceRoomController",
+    "Method": "UpdateConferenceRoomAsync",
+    "RelativePath": "api/conferencerooms",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateConferenceRoomCommand",
+        "Type": "BookingSystem.Application.Features.ConferenceRooms.Commands.UpdateConferenceRoom.UpdateConferenceRoom.UpdateConferenceRoomCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.ConferenceRooms.Commands.UpdateConferenceRoom.UpdateConferenceRoom.UpdateConferenceRoomCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "UpdateConferenceRoomAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.ConferenceRoomController",
+    "Method": "GetConferenceRoomsAsync",
+    "RelativePath": "api/conferencerooms",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SearchQuery",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartTime",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndTime",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferenceRoom.ConferenceRoomVm, BookingSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetConferenceRoomsAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.ConferenceRoomController",
+    "Method": "GetConferenceRoomAsync",
+    "RelativePath": "api/conferencerooms/{conferenceRoomId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conferenceRoomId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferenceRoom.ConferenceRoomVm",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetConferenceRoomAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.ConferenceRoomController",
+    "Method": "DeleteConferenceRoomAsync",
+    "RelativePath": "api/conferencerooms/{conferenceRoomId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conferenceRoomId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "DeleteConferenceRoomAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.ConsumableController",
+    "Method": "CreateConsumableAsync",
+    "RelativePath": "api/consumables",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createConsumableCommand",
+        "Type": "BookingSystem.Application.Features.Consumables.Commands.CreateConsumable.CreateConsumableCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.Consumables.Commands.CreateConsumable.CreateConsumableCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateConsumableAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.ConsumableController",
+    "Method": "CreateConsumableCategoryAsync",
+    "RelativePath": "api/consumables/categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createConsumableCategoryCommand",
+        "Type": "BookingSystem.Application.Features.Consumables.Commands.CreateConsumableCategory.CreateConsumableCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.Consumables.Commands.CreateConsumableCategory.CreateConsumableCategoryCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateConsumableCategoryAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.EventController",
+    "Method": "CreateEventAsync",
+    "RelativePath": "api/events",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createBookingCommand",
+        "Type": "BookingSystem.Application.Features.Events.Commands.CreateEvent.CreateEventCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.Events.Commands.CreateEvent.CreateEventCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateEventAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.EventController",
+    "Method": "UpdateEventAsync",
+    "RelativePath": "api/events",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "BookingSystem.Application.Features.Events.Commands.UpdateEvent.UpdateEventCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ],
+    "EndpointName": "UpdateEventAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.EventController",
+    "Method": "GetBookingsAsync",
+    "RelativePath": "api/events",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Start",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "End",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 0
+      },
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookingSystem.Application.Features.Events.Queries.GetEvent.EventVm, BookingSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetEventsAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.EventController",
+    "Method": "GetEventAsync",
+    "RelativePath": "api/events/{eventId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eventId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.Events.Queries.GetEvent.EventVm",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetEventAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.EventController",
+    "Method": "Delete",
+    "RelativePath": "api/events/{eventId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eventId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 0
+      }
+    ],
+    "EndpointName": "DeleteEventAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.StockController",
+    "Method": "CreateStockAsync",
+    "RelativePath": "api/stock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createStockCommand",
+        "Type": "BookingSystem.Application.Features.Inventory.Commands.CreateStock.CreateStockCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.Inventory.Commands.CreateStock.CreateStockCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateStockAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.StockController",
+    "Method": "CreateStockItemAsync",
+    "RelativePath": "api/stock/stockitems",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createStockItemCommand",
+        "Type": "BookingSystem.Application.Features.Inventory.Commands.CreateStockItem.CreateStockItemCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.Inventory.Commands.CreateStockItem.CreateStockItemCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateStockItemAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.StockEnquiryController",
+    "Method": "CreateStockEnquiryAsync",
+    "RelativePath": "api/stockenquiries",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createStockEnquiryCommand",
+        "Type": "BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockEnquiry.CreateStockEnquiryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockEnquiry.CreateStockEnquiryCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateStockEnquiryAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.StockEnquiryController",
+    "Method": "GetStockEnquiriesAsync",
+    "RelativePath": "api/stockenquiries",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookingId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsApproved",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.StockEnquiry.Queries.GetStockEnquiries.StockEnquiryListVm",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetStockEnquiriesAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.StockEnquiryController",
+    "Method": "GetStockEnquiryAsync",
+    "RelativePath": "api/stockenquiries/{stockEnquiryId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stockEnquiryId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "includeBooking",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "includeStockItemEnquiries",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.StockEnquiry.Queries.GetStockEnquiry.StockEnquiryVm",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetStockEnquiryAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.StockEnquiryController",
+    "Method": "CreateStockItemEnquiryAsync",
+    "RelativePath": "api/stockenquiries/stockitemenquiries",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createStockEnquiryCommand",
+        "Type": "BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockItemEnquiry.CreateStockItemEnquiryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockItemEnquiry.CreateStockItemEnquiryCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateStockItemEnquiryAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.StockEnquiryController",
+    "Method": "GetStockItemEnquiriesAsync",
+    "RelativePath": "api/stockenquiries/stockitemenquiries",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StockEnquiryId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsApproved",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.StockEnquiry.Queries.GetStockItemEnquiries.StockItemEnquiryListVm",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetStockItemEnquiriesAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.StockEnquiryController",
+    "Method": "UpdateStockItemEnquiryAsync",
+    "RelativePath": "api/stockenquiries/stockitemenquiries",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stockItemEnquiryId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "createStockEnquiryCommand",
+        "Type": "BookingSystem.Application.Features.StockEnquiry.Commands.UpdateStockItemEnquiry.UpdateStockItemEnquiryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.StockEnquiry.Commands.UpdateStockItemEnquiry.UpdateStockItemEnquiryCommandResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "UpdateStockItemEnquiryAsync"
+  }
+]

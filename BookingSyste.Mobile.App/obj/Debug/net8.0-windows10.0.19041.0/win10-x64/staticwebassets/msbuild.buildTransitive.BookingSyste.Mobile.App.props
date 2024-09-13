@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BookingSyste.Mobile.App.props" />
+</Project>

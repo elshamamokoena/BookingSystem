@@ -1,0 +1,1 @@
+C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\BookingSystem.Mobile.App.csproj;x64

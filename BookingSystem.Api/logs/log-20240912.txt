@@ -1,0 +1,687 @@
+2024-09-12 00:06:53.438 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:06:53.458 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:06:53.495 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:06:53.497 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:06:53.498 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:08:47.850 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:08:47.866 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:08:47.908 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:08:47.909 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:08:47.911 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:09:38.530 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:09:38.546 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:09:38.585 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:09:38.587 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:09:38.588 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:11:17.357 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:11:17.372 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:11:17.406 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:11:17.409 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:11:17.410 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:14:32.741 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:14:32.757 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:14:32.791 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:14:32.796 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:14:32.799 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:15:21.443 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:15:21.460 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:15:21.503 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:15:21.505 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:15:21.506 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:18:00.685 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:18:00.707 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:18:00.744 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:18:00.745 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:18:00.746 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:20:47.501 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:20:47.518 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:20:47.556 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:20:47.559 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:20:47.560 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:26:43.783 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:26:43.799 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:26:43.843 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:26:43.844 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:26:43.845 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:27:35.902 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:27:35.932 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:27:35.971 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:27:36.003 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:27:36.005 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:33:23.778 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:33:23.799 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:33:23.839 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:33:23.841 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:33:23.842 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:36:05.884 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:36:05.902 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:36:05.955 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:36:05.957 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:36:05.958 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:36:50.550 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:36:50.567 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:36:50.607 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:36:50.608 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:36:50.609 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 00:52:08.103 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 00:52:08.118 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 00:52:08.156 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 00:52:08.158 +02:00 [INF] Hosting environment: Development
+2024-09-12 00:52:08.159 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:06:06.885 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:06:06.901 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:06:06.942 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:06:06.943 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:06:06.944 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:08:25.121 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:08:25.141 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:08:25.177 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:08:25.178 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:08:25.180 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:10:26.739 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:10:26.798 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:10:26.860 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:10:26.862 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:10:26.863 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:13:55.911 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:13:55.926 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:13:55.959 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:13:55.962 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:13:55.963 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:16:03.968 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:16:03.996 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:16:04.039 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:16:04.040 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:16:04.041 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:18:35.602 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:18:35.618 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:18:35.652 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:18:35.653 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:18:35.654 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:20:19.744 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:20:19.767 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:20:19.820 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:20:19.822 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:20:19.823 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:22:51.667 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:22:51.682 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:22:51.718 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:22:51.719 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:22:51.720 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:29:00.026 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:29:00.049 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:29:00.110 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:29:00.113 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:29:00.114 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:29:31.024 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:29:31.051 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:29:31.090 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:29:31.091 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:29:31.091 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:30:12.923 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:30:12.944 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:30:12.990 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:30:12.993 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:30:12.995 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:39:17.285 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:39:17.302 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:39:17.344 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:39:17.345 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:39:17.346 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:48:36.976 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:48:36.993 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:48:37.032 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:48:37.035 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:48:37.036 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 01:55:21.467 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 01:55:21.483 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 01:55:21.535 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 01:55:21.537 +02:00 [INF] Hosting environment: Development
+2024-09-12 01:55:21.540 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:12:50.263 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:12:50.282 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:12:50.317 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:12:50.322 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:12:50.327 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:14:24.616 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:14:24.638 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:14:24.688 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:14:24.689 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:14:24.691 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:21:38.165 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:21:38.185 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:21:38.233 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:21:38.236 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:21:38.237 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:24:29.829 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:24:29.847 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:24:29.882 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:24:29.885 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:24:29.886 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:25:50.761 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:25:50.782 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:25:50.820 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:25:50.821 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:25:50.823 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:27:30.979 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:27:30.995 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:27:31.038 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:27:31.045 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:27:31.047 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:29:03.702 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:29:03.721 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:29:03.757 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:29:03.760 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:29:03.765 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:33:23.050 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:33:23.071 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:33:23.111 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:33:23.113 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:33:23.114 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:36:14.460 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:36:14.487 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:36:14.548 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:36:14.549 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:36:14.551 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:38:55.776 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:38:55.793 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:38:55.834 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:38:55.838 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:38:55.841 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:39:59.782 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:39:59.801 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:39:59.841 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:39:59.843 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:39:59.844 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:46:59.877 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:46:59.899 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:46:59.939 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:46:59.942 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:46:59.943 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:48:25.548 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:48:25.571 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:48:25.619 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:48:25.622 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:48:25.623 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:49:40.201 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:49:40.217 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:49:40.265 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:49:40.267 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:49:40.268 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:51:53.997 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:51:54.017 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:51:54.057 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:51:54.060 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:51:54.063 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:53:48.610 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:53:48.630 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:53:48.668 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:53:48.674 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:53:48.680 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:56:16.258 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:56:16.273 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:56:16.305 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:56:16.308 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:56:16.312 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 03:58:03.890 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 03:58:03.907 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 03:58:03.962 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 03:58:03.964 +02:00 [INF] Hosting environment: Development
+2024-09-12 03:58:03.967 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:01:34.905 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:01:34.930 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:01:34.994 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:01:34.996 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:01:34.998 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:06:19.729 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:06:19.771 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:06:19.823 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:06:19.826 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:06:19.830 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:06:22.163 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'BookingSystem.Persistence.DbContexts.BookingSystemDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.DateTime' to type 'System.DateTimeOffset'.
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFieldValueFromSqlBufferInternal[T](SqlBuffer data, _SqlMetaData metaData, Boolean isAsync)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFieldValueInternal[T](Int32 i, Boolean isAsync)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFieldValue[T](Int32 i)
+   at lambda_method47(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.DateTime' to type 'System.DateTimeOffset'.
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFieldValueFromSqlBufferInternal[T](SqlBuffer data, _SqlMetaData metaData, Boolean isAsync)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFieldValueInternal[T](Int32 i, Boolean isAsync)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFieldValue[T](Int32 i)
+   at lambda_method47(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-09-12 04:10:42.900 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:10:42.920 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:10:42.962 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:10:42.965 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:10:42.967 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:11:53.713 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:11:53.734 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:11:53.768 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:11:53.771 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:11:53.773 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:12:59.151 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:12:59.170 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:12:59.208 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:12:59.213 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:12:59.216 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:13:55.528 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:13:55.545 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:13:55.582 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:13:55.584 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:13:55.587 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:17:01.885 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:17:01.903 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:17:01.944 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:17:01.948 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:17:01.949 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:18:20.381 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:18:20.400 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:18:20.448 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:18:20.451 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:18:20.453 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:19:37.893 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:19:37.911 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:19:37.946 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:19:37.949 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:19:37.951 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:19:51.510 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:19:51.526 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:19:51.559 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:19:51.562 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:19:51.573 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:25:22.083 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:25:22.100 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:25:22.144 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:25:22.146 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:25:22.148 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:27:54.434 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:27:54.453 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:27:54.491 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:27:54.494 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:27:54.497 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:45:12.556 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:45:12.609 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:45:12.664 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:45:12.667 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:45:12.670 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:48:53.540 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:48:53.567 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:48:53.634 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:48:53.637 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:48:53.642 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:51:37.825 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:51:37.893 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:51:38.034 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:51:38.043 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:51:38.045 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:53:35.026 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:53:35.045 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:53:35.085 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:53:35.088 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:53:35.089 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:54:39.661 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:54:39.677 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:54:39.724 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:54:39.729 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:54:39.730 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:56:35.450 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:56:35.468 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:56:35.521 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:56:35.523 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:56:35.524 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:57:36.665 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:57:36.682 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:57:36.714 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:57:36.717 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:57:36.718 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 04:59:39.392 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 04:59:39.414 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 04:59:39.467 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 04:59:39.469 +02:00 [INF] Hosting environment: Development
+2024-09-12 04:59:39.471 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:01:13.610 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:01:13.630 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:01:13.661 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:01:13.664 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:01:13.667 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:06:51.769 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:06:51.786 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:06:51.823 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:06:51.825 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:06:51.830 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:09:51.321 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:09:51.338 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:09:51.368 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:09:51.370 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:09:51.373 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:12:00.568 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:12:00.585 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:12:00.632 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:12:00.634 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:12:00.635 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:13:18.303 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:13:18.333 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:13:18.386 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:13:18.388 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:13:18.390 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:14:24.932 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:14:24.949 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:14:24.984 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:14:24.987 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:14:24.989 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:15:02.473 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:15:02.490 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:15:02.534 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:15:02.545 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:15:02.546 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:15:19.366 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:15:19.382 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:15:19.417 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:15:19.420 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:15:19.424 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:16:36.361 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:16:36.378 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:16:36.411 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:16:36.418 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:16:36.425 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:19:55.417 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:19:55.442 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:19:55.494 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:19:55.496 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:19:55.498 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:22:22.717 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:22:22.736 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:22:22.776 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:22:22.777 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:22:22.779 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:24:00.101 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:24:00.122 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:24:00.168 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:24:00.170 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:24:00.172 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:24:52.488 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:24:52.506 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:24:52.544 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:24:52.547 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:24:52.548 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:26:31.725 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:26:31.741 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:26:31.774 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:26:31.776 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:26:31.780 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:27:18.858 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:27:18.875 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:27:18.912 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:27:18.915 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:27:18.917 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:29:26.496 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:29:26.510 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:29:26.558 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:29:26.560 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:29:26.563 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:32:46.754 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:32:46.771 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:32:46.803 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:32:46.806 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:32:46.808 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:37:13.226 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:37:13.242 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:37:13.279 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:37:13.281 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:37:13.285 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:38:00.469 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:38:00.486 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:38:00.519 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:38:00.545 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:38:00.548 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:42:33.216 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:42:33.232 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:42:33.269 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:42:33.270 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:42:33.272 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:46:34.373 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:46:34.630 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:46:34.699 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:46:34.701 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:46:34.702 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:48:47.320 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:48:47.335 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:48:47.376 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:48:47.378 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:48:47.379 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 05:50:13.866 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 05:50:13.882 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 05:50:13.923 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 05:50:13.926 +02:00 [INF] Hosting environment: Development
+2024-09-12 05:50:13.929 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 06:09:56.627 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 06:09:56.644 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 06:09:56.684 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 06:09:56.688 +02:00 [INF] Hosting environment: Development
+2024-09-12 06:09:56.691 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 06:23:08.437 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 06:23:08.467 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 06:23:08.514 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 06:23:08.516 +02:00 [INF] Hosting environment: Development
+2024-09-12 06:23:08.525 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 06:24:22.747 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 06:24:22.768 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 06:24:22.823 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 06:24:22.826 +02:00 [INF] Hosting environment: Development
+2024-09-12 06:24:22.835 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 06:25:06.053 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 06:25:06.072 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 06:25:06.117 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 06:25:06.122 +02:00 [INF] Hosting environment: Development
+2024-09-12 06:25:06.127 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 06:27:17.186 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 06:27:17.208 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 06:27:17.244 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 06:27:17.246 +02:00 [INF] Hosting environment: Development
+2024-09-12 06:27:17.248 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 06:29:23.528 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 06:29:23.549 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 06:29:23.594 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 06:29:23.596 +02:00 [INF] Hosting environment: Development
+2024-09-12 06:29:23.597 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 06:31:10.271 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 06:31:10.292 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 06:31:10.331 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 06:31:10.333 +02:00 [INF] Hosting environment: Development
+2024-09-12 06:31:10.336 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 12:26:26.987 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 12:26:27.006 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 12:26:27.057 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 12:26:27.058 +02:00 [INF] Hosting environment: Development
+2024-09-12 12:26:27.060 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 13:45:51.174 +02:00 [ERR] Failed executing DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee18f549-e790-5e9f-aa15-18c2292a2ee1', 'ee98f549-e790-5e9f-aa15-18c2292a2ee7', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee6', NULL, NULL),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee7', NULL, NULL),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', NULL, NULL),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', NULL, NULL),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a1ee9', NULL, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-09-12 13:50:13.178 +02:00 [ERR] Failed executing DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee18f549-e790-5e9f-aa15-18c2292a2ee1', 'ee98f549-e790-5e9f-aa15-18c2292a2ee7', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee6', NULL, NULL),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee7', NULL, NULL),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', NULL, NULL),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', NULL, NULL),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a1ee9', NULL, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-09-12 13:53:53.652 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 13:53:53.670 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 13:53:53.718 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 13:53:53.720 +02:00 [INF] Hosting environment: Development
+2024-09-12 13:53:53.721 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 20:22:12.350 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 20:22:12.373 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 20:22:12.413 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 20:22:12.416 +02:00 [INF] Hosting environment: Development
+2024-09-12 20:22:12.419 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 22:34:40.155 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 22:34:40.174 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 22:34:40.214 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 22:34:40.219 +02:00 [INF] Hosting environment: Development
+2024-09-12 22:34:40.224 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 22:36:29.060 +02:00 [ERR] Failed executing DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee6', NULL, NULL),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee7', NULL, NULL),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', NULL, NULL),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', NULL, NULL),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a1ee9', NULL, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-09-12 22:38:34.881 +02:00 [ERR] Failed executing DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee6', NULL, NULL),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee7', NULL, NULL),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', NULL, NULL),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', NULL, NULL),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a1ee9', NULL, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-09-12 22:40:02.188 +02:00 [ERR] Failed executing DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a2ee7', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-09-12 22:44:54.723 +02:00 [ERR] Failed executing DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a2ee7', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-09-12 22:55:28.331 +02:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a2ee7', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-09-12 23:01:43.975 +02:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a2ee7', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-09-12 23:18:08.444 +02:00 [ERR] Failed executing DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a2ee8', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a2ee9', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a2ee7', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e790-5e9f-aa15-18c2292a2ee5', NULL, NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-09-12 23:19:21.490 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 23:19:21.507 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 23:19:21.540 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 23:19:21.543 +02:00 [INF] Hosting environment: Development
+2024-09-12 23:19:21.546 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 23:20:32.915 +02:00 [ERR] Failed executing DbCommand (68ms) [Parameters=[@__bookingsQuery_EventId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookingId], [b].[ConferenceRoomId], [b].[Created], [b].[CreatedBy], [b].[EventId], [b].[LastModified], [b].[LastModifiedBy], [c].[ConferenceRoomId], [c].[Capacity], [c].[Created], [c].[CreatedBy], [c].[Description], [c].[IsAvailable], [c].[LastModified], [c].[LastModifiedBy], [c].[Name], [c].[Tags], [e].[EventId], [e].[Created], [e].[CreatedBy], [e].[Description], [e].[End], [e].[Label], [e].[LastModified], [e].[LastModifiedBy], [e].[Start], [e].[Title]
+FROM [Bookings] AS [b]
+INNER JOIN [ConferenceRooms] AS [c] ON [b].[ConferenceRoomId] = [c].[ConferenceRoomId]
+INNER JOIN [Events] AS [e] ON [b].[EventId] = [e].[EventId]
+WHERE [b].[EventId] = @__bookingsQuery_EventId_0
+2024-09-12 23:20:32.953 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'BookingSystem.Persistence.DbContexts.BookingSystemDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Bookings'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:6481ce15-5f32-4e93-9417-05077e9bf090
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Bookings'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:6481ce15-5f32-4e93-9417-05077e9bf090
+Error Number:208,State:1,Class:16
+2024-09-12 23:22:39.663 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 23:22:39.684 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 23:22:39.729 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 23:22:39.730 +02:00 [INF] Hosting environment: Development
+2024-09-12 23:22:39.732 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 23:38:01.896 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 23:38:01.914 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 23:38:01.962 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 23:38:01.964 +02:00 [INF] Hosting environment: Development
+2024-09-12 23:38:01.965 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 23:38:52.078 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 23:38:52.098 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 23:38:52.136 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 23:38:52.140 +02:00 [INF] Hosting environment: Development
+2024-09-12 23:38:52.144 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-12 23:53:44.741 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-12 23:53:44.760 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-12 23:53:44.805 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-12 23:53:44.817 +02:00 [INF] Hosting environment: Development
+2024-09-12 23:53:44.820 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api

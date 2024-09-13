@@ -1,0 +1,32 @@
+﻿@inherits LayoutComponentBase
+
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div style="padding-bottom:10px" class="container" data-layout="container">
+        <script>
+          var isFluid = JSON.parse(localStorage.getItem('isFluid'));
+          if (isFluid) {
+            var container = document.querySelector('[data-layout]');
+            container.classList.remove('container');
+            container.classList.add('container-fluid');
+          }
+        </script>
+
+        <TopNav/>
+
+
+        <div class="content">
+            <NavBar/>
+@Body
+        <Footer/>
+        </div>
+        <BottomBar/>
+
+      </div>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->

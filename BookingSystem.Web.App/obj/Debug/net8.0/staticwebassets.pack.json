@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Web.App\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Web.App\\obj\\Debug\\net8.0\\compressed\\32z5rghz7f.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Web.App\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BookingSystem.Web.App.styles.css",
+      "PackagePath": "staticwebassets\\BookingSystem.Web.App.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Web.App\\wwwroot\\Index.html",
+      "PackagePath": "staticwebassets\\Index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BookingSystem.Web.App.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BookingSystem.Web.App.props",
+      "PackagePath": "build\\BookingSystem.Web.App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BookingSystem.Web.App.props",
+      "PackagePath": "buildMultiTargeting\\BookingSystem.Web.App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BookingSystem.Web.App.props",
+      "PackagePath": "buildTransitive\\BookingSystem.Web.App.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
