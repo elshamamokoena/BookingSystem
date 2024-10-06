@@ -1,5 +1,6 @@
 ﻿using BookingSystem.Application.Features.Consumables.Commands.CreateConsumable;
 using BookingSystem.Application.Features.Consumables.Commands.CreateConsumableCategory;
+using BookingSystem.Application.Features.Consumables.Queries.GetConsumables;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,6 +14,13 @@ namespace BookingSystem.Api.Controllers
         public ConsumableController(IMediator mediator)
         {
             _mediator = mediator;
+        }
+
+        [HttpGet(Name = "GetConsumablesAsync")]
+        public async Task<ActionResult<IEnumerable<ConsumableListVm>>> GetConsumablesAsync([FromQuery] GetConsumablesQuery query)
+        {
+            var dtos = await _mediator.Send(query);
+            return Ok(dtos);
         }
 
         [HttpPost(Name = "CreateConsumableAsync")]

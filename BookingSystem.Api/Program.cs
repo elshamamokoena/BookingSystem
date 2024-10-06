@@ -23,6 +23,8 @@ var app= builder
     .ConfigurePipeline();
 
 app.UseSerilogRequestLogging();
+//await app.ResetDatabaseAsync();
+
 
 app.Run();
 

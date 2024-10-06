@@ -31,6 +31,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingSystem.Shared", "Boo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingSystem.Web.Wasm", "BookingSystem.Web.Wasm\BookingSystem.Web.Wasm.csproj", "{FF5049EB-0CA0-468C-8541-7E49432F321E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{1AE14972-FE55-41AE-B377-9E374C608F6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingSystem.AuthorizationPolicies", "BookingSystem.AuthorizationPolicies\BookingSystem.AuthorizationPolicies.csproj", "{890B5A99-C768-4E92-B2B3-47ACC788A890}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,10 @@ Global
 		{FF5049EB-0CA0-468C-8541-7E49432F321E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF5049EB-0CA0-468C-8541-7E49432F321E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF5049EB-0CA0-468C-8541-7E49432F321E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{890B5A99-C768-4E92-B2B3-47ACC788A890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{890B5A99-C768-4E92-B2B3-47ACC788A890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{890B5A99-C768-4E92-B2B3-47ACC788A890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{890B5A99-C768-4E92-B2B3-47ACC788A890}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +92,8 @@ Global
 		{EF6DF445-C421-4E7E-B4B6-69759F83FABE} = {FCA33503-2252-4D6F-9A56-A9803BCC712A}
 		{0D1A1A9C-D9D0-49A4-9C97-EDB7857EA20E} = {FCA33503-2252-4D6F-9A56-A9803BCC712A}
 		{FF5049EB-0CA0-468C-8541-7E49432F321E} = {FCA33503-2252-4D6F-9A56-A9803BCC712A}
+		{1AE14972-FE55-41AE-B377-9E374C608F6A} = {72D360BF-CD0D-48FD-91D2-8F29458304F6}
+		{890B5A99-C768-4E92-B2B3-47ACC788A890} = {1AE14972-FE55-41AE-B377-9E374C608F6A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04BD3773-0767-4B17-ACDA-84BA85FDEA2D}

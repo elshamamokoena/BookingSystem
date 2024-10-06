@@ -4,6 +4,7 @@ using BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockItemEn
 using BookingSystem.Application.Features.StockEnquiry.Commands.UpdateStockItemEnquiry;
 using BookingSystem.Application.Features.StockEnquiry.Queries.GetStockEnquiries;
 using BookingSystem.Application.Features.StockEnquiry.Queries.GetStockEnquiry;
+using BookingSystem.Application.Features.StockEnquiry.Queries.GetStockItemEnquiries;
 using BookingSystem.Domain.Entities.Inventory;
 
 namespace BookingSystem.Application.Profiles
@@ -17,7 +18,7 @@ namespace BookingSystem.Application.Profiles
                 .ForMember(dest => dest.StockEnquiry, opt => opt.MapFrom(src => src));
             CreateMap<Domain.Entities.Inventory.StockEnquiry, StockEnquiryDto>();
             CreateMap<Domain.Entities.Inventory.StockEnquiry, StockEnquiryVm>();
-            CreateMap<Domain.Entities.Inventory.StockItemEnquiry, StockItemEnquiryDto>();
+            CreateMap<Domain.Entities.Inventory.StockItemEnquiry, StockItemEnquiryListVm>();
             CreateMap<Domain.Entities.Inventory.StockEnquiry, ForListStockEnquiryDto>();
 
             // stockitem enquiries

@@ -14,21 +14,24 @@ using System.Threading.Tasks;
 namespace BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockItemEnquiry
 {
     public class CreateStockItemEnquiryCommandHandler : IRequestHandler<CreateStockItemEnquiryCommand,
-        CreateStockItemEnquiryCommandResponse>
+        Guid>
     {
         private readonly IStockEnquiryRepository _stockEnquiryRepository;
         private readonly IStockRepository _stockRepository;
         private readonly IConsumableRepository _consumableRepository;
+        private readonly IAsyncRepository<StockItemEnquiry> _stockItemEnquiryRepository;
         private readonly IMapper _mapper;
         public CreateStockItemEnquiryCommandHandler(IStockEnquiryRepository stockEnquiryRepository, 
+            IAsyncRepository<StockItemEnquiry> stockItemEnquiryRepository,
             IConsumableRepository consumableRepository, IMapper mapper, IStockRepository stockRepository)
         {
+            _stockItemEnquiryRepository = stockItemEnquiryRepository;
             _stockEnquiryRepository = stockEnquiryRepository;
             _consumableRepository = consumableRepository;
             _mapper = mapper;
             _stockRepository = stockRepository;
         }
-        public async Task<CreateStockItemEnquiryCommandResponse>  Handle(CreateStockItemEnquiryCommand request, CancellationToken cancellationToken)
+        public async Task<Guid>  Handle(CreateStockItemEnquiryCommand request, CancellationToken cancellationToken)
         {
             var response = new CreateStockItemEnquiryCommandResponse();
             var validator = new CreateStockItemEnquiryCommandValidator();
@@ -37,25 +40,20 @@ namespace BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockIt
             if(validationResult.Errors.Count>0)
                 throw new ValidationException(validationResult);
 
-            if (!await _stockEnquiryRepository.StockEnquiryExistsAsync(request.StockEnquiryId))
+            if (!await _stockEnquiryRepository.EntityExistsAsync(request.StockEnquiryId))
                 throw new NotFoundException(nameof(StockEnquiry), request.StockEnquiryId);
 
-            if(!await _consumableRepository.ConsumableExistsAsync(request.ConsumableId))
+            if(!await _consumableRepository.EntityExistsAsync(request.ConsumableId))
                 throw new NotFoundException(nameof(Consumable), request.ConsumableId);
 
             var stockItemEnquiry = _mapper.Map<StockItemEnquiry>(request);
 
             stockItemEnquiry.IsApproved = await _stockRepository.StockItemIsAvailableAsync(request.ConsumableId, request.Quantity);
-            stockItemEnquiry = await _stockEnquiryRepository.AddStockItemEnquiry(stockItemEnquiry);
+            stockItemEnquiry = await _stockItemEnquiryRepository.AddAsync(stockItemEnquiry);
+            await _stockEnquiryRepository.SaveChangesAsync();
 
-            if(await _stockEnquiryRepository.SaveChangesAsync())
-            {
-                response.Message = "Stock Item Enquiry Created Successfully";
-                response.StockItemEnquiry = _mapper.Map<StockItemEnquiryDto>(stockItemEnquiry);
 
-            }
-
-            return response;
+            return stockItemEnquiry.StockItemEnquiryId;
         }
     }
    

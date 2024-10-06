@@ -4,7 +4,9 @@ using BookingSystem.Application.Features.ConferenceRooms.Commands.UpdateConferen
 using BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferenceRoom;
 using BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferenceRooms;
 using BookingSystem.Application.ResourceParameters;
+using BookingSystem.AuthorizationPolicies;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookingSystem.Api.Controllers
@@ -21,15 +23,14 @@ namespace BookingSystem.Api.Controllers
         }
 
         [HttpPost(Name ="CreateConferenceRoomAsync")]
-        public async Task<ActionResult<CreateConferenceRoomCommandResponse>> 
-            CreateConferenceRoomAsync([FromBody] CreateConferenceRoomCommand createConferenceRoomCommand )
+        [Authorize(Policy =Policies.IsManager)]
+        public async Task<ActionResult<Guid>> CreateConferenceRoomAsync([FromBody] CreateConferenceRoomCommand createConferenceRoomCommand )
         {
             return Ok(await _mediator.Send(createConferenceRoomCommand));
         }
 
         [HttpPut(Name ="UpdateConferenceRoomAsync")]
-        public async Task<ActionResult<UpdateConferenceRoomCommandResponse>> 
-            UpdateConferenceRoomAsync([FromBody] UpdateConferenceRoomCommand updateConferenceRoomCommand)
+        public async Task<ActionResult<UpdateConferenceRoomCommandResponse>> UpdateConferenceRoomAsync([FromBody] UpdateConferenceRoomCommand updateConferenceRoomCommand)
         {
             return Ok(await _mediator.Send(updateConferenceRoomCommand));
         }
@@ -41,7 +42,6 @@ namespace BookingSystem.Api.Controllers
             var query = new GetConferenceRoomQuery(conferenceRoomId);
             return Ok(await _mediator.Send(query));
         }
-
 
         [HttpGet(Name ="GetConferenceRoomsAsync")]
         public async Task<ActionResult<IEnumerable<ConferenceRoomVm>>> 

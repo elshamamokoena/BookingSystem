@@ -16,11 +16,11 @@ namespace BookingSystem.Shared.Components.Base
             await base.OnInitializedAsync();
         }
 
-        protected override async Task OnAfterRenderAsync(bool firstRender)
-        {
-            await JsRuntime!.InitDataTables(firstRender);
-            await JsRuntime!.InitBulkSelect(firstRender);
-            await base.OnAfterRenderAsync(firstRender);
-        }
+        //protected override async Task OnAfterRenderAsync(bool firstRender)
+        //{
+        //    await JsRuntime!.InitDataTables(firstRender);
+        //    await JsRuntime!.InitBulkSelect(firstRender);
+        //    await base.OnAfterRenderAsync(firstRender);
+        //}
     }
 }

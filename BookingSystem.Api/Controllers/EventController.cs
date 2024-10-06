@@ -4,13 +4,17 @@ using BookingSystem.Application.Features.Events.Commands.UpdateEvent;
 using BookingSystem.Application.Features.Events.Queries.GetEvent;
 using BookingSystem.Application.Features.Events.Queries.GetEvents;
 using BookingSystem.Application.ResourceParameters;
+using BookingSystem.AuthorizationPolicies;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookingSystem.Api.Controllers
 {
     [ApiController]
     [Route("api/events")]
+    [Authorize]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     public class EventController:ControllerBase
     {
         private readonly IMediator _mediator;
@@ -18,9 +22,9 @@ namespace BookingSystem.Api.Controllers
         {
             _mediator = mediator;
         }
-
         [HttpPost(Name ="CreateEventAsync")]
-        public async Task<ActionResult<CreateEventCommandResponse>> CreateEventAsync([FromBody] CreateEventCommand createBookingCommand)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<Guid>> CreateEventAsync([FromBody] CreateEventCommand createBookingCommand)
         {
             return Ok(await _mediator.Send(createBookingCommand));
         }
@@ -35,13 +39,15 @@ namespace BookingSystem.Api.Controllers
         }
 
         [HttpGet("{eventId}", Name = "GetEventAsync")]
+        //[Authorize(Policy = Policies.IsManager)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+
         public async Task<ActionResult<EventVm>> GetEventAsync(Guid eventId)
         {
             return Ok(await _mediator.Send(new GetEventQuery { EventId = eventId }));
         }
 
         [HttpGet(Name = "GetEventsAsync")]
-        [ProducesDefaultResponseType]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<EventVm>>> GetBookingsAsync([FromQuery] GetEventsQuery query)
         {

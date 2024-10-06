@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Features.ConferenceRooms.Commands.CreateConferenceRoom
 {
-    public class CreateConferenceRoomCommand:IRequest<CreateConferenceRoomCommandResponse>
+    public class CreateConferenceRoomCommand:IRequest<Guid>
     {
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;

@@ -346,3 +346,4 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8
 C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-ios\iossimulator-x64\BookingSystem.Mobile.App.pdb
 C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-ios\iossimulator-x64\BookingSystem.Mobile.App.genruntimeconfig.cache
 C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-ios\iossimulator-x64\ref\BookingSystem.Mobile.App.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-ios\iossimulator-x64\BookingSystem.Mobile.App.sourcelink.json

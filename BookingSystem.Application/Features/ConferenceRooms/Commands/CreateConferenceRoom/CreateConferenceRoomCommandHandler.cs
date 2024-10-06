@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Features.ConferenceRooms.Commands.CreateConferenceRoom
 {
-    public class CreateConferenceRoomCommandHandler : IRequestHandler<CreateConferenceRoomCommand, CreateConferenceRoomCommandResponse>
+    public class CreateConferenceRoomCommandHandler : IRequestHandler<CreateConferenceRoomCommand, Guid>
     {
         private readonly IConferenceRoomRepository _conferenceRoomRepository;
         private readonly IMapper _mapper;
@@ -20,27 +20,19 @@ namespace BookingSystem.Application.Features.ConferenceRooms.Commands.CreateConf
             _conferenceRoomRepository = conferenceRoomRepository;
             _mapper = mapper;
         }
-        public async Task<CreateConferenceRoomCommandResponse> Handle(CreateConferenceRoomCommand request, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(CreateConferenceRoomCommand request, CancellationToken cancellationToken)
         {
-            var response = new CreateConferenceRoomCommandResponse();
             var validator = new CreateConferenceRoomCommandValidator();
-
             //validate the request
             var validationResult = await validator.ValidateAsync(request);
-
             //if validation fails return the errors
             if (validationResult.Errors.Count > 0)
                 throw new ValidationException(validationResult);
 
-            if (response.Success)
-            {
-                var conferenceRoom = _mapper.Map<ConferenceRoom>(request);
-                conferenceRoom= await _conferenceRoomRepository.AddConferenceRoom(conferenceRoom);
-                await _conferenceRoomRepository.SaveChangesAsync();
-                response.ConferenceRoom = _mapper.Map<CreateConferenceRoomDto>(conferenceRoom);
-                response.Message = "Conference Room Created Successfully.";
-            }
-            return response;
+            var conferenceRoom = _mapper.Map<ConferenceRoom>(request);
+            conferenceRoom= await _conferenceRoomRepository.AddAsync(conferenceRoom);
+            await _conferenceRoomRepository.SaveChangesAsync();
+            return conferenceRoom.ConferenceRoomId;
         }
     }
 }

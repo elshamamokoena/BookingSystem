@@ -8,6 +8,7 @@ namespace BookingSystem.Application.Contracts.Persistence
 {
     public interface IAsyncRepository<T> where T : class
     {
+        Task<IReadOnlyList<T>> ListAllAsync();
         Task<T> AddAsync(T entity);
         void DeleteEntity(T entity); 
         Task<bool> EntityExistsAsync(Guid id);

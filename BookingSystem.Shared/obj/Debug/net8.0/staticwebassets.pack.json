@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Components\\AddBookingModal.razor.js",
-      "PackagePath": "staticwebassets\\Components\\AddBookingModal.razor.js"
-    },
-    {
       "Id": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BookingSystem.Shared.bundle.scp.css",
       "PackagePath": "staticwebassets\\BookingSystem.Shared.bundle.scp.css"
     },
@@ -1931,6 +1927,10 @@
     {
       "Id": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\modules\\one.js",
       "PackagePath": "staticwebassets\\modules\\one.js"
+    },
+    {
+      "Id": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\modules\\utils.js",
+      "PackagePath": "staticwebassets\\modules\\utils.js"
     },
     {
       "Id": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\vendors\\anchorjs\\anchor.min.js",

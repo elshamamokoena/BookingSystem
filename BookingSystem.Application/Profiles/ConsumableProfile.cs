@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using BookingSystem.Application.Features.ConsumableCategories.Queries.GetConsumableCategories;
 using BookingSystem.Application.Features.Consumables.Commands.CreateConsumable;
 using BookingSystem.Application.Features.Consumables.Commands.CreateConsumableCategory;
+using BookingSystem.Application.Features.Consumables.Queries.GetConsumables;
 using BookingSystem.Domain.Entities.Consumables;
 using System;
 using System.Collections.Generic;
@@ -18,12 +20,13 @@ namespace BookingSystem.Application.Profiles
             CreateMap<Consumable, CreateConsumableCommandResponse>()
                 .ForMember(dest => dest.Consumable, opt => opt.MapFrom(src => src));
             CreateMap<Consumable, ConsumableDto>();
-
             CreateMap<CreateConsumableCategoryCommand, ConsumableCategory>();
             CreateMap<ConsumableCategory, CreateConsumableCategoryCommandResponse>()
                 .ForMember(dest => dest.ConsumableCategory, opt => opt.MapFrom(src => src));
             CreateMap<ConsumableCategory, ConsumableCategoryDto>();
-
+            CreateMap<ConsumableCategory, ConsumableCategoryListVm>();
+            CreateMap<Consumable, ConsumableListVm>();
+            CreateMap<ConsumableCategory, ConsumableCategoryForListDto>();
         }
 
     }

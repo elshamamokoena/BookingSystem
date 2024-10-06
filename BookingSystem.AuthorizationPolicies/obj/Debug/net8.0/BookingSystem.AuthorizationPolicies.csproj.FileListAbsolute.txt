@@ -1,0 +1,13 @@
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\bin\Debug\net8.0\BookingSystem.AuthorizationPolicies.deps.json
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\bin\Debug\net8.0\BookingSystem.AuthorizationPolicies.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\bin\Debug\net8.0\BookingSystem.AuthorizationPolicies.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\obj\Debug\net8.0\BookingSystem.AuthorizationPolicies.csproj.AssemblyReference.cache
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\obj\Debug\net8.0\BookingSystem.AuthorizationPolicies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\obj\Debug\net8.0\BookingSystem.AuthorizationPolicies.AssemblyInfoInputs.cache
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\obj\Debug\net8.0\BookingSystem.AuthorizationPolicies.AssemblyInfo.cs
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\obj\Debug\net8.0\BookingSystem.AuthorizationPolicies.csproj.CoreCompileInputs.cache
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\obj\Debug\net8.0\BookingSystem.AuthorizationPolicies.sourcelink.json
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\obj\Debug\net8.0\BookingSystem.AuthorizationPolicies.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\obj\Debug\net8.0\refint\BookingSystem.AuthorizationPolicies.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\obj\Debug\net8.0\BookingSystem.AuthorizationPolicies.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.AuthorizationPolicies\obj\Debug\net8.0\ref\BookingSystem.AuthorizationPolicies.dll

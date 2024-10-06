@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Features.StockEnquiry.Queries.GetStockItemEnquiries
 {
-    public class GetStockItemEnquiriesQueryHandler : IRequestHandler<GetStockItemEnquiriesQuery, StockItemEnquiryListVm>
+    public class GetStockItemEnquiriesQueryHandler : IRequestHandler<GetStockItemEnquiriesQuery,IEnumerable<StockItemEnquiryListVm>>
     {
         private readonly IStockEnquiryRepository _stockEnquiryRepository;
         private readonly IStockRepository _stockRepository;
@@ -24,26 +24,13 @@ namespace BookingSystem.Application.Features.StockEnquiry.Queries.GetStockItemEn
             _stockRepository = stockRepository;
             _mapper = mapper;
         }
-        public async Task<StockItemEnquiryListVm> Handle(GetStockItemEnquiriesQuery request, CancellationToken cancellationToken)
+        public async Task<IEnumerable<StockItemEnquiryListVm>> Handle(GetStockItemEnquiriesQuery request, CancellationToken cancellationToken)
         {
-            if(! await _stockEnquiryRepository.StockEnquiryExistsAsync(request.StockEnquiryId))
+            if(! await _stockEnquiryRepository.EntityExistsAsync(request.StockEnquiryId))
                 throw new NotFoundException(nameof(StockEnquiry), request.StockEnquiryId);
-
-            // Get Stock Enquiry
-            var stockEnquiry = await _stockEnquiryRepository.GetStockEnquiryAsync(request.StockEnquiryId);
-
             // Get Stock Item Enquiries
             var stockItemEnquiries = await _stockEnquiryRepository.GetStockItemEnquiriesAsync(request);
-            var stockItemEnqueriesToReturn = _mapper.Map<IEnumerable<StockItemEnquiryDto>>(stockItemEnquiries);
-
-            return new StockItemEnquiryListVm
-            {
-                StockItemEnquiries = stockItemEnqueriesToReturn,
-                BookingId = stockEnquiry.BookingId,
-                StockEnquiryId = stockEnquiry.StockEnquiryId,
-                AllApproved = !stockItemEnquiries.Any(x => x.IsApproved == false)
-            };
-
+            return _mapper.Map<IEnumerable<StockItemEnquiryListVm>>(stockItemEnquiries);
         }
     }
 }

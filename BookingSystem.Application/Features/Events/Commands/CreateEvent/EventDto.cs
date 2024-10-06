@@ -10,8 +10,8 @@ namespace BookingSystem.Application.Features.Events.Commands.CreateEvent
     {
 
         public string Title { get; set; } = string.Empty;
-        public DateTimeOffset Start { get; set; }
-        public DateTimeOffset End { get; set; }
+        public DateTime Start { get; set; }
+        public DateTime End { get; set; }
         public string Label { get; set; } = string.Empty;
 
     }

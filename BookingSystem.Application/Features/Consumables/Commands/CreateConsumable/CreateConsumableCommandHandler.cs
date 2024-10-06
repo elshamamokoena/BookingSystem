@@ -13,12 +13,16 @@ namespace BookingSystem.Application.Features.Consumables.Commands.CreateConsumab
 {
     public class CreateConsumableCommandHandler : IRequestHandler<CreateConsumableCommand, CreateConsumableCommandResponse>
     {
-        private readonly IConsumableRepository _consumableRepository;
+        //private readonly IConsumableRepository _consumableRepository;
+        private readonly IAsyncRepository<Consumable> _consumableRepository;
+        private readonly IAsyncRepository<ConsumableCategory> _consumableCategoryRepository;
         private readonly IMapper _mapper;
-        public CreateConsumableCommandHandler(IConsumableRepository consumableRepository,
-            IMapper mapper)
+        public CreateConsumableCommandHandler(IAsyncRepository<Consumable> consumableRepository, IAsyncRepository<ConsumableCategory> consumableCategoryRepository,
+            IMapper mapper) 
+
         {
             _consumableRepository = consumableRepository;
+            _consumableCategoryRepository = consumableCategoryRepository;
             _mapper = mapper;
         }
         public async Task<CreateConsumableCommandResponse> Handle(CreateConsumableCommand request, CancellationToken cancellationToken)
@@ -30,10 +34,10 @@ namespace BookingSystem.Application.Features.Consumables.Commands.CreateConsumab
             if(validationResult.Errors.Count > 0)
                 throw new ValidationException(validationResult);
 
-            if(!await _consumableRepository.ConsumableCategoryExists(request.ConsumableCategoryId))
+            if(!await _consumableCategoryRepository.EntityExistsAsync(request.ConsumableCategoryId))
                 throw new NotFoundException(nameof(ConsumableCategory),request.ConsumableCategoryId);
 
-            var consumable = await _consumableRepository.AddConsumableAsync(_mapper.Map<Consumable>(request));
+            var consumable = await _consumableRepository.AddAsync(_mapper.Map<Consumable>(request));
             await _consumableRepository.SaveChangesAsync();
             response.Consumable = _mapper.Map<ConsumableDto>(consumable);
             return response;

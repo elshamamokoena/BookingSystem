@@ -11,25 +11,25 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Contracts.Persistence
 {
-    public interface IStockEnquiryRepository
+    public interface IStockEnquiryRepository:IAsyncRepository<StockEnquiry>
     {
-        Task<StockEnquiry> AddStockEnquiry(StockEnquiry stockItemEnquiry);
-        Task<bool> StockEnquiryExistsAsync(Guid stockEnquiryId);
+        //Task<StockEnquiry> AddStockEnquiry(StockEnquiry stockItemEnquiry);
+        //Task<bool> StockEnquiryExistsAsync(Guid stockEnquiryId);
         Task<StockEnquiry> GetStockEnquiryAsync(GetStockEnquiryQuery query);
-        Task<StockEnquiry> GetStockEnquiryAsync(Guid stockEnquiryId);
+        //Task<StockEnquiry> GetStockEnquiryAsync(Guid stockEnquiryId);
 
         Task<IEnumerable<StockEnquiry>> GetStockEnquiriesAsync(GetStockEnquiriesQuery resourceParameters);
-        void DeleteStockEnquiry(StockEnquiry stockEnquiry);
-        Task<bool> SaveChangesAsync();
-        void UpdateStockEnquiry(StockEnquiry stockEnquiry);
+        //void DeleteStockEnquiry(StockEnquiry stockEnquiry);
+        //Task<bool> SaveChangesAsync();
+        //void UpdateStockEnquiry(StockEnquiry stockEnquiry);
 
-        // stockitem enquiries
+        //// stockitem enquiries
 
-        Task<StockItemEnquiry> AddStockItemEnquiry(StockItemEnquiry stockItemEnquiry);
-        Task<StockItemEnquiry> GetStockItemEnquiryAsync(Guid stockItemEnquiryId);
+        //Task<StockItemEnquiry> AddStockItemEnquiry(StockItemEnquiry stockItemEnquiry);
+        //Task<StockItemEnquiry> GetStockItemEnquiryAsync(Guid stockItemEnquiryId);
         Task<IEnumerable<StockItemEnquiry>> GetStockItemEnquiriesAsync(GetStockItemEnquiriesQuery resourceParameters);
-        void UpdateStockItemEnquiry(StockItemEnquiry stockItemEnquiry);
-        void DeleteStockItemEnquiry(StockItemEnquiry stockItemEnquiry);
-        Task<bool> StockItemEnquiryExistsAsync(Guid stockItemEnquiryId);
+        //void UpdateStockItemEnquiry(StockItemEnquiry stockItemEnquiry);
+        //void DeleteStockItemEnquiry(StockItemEnquiry stockItemEnquiry);
+        //Task<bool> StockItemEnquiryExistsAsync(Guid stockItemEnquiryId);
     }
 }

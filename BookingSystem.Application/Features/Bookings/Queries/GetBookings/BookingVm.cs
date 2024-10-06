@@ -10,6 +10,9 @@ namespace BookingSystem.Application.Features.Bookings.Queries.GetBookings
     public class BookingVm
     {
         public Guid BookingId { get; set; }
+        public int BookingNumber { get; set; }
+        public DateTime Created { get; set; }
+        public string CreatedBy { get; set; } = string.Empty;
         public Guid EventId { get; set; }
         public EventForBookingDto Event { get; set; } = default!;
         public Guid ConferenceRoomId { get; set; }

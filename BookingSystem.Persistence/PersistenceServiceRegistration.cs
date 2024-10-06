@@ -28,7 +28,9 @@ namespace BookingSystem.Persistence
             services.AddScoped<IEventRepository, EventRepository>();
             services.AddScoped<IAmenityRepository, AmenityRepository>();
             services.AddScoped<IConsumableRepository, ConsumableRepository>();
-            services.AddScoped<IBookingRepository, BookingRepository >();
+            services.AddScoped<IConsumableCategoryRepository, ConsumableCategoryRepository>();
+            services.AddScoped<IBookingRepository, BookingRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IStockRepository, StockRepository>();
             services.AddScoped<IStockEnquiryRepository, StockEnquiryRepository>();
             return services;

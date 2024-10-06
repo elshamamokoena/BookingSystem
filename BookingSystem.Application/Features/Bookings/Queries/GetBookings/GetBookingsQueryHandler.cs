@@ -2,6 +2,7 @@
 using BookingSystem.Application.Contracts.Persistence;
 using BookingSystem.Application.Exceptions;
 using BookingSystem.Domain.Entities.Bookings;
+using BookingSystem.Domain.Entities.Events;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,10 @@ namespace BookingSystem.Application.Features.Bookings.Queries.GetBookings
     class GetBookingsQueryHandler : IRequestHandler<GetBookingsQuery, IEnumerable<BookingVm>>
     {
         private readonly IBookingRepository _bookingRepository;
-        private readonly IAsyncRepository<Booking> _asyncRepository; 
+        private readonly IAsyncRepository<Event> _asyncRepository; 
         private readonly IMapper _mapper;
         public GetBookingsQueryHandler(IBookingRepository bookingRepository,
-            IAsyncRepository<Booking> repository, IMapper mapper)
+            IAsyncRepository<Event> repository, IMapper mapper)
         {
             _bookingRepository = bookingRepository;
             _asyncRepository = repository;

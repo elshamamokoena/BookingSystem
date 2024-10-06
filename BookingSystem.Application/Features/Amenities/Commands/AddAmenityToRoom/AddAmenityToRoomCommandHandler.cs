@@ -30,7 +30,7 @@ namespace BookingSystem.Application.Features.Amenities.Commands.AddAmenityToRoom
             if(validationResult.Errors.Count > 0)
                 throw new ValidationException(validationResult);
 
-            if (!await _conferenceRoomRepository.ConferenceRoomExistsAsync(request.RoomId)) 
+            if (!await _conferenceRoomRepository.EntityExistsAsync(request.RoomId)) 
                 throw new NotFoundException("Conference Room", request.RoomId);
 
             if (!await _amenityRepository.AmenityExistsAsync(request.AmenityId))

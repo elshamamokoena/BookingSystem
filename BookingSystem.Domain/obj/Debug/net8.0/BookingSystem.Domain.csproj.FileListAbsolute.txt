@@ -9,3 +9,4 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Domain\obj\Debug\net8.0\
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Domain\obj\Debug\net8.0\refint\BookingSystem.Domain.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Domain\obj\Debug\net8.0\BookingSystem.Domain.pdb
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Domain\obj\Debug\net8.0\ref\BookingSystem.Domain.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Domain\obj\Debug\net8.0\BookingSystem.Domain.sourcelink.json

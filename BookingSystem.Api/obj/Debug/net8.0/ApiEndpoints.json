@@ -139,6 +139,54 @@
     "EndpointName": "GetBookingsAsync"
   },
   {
+    "ContainingType": "BookingSystem.Api.Controllers.BookingController",
+    "Method": "CreateBooking",
+    "RelativePath": "api/bookings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "BookingSystem.Application.Features.Bookings.Commands.CreateBooking.CreateBookingCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "CreateBookingAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.CategoryController",
+    "Method": "GetCategoriesAsync",
+    "RelativePath": "api/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookingSystem.Application.Features.Categories.GetCategories.CategoryListVm, BookingSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetCategoriesAsync"
+  },
+  {
     "ContainingType": "BookingSystem.Api.Controllers.ConferenceRoomController",
     "Method": "CreateConferenceRoomAsync",
     "RelativePath": "api/conferencerooms",
@@ -154,7 +202,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BookingSystem.Application.Features.ConferenceRooms.Commands.CreateConferenceRoom.CreateConferenceRoomCommandResponse",
+        "Type": "System.Guid",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -295,6 +343,43 @@
   },
   {
     "ContainingType": "BookingSystem.Api.Controllers.ConsumableController",
+    "Method": "GetConsumablesAsync",
+    "RelativePath": "api/consumables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IncludeCategory",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookingSystem.Application.Features.Consumables.Queries.GetConsumables.ConsumableListVm, BookingSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetConsumablesAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.ConsumableController",
     "Method": "CreateConsumableAsync",
     "RelativePath": "api/consumables",
     "HttpMethod": "POST",
@@ -319,6 +404,27 @@
       }
     ],
     "EndpointName": "CreateConsumableAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.ConsumableCategoryController",
+    "Method": "GetAllConsumableCategories",
+    "RelativePath": "api/consumables/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookingSystem.Application.Features.ConsumableCategories.Queries.GetConsumableCategories.ConsumableCategoryListVm, BookingSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetAllConsumableCategories"
   },
   {
     "ContainingType": "BookingSystem.Api.Controllers.ConsumableController",
@@ -363,7 +469,16 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BookingSystem.Application.Features.Events.Commands.CreateEvent.CreateEventCommandResponse",
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "System.Guid",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -389,6 +504,15 @@
       }
     ],
     "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
       {
         "Type": "System.Void",
         "MediaTypes": [],
@@ -443,7 +567,7 @@
           "application/json",
           "text/json"
         ],
-        "StatusCode": 0
+        "StatusCode": 401
       },
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[BookingSystem.Application.Features.Events.Queries.GetEvent.EventVm, BookingSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -473,6 +597,15 @@
     ],
     "ReturnTypes": [
       {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
         "Type": "BookingSystem.Application.Features.Events.Queries.GetEvent.EventVm",
         "MediaTypes": [
           "text/plain",
@@ -499,6 +632,15 @@
       }
     ],
     "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
       {
         "Type": "System.Void",
         "MediaTypes": [],
@@ -595,7 +737,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockEnquiry.CreateStockEnquiryCommandResponse",
+        "Type": "System.Guid",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -657,19 +799,29 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "StockEnquiryId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "BookingId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeStockItemEnquiries",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeBooking",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
         "Name": "stockEnquiryId",
-        "Type": "System.Guid",
+        "Type": "",
         "IsRequired": true
-      },
-      {
-        "Name": "includeBooking",
-        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "includeStockItemEnquiries",
-        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -701,7 +853,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockItemEnquiry.CreateStockItemEnquiryCommandResponse",
+        "Type": "System.Guid",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -785,5 +937,42 @@
       }
     ],
     "EndpointName": "UpdateStockItemEnquiryAsync"
+  },
+  {
+    "ContainingType": "BookingSystem.Api.Controllers.BookingController",
+    "Method": "GetBooking",
+    "RelativePath": "booking-detail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookingId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeEvent",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeRoom",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookingSystem.Application.Features.Bookings.Queries.GetBookings.BookingVm",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetBookingAsync"
   }
 ]

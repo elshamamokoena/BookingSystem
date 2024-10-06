@@ -21,8 +21,8 @@ namespace BookingSystem.Application.Features.ConferenceRooms.Commands.DeleteConf
         }
         public async Task<bool> Handle(DeleteConferenceRoomCommand request, CancellationToken cancellationToken)
         {
-            var conferenceRoomToDelete = await _conferenceRoomRepository.GetConferenceRoomAsync(request.ConferenceRoomId);
-             _conferenceRoomRepository.DeleteConferenceRoom(conferenceRoomToDelete);
+            var conferenceRoomToDelete = await _conferenceRoomRepository.GetEntityAsync(request.ConferenceRoomId);
+             _conferenceRoomRepository.DeleteEntity(conferenceRoomToDelete);
             return await _conferenceRoomRepository.SaveChangesAsync();
         }
     }

@@ -14,12 +14,10 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Persistence.Repositories
 {
-    public class StockEnquiryRepository : IStockEnquiryRepository
+    public class StockEnquiryRepository :BaseRepository<StockEnquiry>, IStockEnquiryRepository
     {
-        private readonly BookingSystemDbContext _context;
-        public StockEnquiryRepository(BookingSystemDbContext context)
+        public StockEnquiryRepository(BookingSystemDbContext context): base(context)
         {
-            _context = context;
         }
         public async Task<StockEnquiry> AddStockEnquiry(StockEnquiry stockItemEnquiry)
         {
@@ -69,15 +67,17 @@ namespace BookingSystem.Persistence.Repositories
         {
             var enquiry = _context.StockEnquiries as IQueryable<StockEnquiry>;
 
-            if (query.StockEnquiryId != Guid.Empty)
-                enquiry = enquiry.Where(x => x.StockEnquiryId == query.StockEnquiryId);
+            if (query.BookingId.HasValue)
+                enquiry = enquiry.Where(x => x.BookingId == query.BookingId);
 
-            if(query.IncludeStockItemEnquiries.HasValue)
-                if(query.IncludeStockItemEnquiries.Value)
+
+            if (query.StockEnquiryId.HasValue)
+                    enquiry = enquiry.Where(x => x.StockEnquiryId == query.StockEnquiryId);
+
+            if(query.IncludeStockItemEnquiries.HasValue && query.IncludeStockItemEnquiries.Value)
                     enquiry = enquiry.Include(x => x.StockItemEnquiries);
 
-            if(query.IncludeBooking.HasValue)
-                if(query.IncludeBooking.Value)
+            if(query.IncludeBooking.HasValue && query.IncludeBooking.Value)
                     enquiry = enquiry.Include(x => x.Booking);
 
 #pragma warning disable CS8603 // Possible null reference return.

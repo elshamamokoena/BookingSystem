@@ -1082,6 +1082,10 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8
 C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\android\src\crc64547691bd9df36867\MainActivity.java
+C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\android\src\crc64547691bd9df36867\MainApplication.java
+C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\BookingSystem.Mobile.App.sourcelink.json
+C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\android\typemaps.armeabi-v7a.ll
 C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\android\typemaps.arm64-v8a.ll
 C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\android\typemaps.x86.ll
@@ -1109,5 +1113,5 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8
 C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\app_shared_libraries\armeabi-v7a\libxamarin-app.so
 C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
 C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\app_shared_libraries\x86\libxamarin-app.so
-C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\android\src\crc64547691bd9df36867\MainActivity.java
-C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\obj\Debug\net8.0-android\android\src\crc64547691bd9df36867\MainApplication.java
+C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\bin\Debug\net8.0-android\BookingSystem.AuthorizationPolicies.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSyste.Mobile.App\bin\Debug\net8.0-android\BookingSystem.AuthorizationPolicies.pdb

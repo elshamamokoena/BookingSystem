@@ -17,13 +17,23 @@ namespace BookingSystem.Shared.Models.Bookings
         public Guid ConferenceRoomId { get; set; }
         public ConferenceRoomForBookingDto? ConferenceRoom { get; set; }
         public string Status { get; set; } = string.Empty;
+        public int BookingNumber { get; set; }
     }
     public partial class BookingViewModel
     {
-        //extended properties
-        public Badge? Badge { get; set; }
-        public string ElementId => $"booking-dropdown-{BookingId}";
+        
+    
 
+        public Badge Badge => new(Status);
+        //extended properties
+        public int Id => BookingNumber;
+        public string DropdownId => $"booking-dropdown-{BookingNumber}";
+        public DateTime Created { get; set; }
+    }
+
+    public partial class BookingViewModel
+    {
+        public Employee Employee { get; set; } = new();
     }
 
 }

@@ -36,7 +36,7 @@ namespace BookingSystem.Application.Features.Inventory.Commands.CreateStockItem
             if(! await _stockRepository.StockExistsAsync(request.StockId))
                 throw new NotFoundException("Stock", request.StockId);
 
-            if(! await _consumableRepository.ConsumableExistsAsync(request.ConsumableId))
+            if(! await _consumableRepository.EntityExistsAsync(request.ConsumableId))
                 throw new NotFoundException("Consumable", request.ConsumableId);
 
             var stockItem = mapper.Map<StockItem>(request);

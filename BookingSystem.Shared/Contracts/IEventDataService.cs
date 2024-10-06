@@ -11,7 +11,7 @@ namespace BookingSystem.Shared.Contracts
 {
     public interface IEventDataService
     {
-        public Task<ApiResponse<EventViewModel>> CreateEventAsync(EventViewModel @event);
+        public Task<ApiResponse<Guid>> CreateEventAsync(EventViewModel @event);
         public Task<IEnumerable<EventViewModel>> GetEventsAsync(DateTime ?startTime, DateTime? endTime,int? pageNumber, int? pageSize);
         public Task<EventViewModel> GetEventAsync(Guid eventId);
         public Task UpdateEventAsync(EventViewModel @event);

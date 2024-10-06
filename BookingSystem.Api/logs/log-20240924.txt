@@ -1,0 +1,60 @@
+2024-09-24 15:11:34.427 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-24 15:11:34.453 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-24 15:11:34.513 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 15:11:34.516 +02:00 [INF] Hosting environment: Development
+2024-09-24 15:11:34.517 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-24 15:17:19.351 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-24 15:17:19.452 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-24 15:17:19.589 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 15:17:19.595 +02:00 [INF] Hosting environment: Development
+2024-09-24 15:17:19.601 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-24 15:21:15.583 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-24 15:21:15.733 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-24 15:21:15.896 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 15:21:15.906 +02:00 [INF] Hosting environment: Development
+2024-09-24 15:21:15.913 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-24 15:40:19.997 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-24 15:40:20.072 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-24 15:40:20.239 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 15:40:20.245 +02:00 [INF] Hosting environment: Development
+2024-09-24 15:40:20.246 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-24 15:48:44.326 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-24 15:48:44.398 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-24 15:48:44.587 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 15:48:44.590 +02:00 [INF] Hosting environment: Development
+2024-09-24 15:48:44.593 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-24 15:51:02.820 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-24 15:51:02.871 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-24 15:51:03.054 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 15:51:03.067 +02:00 [INF] Hosting environment: Development
+2024-09-24 15:51:03.079 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-24 15:58:09.827 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-24 15:58:09.869 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-24 15:58:10.006 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 15:58:10.010 +02:00 [INF] Hosting environment: Development
+2024-09-24 15:58:10.015 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-24 17:12:22.922 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-24 17:12:22.944 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-24 17:12:22.997 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 17:12:22.998 +02:00 [INF] Hosting environment: Development
+2024-09-24 17:12:22.999 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-24 17:14:53.774 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-24 17:14:53.798 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-24 17:14:53.861 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 17:14:53.862 +02:00 [INF] Hosting environment: Development
+2024-09-24 17:14:53.863 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-24 17:17:07.450 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-24 17:17:07.483 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-24 17:17:07.560 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 17:17:07.562 +02:00 [INF] Hosting environment: Development
+2024-09-24 17:17:07.563 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-24 17:26:12.432 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-24 17:26:12.460 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-24 17:26:12.528 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 17:26:12.534 +02:00 [INF] Hosting environment: Development
+2024-09-24 17:26:12.536 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-09-24 17:30:17.851 +02:00 [INF] Now listening on: https://localhost:7171
+2024-09-24 17:30:17.876 +02:00 [INF] Now listening on: http://localhost:5062
+2024-09-24 17:30:17.956 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-24 17:30:17.958 +02:00 [INF] Hosting environment: Development
+2024-09-24 17:30:17.960 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api

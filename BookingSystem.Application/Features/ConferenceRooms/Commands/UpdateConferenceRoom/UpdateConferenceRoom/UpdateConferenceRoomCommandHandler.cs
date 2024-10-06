@@ -32,12 +32,12 @@ namespace BookingSystem.Application.Features.ConferenceRooms.Commands.UpdateConf
             if (validationResult.Errors.Count > 0)
                 throw new ValidationException(validationResult);
 
-            if(!await _conferenceRoomRepository.ConferenceRoomExistsAsync(request.ConferenceRoomId))
+            if(!await _conferenceRoomRepository.EntityExistsAsync(request.ConferenceRoomId))
                 throw new NotFoundException(nameof(ConferenceRoom), request.ConferenceRoomId);
 
-            var room = await _conferenceRoomRepository.GetConferenceRoomAsync(request.ConferenceRoomId);
+            var room = await _conferenceRoomRepository.GetEntityAsync(request.ConferenceRoomId);
             _mapper.Map(request, room);
-            _conferenceRoomRepository.UpdateConferenceRoom(room);
+            _conferenceRoomRepository.UpdateEntity(room);
             await _conferenceRoomRepository.SaveChangesAsync();
             response.ConferenceRoom = _mapper.Map<UpdatedConferenceRoomDto>(room);
             response.Message = "Conference Room Updated Successfully";

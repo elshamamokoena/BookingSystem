@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookingSystem.Shared.Models.Events;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,9 @@ namespace BookingSystem.Shared.Models.Rooms
 
         public bool IsAvailable { get; set; }
 
-        public string Status => IsAvailable ? "Available" : "Unavailable";
+        public string Status => IsAvailable ? "Available" : "Reserved";
         public string ClassName => IsAvailable ? "bg-soft-success" : "bg-soft-warning";
+
+        public List<LinkDto> Links => [new LinkDto("get",$"room-detail/{ConferenceRoomId}","room-detail")];
     }
 }

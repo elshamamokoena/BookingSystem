@@ -29,12 +29,12 @@ namespace BookingSystem.Application.Features.StockEnquiry.Commands.UpdateStockEn
             if (validationResult.Errors.Count > 0)
                 throw new ValidationException(validationResult);
 
-            if (!await _stockEnquiryRepository.StockEnquiryExistsAsync(request.StockEnquiryId))
+            if (!await _stockEnquiryRepository.EntityExistsAsync(request.StockEnquiryId))
                 throw new NotFoundException(nameof(StockEnquiry), request.StockEnquiryId);
 
-            var stockEnquiryToUpdate = await _stockEnquiryRepository.GetStockEnquiryAsync(request.StockEnquiryId);
+            var stockEnquiryToUpdate = await _stockEnquiryRepository.GetEntityAsync(request.StockEnquiryId);
             var stockEnquiry = _mapper.Map(request, stockEnquiryToUpdate);
-             _stockEnquiryRepository.UpdateStockEnquiry(stockEnquiry);
+             _stockEnquiryRepository.UpdateEntity(stockEnquiry);
             await _stockEnquiryRepository.SaveChangesAsync();
 
             if(await _stockEnquiryRepository.SaveChangesAsync())

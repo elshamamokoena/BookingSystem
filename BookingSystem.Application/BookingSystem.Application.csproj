@@ -18,10 +18,9 @@
 
   <ItemGroup>
     <Folder Include="Features\Amenities\Queries\" />
-    <Folder Include="Features\Bookings\Commands\CreateBooking\" />
-    <Folder Include="Features\Bookings\Commands\" />
     <Folder Include="Features\Bookings\Commands\UpdateBooking\" />
-    <Folder Include="Features\Consumables\Queries\" />
+    <Folder Include="Features\Categories\GetCategory\" />
+    <Folder Include="Features\ConsumableCategories\Commands\" />
     <Folder Include="Features\Inventory\Queries\" />
 
   </ItemGroup>

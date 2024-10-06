@@ -18,10 +18,10 @@ namespace BookingSystem.Application.Features.StockEnquiry.Commands.DeleteStockEn
         }
         public async Task<bool> Handle(DeleteStockEnquiryCommand request, CancellationToken cancellationToken)
         {
-            if(!await _stockEnquiryRepository.StockEnquiryExistsAsync(request.StockEnquiryId))
+            if(!await _stockEnquiryRepository.EntityExistsAsync(request.StockEnquiryId))
                 throw new NotFoundException(nameof(StockEnquiry), request.StockEnquiryId);
-            var stockEnquiry = await _stockEnquiryRepository.GetStockEnquiryAsync(request.StockEnquiryId);
-            _stockEnquiryRepository.DeleteStockEnquiry(stockEnquiry);
+            var stockEnquiry = await _stockEnquiryRepository.GetEntityAsync(request.StockEnquiryId);
+            _stockEnquiryRepository.DeleteEntity(stockEnquiry);
             return await _stockEnquiryRepository.SaveChangesAsync();
         }
     }

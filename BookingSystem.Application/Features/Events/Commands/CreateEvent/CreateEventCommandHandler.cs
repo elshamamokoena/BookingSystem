@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Features.Events.Commands.CreateEvent
 {
-    public class CreateEventCommandHandler : IRequestHandler<CreateEventCommand, CreateEventCommandResponse>
+    public class CreateEventCommandHandler : IRequestHandler<CreateEventCommand, Guid>
     {
         private readonly IAsyncRepository<Event> _eventRepository;
         private readonly IMapper _mapper;
@@ -22,9 +22,8 @@ namespace BookingSystem.Application.Features.Events.Commands.CreateEvent
             _mapper = mapper;
         }
 
-        public async Task<CreateEventCommandResponse> Handle(CreateEventCommand request, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(CreateEventCommand request, CancellationToken cancellationToken)
         {
-            var response = new CreateEventCommandResponse();
             var validator = new CreateEventCommandValidator();
             var validationResult = await validator.ValidateAsync(request);
 
@@ -34,8 +33,7 @@ namespace BookingSystem.Application.Features.Events.Commands.CreateEvent
             var @event = _mapper.Map<Event>(request);
             @event = await _eventRepository.AddAsync(@event);
             await _eventRepository.SaveChangesAsync();
-            response.Event = _mapper.Map<EventDto>(@event);
-            return response;
+            return @event.EventId;
         }
     }
 }

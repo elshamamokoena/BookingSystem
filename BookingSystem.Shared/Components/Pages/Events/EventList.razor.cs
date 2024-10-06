@@ -14,10 +14,10 @@ namespace BookingSystem.Shared.Components.Pages.Events
 {
     public partial class EventList : BaseComponent
     {
-        public IEnumerable<EventViewModel> Bookings { get; set; } = new List<EventViewModel>();
+        public IEnumerable<EventViewModel> Events { get; set; } = new List<EventViewModel>();
         protected override async Task OnInitializedAsync()
         {
-            Bookings = await EventDataService!.GetEventsAsync(null, null, 1, 20);
+            Events = await EventDataService!.GetEventsAsync(null, null, 1, 20);
             await base.OnInitializedAsync();
         }
 

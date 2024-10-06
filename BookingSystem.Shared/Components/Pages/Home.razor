@@ -1,5 +1,20 @@
 ﻿@page "/"
-@using BookingSystem.Shared.Components.Pages.Bookings
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Policy = AuthorizationPolicies.Policies.IsManager)]
+<PageTitle>Home</PageTitle>
 
-<BookingList/>
-      
+ <Calendar/> 
+
+@code{
+    [CascadingParameter] 
+    public Task<AuthenticationState> AuthenticationStateTask { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAuthenticationStateAsync();
+        await base.OnInitializedAsync();
+    }
+    private async Task LoadAuthenticationStateAsync()
+    {
+        var user = (await AuthenticationStateTask).User;
+    }
+}

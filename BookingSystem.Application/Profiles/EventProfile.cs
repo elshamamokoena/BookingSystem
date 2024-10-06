@@ -16,9 +16,8 @@ namespace BookingSystem.Application.Profiles
         public EventProfile()
         {             
             CreateMap<CreateEventCommand, Event>();
-            CreateMap<Event, CreateEventCommandResponse>()
-                .ForMember(dest => dest.Event, opt => opt.MapFrom(src => src));
             CreateMap<Event, EventVm>();
+            CreateMap<Event, EventDto>();
             CreateMap<UpdateEventCommand, Event>();
         }
     }

@@ -164,3 +164,12 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Ser
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\obj\Debug\net8.0\BookingSystem.Api.sourcelink.json
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\BookingSystem.AuthorizationPolicies.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\BookingSystem.AuthorizationPolicies.pdb

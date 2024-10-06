@@ -17,9 +17,6 @@ namespace BookingSystem.Application.Profiles
         public ConferenceRoomProfile()
         {
             CreateMap<CreateConferenceRoomCommand, ConferenceRoom>();
-            CreateMap<ConferenceRoom, CreateConferenceRoomCommandResponse>()
-                .ForMember(dest => dest.ConferenceRoom, opt => opt.MapFrom(src => src));
-            CreateMap<ConferenceRoom, CreateConferenceRoomDto>();
             CreateMap<ConferenceRoom, ForListConferenceRoomdto>();
             CreateMap<ConferenceRoom, ConferenceRoomVm>();
             CreateMap<ConferenceRoom, UpdatedConferenceRoomDto>();

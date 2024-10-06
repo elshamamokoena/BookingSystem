@@ -1,4 +1,5 @@
-﻿using BookingSystem.Shared.Contracts;
+﻿using Blazored.LocalStorage;
+using BookingSystem.Shared.Contracts;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using System;
@@ -18,8 +19,15 @@ namespace BookingSystem.Shared.Components.Base
         [Inject]
         public IConferenceRoomService ? ConferenceRoomDataService { get; set; }
         [Inject]
+        public IBookingDataService? BookingDataService { get; set; }
+        [Inject]
+        public ICategoryDataService ? CategoryDataService { get; set; }
+        [Inject]
+        public IStockEnquiryDataService ? StockEnquiryDataService { get; set; }
+        [Inject]
         public NavigationManager ? NavigationManager { get; set; }
-
+        [Inject]
+        public IConsumableDataService? ConsumableDataService { get; set; }
 
         [JSInvokable]
         public void NavigateTo(string url)

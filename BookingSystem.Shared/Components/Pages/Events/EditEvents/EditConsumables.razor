@@ -1,0 +1,72 @@
+﻿@inherits BaseComponent
+
+
+<form class="needs-validation" novalidate="novalidate">
+    <div class="mb-3">
+        @* <label for="organizerMultiple2">Multiple</label> *@
+        <select class="form-select js-choice" id="organizerMultiple2" multiple="multiple" size="1" name="organizerMultiple" required="required" data-options='{"removeItemButton":true,"placeholder":true}'>
+            <option value="">Select organizer...</option>
+            @foreach(var category in ConsumableCategories)
+            {
+                <option value="@category.ConsumableCategoryId" >@category.Name</option>
+            }
+        @*     <option>Massachusetts Institute of Technology</option>
+            <option>University of Chicago</option>
+            <option>GSAS Open Labs At Harvard</option>
+            <option>California Institute of Technology</option> *@
+        </select>
+        <div class="invalid-feedback">Please select one or multiple</div>
+    </div>
+@*     <div class="mb-3">
+        <label for="organizerSingle2">Single</label>
+        <select class="form-select js-choice" id="organizerSingle2" size="1" required="required" name="organizerSingle" data-options='{"removeItemButton":true,"placeholder":true}'>
+            <option value="">Select organizer...</option>
+            <option>Massachusetts Institute of Technology</option>
+            <option>University of Chicago</option>
+            <option>GSAS Open Labs At Harvard</option>
+            <option>California Institute of Technology </option>
+        </select>
+        <div class="invalid-feedback">Please select one</div>
+    </div> *@
+    @* <button class="btn btn-primary" type="submit">Submit form</button> *@
+</form>
+
+
+
+ 
+<form class="needs-validation" novalidate="novalidate">
+    <div class="mb-3">
+        <div class="choices valid" data-type="select-multiple" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false">
+            <div class="choices__inner">
+                <select class="form-select js-choice choices__input" id="organizerMultiple2" multiple="multiple" size="1" name="organizerMultiple" required="required" data-options="{&quot;removeItemButton&quot;:true,&quot;placeholder&quot;:true}" hidden="" tabindex="-1" data-choice="active">
+                    <option value="ee58f549-e790-5e9f-aa15-18c2292a2ee9" data-custom-properties="[object Object]">Pens</option>
+                    <option value="ee48f549-e790-5e9f-aa15-18c2292a2ee9" data-custom-properties="[object Object]">Markers</option>
+                </select>
+                <div class="choices__list choices__list--multiple">
+                    <div class="choices__item choices__item--selectable" data-item="" data-id="1" data-value="ee58f549-e790-5e9f-aa15-18c2292a2ee9" data-custom-properties="[object Object]" aria-selected="true" data-deletable="">
+                        Pens
+                        <button type="button" class="choices__button" aria-label="Remove item: 'ee58f549-e790-5e9f-aa15-18c2292a2ee9'" data-button="">
+                            Remove item
+                        </button>
+                    </div>
+                    <div class="choices__item choices__item--selectable" data-item="" data-id="2" data-value="ee48f549-e790-5e9f-aa15-18c2292a2ee9" data-custom-properties="[object Object]" aria-selected="true" data-deletable="">
+                        Markers
+                        <button type="button" class="choices__button" aria-label="Remove item: 'ee48f549-e790-5e9f-aa15-18c2292a2ee9'" data-button="">
+                            Remove item</button>
+                    </div>
+                </div>
+                <input type="text" class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" aria-label="Select consumables..." placeholder="Select consumables..." style="min-width: 20ch; width: 1ch;" aria-activedescendant="choices--organizerMultiple2-item-choice-1">
+            </div>
+            
+       
+        </div>
+            <!--!-->
+        <div class="choices__list choices__list--dropdown" aria-expanded="false">
+            <div class="choices__list" aria-multiselectable="true" role="listbox">
+                <div class="choices__item choices__item--choice has-no-choices">No choices to choose from</div>
+            </div>
+        </div>
+            <!--!-->
+        <div class="invalid-feedback">Please select one or multiple</div>
+    </div>
+</form>

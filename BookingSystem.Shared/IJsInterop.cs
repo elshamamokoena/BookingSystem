@@ -1,4 +1,5 @@
 ﻿using BookingSystem.Shared.Components.Base;
+using BookingSystem.Shared.Models.Bookings;
 using BookingSystem.Shared.Models.Events;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
@@ -12,6 +13,7 @@ namespace BookingSystem.Shared
 {
     public interface IJsInterop
     {
+        Task DestroyTable();
         Task InitAppCalendar( bool firstRender, IEnumerable<EventViewModel> events);
         Task InitCalendar(bool firstRender);
         Task InitBulkSelect(bool firstRender);
@@ -21,6 +23,7 @@ namespace BookingSystem.Shared
         Task InitWizard(bool firstRender);
         Task LoadModule(string module);
         Task InitNavigationManager(BaseComponent component);
-        Task InitiAdvanceAjaxTable();
+        Task InitiAdvanceAjaxTable(bool firstRender, IEnumerable<BookingViewModel>  bookings,
+            BaseComponent component);
     }
 }

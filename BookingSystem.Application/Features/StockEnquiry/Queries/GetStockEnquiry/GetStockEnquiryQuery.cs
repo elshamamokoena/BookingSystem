@@ -9,16 +9,9 @@ namespace BookingSystem.Application.Features.StockEnquiry.Queries.GetStockEnquir
 {
     public class GetStockEnquiryQuery: IRequest<StockEnquiryVm>
     {
-        public GetStockEnquiryQuery() { }
-        public GetStockEnquiryQuery(Guid stockEnquiryId, 
-            bool? includeStockItemEnquiries, bool? includeBooking)
-        {
-            StockEnquiryId = stockEnquiryId;
-            IncludeStockItemEnquiries = includeStockItemEnquiries;
-            IncludeBooking = includeBooking;
-        }
-
-        public Guid StockEnquiryId { get; set; }
+ 
+        public Guid ? StockEnquiryId { get; set; }
+        public Guid ? BookingId { get; set; }
         public bool ? IncludeStockItemEnquiries { get; set; }
         public bool ? IncludeBooking { get; set; } = false;
     }

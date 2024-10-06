@@ -13,9 +13,9 @@ namespace BookingSystem.Application.Features.Consumables.Commands.CreateConsumab
 {
     public class CreateConsumableCategoryCommandHandler : IRequestHandler<CreateConsumableCategoryCommand, CreateConsumableCategoryCommandResponse>
     {
-        private readonly IConsumableRepository _consumableCategoryRepository;
+        private readonly IConsumableCategoryRepository _consumableCategoryRepository;
         private readonly IMapper _mapper;
-        public CreateConsumableCategoryCommandHandler(IConsumableRepository consumableCategoryRepository,
+        public CreateConsumableCategoryCommandHandler(IConsumableCategoryRepository consumableCategoryRepository,
             IMapper mapper)
         {
             _consumableCategoryRepository = consumableCategoryRepository;
@@ -31,7 +31,7 @@ namespace BookingSystem.Application.Features.Consumables.Commands.CreateConsumab
                 throw new ValidationException(validationResult);
 
             var consumableCategory = _mapper.Map<ConsumableCategory>(request);
-            consumableCategory = await _consumableCategoryRepository.AddConsumableCategoryAsync(consumableCategory);
+            consumableCategory = await _consumableCategoryRepository.AddAsync(consumableCategory);
             await _consumableCategoryRepository.SaveChangesAsync();
             response.ConsumableCategory = _mapper.Map<ConsumableCategoryDto>(consumableCategory);
             response.Message = "Consumable Category Created Successfully";

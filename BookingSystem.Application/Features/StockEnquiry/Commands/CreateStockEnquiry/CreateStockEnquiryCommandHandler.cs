@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockEnquiry
 {
-    public class CreateStockEnquiryCommandHandler : IRequestHandler<CreateStockEnquiryCommand, CreateStockEnquiryCommandResponse>
+    public class CreateStockEnquiryCommandHandler : IRequestHandler<CreateStockEnquiryCommand, Guid>
     {
         private readonly IStockEnquiryRepository _stockEnquiryRepository;
         private readonly IMapper _mapper;
@@ -21,7 +21,7 @@ namespace BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockEn
             _stockEnquiryRepository = stockEnquiryRepository;
             _mapper = mapper;
         }
-        public async Task<CreateStockEnquiryCommandResponse> Handle(CreateStockEnquiryCommand request, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(CreateStockEnquiryCommand request, CancellationToken cancellationToken)
         {
             var response = new CreateStockEnquiryCommandResponse();
             var validator = new CreateStockEnquiryCommandValidator();
@@ -31,10 +31,10 @@ namespace BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockEn
                 throw new ValidationException(validationResult);
 
             var stockEnquiry = _mapper.Map<Domain.Entities.Inventory.StockEnquiry>(request);
-            stockEnquiry = await _stockEnquiryRepository.AddStockEnquiry(stockEnquiry);
+            stockEnquiry = await _stockEnquiryRepository.AddAsync(stockEnquiry);
             await _stockEnquiryRepository.SaveChangesAsync();
-            response.StockEnquiry = _mapper.Map<StockEnquiryDto>(stockEnquiry);
-            return response;
+            //response.StockEnquiry = _mapper.Map<StockEnquiryDto>(stockEnquiry);
+            return stockEnquiry.StockEnquiryId;
         }
     }
 }

@@ -12,8 +12,8 @@ namespace BookingSystem.Application.Features.Events.Commands.UpdateEvent
         public Guid EventId { get; set; }
         public string Title { get; set; } = string.Empty;
         public string Label { get; set; } = string.Empty;
-        public DateTimeOffset Start { get; set; }
-        public DateTimeOffset End { get; set; }
+        public DateTime Start { get; set; }
+        public DateTime End { get; set; }
         public string Description { get; set; } = string.Empty;
     }
 }

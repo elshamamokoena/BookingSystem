@@ -21,13 +21,13 @@ namespace BookingSystem.Api.Controllers
         }
 
         [HttpPost(Name = "CreateStockEnquiryAsync")]
-        public async Task<ActionResult<CreateStockEnquiryCommandResponse>>
+        public async Task<ActionResult<Guid>>
             CreateStockEnquiryAsync([FromBody] CreateStockEnquiryCommand createStockEnquiryCommand)
         {
             return Ok(await _mediator.Send(createStockEnquiryCommand));
         }
         [HttpPost("stockitemenquiries",Name = "CreateStockItemEnquiryAsync")]
-        public async Task<ActionResult<CreateStockItemEnquiryCommandResponse>>
+        public async Task<ActionResult<Guid>>
             CreateStockItemEnquiryAsync([FromBody] CreateStockItemEnquiryCommand createStockEnquiryCommand)
         {
             return Ok(await _mediator.Send(createStockEnquiryCommand));
@@ -50,10 +50,9 @@ namespace BookingSystem.Api.Controllers
 
         [HttpGet("{stockEnquiryId}",Name = "GetStockEnquiryAsync")]
         public async Task<ActionResult<StockEnquiryVm>>
-            GetStockEnquiryAsync(Guid stockEnquiryId,[FromQuery] bool ? includeBooking,  [FromQuery] bool ? includeStockItemEnquiries )
+            GetStockEnquiryAsync([FromQuery] GetStockEnquiryQuery query )
         {
-            return Ok(await _mediator
-                .Send(new GetStockEnquiryQuery(stockEnquiryId, includeBooking, includeStockItemEnquiries)));
+            return Ok(await _mediator.Send(query));
         }
         [HttpGet(Name = "GetStockEnquiriesAsync")]
         public async Task<ActionResult<StockEnquiryListVm>> 

@@ -24,7 +24,7 @@ namespace BookingSystem.Application.Features.StockEnquiry.Queries.GetStockEnquir
         }
         public async Task<StockEnquiryListVm> Handle(GetStockEnquiriesQuery request, CancellationToken cancellationToken)
         {
-                //if (!await _bookingRepository.EntityExistsAsync(request.BookingId))
+                if (!await _bookingRepository.EntityExistsAsync(request.BookingId))
                     throw new NotFoundException(nameof(StockEnquiry), request.BookingId);
 
 

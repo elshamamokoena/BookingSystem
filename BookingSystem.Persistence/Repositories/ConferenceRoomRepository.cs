@@ -12,13 +12,11 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Persistence.Repositories
 {
-    public class ConferenceRoomRepository : IConferenceRoomRepository
+    public class ConferenceRoomRepository :BaseRepository<ConferenceRoom>, IConferenceRoomRepository
     {
-        private readonly BookingSystemDbContext _context;
 
-        public ConferenceRoomRepository(BookingSystemDbContext context)
+        public ConferenceRoomRepository(BookingSystemDbContext context): base(context)
         {
-            _context = context;
         }
 
         public async Task<bool> ConferenceRoomExistsAsync(Guid conferenceRoomId)
@@ -27,18 +25,9 @@ namespace BookingSystem.Persistence.Repositories
             return await _context.ConferenceRooms.AnyAsync(c => c.ConferenceRoomId == conferenceRoomId);
         }
 
-        public async Task<ConferenceRoom> AddConferenceRoom(ConferenceRoom conferenceRoom)
-        {
-            ArgumentNullException.ThrowIfNull(conferenceRoom, nameof(conferenceRoom));
-            await _context.ConferenceRooms.AddAsync(conferenceRoom);
-            return conferenceRoom;
-        }
 
-        public void DeleteConferenceRoom(ConferenceRoom conferenceRoom)
-        {
-            ArgumentNullException.ThrowIfNull(conferenceRoom, nameof(conferenceRoom));
-            _context.ConferenceRooms.Remove(conferenceRoom);
-        }
+
+
         //public async Task<IEnumerable<ConferenceRoom>> GetAvailableConferenceRoomsAsync(DateTime startTime, DateTime endTime)
         //{
         //    //Get all bookings that overlap with the requested time
@@ -69,9 +58,9 @@ namespace BookingSystem.Persistence.Repositories
             //use collection to build up the query
             //IQueryable allows you to build up a query before it is executed
             var collection = _context.ConferenceRooms as IQueryable<ConferenceRoom>;
-            var roomsToExclude = new List<ConferenceRoom>();
 
 
+ 
             if (!string.IsNullOrWhiteSpace(resourceParameters.SearchQuery))
             {
 
@@ -84,18 +73,11 @@ namespace BookingSystem.Persistence.Repositories
                     .Where(c=>c.Tags.Contains(searchQuery)));
             }
 
-            //if (resourceParameters.StartTime.HasValue && resourceParameters.EndTime.HasValue)
-            //{
-            //     roomsToExclude = await _context.Events
-            //      .Where(b => b.Start >= resourceParameters.StartTime && b.End <= resourceParameters.EndTime)
-            //      .SelectMany(b => b.ConferenceRooms)
-            //      .ToListAsync();
-            //}
+
       
             // return the collection as a paged list
             return (await collection
                 .ToListAsync())
-                .Except(roomsToExclude) //exclude conference rooms that are already booked for the requested time
                 .Skip(resourceParameters.PageSize * (resourceParameters.PageNumber - 1))
                 .Take(resourceParameters.PageSize); 
         }
@@ -103,10 +85,14 @@ namespace BookingSystem.Persistence.Repositories
         {
             return await _context.ConferenceRooms.CountAsync();
         }
-        public async Task<bool> SaveChangesAsync()
+
+        public async Task<bool> IsAvableForBooking(DateTime starttime, DateTime endTime, Guid roomId)
         {
-            return await _context.SaveChangesAsync() > 0;
+            return await _context.ConferenceRooms
+                .AnyAsync(c => c.ConferenceRoomId == roomId && c.Bookings.All(b => b.Event.End < starttime || b.Event.Start > endTime));
         }
+
+   
         public void UpdateConferenceRoom(ConferenceRoom conferenceRoom)
         {
             // Just hit saveasync after updating the conference room entity

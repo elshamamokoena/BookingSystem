@@ -1,4 +1,5 @@
 ﻿@page "/calendar"
+@using BookingSystem.Shared.Components.Pages.Events.AddEvent
 @inherits BaseComponent
 
 <div class="card overflow-hidden">
@@ -49,4 +50,4 @@
 </div>
 
 
-<AddBookingModal OnBookingCreated="GetEvents"/>
+<AddEventModal OnBookingCreated="GetEvents"/>

@@ -1,0 +1,46 @@
+﻿@inherits BaseComponent
+
+<div class="tab-pane active px-sm-3 px-md-5" role="tabpanel" aria-labelledby="bootstrap-wizard-validation-tab1" id="bootstrap-wizard-validation-tab1">
+
+    @if (Event != null)
+    {
+        <EditForm Model="@Event" OnValidSubmit="UpdateEvent" data-wizard-form="2">
+            <div class="row gx-2">
+                <div class="col-12 mb-3">
+                    <label class="form-label" for="event-name">Title</label>
+                    <InputText @bind-Value="@Event.Title" class="form-control" id="event-name" type="text" placeholder="Booking Title" />
+                </div>
+                <div class="col-sm-6 mb-3">
+                    <label class="form-label" for="start-date">Start Date</label>
+                    <input @bind-value="@Event.Start" @bind-value:event="onchange" class="form-control " id="start-date" type="datetime-local" placeholder="yyyy/mm/dd hh:mm" data-options='{"dateFormat":"Y/m/d H:i","enableTime":"true","disableMobile":true}' />
+                </div>
+                <div class="col-sm-6 mb-3">
+                    <label class="form-label" for="end-date">End Date</label>
+                    <input @bind-value="@Event.End" @bind-value:event="onchange" class="form-control" id="end-date" type="datetime-local" placeholder="yyyy/mm/dd hh:mm" data-options='{"dateFormat":"Y/m/d H:i","enableTime":"true","disableMobile":true}' />
+                </div>
+                <div class="col-sm-6">
+                    <label class="form-label" for="eventLabel">Label</label>
+                    <select @bind-value="@Event.Label" @bind-value:event="oninput" class="form-select" id="eventLabel" name="label">
+                        <option value="" selected="selected">None</option>
+                        <option value="primary">Business</option>
+                        <option value="danger">Important</option>
+                        <option value="success">Personal</option>
+                        <option value="warning">Must Attend</option>
+                    </select>
+                </div>
+         
+                @* <div class="col-sm-6 mb-3"><label class="form-label" for="event-venue">Room</label><input class="form-control" id="event-venue" type="text" placeholder="Venue" /><button class="btn btn-link btn-sm btn p-0" type="button">Online Event</button></div> *@
+                @* <div class="col-sm-6 mb-3"><label class="form-label" for="event-address">Room number</label><input class="form-control" id="event-address" type="text" placeholder="Address" /></div> *@
+                <div class="col-12">
+                    <label class="form-label" for="event-description">Description</label>
+                    <InputTextArea @bind-Value="@Event.Description" class="form-control" id="event-description" rows="6"></InputTextArea>
+                </div>
+
+            </div>
+
+            <button class="btn btn-falcon-default btn-sm mt-2" type="submit"><span class="fas fa-plus fs-11 me-1" data-fa-transform="up-1"></span>Save event</button>
+        </EditForm>
+
+    }
+
+</div>

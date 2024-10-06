@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Features.StockEnquiry.Commands.CreateStockEnquiry
 {
-    public class CreateStockEnquiryCommand : IRequest<CreateStockEnquiryCommandResponse>
+    public class CreateStockEnquiryCommand : IRequest<Guid>
     {
         public Guid BookingId { get; set; }
     }

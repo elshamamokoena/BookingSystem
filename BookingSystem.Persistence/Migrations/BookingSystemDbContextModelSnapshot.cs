@@ -106,6 +106,12 @@ namespace BookingSystem.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int>("BookingNumber")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BookingNumber"));
+
                     b.Property<Guid>("ConferenceRoomId")
                         .HasColumnType("uniqueidentifier");
 
@@ -124,6 +130,10 @@ namespace BookingSystem.Persistence.Migrations
                     b.Property<string>("LastModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("BookingId");
 
                     b.HasIndex("ConferenceRoomId");
@@ -136,72 +146,92 @@ namespace BookingSystem.Persistence.Migrations
                         new
                         {
                             BookingId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a1ee9"),
+                            BookingNumber = 0,
                             ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a2ee7"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1")
+                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
+                            Status = "Pending"
                         },
                         new
                         {
                             BookingId = new Guid("ee28f549-e790-5e9f-aa15-18c2292a2ee2"),
+                            BookingNumber = 0,
                             ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a2ee8"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1")
+                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
+                            Status = "Pending"
                         },
                         new
                         {
                             BookingId = new Guid("ee38f549-e790-5e9f-aa15-18c2292a2ee3"),
+                            BookingNumber = 0,
                             ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a2ee9"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1")
+                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
+                            Status = "Pending"
                         },
                         new
                         {
                             BookingId = new Guid("ee08f549-e790-5e9f-aa15-18c2292a2ee4"),
+                            BookingNumber = 0,
                             ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-11c2292a1ee0"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1")
+                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
+                            Status = "Cancelled"
                         },
                         new
                         {
                             BookingId = new Guid("ee48f549-e790-5e9f-aa15-18c2292a2ee5"),
+                            BookingNumber = 0,
                             ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-11c2292a1ee1"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1")
+                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
+                            Status = "Pending"
                         },
                         new
                         {
                             BookingId = new Guid("ee58f549-e790-5e9f-aa15-18c2292a2ee6"),
+                            BookingNumber = 0,
                             ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-11c2292a1ee2"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1")
+                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
+                            Status = "Approved"
                         },
                         new
                         {
                             BookingId = new Guid("ee68f549-e790-5e9f-aa15-18c2292a2ee7"),
+                            BookingNumber = 0,
                             ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-11c2292a1ee3"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            EventId = new Guid("ee98f543-e790-5e9f-aa15-18c2292a1ee9")
+                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
+                            Status = "Cancelled"
                         },
                         new
                         {
                             BookingId = new Guid("ee78f549-e790-5e9f-aa15-18c2292a2ee8"),
+                            BookingNumber = 0,
                             ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-11c2292a1ee4"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            EventId = new Guid("ee98f545-e790-5e9f-aa15-18c2292a2ee6")
+                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
+                            Status = "Approved"
                         },
                         new
                         {
                             BookingId = new Guid("ee88f549-e790-5e9f-aa15-18c2292a2ee9"),
+                            BookingNumber = 0,
                             ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-11c2292a1ee5"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            EventId = new Guid("ee98f548-e790-5e9f-aa15-18c2292a2ee3")
+                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
+                            Status = "Pending"
                         },
                         new
                         {
                             BookingId = new Guid("ee91f549-e790-5e9f-aa15-18c2292a1ee9"),
+                            BookingNumber = 0,
                             ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-11c2292a1ee6"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            EventId = new Guid("ee98f540-e790-5e9f-aa15-18c2292a2ee2")
+                            EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
+                            Status = "Approved"
                         });
                 });
 
@@ -272,7 +302,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 30,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 3 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 3",
                             Tags = ""
                         },
@@ -292,7 +322,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 50,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 5 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 5",
                             Tags = ""
                         },
@@ -302,7 +332,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 60,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 6 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 6",
                             Tags = ""
                         },
@@ -312,7 +342,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 70,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 7 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 7",
                             Tags = ""
                         },
@@ -322,7 +352,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 80,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 8 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 8",
                             Tags = ""
                         },
@@ -332,7 +362,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 90,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 9 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 9",
                             Tags = ""
                         },
@@ -342,7 +372,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 100,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 10 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 10",
                             Tags = ""
                         },
@@ -352,7 +382,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 110,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 11 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 11",
                             Tags = ""
                         },
@@ -362,7 +392,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 120,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 12 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 12",
                             Tags = ""
                         },
@@ -372,7 +402,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 130,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 13 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 13",
                             Tags = ""
                         },
@@ -382,7 +412,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 140,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 14 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 14",
                             Tags = ""
                         },
@@ -392,7 +422,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 150,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 15 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 15",
                             Tags = ""
                         },
@@ -402,7 +432,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 160,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 16 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 16",
                             Tags = ""
                         },
@@ -412,7 +442,7 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 170,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 17 Description",
-                            IsAvailable = false,
+                            IsAvailable = true,
                             Name = "Conference Room 17",
                             Tags = ""
                         });
@@ -452,6 +482,32 @@ namespace BookingSystem.Persistence.Migrations
                     b.HasIndex("ConsumableCategoryId");
 
                     b.ToTable("Consumables");
+
+                    b.HasData(
+                        new
+                        {
+                            ConsumableId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a2ee8"),
+                            ConsumableCategoryId = new Guid("ee48f549-e790-5e9f-aa15-18c2292a2ee9"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ",
+                            Name = "Marker"
+                        },
+                        new
+                        {
+                            ConsumableId = new Guid("ee18f549-e790-5e9f-aa15-18c2292a2ee9"),
+                            ConsumableCategoryId = new Guid("ee58f549-e790-5e9f-aa15-18c2292a2ee9"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ",
+                            Name = "Pen"
+                        },
+                        new
+                        {
+                            ConsumableId = new Guid("ee38f549-e790-5e9f-aa15-18c2292a2ee9"),
+                            ConsumableCategoryId = new Guid("ee58f549-e790-5e9f-aa15-18c2292a2ee9"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ",
+                            Name = "Pencil"
+                        });
                 });
 
             modelBuilder.Entity("BookingSystem.Domain.Entities.Consumables.ConsumableCategory", b =>
@@ -486,12 +542,92 @@ namespace BookingSystem.Persistence.Migrations
                     b.HasKey("ConsumableCategoryId");
 
                     b.ToTable("ConsumableCategories");
+
+                    b.HasData(
+                        new
+                        {
+                            ConsumableCategoryId = new Guid("ee48f549-e790-5e9f-aa15-18c2292a2ee9"),
+                            AmountOfConsumables = 0,
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
+                            Name = "Markers"
+                        },
+                        new
+                        {
+                            ConsumableCategoryId = new Guid("ee58f549-e790-5e9f-aa15-18c2292a2ee9"),
+                            AmountOfConsumables = 0,
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
+                            Name = "Pens"
+                        });
+                });
+
+            modelBuilder.Entity("BookingSystem.Domain.Entities.Events.Category", b =>
+                {
+                    b.Property<Guid>("CategoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CategoryId");
+
+                    b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryId = new Guid("ee98f549-e110-5e9f-aa15-18c2292a2ee1"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Class, Training or Workshop"
+                        },
+                        new
+                        {
+                            CategoryId = new Guid("ee98f549-e120-5e9f-aa15-18c2292a2ee2"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Conference"
+                        },
+                        new
+                        {
+                            CategoryId = new Guid("ee98f549-e130-5e9f-aa15-18c2292a2ee3"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Meeting"
+                        },
+                        new
+                        {
+                            CategoryId = new Guid("ee98f549-e140-5e9f-aa15-18c2292a2ee4"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Convention"
+                        },
+                        new
+                        {
+                            CategoryId = new Guid("ee98f549-e150-5e9f-aa15-18c2292a2ee5"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Dinner or Gala"
+                        });
                 });
 
             modelBuilder.Entity("BookingSystem.Domain.Entities.Events.Event", b =>
                 {
                     b.Property<Guid>("EventId")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CategoryId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("Created")
@@ -504,9 +640,9 @@ namespace BookingSystem.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("End")
+                    b.Property<DateTime>("End")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("datetimeoffset");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Label")
                         .IsRequired()
@@ -518,9 +654,9 @@ namespace BookingSystem.Persistence.Migrations
                     b.Property<string>("LastModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("Start")
+                    b.Property<DateTime>("Start")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("datetimeoffset");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -528,107 +664,130 @@ namespace BookingSystem.Persistence.Migrations
 
                     b.HasKey("EventId");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Events");
 
                     b.HasData(
                         new
                         {
                             EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
+                            CategoryId = new Guid("ee98f549-e150-5e9f-aa15-18c2292a2ee5"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference 1 Description",
-                            End = new DateTimeOffset(new DateTime(2024, 9, 23, 10, 0, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            End = new DateTime(2024, 9, 23, 10, 0, 0, 0, DateTimeKind.Unspecified),
                             Label = "primary",
-                            Start = new DateTimeOffset(new DateTime(2024, 9, 23, 8, 30, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Start = new DateTime(2024, 9, 23, 8, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Conference 1"
                         },
                         new
                         {
+                            EventId = new Guid("ee11f549-e190-5e9f-aa15-18c2292a2ee1"),
+                            CategoryId = new Guid("ee98f549-e150-5e9f-aa15-18c2292a2ee5"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Conference 1 copy Description",
+                            End = new DateTime(2024, 9, 23, 12, 0, 0, 0, DateTimeKind.Unspecified),
+                            Label = "primary",
+                            Start = new DateTime(2024, 9, 23, 8, 30, 0, 0, DateTimeKind.Unspecified),
+                            Title = "Conference 1 Copy"
+                        },
+                        new
+                        {
                             EventId = new Guid("ee98f540-e790-5e9f-aa15-18c2292a2ee2"),
+                            CategoryId = new Guid("ee98f549-e150-5e9f-aa15-18c2292a2ee5"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "",
-                            End = new DateTimeOffset(new DateTime(2024, 9, 13, 12, 0, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            End = new DateTime(2024, 9, 24, 12, 0, 0, 0, DateTimeKind.Unspecified),
                             Label = "primary",
-                            Start = new DateTimeOffset(new DateTime(2024, 9, 13, 10, 30, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Start = new DateTime(2024, 9, 24, 10, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Conference 2"
                         },
                         new
                         {
                             EventId = new Guid("ee98f548-e790-5e9f-aa15-18c2292a2ee3"),
+                            CategoryId = new Guid("ee98f549-e150-5e9f-aa15-18c2292a2ee5"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "",
-                            End = new DateTimeOffset(new DateTime(2024, 8, 23, 14, 0, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            End = new DateTime(2024, 9, 24, 15, 0, 0, 0, DateTimeKind.Unspecified),
                             Label = "primary",
-                            Start = new DateTimeOffset(new DateTime(2024, 8, 23, 12, 30, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Start = new DateTime(2024, 9, 24, 14, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Conference 3"
                         },
                         new
                         {
                             EventId = new Guid("ee98f547-e790-5e9f-aa15-18c2292a2ee4"),
+                            CategoryId = new Guid("ee98f549-e140-5e9f-aa15-18c2292a2ee4"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "",
-                            End = new DateTimeOffset(new DateTime(2024, 9, 23, 16, 0, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            End = new DateTime(2024, 9, 25, 18, 0, 0, 0, DateTimeKind.Unspecified),
                             Label = "warning",
-                            Start = new DateTimeOffset(new DateTime(2024, 9, 23, 14, 30, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Start = new DateTime(2024, 9, 25, 16, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Conference 4"
                         },
                         new
                         {
                             EventId = new Guid("ee98f546-e790-5e9f-aa15-18c2292a2ee5"),
+                            CategoryId = new Guid("ee98f549-e140-5e9f-aa15-18c2292a2ee4"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "",
-                            End = new DateTimeOffset(new DateTime(2024, 10, 23, 18, 0, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            End = new DateTime(2024, 9, 25, 16, 0, 0, 0, DateTimeKind.Unspecified),
                             Label = "warning",
-                            Start = new DateTimeOffset(new DateTime(2024, 10, 23, 16, 30, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Start = new DateTime(2024, 9, 25, 16, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Conference 5"
                         },
                         new
                         {
                             EventId = new Guid("ee98f545-e790-5e9f-aa15-18c2292a2ee6"),
+                            CategoryId = new Guid("ee98f549-e130-5e9f-aa15-18c2292a2ee3"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "",
-                            End = new DateTimeOffset(new DateTime(2024, 8, 29, 20, 0, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            End = new DateTime(2024, 9, 25, 14, 0, 0, 0, DateTimeKind.Unspecified),
                             Label = "warning",
-                            Start = new DateTimeOffset(new DateTime(2024, 8, 29, 18, 30, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Start = new DateTime(2024, 9, 25, 12, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Conference 6"
                         },
                         new
                         {
                             EventId = new Guid("ee98f544-e790-5e9f-aa15-18c1292a2ee7"),
+                            CategoryId = new Guid("ee98f549-e130-5e9f-aa15-18c2292a2ee3"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "",
-                            End = new DateTimeOffset(new DateTime(2024, 9, 10, 22, 0, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            End = new DateTime(2024, 9, 25, 17, 0, 0, 0, DateTimeKind.Unspecified),
                             Label = "warning",
-                            Start = new DateTimeOffset(new DateTime(2024, 9, 10, 20, 30, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Start = new DateTime(2024, 9, 25, 16, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Conference 7"
                         },
                         new
                         {
                             EventId = new Guid("ee98f541-e790-5e9f-aa15-18c2292a2ee8"),
+                            CategoryId = new Guid("ee98f549-e130-5e9f-aa15-18c2292a2ee3"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "",
-                            End = new DateTimeOffset(new DateTime(2024, 9, 8, 23, 0, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            End = new DateTime(2024, 9, 26, 12, 0, 0, 0, DateTimeKind.Unspecified),
                             Label = "success",
-                            Start = new DateTimeOffset(new DateTime(2024, 9, 8, 22, 30, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Start = new DateTime(2024, 9, 26, 8, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Conference 8"
                         },
                         new
                         {
                             EventId = new Guid("ee98f542-e790-5e9f-aa15-18c2292a2ee9"),
+                            CategoryId = new Guid("ee98f549-e130-5e9f-aa15-18c2292a2ee3"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "",
-                            End = new DateTimeOffset(new DateTime(2024, 8, 24, 0, 0, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            End = new DateTime(2024, 9, 25, 16, 0, 0, 0, DateTimeKind.Unspecified),
                             Label = "danger",
-                            Start = new DateTimeOffset(new DateTime(2024, 8, 23, 23, 30, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Start = new DateTime(2024, 9, 26, 14, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Conference 9"
                         },
                         new
                         {
                             EventId = new Guid("ee98f543-e790-5e9f-aa15-18c2292a1ee9"),
+                            CategoryId = new Guid("ee98f549-e130-5e9f-aa15-18c2292a2ee3"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "",
-                            End = new DateTimeOffset(new DateTime(2024, 8, 24, 2, 0, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            End = new DateTime(2024, 9, 25, 16, 0, 0, 0, DateTimeKind.Unspecified),
                             Label = "primary",
-                            Start = new DateTimeOffset(new DateTime(2024, 8, 24, 0, 30, 30, 791, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
+                            Start = new DateTime(2024, 9, 25, 15, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Conference 10"
                         });
                 });
@@ -778,7 +937,7 @@ namespace BookingSystem.Persistence.Migrations
                         .IsRequired();
 
                     b.HasOne("BookingSystem.Domain.Entities.ConferenceRooms.ConferenceRoom", "ConferenceRoom")
-                        .WithMany("Amenities")
+                        .WithMany()
                         .HasForeignKey("ConferenceRoomId");
 
                     b.Navigation("AmenityCategory");
@@ -789,7 +948,7 @@ namespace BookingSystem.Persistence.Migrations
             modelBuilder.Entity("BookingSystem.Domain.Entities.Bookings.Booking", b =>
                 {
                     b.HasOne("BookingSystem.Domain.Entities.ConferenceRooms.ConferenceRoom", "ConferenceRoom")
-                        .WithMany()
+                        .WithMany("Bookings")
                         .HasForeignKey("ConferenceRoomId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -810,6 +969,17 @@ namespace BookingSystem.Persistence.Migrations
                     b.HasOne("BookingSystem.Domain.Entities.Consumables.ConsumableCategory", "Category")
                         .WithMany("Consumables")
                         .HasForeignKey("ConsumableCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("BookingSystem.Domain.Entities.Events.Event", b =>
+                {
+                    b.HasOne("BookingSystem.Domain.Entities.Events.Category", "Category")
+                        .WithMany("Events")
+                        .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -862,12 +1032,17 @@ namespace BookingSystem.Persistence.Migrations
 
             modelBuilder.Entity("BookingSystem.Domain.Entities.ConferenceRooms.ConferenceRoom", b =>
                 {
-                    b.Navigation("Amenities");
+                    b.Navigation("Bookings");
                 });
 
             modelBuilder.Entity("BookingSystem.Domain.Entities.Consumables.ConsumableCategory", b =>
                 {
                     b.Navigation("Consumables");
+                });
+
+            modelBuilder.Entity("BookingSystem.Domain.Entities.Events.Category", b =>
+                {
+                    b.Navigation("Events");
                 });
 
             modelBuilder.Entity("BookingSystem.Domain.Entities.Events.Event", b =>

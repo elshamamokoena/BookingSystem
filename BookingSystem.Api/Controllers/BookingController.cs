@@ -1,4 +1,6 @@
-﻿using BookingSystem.Application.Features.Bookings.Queries.GetBookings;
+﻿using BookingSystem.Application.Features.Bookings.Commands.CreateBooking;
+using BookingSystem.Application.Features.Bookings.Queries.GetBooking;
+using BookingSystem.Application.Features.Bookings.Queries.GetBookings;
 using BookingSystem.Domain.Entities.Bookings;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -21,6 +23,19 @@ namespace BookingSystem.Api.Controllers
         {
             var bookings = await _mediator.Send(query);
             return Ok(bookings);
+        }
+
+        [HttpGet("/booking-detail", Name = "GetBookingAsync")]
+        public async Task<ActionResult<BookingVm>> GetBooking([FromQuery]GetBookingQuery query)
+        {
+            var booking = await _mediator.Send(query);
+            return Ok(booking);
+        }
+        [HttpPost(Name ="CreateBookingAsync")]
+        public async Task<ActionResult<Guid>>  CreateBooking([FromBody] CreateBookingCommand command)
+        {
+            var bookingId = await _mediator.Send(command);
+            return Ok(bookingId);
         }
     }
 }

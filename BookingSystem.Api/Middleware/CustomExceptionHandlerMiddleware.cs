@@ -1,5 +1,6 @@
 ﻿using BookingSystem.Application.Exceptions;
 using System.Net;
+using System.Security.Authentication;
 using System.Text.Json;
 
 namespace BookingSystem.Api.Middleware
@@ -44,6 +45,9 @@ namespace BookingSystem.Api.Middleware
                     break;
                 case NotFoundException:
                     httpStatusCode = HttpStatusCode.NotFound;
+                    break;
+                case UnauthorizedAccessException:
+                    httpStatusCode = HttpStatusCode.Unauthorized;
                     break;
                 case Exception:
                     httpStatusCode = HttpStatusCode.InternalServerError;

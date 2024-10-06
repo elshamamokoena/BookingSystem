@@ -1,4 +1,5 @@
 ﻿using BookingSystem.Application.Contracts.Persistence;
+using BookingSystem.Application.Features.Consumables.Queries.GetConsumables;
 using BookingSystem.Application.ResourceParameters;
 using BookingSystem.Domain.Entities.Consumables;
 using BookingSystem.Persistence.DbContexts;
@@ -11,124 +12,136 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Persistence.Repositories
 {
-    public class ConsumableRepository : IConsumableRepository
+    public class ConsumableRepository :BaseRepository<Consumable>, IConsumableRepository
     {
-        private readonly BookingSystemDbContext _context;
-        public ConsumableRepository(BookingSystemDbContext context)
+        public ConsumableRepository(BookingSystemDbContext context): base(context)
         {
-            _context = context;
-        }
-        public async Task<Consumable> AddConsumableAsync(Consumable consumable)
-        {
-            ArgumentNullException.ThrowIfNull(consumable, nameof(consumable));
-
-            await _context.Consumables.AddAsync(consumable);
-            return consumable;
         }
 
-        public void AddConsumableCategory(ConsumableCategory consumableCategory)
+        public async Task<IEnumerable<Consumable>> GetConsumablesAsync(GetConsumablesQuery query)
         {
-            ArgumentNullException.ThrowIfNull(consumableCategory, nameof(consumableCategory));
-            _context.ConsumableCategories.Add(consumableCategory);
+            var consumables = _context.Consumables as IQueryable<Consumable>;
+
+            if (query.IncludeCategory.HasValue && query.IncludeCategory.Value)
+                consumables = consumables.Include(x => x.Category);
+
+            return await consumables.
+               OrderBy(x => x.Name)
+                .Skip(query.PageSize * (query.PageNumber - 1))
+                .Take(query.PageSize)
+                .ToListAsync();
         }
+        //        public async Task<Consumable> AddConsumableAsync(Consumable consumable)
+        //        {
+        //            ArgumentNullException.ThrowIfNull(consumable, nameof(consumable));
 
-        public async Task<ConsumableCategory> AddConsumableCategoryAsync(ConsumableCategory consumableCategory)
-        {
-            await  _context.ConsumableCategories.AddAsync(consumableCategory);
-            return consumableCategory;
-        }
+        //            await _context.Consumables.AddAsync(consumable);
+        //            return consumable;
+        //        }
 
-        public async Task<bool> ConsumableCategoryExists(Guid consumableCategoryId)
-        {
-            return await _context.ConsumableCategories
-                .AnyAsync(c => c.ConsumableCategoryId == consumableCategoryId);
-        }
+        //        public void AddConsumableCategory(ConsumableCategory consumableCategory)
+        //        {
+        //            ArgumentNullException.ThrowIfNull(consumableCategory, nameof(consumableCategory));
+        //            _context.ConsumableCategories.Add(consumableCategory);
+        //        }
 
-        public async Task<bool> ConsumableExistsAsync(Guid consumableId)
-        {
-            return await _context.Consumables
-                .AnyAsync(c => c.ConsumableId == consumableId);
-        }
+        //        public async Task<ConsumableCategory> AddConsumableCategoryAsync(ConsumableCategory consumableCategory)
+        //        {
+        //            await  _context.ConsumableCategories.AddAsync(consumableCategory);
+        //            return consumableCategory;
+        //        }
 
-        public void DeleteConsumable(Consumable consumable)
-        {
-            _context.Consumables.Remove(consumable);
-        }
+        //        public async Task<bool> ConsumableCategoryExists(Guid consumableCategoryId)
+        //        {
+        //            return await _context.ConsumableCategories
+        //                .AnyAsync(c => c.ConsumableCategoryId == consumableCategoryId);
+        //        }
 
-        public void DeleteConsumableCategory(ConsumableCategory consumableCategory)
-        {
-            _context.ConsumableCategories.Remove(consumableCategory);
-        }
+        //        public async Task<bool> ConsumableExistsAsync(Guid consumableId)
+        //        {
+        //            return await _context.Consumables
+        //                .AnyAsync(c => c.ConsumableId == consumableId);
+        //        }
 
-        public async Task<Consumable> GetConsumableAsync(Guid consumableCategoryId, Guid consumableId)
-        {
-            if (consumableCategoryId == Guid.Empty) throw new ArgumentNullException(nameof(consumableCategoryId));
-            if (consumableId == Guid.Empty) throw new ArgumentNullException(nameof(consumableId));
+        //        public void DeleteConsumable(Consumable consumable)
+        //        {
+        //            _context.Consumables.Remove(consumable);
+        //        }
 
-#pragma warning disable CS8603 // Possible null reference return.
-            return await _context.Consumables
-                .Where(c => c.ConsumableCategoryId == consumableCategoryId
-                && c.ConsumableId == consumableId).FirstOrDefaultAsync();
-#pragma warning restore CS8603 // Possible null reference return.
-        }
+        //        public void DeleteConsumableCategory(ConsumableCategory consumableCategory)
+        //        {
+        //            _context.ConsumableCategories.Remove(consumableCategory);
+        //        }
 
-        //public async Task<IEnumerable<ConsumableCategory>> GetConsumableCategoriesAsync(ConsumableCategoriesResourceParameters resourceParameters)
-        //{
-        //    if (resourceParameters == null) throw new ArgumentNullException(nameof(resourceParameters));
+        //        public async Task<Consumable> GetConsumableAsync(Guid consumableCategoryId, Guid consumableId)
+        //        {
+        //            if (consumableCategoryId == Guid.Empty) throw new ArgumentNullException(nameof(consumableCategoryId));
+        //            if (consumableId == Guid.Empty) throw new ArgumentNullException(nameof(consumableId));
 
-        //    var collection = _context.ConsumableCategories as IQueryable<ConsumableCategory>;
+        //#pragma warning disable CS8603 // Possible null reference return.
+        //            return await _context.Consumables
+        //                .Where(c => c.ConsumableCategoryId == consumableCategoryId
+        //                && c.ConsumableId == consumableId).FirstOrDefaultAsync();
+        //#pragma warning restore CS8603 // Possible null reference return.
+        //        }
 
-        //    //...
+        //        //public async Task<IEnumerable<ConsumableCategory>> GetConsumableCategoriesAsync(ConsumableCategoriesResourceParameters resourceParameters)
+        //        //{
+        //        //    if (resourceParameters == null) throw new ArgumentNullException(nameof(resourceParameters));
 
-        //    return await collection
-        //        .Skip(resourceParameters.PageSize * (resourceParameters.PageNumber - 1))
-        //        .Take(resourceParameters.PageSize)
-        //        .ToListAsync();
-        //}
+        //        //    var collection = _context.ConsumableCategories as IQueryable<ConsumableCategory>;
 
-        public async Task<int> GetConsumableCategoriesCountAsync()
-        {
-            return await _context.ConsumableCategories.CountAsync();
-        }
+        //        //    //...
 
-        public async Task<ConsumableCategory> GetConsumableCategoryAsync(Guid consumableCategoryId)
-        {
-            if (consumableCategoryId == Guid.Empty) throw new ArgumentNullException(nameof(consumableCategoryId));
+        //        //    return await collection
+        //        //        .Skip(resourceParameters.PageSize * (resourceParameters.PageNumber - 1))
+        //        //        .Take(resourceParameters.PageSize)
+        //        //        .ToListAsync();
+        //        //}
 
-#pragma warning disable CS8603 // Possible null reference return.
-            return await _context.ConsumableCategories
-                .FirstOrDefaultAsync(c => c.ConsumableCategoryId == consumableCategoryId);
-#pragma warning restore CS8603 // Possible null reference return.
-        }
+        //        public async Task<int> GetConsumableCategoriesCountAsync()
+        //        {
+        //            return await _context.ConsumableCategories.CountAsync();
+        //        }
 
-        public async Task<IEnumerable<Consumable>> GetConsumablesAsync(Guid consumableCategoryId)
-        {
-            if (consumableCategoryId == Guid.Empty) throw new ArgumentNullException(nameof(consumableCategoryId));
+        //        public async Task<ConsumableCategory> GetConsumableCategoryAsync(Guid consumableCategoryId)
+        //        {
+        //            if (consumableCategoryId == Guid.Empty) throw new ArgumentNullException(nameof(consumableCategoryId));
 
-            return await _context.Consumables
-                .Where(c => c.ConsumableCategoryId == consumableCategoryId).ToListAsync();
-        }
+        //#pragma warning disable CS8603 // Possible null reference return.
+        //            return await _context.ConsumableCategories
+        //                .FirstOrDefaultAsync(c => c.ConsumableCategoryId == consumableCategoryId);
+        //#pragma warning restore CS8603 // Possible null reference return.
+        //        }
 
-        public async Task<int> GetConsumablesCountAsync(Guid consumableCategoryId)
-        {
-            return await _context.Consumables
-                .Where(c => c.ConsumableCategoryId == consumableCategoryId)
-                .CountAsync();
-        }
+        //        public async Task<IEnumerable<Consumable>> GetConsumablesAsync(Guid consumableCategoryId)
+        //        {
+        //            if (consumableCategoryId == Guid.Empty) throw new ArgumentNullException(nameof(consumableCategoryId));
 
-        public async Task<bool> SaveChangesAsync()
-        {
-            return await _context.SaveChangesAsync() > 0;
-        }
+        //            return await _context.Consumables
+        //                .Where(c => c.ConsumableCategoryId == consumableCategoryId).ToListAsync();
+        //        }
 
-        public void UpdateConsumable(Consumable consumable)
-        {
-            // Update the consumable
-        }
+        //        public async Task<int> GetConsumablesCountAsync(Guid consumableCategoryId)
+        //        {
+        //            return await _context.Consumables
+        //                .Where(c => c.ConsumableCategoryId == consumableCategoryId)
+        //                .CountAsync();
+        //        }
 
-        public void UpdateConsumableCategory(ConsumableCategory consumableCategory)
-        {
-            // Update the consumable category
-        }
+        //        public async Task<bool> SaveChangesAsync()
+        //        {
+        //            return await _context.SaveChangesAsync() > 0;
+        //        }
+
+        //        public void UpdateConsumable(Consumable consumable)
+        //        {
+        //            // Update the consumable
+        //        }
+
+        //        public void UpdateConsumableCategory(ConsumableCategory consumableCategory)
+        //        {
+        //            // Update the consumable category
+        //        }
     }
 }

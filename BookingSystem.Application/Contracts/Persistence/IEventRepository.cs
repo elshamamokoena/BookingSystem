@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Contracts.Persistence
 {
-    public interface IEventRepository
+    public interface IEventRepository : IAsyncRepository<Event> 
     {
         Task<IEnumerable<Event>> GetEventsAsync(GetEventsQuery bookingQuery);
 

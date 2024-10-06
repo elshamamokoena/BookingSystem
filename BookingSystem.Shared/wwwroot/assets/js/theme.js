@@ -768,60 +768,60 @@ var chatInit = function chatInit() {
 /* -------------------------------------------------------------------------- */
 
 
-var choicesInit = function choicesInit() {
-  if (window.Choices) {
-    var elements = document.querySelectorAll('.js-choice');
-    elements.forEach(function (item) {
-      var userOptions = utils.getData(item, 'options');
-      var choices = new window.Choices(item, _objectSpread({
-        itemSelectText: ''
-      }, userOptions));
-      var needsValidation = document.querySelectorAll('.needs-validation');
-      needsValidation.forEach(function (validationItem) {
-        var selectFormValidation = function selectFormValidation() {
-          validationItem.querySelectorAll('.choices').forEach(function (choicesItem) {
-            var singleSelect = choicesItem.querySelector('.choices__list--single');
-            var multipleSelect = choicesItem.querySelector('.choices__list--multiple');
+//var choicesInit = function choicesInit() {
+//  if (window.Choices) {
+//    var elements = document.querySelectorAll('.js-choice');
+//    elements.forEach(function (item) {
+//      var userOptions = utils.getData(item, 'options');
+//      var choices = new window.Choices(item, _objectSpread({
+//        itemSelectText: ''
+//      }, userOptions));
+//      var needsValidation = document.querySelectorAll('.needs-validation');
+//      needsValidation.forEach(function (validationItem) {
+//        var selectFormValidation = function selectFormValidation() {
+//          validationItem.querySelectorAll('.choices').forEach(function (choicesItem) {
+//            var singleSelect = choicesItem.querySelector('.choices__list--single');
+//            var multipleSelect = choicesItem.querySelector('.choices__list--multiple');
 
-            if (choicesItem.querySelector('[required]')) {
-              if (singleSelect) {
-                var _singleSelect$querySe;
+//            if (choicesItem.querySelector('[required]')) {
+//              if (singleSelect) {
+//                var _singleSelect$querySe;
 
-                if (((_singleSelect$querySe = singleSelect.querySelector('.choices__item--selectable')) === null || _singleSelect$querySe === void 0 ? void 0 : _singleSelect$querySe.getAttribute('data-value')) !== '') {
-                  choicesItem.classList.remove('invalid');
-                  choicesItem.classList.add('valid');
-                } else {
-                  choicesItem.classList.remove('valid');
-                  choicesItem.classList.add('invalid');
-                }
-              } //----- for multiple select only ----------
+//                if (((_singleSelect$querySe = singleSelect.querySelector('.choices__item--selectable')) === null || _singleSelect$querySe === void 0 ? void 0 : _singleSelect$querySe.getAttribute('data-value')) !== '') {
+//                  choicesItem.classList.remove('invalid');
+//                  choicesItem.classList.add('valid');
+//                } else {
+//                  choicesItem.classList.remove('valid');
+//                  choicesItem.classList.add('invalid');
+//                }
+//              } //----- for multiple select only ----------
 
 
-              if (multipleSelect) {
-                if (choicesItem.getElementsByTagName('option').length) {
-                  choicesItem.classList.remove('invalid');
-                  choicesItem.classList.add('valid');
-                } else {
-                  choicesItem.classList.remove('valid');
-                  choicesItem.classList.add('invalid');
-                }
-              } //------ select end ---------------
+//              if (multipleSelect) {
+//                if (choicesItem.getElementsByTagName('option').length) {
+//                  choicesItem.classList.remove('invalid');
+//                  choicesItem.classList.add('valid');
+//                } else {
+//                  choicesItem.classList.remove('valid');
+//                  choicesItem.classList.add('invalid');
+//                }
+//              } //------ select end ---------------
 
-            }
-          });
-        };
+//            }
+//          });
+//        };
 
-        validationItem.addEventListener('submit', function () {
-          selectFormValidation();
-        });
-        item.addEventListener('change', function () {
-          selectFormValidation();
-        });
-      });
-      return choices;
-    });
-  }
-};
+//        validationItem.addEventListener('submit', function () {
+//          selectFormValidation();
+//        });
+//        item.addEventListener('change', function () {
+//          selectFormValidation();
+//        });
+//      });
+//      return choices;
+//    });
+//  }
+//};
 /*-----------------------------------------------
 |   Cookie notice
 -----------------------------------------------*/
@@ -3452,141 +3452,141 @@ var togglePaginationButtonDisable = function togglePaginationButtonDisable(butto
   button.classList[disabled ? 'add' : 'remove']('disabled');
 };
 
-var listInit = function listInit() {
-  if (window.List) {
-    var lists = document.querySelectorAll('[data-list]');
+//var listInit = function listInit() {
+//  if (window.List) {
+//    var lists = document.querySelectorAll('[data-list]');
 
-    if (lists.length) {
-      lists.forEach(function (el) {
-        var options = utils.getData(el, 'list');
+//    if (lists.length) {
+//      lists.forEach(function (el) {
+//        var options = utils.getData(el, 'list');
 
-        if (options.pagination) {
-          options = _objectSpread(_objectSpread({}, options), {}, {
-            pagination: _objectSpread({
-              item: '<li><button class=\'page\' type=\'button\'></button></li>'
-            }, options.pagination)
-          });
-        }
+//        if (options.pagination) {
+//          options = _objectSpread(_objectSpread({}, options), {}, {
+//            pagination: _objectSpread({
+//              item: '<li><button class=\'page\' type=\'button\'></button></li>'
+//            }, options.pagination)
+//          });
+//        }
 
-        var paginationButtonNext = el.querySelector('[data-list-pagination="next"]');
-        var paginationButtonPrev = el.querySelector('[data-list-pagination="prev"]');
-        var viewAll = el.querySelector('[data-list-view="*"]');
-        var viewLess = el.querySelector('[data-list-view="less"]');
-        var listInfo = el.querySelector('[data-list-info]');
-        var listFilter = document.querySelector('[data-list-filter]');
-        var list = new window.List(el, options); //-------fallback-----------
+//        var paginationButtonNext = el.querySelector('[data-list-pagination="next"]');
+//        var paginationButtonPrev = el.querySelector('[data-list-pagination="prev"]');
+//        var viewAll = el.querySelector('[data-list-view="*"]');
+//        var viewLess = el.querySelector('[data-list-view="less"]');
+//        var listInfo = el.querySelector('[data-list-info]');
+//        var listFilter = document.querySelector('[data-list-filter]');
+//        var list = new window.List(el, options); //-------fallback-----------
 
-        list.on('updated', function (item) {
-          var fallback = el.querySelector('.fallback') || document.getElementById(options.fallback);
+//        list.on('updated', function (item) {
+//          var fallback = el.querySelector('.fallback') || document.getElementById(options.fallback);
 
-          if (fallback) {
-            if (item.matchingItems.length === 0) {
-              fallback.classList.remove('d-none');
-            } else {
-              fallback.classList.add('d-none');
-            }
-          }
-        }); // ---------------------------------------
+//          if (fallback) {
+//            if (item.matchingItems.length === 0) {
+//              fallback.classList.remove('d-none');
+//            } else {
+//              fallback.classList.add('d-none');
+//            }
+//          }
+//        }); // ---------------------------------------
 
-        var totalItem = list.items.length;
-        var itemsPerPage = list.page;
-        var btnDropdownClose = list.listContainer.querySelector('.btn-close');
-        var pageQuantity = Math.ceil(totalItem / itemsPerPage);
-        var numberOfcurrentItems = list.visibleItems.length;
-        var pageCount = 1;
-        btnDropdownClose && btnDropdownClose.addEventListener('search.close', function () {
-          list.fuzzySearch('');
-        });
+//        var totalItem = list.items.length;
+//        var itemsPerPage = list.page;
+//        var btnDropdownClose = list.listContainer.querySelector('.btn-close');
+//        var pageQuantity = Math.ceil(totalItem / itemsPerPage);
+//        var numberOfcurrentItems = list.visibleItems.length;
+//        var pageCount = 1;
+//        btnDropdownClose && btnDropdownClose.addEventListener('search.close', function () {
+//          list.fuzzySearch('');
+//        });
 
-        var updateListControls = function updateListControls() {
-          listInfo && (listInfo.innerHTML = "".concat(list.i, " to ").concat(numberOfcurrentItems, " of ").concat(totalItem));
-          paginationButtonPrev && togglePaginationButtonDisable(paginationButtonPrev, pageCount === 1);
-          paginationButtonNext && togglePaginationButtonDisable(paginationButtonNext, pageCount === pageQuantity);
+//        var updateListControls = function updateListControls() {
+//          listInfo && (listInfo.innerHTML = "".concat(list.i, " to ").concat(numberOfcurrentItems, " of ").concat(totalItem));
+//          paginationButtonPrev && togglePaginationButtonDisable(paginationButtonPrev, pageCount === 1);
+//          paginationButtonNext && togglePaginationButtonDisable(paginationButtonNext, pageCount === pageQuantity);
 
-          if (pageCount > 1 && pageCount < pageQuantity) {
-            togglePaginationButtonDisable(paginationButtonNext, false);
-            togglePaginationButtonDisable(paginationButtonPrev, false);
-          }
-        }; // List info
-
-
-        updateListControls();
-
-        if (paginationButtonNext) {
-          paginationButtonNext.addEventListener('click', function (e) {
-            e.preventDefault();
-            pageCount += 1;
-            var nextInitialIndex = list.i + itemsPerPage;
-            nextInitialIndex <= list.size() && list.show(nextInitialIndex, itemsPerPage);
-            numberOfcurrentItems += list.visibleItems.length;
-            updateListControls();
-          });
-        }
-
-        if (paginationButtonPrev) {
-          paginationButtonPrev.addEventListener('click', function (e) {
-            e.preventDefault();
-            pageCount -= 1;
-            numberOfcurrentItems -= list.visibleItems.length;
-            var prevItem = list.i - itemsPerPage;
-            prevItem > 0 && list.show(prevItem, itemsPerPage);
-            updateListControls();
-          });
-        }
-
-        var toggleViewBtn = function toggleViewBtn() {
-          viewLess.classList.toggle('d-none');
-          viewAll.classList.toggle('d-none');
-        };
-
-        if (viewAll) {
-          viewAll.addEventListener('click', function () {
-            list.show(1, totalItem);
-            pageQuantity = 1;
-            pageCount = 1;
-            numberOfcurrentItems = totalItem;
-            updateListControls();
-            toggleViewBtn();
-          });
-        }
-
-        if (viewLess) {
-          viewLess.addEventListener('click', function () {
-            list.show(1, itemsPerPage);
-            pageQuantity = Math.ceil(totalItem / itemsPerPage);
-            pageCount = 1;
-            numberOfcurrentItems = list.visibleItems.length;
-            updateListControls();
-            toggleViewBtn();
-          });
-        } // numbering pagination
+//          if (pageCount > 1 && pageCount < pageQuantity) {
+//            togglePaginationButtonDisable(paginationButtonNext, false);
+//            togglePaginationButtonDisable(paginationButtonPrev, false);
+//          }
+//        }; // List info
 
 
-        if (options.pagination) {
-          el.querySelector('.pagination').addEventListener('click', function (e) {
-            if (e.target.classList[0] === 'page') {
-              pageCount = Number(e.target.innerText);
-              updateListControls();
-            }
-          });
-        }
+//        updateListControls();
 
-        if (options.filter) {
-          var key = options.filter.key;
-          listFilter.addEventListener('change', function (e) {
-            list.filter(function (item) {
-              if (e.target.value === '') {
-                return true;
-              }
+//        if (paginationButtonNext) {
+//          paginationButtonNext.addEventListener('click', function (e) {
+//            e.preventDefault();
+//            pageCount += 1;
+//            var nextInitialIndex = list.i + itemsPerPage;
+//            nextInitialIndex <= list.size() && list.show(nextInitialIndex, itemsPerPage);
+//            numberOfcurrentItems += list.visibleItems.length;
+//            updateListControls();
+//          });
+//        }
 
-              return item.values()[key].toLowerCase().includes(e.target.value.toLowerCase());
-            });
-          });
-        }
-      });
-    }
-  }
-};
+//        if (paginationButtonPrev) {
+//          paginationButtonPrev.addEventListener('click', function (e) {
+//            e.preventDefault();
+//            pageCount -= 1;
+//            numberOfcurrentItems -= list.visibleItems.length;
+//            var prevItem = list.i - itemsPerPage;
+//            prevItem > 0 && list.show(prevItem, itemsPerPage);
+//            updateListControls();
+//          });
+//        }
+
+//        var toggleViewBtn = function toggleViewBtn() {
+//          viewLess.classList.toggle('d-none');
+//          viewAll.classList.toggle('d-none');
+//        };
+
+//        if (viewAll) {
+//          viewAll.addEventListener('click', function () {
+//            list.show(1, totalItem);
+//            pageQuantity = 1;
+//            pageCount = 1;
+//            numberOfcurrentItems = totalItem;
+//            updateListControls();
+//            toggleViewBtn();
+//          });
+//        }
+
+//        if (viewLess) {
+//          viewLess.addEventListener('click', function () {
+//            list.show(1, itemsPerPage);
+//            pageQuantity = Math.ceil(totalItem / itemsPerPage);
+//            pageCount = 1;
+//            numberOfcurrentItems = list.visibleItems.length;
+//            updateListControls();
+//            toggleViewBtn();
+//          });
+//        } // numbering pagination
+
+
+//        if (options.pagination) {
+//          el.querySelector('.pagination').addEventListener('click', function (e) {
+//            if (e.target.classList[0] === 'page') {
+//              pageCount = Number(e.target.innerText);
+//              updateListControls();
+//            }
+//          });
+//        }
+
+//        if (options.filter) {
+//          var key = options.filter.key;
+//          listFilter.addEventListener('change', function (e) {
+//            list.filter(function (item) {
+//              if (e.target.value === '') {
+//                return true;
+//              }
+
+//              return item.values()[key].toLowerCase().includes(e.target.value.toLowerCase());
+//            });
+//          });
+//        }
+//      });
+//    }
+//  }
+//};
 
 //var lottieInit = function lottieInit() {
 //  var lotties = document.querySelectorAll('.lottie');
@@ -3871,52 +3871,7 @@ var navbarTopDropShadow = function navbarTopDropShadow() {
 /* -------------------------------------------------------------------------- */
 
 
-var handleNavbarVerticalCollapsed = function handleNavbarVerticalCollapsed() {
-  var Selector = {
-    HTML: 'html',
-    NAVBAR_VERTICAL_TOGGLE: '.navbar-vertical-toggle',
-    NAVBAR_VERTICAL_COLLAPSE: '.navbar-vertical .navbar-collapse',
-    ECHART_RESPONSIVE: '[data-echart-responsive]'
-  };
-  var Events = {
-    CLICK: 'click',
-    MOUSE_OVER: 'mouseover',
-    MOUSE_LEAVE: 'mouseleave',
-    NAVBAR_VERTICAL_TOGGLE: 'navbar.vertical.toggle'
-  };
-  var ClassNames = {
-    NAVBAR_VERTICAL_COLLAPSED: 'navbar-vertical-collapsed',
-    NAVBAR_VERTICAL_COLLAPSED_HOVER: 'navbar-vertical-collapsed-hover'
-  };
-  var navbarVerticalToggle = document.querySelector(Selector.NAVBAR_VERTICAL_TOGGLE);
-  var html = document.querySelector(Selector.HTML);
-  var navbarVerticalCollapse = document.querySelector(Selector.NAVBAR_VERTICAL_COLLAPSE);
 
-  if (navbarVerticalToggle) {
-    navbarVerticalToggle.addEventListener(Events.CLICK, function (e) {
-      navbarVerticalToggle.blur();
-      html.classList.toggle(ClassNames.NAVBAR_VERTICAL_COLLAPSED); // Set collapse state on localStorage
-
-      var isNavbarVerticalCollapsed = utils.getItemFromStore('isNavbarVerticalCollapsed');
-      utils.setItemToStore('isNavbarVerticalCollapsed', !isNavbarVerticalCollapsed);
-      var event = new CustomEvent(Events.NAVBAR_VERTICAL_TOGGLE);
-      e.currentTarget.dispatchEvent(event);
-    });
-  }
-
-  if (navbarVerticalCollapse) {
-    navbarVerticalCollapse.addEventListener(Events.MOUSE_OVER, function () {
-      if (utils.hasClass(html, ClassNames.NAVBAR_VERTICAL_COLLAPSED)) {
-        html.classList.add(ClassNames.NAVBAR_VERTICAL_COLLAPSED_HOVER);
-      }
-    });
-    navbarVerticalCollapse.addEventListener(Events.MOUSE_LEAVE, function () {
-      if (utils.hasClass(html, ClassNames.NAVBAR_VERTICAL_COLLAPSED_HOVER)) {
-        html.classList.remove(ClassNames.NAVBAR_VERTICAL_COLLAPSED_HOVER);
-      }
-    });
-  }
-};
 /*-----------------------------------------------
 |   Inline Player [plyr]
 -----------------------------------------------*/
@@ -4142,70 +4097,70 @@ var searchInit = function searchInit() {
 -----------------------------------------------*/
 
 
-var select2Init = function select2Init() {
-  if (window.jQuery) {
-    var $ = window.jQuery;
-    var select2 = $('.selectpicker');
-    select2.length && select2.each(function (index, value) {
-      var $this = $(value);
-      var options = $.extend({
-        theme: 'bootstrap-5'
-      }, $this.data('options'));
-      $this.select2(options);
-    });
-  }
-};
+//var select2Init = function select2Init() {
+//  if (window.jQuery) {
+//    var $ = window.jQuery;
+//    var select2 = $('.selectpicker');
+//    select2.length && select2.each(function (index, value) {
+//      var $this = $(value);
+//      var options = $.extend({
+//        theme: 'bootstrap-5'
+//      }, $this.data('options'));
+//      $this.select2(options);
+//    });
+//  }
+//};
 /*-----------------------------------------------
 |  Swiper
 -----------------------------------------------*/
 
 
-var swiperInit = function swiperInit() {
-  var swipers = document.querySelectorAll('[data-swiper]');
-  var navbarVerticalToggle = document.querySelector('.navbar-vertical-toggle');
-  swipers.forEach(function (swiper) {
-    var options = utils.getData(swiper, 'swiper');
-    var thumbsOptions = options.thumb;
-    var thumbsInit;
+//var swiperInit = function swiperInit() {
+//  var swipers = document.querySelectorAll('[data-swiper]');
+//  var navbarVerticalToggle = document.querySelector('.navbar-vertical-toggle');
+//  swipers.forEach(function (swiper) {
+  //  var options = utils.getData(swiper, 'swiper');
+  //  var thumbsOptions = options.thumb;
+  //  var thumbsInit;
 
-    if (thumbsOptions) {
-      var thumbImages = swiper.querySelectorAll('img');
-      var slides = '';
-      thumbImages.forEach(function (img) {
-        slides += "\n          <div class='swiper-slide '>\n            <img class='img-fluid rounded mt-1' src=".concat(img.src, " alt=''/>\n          </div>\n        ");
-      });
-      var thumbs = document.createElement('div');
-      thumbs.setAttribute('class', 'swiper-container thumb');
-      thumbs.innerHTML = "<div class='swiper-wrapper'>".concat(slides, "</div>");
+  //  if (thumbsOptions) {
+  //    var thumbImages = swiper.querySelectorAll('img');
+  //    var slides = '';
+  //    thumbImages.forEach(function (img) {
+  //      slides += "\n          <div class='swiper-slide '>\n            <img class='img-fluid rounded mt-1' src=".concat(img.src, " alt=''/>\n          </div>\n        ");
+  //    });
+  //    var thumbs = document.createElement('div');
+  //    thumbs.setAttribute('class', 'swiper-container thumb');
+  //    thumbs.innerHTML = "<div class='swiper-wrapper'>".concat(slides, "</div>");
 
-      if (thumbsOptions.parent) {
-        var parent = document.querySelector(thumbsOptions.parent);
-        parent.parentNode.appendChild(thumbs);
-      } else {
-        swiper.parentNode.appendChild(thumbs);
-      }
+  //    if (thumbsOptions.parent) {
+  //      var parent = document.querySelector(thumbsOptions.parent);
+  //      parent.parentNode.appendChild(thumbs);
+  //    } else {
+  //      swiper.parentNode.appendChild(thumbs);
+  //    }
 
-      thumbsInit = new window.Swiper(thumbs, thumbsOptions);
-    }
+  //    thumbsInit = new window.Swiper(thumbs, thumbsOptions);
+  //  }
 
-    var swiperNav = swiper.querySelector('.swiper-nav');
-    var newSwiper = new window.Swiper(swiper, _objectSpread(_objectSpread({}, options), {}, {
-      navigation: {
-        nextEl: swiperNav === null || swiperNav === void 0 ? void 0 : swiperNav.querySelector('.swiper-button-next'),
-        prevEl: swiperNav === null || swiperNav === void 0 ? void 0 : swiperNav.querySelector('.swiper-button-prev')
-      },
-      thumbs: {
-        swiper: thumbsInit
-      }
-    }));
+  //  var swiperNav = swiper.querySelector('.swiper-nav');
+  //  var newSwiper = new window.Swiper(swiper, _objectSpread(_objectSpread({}, options), {}, {
+  //    navigation: {
+  //      nextEl: swiperNav === null || swiperNav === void 0 ? void 0 : swiperNav.querySelector('.swiper-button-next'),
+  //      prevEl: swiperNav === null || swiperNav === void 0 ? void 0 : swiperNav.querySelector('.swiper-button-prev')
+  //    },
+  //    thumbs: {
+  //      swiper: thumbsInit
+  //    }
+  //  }));
 
-    if (navbarVerticalToggle) {
-      navbarVerticalToggle.addEventListener('navbar.vertical.toggle', function () {
-        newSwiper.update();
-      });
-    }
-  });
-}; // export default themeControl;
+  //  if (navbarVerticalToggle) {
+  //    navbarVerticalToggle.addEventListener('navbar.vertical.toggle', function () {
+  //      newSwiper.update();
+  //    });
+  //  }
+  //});
+//}; // export default themeControl;
 
 /* -------------------------------------------------------------------------- */
 
@@ -13737,102 +13692,102 @@ var weeklyGoalsInit = function weeklyGoalsInit() {
 /* -------------------------------------------------------------------------- */
 
 
-var weeklySalesInit = function weeklySalesInit() {
-  var ECHART_BAR_WEEKLY_SALES = '.echart-bar-weekly-sales';
-  var $echartBarWeeklySales = document.querySelector(ECHART_BAR_WEEKLY_SALES);
+//var weeklySalesInit = function weeklySalesInit() {
+//  var ECHART_BAR_WEEKLY_SALES = '.echart-bar-weekly-sales';
+//  var $echartBarWeeklySales = document.querySelector(ECHART_BAR_WEEKLY_SALES);
 
-  if ($echartBarWeeklySales) {
-    // Get options from data attribute
-    var userOptions = utils.getData($echartBarWeeklySales, 'options');
-    var data = [120, 200, 150, 80, 70, 110, 120]; // Max value of data
+//  if ($echartBarWeeklySales) {
+//    // Get options from data attribute
+//    var userOptions = utils.getData($echartBarWeeklySales, 'options');
+//    var data = [120, 200, 150, 80, 70, 110, 120]; // Max value of data
 
-    var yMax = Math.max.apply(Math, data); // const dataBackground = data.map(() => yMax);
+//    var yMax = Math.max.apply(Math, data); // const dataBackground = data.map(() => yMax);
 
-    var chart = window.echarts.init($echartBarWeeklySales); // Default options
+//    var chart = window.echarts.init($echartBarWeeklySales); // Default options
 
-    var getDefaultOptions = function getDefaultOptions() {
-      return {
-        tooltip: {
-          trigger: 'axis',
-          padding: [7, 10],
-          formatter: '{b0} : {c0}',
-          transitionDuration: 0,
-          backgroundColor: utils.getGrays()['100'],
-          borderColor: utils.getGrays()['300'],
-          textStyle: {
-            color: utils.getColors().dark
-          },
-          borderWidth: 1,
-          position: function position(pos, params, dom, rect, size) {
-            return getPosition(pos, params, dom, rect, size);
-          }
-        },
-        xAxis: {
-          type: 'category',
-          data: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-          boundaryGap: false,
-          axisLine: {
-            show: false
-          },
-          axisLabel: {
-            show: false
-          },
-          axisTick: {
-            show: false
-          },
-          axisPointer: {
-            type: 'none'
-          }
-        },
-        yAxis: {
-          type: 'value',
-          splitLine: {
-            show: false
-          },
-          axisLine: {
-            show: false
-          },
-          axisLabel: {
-            show: false
-          },
-          axisTick: {
-            show: false
-          },
-          axisPointer: {
-            type: 'none'
-          }
-        },
-        series: [{
-          type: 'bar',
-          showBackground: true,
-          backgroundStyle: {
-            borderRadius: 10
-          },
-          barWidth: '5px',
-          itemStyle: {
-            barBorderRadius: 10,
-            color: utils.getColors().primary
-          },
-          data: data,
-          z: 10,
-          emphasis: {
-            itemStyle: {
-              color: utils.getColors().primary
-            }
-          }
-        }],
-        grid: {
-          right: 5,
-          left: 10,
-          top: 0,
-          bottom: 0
-        }
-      };
-    };
+//    var getDefaultOptions = function getDefaultOptions() {
+//      return {
+//        tooltip: {
+//          trigger: 'axis',
+//          padding: [7, 10],
+//          formatter: '{b0} : {c0}',
+//          transitionDuration: 0,
+//          backgroundColor: utils.getGrays()['100'],
+//          borderColor: utils.getGrays()['300'],
+//          textStyle: {
+//            color: utils.getColors().dark
+//          },
+//          borderWidth: 1,
+//          position: function position(pos, params, dom, rect, size) {
+//            return getPosition(pos, params, dom, rect, size);
+//          }
+//        },
+//        xAxis: {
+//          type: 'category',
+//          data: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+//          boundaryGap: false,
+//          axisLine: {
+//            show: false
+//          },
+//          axisLabel: {
+//            show: false
+//          },
+//          axisTick: {
+//            show: false
+//          },
+//          axisPointer: {
+//            type: 'none'
+//          }
+//        },
+//        yAxis: {
+//          type: 'value',
+//          splitLine: {
+//            show: false
+//          },
+//          axisLine: {
+//            show: false
+//          },
+//          axisLabel: {
+//            show: false
+//          },
+//          axisTick: {
+//            show: false
+//          },
+//          axisPointer: {
+//            type: 'none'
+//          }
+//        },
+//        series: [{
+//          type: 'bar',
+//          showBackground: true,
+//          backgroundStyle: {
+//            borderRadius: 10
+//          },
+//          barWidth: '5px',
+//          itemStyle: {
+//            barBorderRadius: 10,
+//            color: utils.getColors().primary
+//          },
+//          data: data,
+//          z: 10,
+//          emphasis: {
+//            itemStyle: {
+//              color: utils.getColors().primary
+//            }
+//          }
+//        }],
+//        grid: {
+//          right: 5,
+//          left: 10,
+//          top: 0,
+//          bottom: 0
+//        }
+//      };
+//    };
 
-    echartSetOption(chart, userOptions, getDefaultOptions);
-  }
-};
+//    echartSetOption(chart, userOptions, getDefaultOptions);
+//  }
+//};
 /* -------------------------------------------------------------------------- */
 
 /*                            Theme Initialization                            */
@@ -13841,9 +13796,9 @@ var weeklySalesInit = function weeklySalesInit() {
 
 
 docReady(detectorInit);
-docReady(handleNavbarVerticalCollapsed);
+//docReady(handleNavbarVerticalCollapsed);
 docReady(totalOrderInit);
-docReady(weeklySalesInit);
+//docReady(weeklySalesInit);
 docReady(marketShareInit);
 docReady(totalSalesInit);
 docReady(topProductsInit);
@@ -13856,7 +13811,7 @@ docReady(glightboxInit);
 docReady(plyrInit);
 docReady(initMap);
 //docReady(dropzoneInit);
-docReady(choicesInit);
+//docReady(choicesInit);
 docReady(formValidationInit);
 docReady(barChartInit);
 docReady(leafletActiveUserInit);
@@ -13869,8 +13824,8 @@ docReady(tinymceInit);
 docReady(chatInit);
 docReady(quantityInit);
 docReady(navbarComboInit);
-docReady(listInit);
-docReady(swiperInit);
+//docReady(listInit);
+//docReady(swiperInit);
 docReady(ratingInit);
 docReady(draggableInit);
 docReady(kanbanInit);
@@ -13944,7 +13899,7 @@ docReady(chartHalfDoughnutInit);
 docReady(trendingKeywordsInit);
 docReady(D3PackedBubbleInit);
 //docReady(dataTablesInit);
-docReady(select2Init);
+//docReady(select2Init);
 docReady(hideOnCollapseInit);
 docReady(unresolvedTicketsTabInit);
 //# sourceMappingURL=theme.js.map

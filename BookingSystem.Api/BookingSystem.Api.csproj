@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -21,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BookingSystem.Application\BookingSystem.Application.csproj" />
+    <ProjectReference Include="..\BookingSystem.AuthorizationPolicies\BookingSystem.AuthorizationPolicies.csproj" />
     <ProjectReference Include="..\BookingSystem.Persistence\BookingSystem.Persistence.csproj" />
   </ItemGroup>
 

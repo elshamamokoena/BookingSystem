@@ -63,12 +63,39 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<CreateConferenceRoomCommandResponse> CreateConferenceRoomAsync(CreateConferenceRoomCommand body);
+        System.Threading.Tasks.Task<System.Guid> CreateBookingAsync(CreateBookingCommand body);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<CreateConferenceRoomCommandResponse> CreateConferenceRoomAsync(CreateConferenceRoomCommand body, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Guid> CreateBookingAsync(CreateBookingCommand body, System.Threading.CancellationToken cancellationToken);
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<BookingVm> GetBookingAsync(System.Guid? bookingId, bool? includeEvent, bool? includeRoom);
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<BookingVm> GetBookingAsync(System.Guid? bookingId, bool? includeEvent, bool? includeRoom, System.Threading.CancellationToken cancellationToken);
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CategoryListVm>> GetCategoriesAsync();
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CategoryListVm>> GetCategoriesAsync(System.Threading.CancellationToken cancellationToken);
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Guid> CreateConferenceRoomAsync(CreateConferenceRoomCommand body);
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Guid> CreateConferenceRoomAsync(CreateConferenceRoomCommand body, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
@@ -81,12 +108,12 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConferenceRoomVm>> GetConferenceRoomsAsync(string searchQuery, System.DateTimeOffset? startTime, System.DateTimeOffset? endTime, int? pageNumber, int? pageSize);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConferenceRoomVm>> GetConferenceRoomsAsync(string searchQuery, System.DateTime? startTime, System.DateTime? endTime, int? pageNumber, int? pageSize);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConferenceRoomVm>> GetConferenceRoomsAsync(string searchQuery, System.DateTimeOffset? startTime, System.DateTimeOffset? endTime, int? pageNumber, int? pageSize, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConferenceRoomVm>> GetConferenceRoomsAsync(string searchQuery, System.DateTime? startTime, System.DateTime? endTime, int? pageNumber, int? pageSize, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
@@ -108,6 +135,15 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConsumableListVm>> GetConsumablesAsync(bool? includeCategory, int? pageNumber, int? pageSize);
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConsumableListVm>> GetConsumablesAsync(bool? includeCategory, int? pageNumber, int? pageSize, System.Threading.CancellationToken cancellationToken);
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
         System.Threading.Tasks.Task<CreateConsumableCommandResponse> CreateConsumableAsync(CreateConsumableCommand body);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
@@ -126,30 +162,39 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<CreateEventCommandResponse> CreateEventAsync(CreateEventCommand body);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConsumableCategoryListVm>> GetAllConsumableCategoriesAsync();
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<CreateEventCommandResponse> CreateEventAsync(CreateEventCommand body, System.Threading.CancellationToken cancellationToken);
-
-        /// <returns>No Content</returns>
-        /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task UpdateEventAsync(UpdateEventCommand body);
-
-        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-        /// <returns>No Content</returns>
-        /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task UpdateEventAsync(UpdateEventCommand body, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConsumableCategoryListVm>> GetAllConsumableCategoriesAsync(System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<EventVm>> GetEventsAsync(System.DateTimeOffset? start, System.DateTimeOffset? end, int? pageNumber, int? pageSize);
+        System.Threading.Tasks.Task<System.Guid> CreateEventAsync(CreateEventCommand body);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<EventVm>> GetEventsAsync(System.DateTimeOffset? start, System.DateTimeOffset? end, int? pageNumber, int? pageSize, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Guid> CreateEventAsync(CreateEventCommand body, System.Threading.CancellationToken cancellationToken);
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<UpdateEventCommandResponse> UpdateEventAsync(UpdateEventCommand body);
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<UpdateEventCommandResponse> UpdateEventAsync(UpdateEventCommand body, System.Threading.CancellationToken cancellationToken);
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<EventVm>> GetEventsAsync(System.DateTime? start, System.DateTime? end, int? pageNumber, int? pageSize);
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<EventVm>> GetEventsAsync(System.DateTime? start, System.DateTime? end, int? pageNumber, int? pageSize, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
@@ -160,12 +205,12 @@ namespace BookingSystem.Shared.Services
         /// <exception cref="ApiException">A server side error occurred.</exception>
         System.Threading.Tasks.Task<EventVm> GetEventAsync(System.Guid eventId, System.Threading.CancellationToken cancellationToken);
 
-        /// <returns>No Content</returns>
+        /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
         System.Threading.Tasks.Task DeleteEventAsync(System.Guid eventId);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-        /// <returns>No Content</returns>
+        /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
         System.Threading.Tasks.Task DeleteEventAsync(System.Guid eventId, System.Threading.CancellationToken cancellationToken);
 
@@ -198,12 +243,12 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<CreateStockEnquiryCommandResponse> CreateStockEnquiryAsync(CreateStockEnquiryCommand body);
+        System.Threading.Tasks.Task<System.Guid> CreateStockEnquiryAsync(CreateStockEnquiryCommand body);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<CreateStockEnquiryCommandResponse> CreateStockEnquiryAsync(CreateStockEnquiryCommand body, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Guid> CreateStockEnquiryAsync(CreateStockEnquiryCommand body, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
@@ -216,12 +261,12 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<CreateStockItemEnquiryCommandResponse> CreateStockItemEnquiryAsync(CreateStockItemEnquiryCommand body);
+        System.Threading.Tasks.Task<System.Guid> CreateStockItemEnquiryAsync(CreateStockItemEnquiryCommand body);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<CreateStockItemEnquiryCommandResponse> CreateStockItemEnquiryAsync(CreateStockItemEnquiryCommand body, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Guid> CreateStockItemEnquiryAsync(CreateStockItemEnquiryCommand body, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
@@ -243,12 +288,12 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<StockEnquiryVm> GetStockEnquiryAsync(System.Guid stockEnquiryId, bool? includeBooking, bool? includeStockItemEnquiries);
+        System.Threading.Tasks.Task<StockEnquiryVm> GetStockEnquiryAsync(System.Guid? stockEnquiryIdQuery, System.Guid? bookingId, bool? includeStockItemEnquiries, bool? includeBooking, string stockEnquiryIdPath);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<StockEnquiryVm> GetStockEnquiryAsync(System.Guid stockEnquiryId, bool? includeBooking, bool? includeStockItemEnquiries, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<StockEnquiryVm> GetStockEnquiryAsync(System.Guid? stockEnquiryIdQuery, System.Guid? bookingId, bool? includeStockItemEnquiries, bool? includeBooking, string stockEnquiryIdPath, System.Threading.CancellationToken cancellationToken);
 
     }
 
@@ -624,7 +669,259 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<CreateConferenceRoomCommandResponse> CreateConferenceRoomAsync(CreateConferenceRoomCommand body)
+        public virtual System.Threading.Tasks.Task<System.Guid> CreateBookingAsync(CreateBookingCommand body)
+        {
+            return CreateBookingAsync(body, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<System.Guid> CreateBookingAsync(CreateBookingCommand body, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    var json_ = System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(body, JsonSerializerSettings);
+                    var content_ = new System.Net.Http.ByteArrayContent(json_);
+                    content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+                    request_.Content = content_;
+                    request_.Method = new System.Net.Http.HttpMethod("POST");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("text/plain"));
+
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                
+                    // Operation Path: "api/bookings"
+                    urlBuilder_.Append("api/bookings");
+
+                    PrepareRequest(client_, request_, urlBuilder_);
+
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+
+                    PrepareRequest(client_, request_, url_);
+
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Guid>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<BookingVm> GetBookingAsync(System.Guid? bookingId, bool? includeEvent, bool? includeRoom)
+        {
+            return GetBookingAsync(bookingId, includeEvent, includeRoom, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<BookingVm> GetBookingAsync(System.Guid? bookingId, bool? includeEvent, bool? includeRoom, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("text/plain"));
+
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                
+                    // Operation Path: "booking-detail"
+                    urlBuilder_.Append("booking-detail");
+                    urlBuilder_.Append('?');
+                    if (bookingId != null)
+                    {
+                        urlBuilder_.Append(System.Uri.EscapeDataString("BookingId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(bookingId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    }
+                    if (includeEvent != null)
+                    {
+                        urlBuilder_.Append(System.Uri.EscapeDataString("IncludeEvent")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(includeEvent, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    }
+                    if (includeRoom != null)
+                    {
+                        urlBuilder_.Append(System.Uri.EscapeDataString("IncludeRoom")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(includeRoom, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    }
+                    urlBuilder_.Length--;
+
+                    PrepareRequest(client_, request_, urlBuilder_);
+
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+
+                    PrepareRequest(client_, request_, url_);
+
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<BookingVm>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CategoryListVm>> GetCategoriesAsync()
+        {
+            return GetCategoriesAsync(System.Threading.CancellationToken.None);
+        }
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CategoryListVm>> GetCategoriesAsync(System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("text/plain"));
+
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                
+                    // Operation Path: "api/categories"
+                    urlBuilder_.Append("api/categories");
+
+                    PrepareRequest(client_, request_, urlBuilder_);
+
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+
+                    PrepareRequest(client_, request_, url_);
+
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<CategoryListVm>>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<System.Guid> CreateConferenceRoomAsync(CreateConferenceRoomCommand body)
         {
             return CreateConferenceRoomAsync(body, System.Threading.CancellationToken.None);
         }
@@ -632,7 +929,7 @@ namespace BookingSystem.Shared.Services
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<CreateConferenceRoomCommandResponse> CreateConferenceRoomAsync(CreateConferenceRoomCommand body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Guid> CreateConferenceRoomAsync(CreateConferenceRoomCommand body, System.Threading.CancellationToken cancellationToken)
         {
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -677,7 +974,7 @@ namespace BookingSystem.Shared.Services
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<CreateConferenceRoomCommandResponse>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Guid>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -788,7 +1085,7 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConferenceRoomVm>> GetConferenceRoomsAsync(string searchQuery, System.DateTimeOffset? startTime, System.DateTimeOffset? endTime, int? pageNumber, int? pageSize)
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConferenceRoomVm>> GetConferenceRoomsAsync(string searchQuery, System.DateTime? startTime, System.DateTime? endTime, int? pageNumber, int? pageSize)
         {
             return GetConferenceRoomsAsync(searchQuery, startTime, endTime, pageNumber, pageSize, System.Threading.CancellationToken.None);
         }
@@ -796,7 +1093,7 @@ namespace BookingSystem.Shared.Services
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConferenceRoomVm>> GetConferenceRoomsAsync(string searchQuery, System.DateTimeOffset? startTime, System.DateTimeOffset? endTime, int? pageNumber, int? pageSize, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConferenceRoomVm>> GetConferenceRoomsAsync(string searchQuery, System.DateTime? startTime, System.DateTime? endTime, int? pageNumber, int? pageSize, System.Threading.CancellationToken cancellationToken)
         {
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -1052,6 +1349,98 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConsumableListVm>> GetConsumablesAsync(bool? includeCategory, int? pageNumber, int? pageSize)
+        {
+            return GetConsumablesAsync(includeCategory, pageNumber, pageSize, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConsumableListVm>> GetConsumablesAsync(bool? includeCategory, int? pageNumber, int? pageSize, System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("text/plain"));
+
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                
+                    // Operation Path: "api/consumables"
+                    urlBuilder_.Append("api/consumables");
+                    urlBuilder_.Append('?');
+                    if (includeCategory != null)
+                    {
+                        urlBuilder_.Append(System.Uri.EscapeDataString("IncludeCategory")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(includeCategory, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    }
+                    if (pageNumber != null)
+                    {
+                        urlBuilder_.Append(System.Uri.EscapeDataString("PageNumber")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(pageNumber, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    }
+                    if (pageSize != null)
+                    {
+                        urlBuilder_.Append(System.Uri.EscapeDataString("PageSize")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(pageSize, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    }
+                    urlBuilder_.Length--;
+
+                    PrepareRequest(client_, request_, urlBuilder_);
+
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+
+                    PrepareRequest(client_, request_, url_);
+
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<ConsumableListVm>>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
         public virtual System.Threading.Tasks.Task<CreateConsumableCommandResponse> CreateConsumableAsync(CreateConsumableCommand body)
         {
             return CreateConsumableAsync(body, System.Threading.CancellationToken.None);
@@ -1216,7 +1605,85 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<CreateEventCommandResponse> CreateEventAsync(CreateEventCommand body)
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConsumableCategoryListVm>> GetAllConsumableCategoriesAsync()
+        {
+            return GetAllConsumableCategoriesAsync(System.Threading.CancellationToken.None);
+        }
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConsumableCategoryListVm>> GetAllConsumableCategoriesAsync(System.Threading.CancellationToken cancellationToken)
+        {
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("text/plain"));
+
+                    var urlBuilder_ = new System.Text.StringBuilder();
+                
+                    // Operation Path: "api/consumables/categories"
+                    urlBuilder_.Append("api/consumables/categories");
+
+                    PrepareRequest(client_, request_, urlBuilder_);
+
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+
+                    PrepareRequest(client_, request_, url_);
+
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = new System.Collections.Generic.Dictionary<string, System.Collections.Generic.IEnumerable<string>>();
+                        foreach (var item_ in response_.Headers)
+                            headers_[item_.Key] = item_.Value;
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<ConsumableCategoryListVm>>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            return objectResponse_.Object;
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        public virtual System.Threading.Tasks.Task<System.Guid> CreateEventAsync(CreateEventCommand body)
         {
             return CreateEventAsync(body, System.Threading.CancellationToken.None);
         }
@@ -1224,7 +1691,7 @@ namespace BookingSystem.Shared.Services
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<CreateEventCommandResponse> CreateEventAsync(CreateEventCommand body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Guid> CreateEventAsync(CreateEventCommand body, System.Threading.CancellationToken cancellationToken)
         {
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -1267,9 +1734,19 @@ namespace BookingSystem.Shared.Services
                         ProcessResponse(client_, response_);
 
                         var status_ = (int)response_.StatusCode;
+                        if (status_ == 401)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<ProblemDetails>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            throw new ApiException<ProblemDetails>("Unauthorized", status_, objectResponse_.Text, headers_, objectResponse_.Object, null);
+                        }
+                        else
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<CreateEventCommandResponse>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Guid>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -1296,17 +1773,17 @@ namespace BookingSystem.Shared.Services
             }
         }
 
-        /// <returns>No Content</returns>
+        /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task UpdateEventAsync(UpdateEventCommand body)
+        public virtual System.Threading.Tasks.Task<UpdateEventCommandResponse> UpdateEventAsync(UpdateEventCommand body)
         {
             return UpdateEventAsync(body, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-        /// <returns>No Content</returns>
+        /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task UpdateEventAsync(UpdateEventCommand body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<UpdateEventCommandResponse> UpdateEventAsync(UpdateEventCommand body, System.Threading.CancellationToken cancellationToken)
         {
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -1319,6 +1796,7 @@ namespace BookingSystem.Shared.Services
                     content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("PUT");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("text/plain"));
 
                     var urlBuilder_ = new System.Text.StringBuilder();
                 
@@ -1348,9 +1826,30 @@ namespace BookingSystem.Shared.Services
                         ProcessResponse(client_, response_);
 
                         var status_ = (int)response_.StatusCode;
+                        if (status_ == 401)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<ProblemDetails>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            throw new ApiException<ProblemDetails>("Unauthorized", status_, objectResponse_.Text, headers_, objectResponse_.Object, null);
+                        }
+                        else
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<UpdateEventCommandResponse>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            return objectResponse_.Object;
+                        }
+                        else
                         if (status_ == 204)
                         {
-                            return;
+                            string responseText_ = ( response_.Content == null ) ? string.Empty : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("No Content", status_, responseText_, headers_, null);
                         }
                         else
                         if (status_ == 404)
@@ -1384,7 +1883,7 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<EventVm>> GetEventsAsync(System.DateTimeOffset? start, System.DateTimeOffset? end, int? pageNumber, int? pageSize)
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<EventVm>> GetEventsAsync(System.DateTime? start, System.DateTime? end, int? pageNumber, int? pageSize)
         {
             return GetEventsAsync(start, end, pageNumber, pageSize, System.Threading.CancellationToken.None);
         }
@@ -1392,7 +1891,7 @@ namespace BookingSystem.Shared.Services
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<EventVm>> GetEventsAsync(System.DateTimeOffset? start, System.DateTimeOffset? end, int? pageNumber, int? pageSize, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<EventVm>> GetEventsAsync(System.DateTime? start, System.DateTime? end, int? pageNumber, int? pageSize, System.Threading.CancellationToken cancellationToken)
         {
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -1449,6 +1948,16 @@ namespace BookingSystem.Shared.Services
                         ProcessResponse(client_, response_);
 
                         var status_ = (int)response_.StatusCode;
+                        if (status_ == 401)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<ProblemDetails>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            throw new ApiException<ProblemDetails>("Unauthorized", status_, objectResponse_.Text, headers_, objectResponse_.Object, null);
+                        }
+                        else
                         if (status_ == 200)
                         {
                             var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<EventVm>>(response_, headers_, cancellationToken).ConfigureAwait(false);
@@ -1460,12 +1969,8 @@ namespace BookingSystem.Shared.Services
                         }
                         else
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<ProblemDetails>(response_, headers_, cancellationToken).ConfigureAwait(false);
-                            if (objectResponse_.Object == null)
-                            {
-                                throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
-                            }
-                            throw new ApiException<ProblemDetails>("Error", status_, objectResponse_.Text, headers_, objectResponse_.Object, null);
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new ApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
                         }
                     }
                     finally
@@ -1535,6 +2040,16 @@ namespace BookingSystem.Shared.Services
                         ProcessResponse(client_, response_);
 
                         var status_ = (int)response_.StatusCode;
+                        if (status_ == 401)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<ProblemDetails>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            throw new ApiException<ProblemDetails>("Unauthorized", status_, objectResponse_.Text, headers_, objectResponse_.Object, null);
+                        }
+                        else
                         if (status_ == 200)
                         {
                             var objectResponse_ = await ReadObjectResponseAsync<EventVm>(response_, headers_, cancellationToken).ConfigureAwait(false);
@@ -1564,7 +2079,7 @@ namespace BookingSystem.Shared.Services
             }
         }
 
-        /// <returns>No Content</returns>
+        /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
         public virtual System.Threading.Tasks.Task DeleteEventAsync(System.Guid eventId)
         {
@@ -1572,7 +2087,7 @@ namespace BookingSystem.Shared.Services
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-        /// <returns>No Content</returns>
+        /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task DeleteEventAsync(System.Guid eventId, System.Threading.CancellationToken cancellationToken)
         {
@@ -1616,6 +2131,21 @@ namespace BookingSystem.Shared.Services
                         ProcessResponse(client_, response_);
 
                         var status_ = (int)response_.StatusCode;
+                        if (status_ == 401)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<ProblemDetails>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            throw new ApiException<ProblemDetails>("Unauthorized", status_, objectResponse_.Text, headers_, objectResponse_.Object, null);
+                        }
+                        else
+                        if (status_ == 200)
+                        {
+                            return;
+                        }
+                        else
                         if (status_ == 204)
                         {
                             return;
@@ -1898,7 +2428,7 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<CreateStockEnquiryCommandResponse> CreateStockEnquiryAsync(CreateStockEnquiryCommand body)
+        public virtual System.Threading.Tasks.Task<System.Guid> CreateStockEnquiryAsync(CreateStockEnquiryCommand body)
         {
             return CreateStockEnquiryAsync(body, System.Threading.CancellationToken.None);
         }
@@ -1906,7 +2436,7 @@ namespace BookingSystem.Shared.Services
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<CreateStockEnquiryCommandResponse> CreateStockEnquiryAsync(CreateStockEnquiryCommand body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Guid> CreateStockEnquiryAsync(CreateStockEnquiryCommand body, System.Threading.CancellationToken cancellationToken)
         {
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -1951,7 +2481,7 @@ namespace BookingSystem.Shared.Services
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<CreateStockEnquiryCommandResponse>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Guid>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -2076,7 +2606,7 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<CreateStockItemEnquiryCommandResponse> CreateStockItemEnquiryAsync(CreateStockItemEnquiryCommand body)
+        public virtual System.Threading.Tasks.Task<System.Guid> CreateStockItemEnquiryAsync(CreateStockItemEnquiryCommand body)
         {
             return CreateStockItemEnquiryAsync(body, System.Threading.CancellationToken.None);
         }
@@ -2084,7 +2614,7 @@ namespace BookingSystem.Shared.Services
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<CreateStockItemEnquiryCommandResponse> CreateStockItemEnquiryAsync(CreateStockItemEnquiryCommand body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Guid> CreateStockItemEnquiryAsync(CreateStockItemEnquiryCommand body, System.Threading.CancellationToken cancellationToken)
         {
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -2129,7 +2659,7 @@ namespace BookingSystem.Shared.Services
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<CreateStockItemEnquiryCommandResponse>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Guid>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -2342,18 +2872,18 @@ namespace BookingSystem.Shared.Services
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<StockEnquiryVm> GetStockEnquiryAsync(System.Guid stockEnquiryId, bool? includeBooking, bool? includeStockItemEnquiries)
+        public virtual System.Threading.Tasks.Task<StockEnquiryVm> GetStockEnquiryAsync(System.Guid? stockEnquiryIdQuery, System.Guid? bookingId, bool? includeStockItemEnquiries, bool? includeBooking, string stockEnquiryIdPath)
         {
-            return GetStockEnquiryAsync(stockEnquiryId, includeBooking, includeStockItemEnquiries, System.Threading.CancellationToken.None);
+            return GetStockEnquiryAsync(stockEnquiryIdQuery, bookingId, includeStockItemEnquiries, includeBooking, stockEnquiryIdPath, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<StockEnquiryVm> GetStockEnquiryAsync(System.Guid stockEnquiryId, bool? includeBooking, bool? includeStockItemEnquiries, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<StockEnquiryVm> GetStockEnquiryAsync(System.Guid? stockEnquiryIdQuery, System.Guid? bookingId, bool? includeStockItemEnquiries, bool? includeBooking, string stockEnquiryIdPath, System.Threading.CancellationToken cancellationToken)
         {
-            if (stockEnquiryId == null)
-                throw new System.ArgumentNullException("stockEnquiryId");
+            if (stockEnquiryIdPath == null)
+                throw new System.ArgumentNullException("stockEnquiryIdPath");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -2368,15 +2898,23 @@ namespace BookingSystem.Shared.Services
                 
                     // Operation Path: "api/stockenquiries/{stockEnquiryId}"
                     urlBuilder_.Append("api/stockenquiries/");
-                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(stockEnquiryId, System.Globalization.CultureInfo.InvariantCulture)));
+                    urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(stockEnquiryIdPath, System.Globalization.CultureInfo.InvariantCulture)));
                     urlBuilder_.Append('?');
-                    if (includeBooking != null)
+                    if (stockEnquiryIdQuery != null)
                     {
-                        urlBuilder_.Append(System.Uri.EscapeDataString("includeBooking")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(includeBooking, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                        urlBuilder_.Append(System.Uri.EscapeDataString("StockEnquiryId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(stockEnquiryIdQuery, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    }
+                    if (bookingId != null)
+                    {
+                        urlBuilder_.Append(System.Uri.EscapeDataString("BookingId")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(bookingId, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     }
                     if (includeStockItemEnquiries != null)
                     {
-                        urlBuilder_.Append(System.Uri.EscapeDataString("includeStockItemEnquiries")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(includeStockItemEnquiries, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                        urlBuilder_.Append(System.Uri.EscapeDataString("IncludeStockItemEnquiries")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(includeStockItemEnquiries, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
+                    }
+                    if (includeBooking != null)
+                    {
+                        urlBuilder_.Append(System.Uri.EscapeDataString("IncludeBooking")).Append('=').Append(System.Uri.EscapeDataString(ConvertToString(includeBooking, System.Globalization.CultureInfo.InvariantCulture))).Append('&');
                     }
                     urlBuilder_.Length--;
 
@@ -2572,81 +3110,6 @@ namespace BookingSystem.Shared.Services
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class Amenity
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("created")]
-        public System.DateTimeOffset Created { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("createdBy")]
-        public string CreatedBy { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("lastModified")]
-        public System.DateTimeOffset? LastModified { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("lastModifiedBy")]
-        public string LastModifiedBy { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("amenityId")]
-        public System.Guid AmenityId { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string Name { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string Description { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("amenityCategoryId")]
-        public System.Guid AmenityCategoryId { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("amenityCategory")]
-        public AmenityCategory AmenityCategory { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("conferenceRoomId")]
-        public System.Guid? ConferenceRoomId { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("conferenceRoom")]
-        public ConferenceRoom ConferenceRoom { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("amount")]
-        public int Amount { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("isAvailable")]
-        public bool IsAvailable { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AmenityCategory
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("created")]
-        public System.DateTimeOffset Created { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("createdBy")]
-        public string CreatedBy { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("lastModified")]
-        public System.DateTimeOffset? LastModified { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("lastModifiedBy")]
-        public string LastModifiedBy { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("amenityCategoryId")]
-        public System.Guid AmenityCategoryId { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string Name { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string Description { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("amenities")]
-        public System.Collections.Generic.ICollection<Amenity> Amenities { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AmenityCategoryDto
     {
 
@@ -2705,19 +3168,22 @@ namespace BookingSystem.Shared.Services
     {
 
         [System.Text.Json.Serialization.JsonPropertyName("created")]
-        public System.DateTimeOffset Created { get; set; }
+        public System.DateTime Created { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("createdBy")]
         public string CreatedBy { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("lastModified")]
-        public System.DateTimeOffset? LastModified { get; set; }
+        public System.DateTime? LastModified { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("lastModifiedBy")]
         public string LastModifiedBy { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("bookingId")]
         public System.Guid BookingId { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("bookingNumber")]
+        public int BookingNumber { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("eventId")]
         public System.Guid EventId { get; set; }
@@ -2731,6 +3197,9 @@ namespace BookingSystem.Shared.Services
         [System.Text.Json.Serialization.JsonPropertyName("conferenceRoom")]
         public ConferenceRoom ConferenceRoom { get; set; }
 
+        [System.Text.Json.Serialization.JsonPropertyName("status")]
+        public string Status { get; set; }
+
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
@@ -2739,6 +3208,15 @@ namespace BookingSystem.Shared.Services
 
         [System.Text.Json.Serialization.JsonPropertyName("bookingId")]
         public System.Guid BookingId { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("bookingNumber")]
+        public int BookingNumber { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("created")]
+        public System.DateTime Created { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("createdBy")]
+        public string CreatedBy { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("eventId")]
         public System.Guid EventId { get; set; }
@@ -2758,17 +3236,56 @@ namespace BookingSystem.Shared.Services
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class ConferenceRoom
+    public partial class Category
     {
 
         [System.Text.Json.Serialization.JsonPropertyName("created")]
-        public System.DateTimeOffset Created { get; set; }
+        public System.DateTime Created { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("createdBy")]
         public string CreatedBy { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("lastModified")]
-        public System.DateTimeOffset? LastModified { get; set; }
+        public System.DateTime? LastModified { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("lastModifiedBy")]
+        public string LastModifiedBy { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("categoryId")]
+        public System.Guid CategoryId { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string Name { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("events")]
+        public System.Collections.Generic.ICollection<Event> Events { get; set; }
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class CategoryListVm
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("categoryId")]
+        public System.Guid CategoryId { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string Name { get; set; }
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class ConferenceRoom
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("created")]
+        public System.DateTime Created { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("createdBy")]
+        public string CreatedBy { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("lastModified")]
+        public System.DateTime? LastModified { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("lastModifiedBy")]
         public string LastModifiedBy { get; set; }
@@ -2791,8 +3308,8 @@ namespace BookingSystem.Shared.Services
         [System.Text.Json.Serialization.JsonPropertyName("isAvailable")]
         public bool IsAvailable { get; set; }
 
-        [System.Text.Json.Serialization.JsonPropertyName("amenities")]
-        public System.Collections.Generic.ICollection<Amenity> Amenities { get; set; }
+        [System.Text.Json.Serialization.JsonPropertyName("bookings")]
+        public System.Collections.Generic.ICollection<Booking> Bookings { get; set; }
 
     }
 
@@ -2805,6 +3322,12 @@ namespace BookingSystem.Shared.Services
 
         [System.Text.Json.Serialization.JsonPropertyName("name")]
         public string Name { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("capacity")]
+        public int Capacity { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("isAvailable")]
+        public bool IsAvailable { get; set; }
 
     }
 
@@ -2851,6 +3374,30 @@ namespace BookingSystem.Shared.Services
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class ConsumableCategoryForListDto
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("consumableCategoryId")]
+        public System.Guid ConsumableCategoryId { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string Name { get; set; }
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class ConsumableCategoryListVm
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("consumableCategoryId")]
+        public System.Guid ConsumableCategoryId { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string Name { get; set; }
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ConsumableDto
     {
 
@@ -2865,6 +3412,27 @@ namespace BookingSystem.Shared.Services
 
         [System.Text.Json.Serialization.JsonPropertyName("consumableCategoryId")]
         public System.Guid ConsumableCategoryId { get; set; }
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class ConsumableListVm
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("consumableId")]
+        public System.Guid ConsumableId { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string Name { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string Description { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("consumableCategoryId")]
+        public System.Guid ConsumableCategoryId { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("category")]
+        public ConsumableCategoryForListDto Category { get; set; }
 
     }
 
@@ -2932,6 +3500,18 @@ namespace BookingSystem.Shared.Services
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class CreateBookingCommand
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("eventId")]
+        public System.Guid EventId { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("conferenceRoomId")]
+        public System.Guid ConferenceRoomId { get; set; }
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class CreateConferenceRoomCommand
     {
 
@@ -2943,45 +3523,6 @@ namespace BookingSystem.Shared.Services
 
         [System.Text.Json.Serialization.JsonPropertyName("capacity")]
         public int Capacity { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class CreateConferenceRoomCommandResponse
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("success")]
-        public bool Success { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("message")]
-        public string Message { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("validationErrors")]
-        public System.Collections.Generic.ICollection<string> ValidationErrors { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("conferenceRoom")]
-        public CreateConferenceRoomDto ConferenceRoom { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class CreateConferenceRoomDto
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("conferenceRoomId")]
-        public System.Guid ConferenceRoomId { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string Name { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("capacity")]
-        public int Capacity { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string Description { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("isAvailable")]
-        public bool IsAvailable { get; set; }
 
     }
 
@@ -3056,10 +3597,10 @@ namespace BookingSystem.Shared.Services
         public string Title { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("start")]
-        public System.DateTimeOffset Start { get; set; }
+        public System.DateTime Start { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("end")]
-        public System.DateTimeOffset End { get; set; }
+        public System.DateTime End { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("description")]
         public string Description { get; set; }
@@ -3067,23 +3608,8 @@ namespace BookingSystem.Shared.Services
         [System.Text.Json.Serialization.JsonPropertyName("label")]
         public string Label { get; set; }
 
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class CreateEventCommandResponse
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("success")]
-        public bool Success { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("message")]
-        public string Message { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("validationErrors")]
-        public System.Collections.Generic.ICollection<string> ValidationErrors { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("event")]
-        public EventDto Event { get; set; }
+        [System.Text.Json.Serialization.JsonPropertyName("categoryId")]
+        public System.Guid CategoryId { get; set; }
 
     }
 
@@ -3123,24 +3649,6 @@ namespace BookingSystem.Shared.Services
 
         [System.Text.Json.Serialization.JsonPropertyName("bookingId")]
         public System.Guid BookingId { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class CreateStockEnquiryCommandResponse
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("success")]
-        public bool Success { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("message")]
-        public string Message { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("validationErrors")]
-        public System.Collections.Generic.ICollection<string> ValidationErrors { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("stockEnquiry")]
-        public StockEnquiryDto StockEnquiry { get; set; }
 
     }
 
@@ -3199,35 +3707,17 @@ namespace BookingSystem.Shared.Services
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class CreateStockItemEnquiryCommandResponse
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("success")]
-        public bool Success { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("message")]
-        public string Message { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("validationErrors")]
-        public System.Collections.Generic.ICollection<string> ValidationErrors { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("stockItemEnquiry")]
-        public StockItemEnquiryDto StockItemEnquiry { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class Event
     {
 
         [System.Text.Json.Serialization.JsonPropertyName("created")]
-        public System.DateTimeOffset Created { get; set; }
+        public System.DateTime Created { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("createdBy")]
         public string CreatedBy { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("lastModified")]
-        public System.DateTimeOffset? LastModified { get; set; }
+        public System.DateTime? LastModified { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("lastModifiedBy")]
         public string LastModifiedBy { get; set; }
@@ -3242,34 +3732,22 @@ namespace BookingSystem.Shared.Services
         public string Label { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("start")]
-        public System.DateTimeOffset Start { get; set; }
+        public System.DateTime Start { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("end")]
-        public System.DateTimeOffset End { get; set; }
+        public System.DateTime End { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("description")]
         public string Description { get; set; }
 
+        [System.Text.Json.Serialization.JsonPropertyName("categoryId")]
+        public System.Guid CategoryId { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("category")]
+        public Category Category { get; set; }
+
         [System.Text.Json.Serialization.JsonPropertyName("bookings")]
         public System.Collections.Generic.ICollection<Booking> Bookings { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class EventDto
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("title")]
-        public string Title { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("start")]
-        public System.DateTimeOffset Start { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("end")]
-        public System.DateTimeOffset End { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("label")]
-        public string Label { get; set; }
 
     }
 
@@ -3284,10 +3762,10 @@ namespace BookingSystem.Shared.Services
         public string Title { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("start")]
-        public System.DateTimeOffset Start { get; set; }
+        public System.DateTime Start { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("end")]
-        public System.DateTimeOffset End { get; set; }
+        public System.DateTime End { get; set; }
 
     }
 
@@ -3314,10 +3792,10 @@ namespace BookingSystem.Shared.Services
         public string Title { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("start")]
-        public System.DateTimeOffset Start { get; set; }
+        public System.DateTime Start { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("end")]
-        public System.DateTimeOffset End { get; set; }
+        public System.DateTime End { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("label")]
         public string Label { get; set; }
@@ -3381,21 +3859,6 @@ namespace BookingSystem.Shared.Services
 
         [System.Text.Json.Serialization.JsonPropertyName("description")]
         public string Description { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class StockEnquiryDto
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("stockEnquiryId")]
-        public System.Guid StockEnquiryId { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("bookingId")]
-        public System.Guid BookingId { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("isApproved")]
-        public bool IsApproved { get; set; }
 
     }
 
@@ -3481,20 +3944,20 @@ namespace BookingSystem.Shared.Services
     public partial class StockItemEnquiryListVm
     {
 
+        [System.Text.Json.Serialization.JsonPropertyName("stockItemEnquiryId")]
+        public System.Guid StockItemEnquiryId { get; set; }
+
         [System.Text.Json.Serialization.JsonPropertyName("stockEnquiryId")]
         public System.Guid StockEnquiryId { get; set; }
 
-        [System.Text.Json.Serialization.JsonPropertyName("bookingId")]
-        public System.Guid BookingId { get; set; }
+        [System.Text.Json.Serialization.JsonPropertyName("consumableId")]
+        public System.Guid ConsumableId { get; set; }
 
-        [System.Text.Json.Serialization.JsonPropertyName("booking")]
-        public Event Booking { get; set; }
+        [System.Text.Json.Serialization.JsonPropertyName("quantity")]
+        public int Quantity { get; set; }
 
-        [System.Text.Json.Serialization.JsonPropertyName("stockItemEnquiries")]
-        public System.Collections.Generic.ICollection<StockItemEnquiryDto> StockItemEnquiries { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("allApproved")]
-        public bool AllApproved { get; set; }
+        [System.Text.Json.Serialization.JsonPropertyName("isApproved")]
+        public bool IsApproved { get; set; }
 
     }
 
@@ -3551,13 +4014,31 @@ namespace BookingSystem.Shared.Services
         public string Label { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("start")]
-        public System.DateTimeOffset Start { get; set; }
+        public System.DateTime Start { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("end")]
-        public System.DateTimeOffset End { get; set; }
+        public System.DateTime End { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("description")]
         public string Description { get; set; }
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.1.0.0 (NJsonSchema v11.0.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    public partial class UpdateEventCommandResponse
+    {
+
+        [System.Text.Json.Serialization.JsonPropertyName("success")]
+        public bool Success { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("message")]
+        public string Message { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("validationErrors")]
+        public System.Collections.Generic.ICollection<string> ValidationErrors { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("event")]
+        public EventVm Event { get; set; }
 
     }
 

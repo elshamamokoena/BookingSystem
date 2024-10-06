@@ -32,6 +32,9 @@ namespace BookingSystem.Application.Features.Events.Commands.CreateEvent
                 .NotEmpty().WithMessage("{PropertyName} is required.")
                 .NotNull()
                 .MaximumLength(200).WithMessage("{PropertyName} must not exceed 200 characters.");
+            RuleFor(p => p.CategoryId)
+                .NotEmpty().WithMessage("{PropertyName} is required.")
+                .NotNull();
         }
     }
 }

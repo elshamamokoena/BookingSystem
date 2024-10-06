@@ -23,6 +23,10 @@ namespace BookingSystem.Persistence.Repositories
             await _context.Set<T>().AddAsync(entity);
             return entity;
         }
+        public async Task<IReadOnlyList<T>> ListAllAsync()
+        {
+            return await _context.Set<T>().ToListAsync();
+        }
 
         public void DeleteEntity(T entity)
         {

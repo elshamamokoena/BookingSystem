@@ -234,7 +234,6 @@ wwwroot\lib\polyfill\test\browser-es5.js
 wwwroot\lib\polyfill\test\browser-es5-Array.js
 wwwroot\lib\polyfill\test\mocha.opts
 wwwroot\lib\polyfill\test\simple.js
-wwwroot\_content\BookingSystem.Shared\Components\AddBookingModal.razor.js
 wwwroot\_content\BookingSystem.Shared\BookingSystem.Shared.bundle.scp.css
 wwwroot\_content\BookingSystem.Shared\assets\css\theme.css
 wwwroot\_content\BookingSystem.Shared\assets\css\theme.css.map
@@ -717,6 +716,7 @@ wwwroot\_content\BookingSystem.Shared\background.png
 wwwroot\_content\BookingSystem.Shared\modules\advance-ajax-table.js
 wwwroot\_content\BookingSystem.Shared\modules\flatpickr.js
 wwwroot\_content\BookingSystem.Shared\modules\one.js
+wwwroot\_content\BookingSystem.Shared\modules\utils.js
 wwwroot\_content\BookingSystem.Shared\vendors\anchorjs\anchor.min.js
 wwwroot\_content\BookingSystem.Shared\vendors\bootstrap\bootstrap.min.js
 wwwroot\_content\BookingSystem.Shared\vendors\bootstrap\bootstrap.min.js.map

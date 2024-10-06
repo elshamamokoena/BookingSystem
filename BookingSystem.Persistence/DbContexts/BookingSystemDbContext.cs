@@ -30,6 +30,7 @@ namespace BookingSystem.Persistence.DbContexts
         // Any instance of this DbContext tracks changes made to the following entities from the domain
 
         public DbSet<Event> Events { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<ConferenceRoom> ConferenceRooms { get; set; }
         public DbSet<Amenity> Amenities { get; set; }
@@ -47,6 +48,8 @@ namespace BookingSystem.Persistence.DbContexts
             modelBuilder.ApplyConfiguration(new BookingConfiguration());
             modelBuilder.ApplyConfiguration(new StockConfiguration());
 
+
+
             modelBuilder.Entity<ConferenceRoom>().HasData(
                 new ConferenceRoom
                 {
@@ -54,7 +57,6 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 1",
                     Description = "Conference Room 1 Description",
                     Capacity = 10,
-                    IsAvailable= true
                 },
                 new ConferenceRoom
                 {
@@ -62,7 +64,6 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 2",
                     Description = "Conference Room 2 Description",
                     Capacity = 20,
-                    IsAvailable = true
                 },
                 new ConferenceRoom
                 {
@@ -77,7 +78,6 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 4",
                     Description = "Conference Room 4 Description",
                     Capacity = 40,
-                    IsAvailable = true
                 },
                 new ConferenceRoom
                 {
@@ -163,100 +163,158 @@ namespace BookingSystem.Persistence.DbContexts
                     Description = "Conference Room 16 Description",
                     Capacity = 160,
                 },
-                new ConferenceRoom
-                {
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE6"),
-                    Name = "Conference Room 17",
-                    Description = "Conference Room 17 Description",
-                    Capacity = 170,
-                }
+                    new ConferenceRoom
+                    {
+                        ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE6"),
+                        Name = "Conference Room 17",
+                        Description = "Conference Room 17 Description",
+                        Capacity = 170,
+                    }
 
-
-                
                 );
+
+modelBuilder.Entity<Category>().HasData(
+    new Category
+{
+    CategoryId = Guid.Parse("EE98F549-E110-5E9F-AA15-18C2292A2EE1"),
+    Name = "Class, Training or Workshop"
+},
+new Category
+{
+    CategoryId = Guid.Parse("EE98F549-E120-5E9F-AA15-18C2292A2EE2"),
+    Name = "Conference"
+},
+new Category
+{
+    CategoryId = Guid.Parse("EE98F549-E130-5E9F-AA15-18C2292A2EE3"),
+    Name = "Meeting"
+},
+new Category
+{
+    CategoryId = Guid.Parse("EE98F549-E140-5E9F-AA15-18C2292A2EE4"),
+    Name = "Convention"
+},
+new Category
+{
+    CategoryId = Guid.Parse("EE98F549-E150-5E9F-AA15-18C2292A2EE5"),
+    Name = "Dinner or Gala"
+});
+
+
             modelBuilder.Entity<Event>().HasData(
                 new Event
                 {
                     EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
                     Title = "Conference 1",
-                    Start= DateTimeOffset.Parse("2024-09-23T08:30:30.791Z"),
+                    Start= DateTime.Parse("2024/09/23 08:00:00"),
 
-                    End = DateTimeOffset.Parse("2024-09-23T10:00:30.791Z"),
+                    End = DateTime.Parse("2024/09/23 10:00:00"),
+
                     Label = "primary",
-                    Description = "Conference 1 Description"
+                    Description = "Conference 1 Description",
+                    CategoryId = Guid.Parse("EE98F549-E150-5E9F-AA15-18C2292A2EE5"),
+
+                }, 
+                new Event
+                {
+                    EventId = Guid.Parse("EE11F549-E190-5E9F-AA15-18C2292A2EE1"),
+                    Title = "Conference 1 Copy",
+                    Start = DateTime.Parse("2024/09/23 08:30:00"),
+
+                    End = DateTime .Parse("2024/09/23 12:00:00"),
+                    Label = "primary",
+                    Description = "Conference 1 copy Description",
+                    CategoryId = Guid.Parse("EE98F549-E150-5E9F-AA15-18C2292A2EE5"),
                 },
                 new Event
                 {
 
                     EventId = Guid.Parse("EE98F540-E790-5E9F-AA15-18C2292A2EE2"),
                     Title = "Conference 2",
-                    Start = DateTimeOffset.Parse("2024-09-13T10:30:30.791Z"),
-                    End = DateTimeOffset.Parse("2024-09-13T12:00:30.791Z"),
+                    Start = DateTime.Parse("2024/09/24 10:00:00"),
+                    End = DateTime.Parse("2024/09/24 12:00:00"),
                     Label = "primary",
+                    CategoryId = Guid.Parse("EE98F549-E150-5E9F-AA15-18C2292A2EE5"),
+
                 },
                 new Event
                 {
                     EventId = Guid.Parse("EE98F548-E790-5E9F-AA15-18C2292A2EE3"),
                     Title = "Conference 3",
-                    Start = DateTimeOffset.Parse("2024-08-23T12:30:30.791Z"),
-                    End = DateTimeOffset.Parse("2024-08-23T14:00:30.791Z"),
+                    Start = DateTime.Parse("2024/09/24 14:00:00"),
+                    End = DateTime.Parse("2024/09/24 15:00:00"),
                     Label = "primary",
+                    CategoryId = Guid.Parse("EE98F549-E150-5E9F-AA15-18C2292A2EE5"),
+
                 },
                 new Event
                 {
                     EventId = Guid.Parse("EE98F547-E790-5E9F-AA15-18C2292A2EE4"),
                     Title = "Conference 4",
-                    Start = DateTimeOffset.Parse("2024-09-23T14:30:30.791Z"),
-                    End= DateTimeOffset.Parse("2024-09-23T16:00:30.791Z"),
+                    Start = DateTime.Parse("2024/09/25 16:00:00"),
+                    End= DateTime.Parse("2024/09/25 18:00:00"),
                     Label = "warning",
+                    CategoryId = Guid.Parse("EE98F549-E140-5E9F-AA15-18C2292A2EE4"),
+
                 },
                 new Event
                 {
                     EventId = Guid.Parse("EE98F546-E790-5E9F-AA15-18C2292A2EE5"),
                     Title = "Conference 5",
-                    Start = DateTimeOffset.Parse("2024-10-23T16:30:30.791Z"),
-                    End = DateTimeOffset.Parse("2024-10-23T18:00:30.791Z"),
+                    Start = DateTime.Parse("2024/09/25 16:00:00"),
+                    End = DateTime.Parse("2024/09/25 16:00:00"),
                     Label = "warning",
+                    CategoryId = Guid.Parse("EE98F549-E140-5E9F-AA15-18C2292A2EE4"),
+
                 },
                 new Event
                 {
                     EventId = Guid.Parse("EE98F545-E790-5E9F-AA15-18C2292A2EE6"),
                     Title = "Conference 6",
-                    Start = DateTimeOffset.Parse("2024-08-29T18:30:30.791Z"),
-                    End = DateTimeOffset.Parse("2024-08-29T20:00:30.791Z"),
+                    Start = DateTime.Parse("2024/09/25 12:00:00"),
+                    End = DateTime.Parse("2024/09/25 14:00:00"),
                     Label = "warning",
+                    CategoryId = Guid.Parse("EE98F549-E130-5E9F-AA15-18C2292A2EE3"),
+
                 },
                 new Event
                 {
                     EventId = Guid.Parse("EE98F544-E790-5E9F-AA15-18C1292A2EE7"),
                     Title = "Conference 7",
-                    Start = DateTimeOffset.Parse("2024-09-10T20:30:30.791Z"),
-                    End = DateTimeOffset.Parse("2024-09-10T22:00:30.791Z"),
+                    Start = DateTime.Parse("2024/09/25 16:00:00"),
+                    End = DateTime.Parse("2024/09/25 17:00:00"),
                     Label = "warning",
+                    CategoryId = Guid.Parse("EE98F549-E130-5E9F-AA15-18C2292A2EE3"),
                 },
                 new Event
                 {
                     EventId = Guid.Parse("EE98F541-E790-5E9F-AA15-18C2292A2EE8"),
                     Title = "Conference 8",
-                    Start = DateTimeOffset.Parse("2024-09-08T22:30:30.791Z"),
-                    End = DateTimeOffset.Parse("2024-09-08T23:00:30.791Z"),
+                    Start = DateTime.Parse("2024/09/26 08:00:00"),
+                    End = DateTime.Parse("2024/09/26 12:00:00"),
                     Label = "success",
+
+                    CategoryId = Guid.Parse("EE98F549-E130-5E9F-AA15-18C2292A2EE3"),
+
                 },
                 new Event
                 {
                     EventId = Guid.Parse("EE98F542-E790-5E9F-AA15-18C2292A2EE9"),
                     Title = "Conference 9",
-                    Start = DateTimeOffset.Parse("2024-08-23T23:30:30.791Z"),
-                    End = DateTimeOffset.Parse("2024-08-24T00:00:30.791Z"),
+                    Start = DateTime.Parse("2024/09/26 14:00:00"),
+                    End = DateTime.Parse("2024/09/25 16:00:00"),
                     Label = "danger",
+                    CategoryId = Guid.Parse("EE98F549-E130-5E9F-AA15-18C2292A2EE3"),
+
                 },
                 new Event
                 {
                     EventId = Guid.Parse("EE98F543-E790-5E9F-AA15-18C2292A1EE9"),
                     Title = "Conference 10",
-                    Start = DateTimeOffset.Parse("2024-08-24T00:30:30.791Z"),
-                    End = DateTimeOffset.Parse("2024-08-24T02:00:30.791Z"),
+                    Start = DateTime.Parse("2024/09/25 15:00:00"),
+                    End = DateTime.Parse("2024/09/25 16:00:00"),
                     Label = "primary",
+                    CategoryId = Guid.Parse("EE98F549-E130-5E9F-AA15-18C2292A2EE3"),
                 }
             );
 
@@ -270,63 +328,89 @@ namespace BookingSystem.Persistence.DbContexts
                 {
                     BookingId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A1EE9"),
                     EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE7")
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE7"),
+                    Status = nameof(BookingStatus.Pending)
                 },
                 new Booking
                 {
                     BookingId = Guid.Parse("EE28F549-E790-5E9F-AA15-18C2292A2EE2"),
                     EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE8")
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE8"),
+                    Status = nameof(BookingStatus.Pending)
+
                 },
                 new Booking
                 {
                     BookingId = Guid.Parse("EE38F549-E790-5E9F-AA15-18C2292A2EE3"),
                     EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE9")
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE9"),
+                    Status = nameof(BookingStatus.Pending)
                 },
                 new Booking
                 {
                     BookingId = Guid.Parse("EE08F549-E790-5E9F-AA15-18C2292A2EE4"),
                     EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE0")
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE0"),
+                    Status = nameof(BookingStatus.Cancelled)
                 },
                 new Booking
                 {
                     BookingId = Guid.Parse("EE48F549-E790-5E9F-AA15-18C2292A2EE5"),
                     EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE1")
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE1"),
+                    Status = nameof(BookingStatus.Pending)
                 },
                 new Booking
                 {
                     BookingId = Guid.Parse("EE58F549-E790-5E9F-AA15-18C2292A2EE6"),
                     EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE2")
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE2"),
+                    Status = nameof(BookingStatus.Approved)
                 },
                 new Booking
                 {
                     BookingId = Guid.Parse("EE68F549-E790-5E9F-AA15-18C2292A2EE7"),
-                    EventId = Guid.Parse("EE98F543-E790-5E9F-AA15-18C2292A1EE9"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE3")
+                    EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE3"),
+                    Status = nameof(BookingStatus.Cancelled)
                 },
                 new Booking
                 {
                     BookingId = Guid.Parse("EE78F549-E790-5E9F-AA15-18C2292A2EE8"),
-                    EventId = Guid.Parse("EE98F545-E790-5E9F-AA15-18C2292A2EE6"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE4")
+                    EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE4"),
+                    Status = nameof(BookingStatus.Approved)
+
                 },
                 new Booking
                 {
                     BookingId = Guid.Parse("EE88F549-E790-5E9F-AA15-18C2292A2EE9"),
-                    EventId = Guid.Parse("EE98F548-E790-5E9F-AA15-18C2292A2EE3"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE5")
+                    EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE5"),
+                    Status = nameof(BookingStatus.Pending)
                 },
                 new Booking
                 {
                     BookingId = Guid.Parse("EE91F549-E790-5E9F-AA15-18C2292A1EE9"),
-                    EventId = Guid.Parse("EE98F540-E790-5E9F-AA15-18C2292A2EE2"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE6")
+                    EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-11C2292A1EE6"),
+                    Status = nameof(BookingStatus.Approved)
                 }
            );
+
+
+            modelBuilder.Entity<ConsumableCategory>().HasData(
+                new ConsumableCategory
+                {
+                    ConsumableCategoryId = Guid.Parse("EE48F549-E790-5E9F-AA15-18C2292A2EE9"),
+                    Name = "Markers"
+                },
+                new ConsumableCategory
+                {
+                    ConsumableCategoryId = Guid.Parse("EE58F549-E790-5E9F-AA15-18C2292A2EE9"),
+                    Name = "Pens"
+                }
+                );
 
             //modelBuilder.Entity<StockEnquiry>().HasData(
             //    new StockEnquiry
@@ -354,44 +438,37 @@ namespace BookingSystem.Persistence.DbContexts
             //    new StockItemEnquiry
             //    {
             //        StockItemEnquiryId = Guid.Parse("EE28F549-E790-5E9F-AA15-18C2292A2EE9"),
-            //        StockEnquiryId =     Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE6"),
-            //        ConsumableId =       Guid.Parse("EE38F549-E790-5E9F-AA15-18C2292A2EE9"),
+            //        StockEnquiryId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE6"),
+            //        ConsumableId = Guid.Parse("EE38F549-E790-5E9F-AA15-18C2292A2EE9"),
             //        Quantity = 15,
             //    }
             //);
-            //modelBuilder.Entity<Consumable>().HasData(
-            //    new Consumable
-            //    {
-            //        ConsumableId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE8"),
-            //        Name = "Marker",
-            //        ConsumableCategoryId = Guid.Parse("EE48F549-E790-5E9F-AA15-18C2292A2EE9"),
-            //    },
-            //    new Consumable
-            //    {
-            //        ConsumableId = Guid.Parse("EE18F549-E790-5E9F-AA15-18C2292A2EE9"),
-            //        Name = "Pen",
-            //        ConsumableCategoryId = Guid.Parse("EE58F549-E790-5E9F-AA15-18C2292A2EE9"),
-            //    },
-            //    new Consumable
-            //    {
-            //        ConsumableId = Guid.Parse("EE38F549-E790-5E9F-AA15-18C2292A2EE9"),
-            //        Name = "Pencil",
-            //        ConsumableCategoryId = Guid.Parse("EE58F549-E790-5E9F-AA15-18C2292A2EE9"),
-            //    }
-            //    );
+            modelBuilder.Entity<Consumable>().HasData(
+                new Consumable
+                {
+                    ConsumableId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE8"),
+                    Name = "Marker",
+                    ConsumableCategoryId = Guid.Parse("EE48F549-E790-5E9F-AA15-18C2292A2EE9"),
+                    Description = "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's "
+                },
+                new Consumable
+                {
+                    ConsumableId = Guid.Parse("EE18F549-E790-5E9F-AA15-18C2292A2EE9"),
+                    Name = "Pen",
+                    ConsumableCategoryId = Guid.Parse("EE58F549-E790-5E9F-AA15-18C2292A2EE9"),
+                    Description = "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's "
 
-            //modelBuilder.Entity<ConsumableCategory>().HasData(
-            //    new ConsumableCategory
-            //    {
-            //        ConsumableCategoryId = Guid.Parse("EE48F549-E790-5E9F-AA15-18C2292A2EE9"),
-            //        Name = "Markers"
-            //    },
-            //    new ConsumableCategory
-            //    {
-            //        ConsumableCategoryId = Guid.Parse("EE58F549-E790-5E9F-AA15-18C2292A2EE9"),
-            //        Name = "Pens"
-            //    }
-            //    );
+                },
+                new Consumable
+                {
+                    ConsumableId = Guid.Parse("EE38F549-E790-5E9F-AA15-18C2292A2EE9"),
+                    Name = "Pencil",
+                    ConsumableCategoryId = Guid.Parse("EE58F549-E790-5E9F-AA15-18C2292A2EE9"),
+                    Description = "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's "
+                }
+                );
+
+
             //modelBuilder.Entity<StockItem>().HasData(
             //    new StockItem
             //    {

@@ -5,22 +5,25 @@
         public Badge(string status)
         {
             Status = status;
+
         }
         public string Status { get; set; }
+
         public string Type => Status switch
         {
-            "Pending" => "bg-soft-warning",
-            "Reserved" => "bg-soft-primary",
-            "Cancelled" => "bg-soft-danger",
-            "Completed" => "bg-soft-success",
-            _ => "bg-soft-secondary"
+            "Pending" => "warning",
+            "Reserved" => "primary",
+            "Cancelled" => "danger",
+            "Approved" => "success",
+            _ => "secondary"
         };
+
         public string Icon => Status switch
         {
             "Pending" => "fas fa-stream",
             "Reserved" => "fas fa-redo",
             "Cancelled" => "fas fa-calendar-times",
-            "Completed" => "fas fa-check",
+            "Approved" => "fas fa-check",
             _ => "fas fa-ban"
         };
     }

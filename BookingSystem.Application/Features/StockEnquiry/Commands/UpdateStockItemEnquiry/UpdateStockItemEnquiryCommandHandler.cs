@@ -14,14 +14,16 @@ namespace BookingSystem.Application.Features.StockEnquiry.Commands.UpdateStockIt
     public class UpdateStockItemEnquiryCommandHandler : IRequestHandler<UpdateStockItemEnquiryCommand, UpdateStockItemEnquiryCommandResponse>
     {
         private readonly IStockEnquiryRepository _stockEnquiryRepository;
+        private readonly IAsyncRepository<StockItemEnquiry> _stockItemEnquiryRepository;
         private readonly IStockRepository _stockRepository;
         private readonly IMapper _mapper;
         public UpdateStockItemEnquiryCommandHandler(IStockEnquiryRepository stockEnquiryRepository, IStockRepository stockRepository,
-            IMapper mapper)
+            IMapper mapper, IAsyncRepository<StockItemEnquiry> stockItemEnquiryRepository)
         {
             _stockEnquiryRepository = stockEnquiryRepository;
             _mapper = mapper;
             _stockRepository = stockRepository;
+            _stockItemEnquiryRepository = stockItemEnquiryRepository;
         }
         public  async Task<UpdateStockItemEnquiryCommandResponse> Handle(UpdateStockItemEnquiryCommand request, CancellationToken cancellationToken)
         {
@@ -31,16 +33,16 @@ namespace BookingSystem.Application.Features.StockEnquiry.Commands.UpdateStockIt
             if(validationResult.Errors.Count>0)
                 throw new ValidationException(validationResult);
 
-            if(!await _stockEnquiryRepository.StockEnquiryExistsAsync(request.StockEnquiryId))
+            if(!await _stockEnquiryRepository.EntityExistsAsync(request.StockEnquiryId))
                 throw new NotFoundException(nameof(StockEnquiry), request.StockEnquiryId);
 
-            if(!await _stockEnquiryRepository.StockItemEnquiryExistsAsync(request.StockItemEnquiryId))
+            if(!await _stockItemEnquiryRepository.EntityExistsAsync(request.StockItemEnquiryId))
                 throw new NotFoundException(nameof(StockItemEnquiry), request.StockItemEnquiryId);
 
-            var stockItemEnquiryToUpdate = await _stockEnquiryRepository.GetStockItemEnquiryAsync(request.StockItemEnquiryId);
+            var stockItemEnquiryToUpdate = await _stockItemEnquiryRepository.GetEntityAsync(request.StockItemEnquiryId);
             var stockItemEnquiry = _mapper.Map(request, stockItemEnquiryToUpdate);
             stockItemEnquiry.IsApproved= await _stockRepository.StockItemIsAvailableAsync(stockItemEnquiry.ConsumableId, stockItemEnquiry.Quantity);
-             _stockEnquiryRepository.UpdateStockItemEnquiry(stockItemEnquiry);
+             _stockItemEnquiryRepository.UpdateEntity(stockItemEnquiry);
 
             if(await _stockEnquiryRepository.SaveChangesAsync())
                 response.Message = "Stock Item Enquiry Updated Successfully";

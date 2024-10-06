@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yjZ+td9rli2R0FwM/sitIJU7lNgYTB7j5OqhM9eGl/M=",
+  "Hash": "HLvFvYy3OkvLLNjTC8HPvfqo8c8pwfTPDStutG5kCwg=",
   "Source": "BookingSystem.Shared",
   "BasePath": "_content/BookingSystem.Shared",
   "Mode": "Default",
@@ -16,25 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\Components\\AddBookingModal.razor.js",
-      "SourceId": "BookingSystem.Shared",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\",
-      "BasePath": "_content/BookingSystem.Shared",
-      "RelativePath": "Components/AddBookingModal.razor.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "Components\\AddBookingModal.razor.js"
-    },
     {
       "Identity": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BookingSystem.Shared.styles.css",
       "SourceId": "BookingSystem.Shared",
@@ -9211,6 +9192,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\modules\\one.js"
+    },
+    {
+      "Identity": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\modules\\utils.js",
+      "SourceId": "BookingSystem.Shared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\",
+      "BasePath": "_content/BookingSystem.Shared",
+      "RelativePath": "modules/utils.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modules\\utils.js"
     },
     {
       "Identity": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Shared\\wwwroot\\vendors\\anchorjs\\anchor.min.js",
