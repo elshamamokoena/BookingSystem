@@ -1,1 +1,0 @@
-C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Android.App\BookingSystem.Android.App.csproj;x64
