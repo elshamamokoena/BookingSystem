@@ -1,0 +1,179 @@
+﻿@page "/conference-room-list"
+@using Microsoft.AspNetCore.Authorization
+@inherits CustomComponentBase
+@attribute [Authorize]
+
+
+<AddConferenceRoomModal OnValidResponse="async()=> await FetchRoomsAsync()"/>
+
+<div class="card shadow-none"><div class="card-header"><div class="row flex-between-center">
+    <!--!-->
+    <div class="col-6 col-sm-auto d-flex align-items-center pe-0">
+        <h5 class="fs-9 mb-0 text-nowrap py-2 py-xl-0">Conference Rooms</h5>
+    </div>
+    <div class="col-6 col-sm-auto ms-auto text-end ps-0"><div class="d-none" id="table-simple-pagination-actions">
+      <div class="d-flex">
+          <select class="form-select form-select-sm" aria-label="Bulk actions">
+              <option selected="">Bulk actions</option>
+              <!--!-->
+              <option value="Refund">Refund</option>
+              <!--!-->
+              <option value="Delete">Delete</option>
+              <!--!-->
+              <option value="Archive">Archive</option>
+          </select>
+          <!--!-->
+
+          <button class="btn btn-falcon-default btn-sm ms-2" type="button">
+              Apply
+          </button>
+      </div>
+</div>
+
+    <!--!-->
+    <!--!-->
+    <div id="table-simple-pagination-replace-element">
+
+        <AuthorizeView Policy="@AuthorizationPolicies.Policies.IsManager">
+            <Authorized >
+                        <button class="btn btn-falcon-default btn-sm" data-bs-toggle="modal" data-bs-target="#add-room-modal" type="button">
+                            <svg class="svg-inline--fa fa-plus fa-w-14" data-fa-transform="shrink-3 down-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="" style="transform-origin: 0.4375em 0.625em;"><g transform="translate(224 256)"><g transform="translate(0, 64)  scale(0.8125, 0.8125)  rotate(0 0 0)"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" transform="translate(-224 -256)"></path></g></g></svg><!-- <span class="fas fa-plus" data-fa-transform="shrink-3 down-2"></span> Font Awesome fontawesome.com -->
+                            <span class="d-none d-sm-inline-block ms-1">New</span>
+                        </button>
+            </Authorized>
+
+        </AuthorizeView>
+            <AuthorizeView Policy="@AuthorizationPolicies.Policies.IsManager">
+            <Authorized >
+                <button class="btn btn-falcon-default btn-sm" type="button">
+                    <svg class="svg-inline--fa fa-external-link-alt fa-w-16" data-fa-transform="shrink-3 down-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="external-link-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.625em;"><g transform="translate(256 256)"><g transform="translate(0, 64)  scale(0.8125, 0.8125)  rotate(0 0 0)"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z" transform="translate(-256 -256)"></path></g></g></svg><!-- <span class="fas fa-external-link-alt" data-fa-transform="shrink-3 down-2"></span> Font Awesome fontawesome.com -->
+
+                    <span class="d-none d-sm-inline-block ms-1">Export</span>
+                </button>
+                </Authorized>
+            </AuthorizeView>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--!-->
+  
+    
+<div class="card-body px-0 pt-0"><div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
+    <div class="row mx-0">
+        <div class="col-md-6">
+            <div class="dataTables_length" id="DataTables_Table_0_length">
+                <label>
+                    Show 
+                    <select @bind-value="@_pageSize" @bind-value:event="oninput" @onchange="FetchRoomsAsync" name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-select form-select-sm">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+
+                    </select> 
+
+                    entries
+                </label>
+            </div>
+        </div>
+        <div class="col-md-6">
+                <div id="DataTables_Table_0_filter" class="dataTables_filter">
+                        <label>
+                            Search:
+                            <input @bind-value="@_searchQuery" @bind-value:event="oninput" @onkeyup="FetchRoomsAsync" type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_0">
+                        </label>
+                </div>
+        </div>
+    </div>
+    @if(ShowToast)
+    {
+        <Toast Success="false" Message="@Message"/>
+    }
+
+    <div class="table-responsive scrollbar">
+    <table class="table table-sm mb-0 overflow-hidden data-table fs-10 dataTable no-footer" data-datatables="{&quot;responsive&quot;:false,&quot;pagingType&quot;:&quot;simple&quot;,&quot;lengthChange&quot;:false,&quot;searching&quot;:false,&quot;pageLength&quot;:8,&quot;language&quot;:{&quot;info&quot;:&quot;_START_ to _END_ Items of _TOTAL_&quot;}}" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
+            <!--!-->
+            <thead class="bg-200"><tr><th class="text-900 no-sort white-space-nowrap sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 87.4375px;">
+             @*    <div class="form-check mb-0 d-flex align-items-center">
+                    <input class="form-check-input" id="checkbox-bulk-item-select" type="checkbox" data-bulk-select="{&quot;body&quot;:&quot;table-simple-pagination-body&quot;,&quot;actions&quot;:&quot;table-simple-pagination-actions&quot;,&quot;replacedElement&quot;:&quot;table-simple-pagination-replace-element&quot;}">
+                    </div> *@
+
+
+                    </th>
+                    <th class="text-900 sort pe-1 align-middle white-space-nowrap sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 134.325px;">
+                        Name
+                    </th>
+                    <th class="text-900 sort pe-1 align-middle white-space-nowrap sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Capacity: activate to sort column ascending" style="width: 179.975px;">Capacity</th><th class="text-900 sort pe-1 align-middle white-space-nowrap sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Description: activate to sort column ascending" style="width: 232.85px;">
+                        Description
+                    </th>
+                    <th class="text-900 sort pe-1 align-middle white-space-nowrap text-center sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 139.863px;">
+                        Status
+                    </th>
+                    <th class="text-900 sort pe-1 align-middle white-space-nowrap text-end sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Tags: activate to sort column ascending" style="width: 108.05px;">
+                        Capacity
+                    </th>
+                    <th class="text-900 no-sort pe-1 align-middle data-table-row-action sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 103.5px;">
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="list" id="table-simple-pagination-body">
+
+                @if(RoomList==null)
+                {
+                <tr class="odd">
+                    <td valign="top" colspan="7" class="dataTables_empty">
+                        No room data available
+                     </td>
+                            </tr>
+                }else
+                {
+                    @foreach (var room in RoomList)
+                    {
+                        <ConferenceRoomRow IsBookingMode="@IsInBookingMode" @key="room" Room="@room" OnBookRoomSelected="BookRoomForEvent" OnRoomDeleted="async()=>await FetchRoomsAsync()" />
+                    }
+                }
+
+            </tbody>
+    </table>
+    </div>
+            
+                <div class="row g-0 align-items-center justify-content-center justify-content-sm-between">
+                    <div class="col-auto mb-2 mb-sm-0 px-3"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">
+                        Showing 0 to 0 of 0 entries
+                    </div>
+                </div>
+                <div class="col-auto px-3">
+
+                    <Pager HasNextPage="Rooms.HasNext" 
+                    HasPreviousPage="Rooms.HasPrevious"
+                    PageIndex="Rooms.CurrentPage"
+                    TotalPages="Rooms.TotalPages"
+                    OnClick="PageIndexChanged"/>
+
+        @*             <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                        <ul class="pagination pagination-sm">
+                            <li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous">
+                                <a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">
+                                    Previous
+                                </a>
+                            </li>
+                            <li class="paginate_button page-item next disabled" id="DataTables_Table_0_next">
+                                <a href="#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" class="page-link">
+                                    Next
+                                </a>
+                            </li>
+                        </ul>
+                    </div> *@
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,59 @@
+﻿<div class="modal fade" id="add-room-modal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px">
+        <div class="modal-content position-relative">
+            <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
+                <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="rounded-top-lg py-3 ps-4 pe-6 bg-light">
+                    <h4 class="mb-1" id="modalExampleDemoLabel">Add Conference Room </h4>
+                </div>
+                <div class="p-4 pb-0">
+                    @if(ShowToast)
+                    {
+                        
+                    <div class="d-flex">
+                        <div class="toast show align-items-center text-white bg-success border-0" role="alert" data-bs-autohide="false" aria-live="assertive" aria-atomic="true">
+                            <div class="d-flex">
+                                    <div class="toast-body text-bg-success">
+                                    @Message
+                                </div>
+                                    <button @onclick="CloseModal" class="btn-close btn-close-white me-2 m-auto" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                    <EditForm Model="@Room" id="add-room-form" OnValidSubmit="HandleValidSubmit">
+                        <DataAnnotationsValidator/>
+                        <ValidationSummary></ValidationSummary>
+                        <div class="mb-3">
+                            <label class="col-form-label" for="room-name">Name</label>
+                            <InputText @bind-Value="@Room.Name" class="form-control" id="room-name" type="text" />
+                            <ValidationMessage For="@(()=>Room.Name)" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label" for="room-capacity">Capacity</label>
+                            <InputNumber @bind-Value="@Room.Capacity"  class="form-control" id="room-capacity" type="number" />
+                            <ValidationMessage For="@(()=>Room.Capacity)" />
+
+                        </div>
+                        <div class="mb-3">
+                            <label class="col-form-label" for="room-description">Description</label>
+                            <InputTextArea @bind-Value="@Room.Description" class="form-control" id="room-description"></InputTextArea>
+                            <ValidationMessage For="@(()=>Room.Description)" />
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" @onclick = "CloseModal" data-bs-dismiss="modal">Close</button>
+                            @if(!HideButton)
+                            {
+                                <button class="btn btn-primary" value="submit" type="submit">Submit</button>
+                            }
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+</div>

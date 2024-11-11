@@ -1,8 +1,8 @@
-﻿@using BookingSystem.Shared.Components.Pages.Events
+﻿@using BookingSystem.Shared.Components.Pages.ConferenceRooms.ConferenceRoomListComponent
+@using BookingSystem.Shared.Components.Pages.Events
 @inherits BaseComponent
 
 
-<div class="col-lg-8 pe-lg-2">
        
 <div class="card mb-3">
 <div class="col-lg-6 col-xl-12 col-xxl-6 h-100">
@@ -24,7 +24,9 @@
         <div class="card-body py-4" id="wizard-controller">
             <div class="tab-content">
                <EditEventPane EventId="@EventId" />
-               <AvailableConferenceRooms EventId="@EventId"/>
+                  <div class="tab-pane px-sm-3 px-md-5" role="tabpanel" aria-labelledby="bootstrap-wizard-validation-tab2" id="bootstrap-wizard-validation-tab2">
+                      <ConferenceRoomList EventId="@EventId"/>
+               </div>
                <BookingSummary EventId="@EventId"/>
 
             </div>
@@ -41,4 +43,3 @@
 </div>
 
     </div>
-</div>

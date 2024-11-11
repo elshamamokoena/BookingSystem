@@ -28,3 +28,5 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Shared\obj\Debug\net8.0\
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Shared\bin\Debug\net8.0\BookingSystem.AuthorizationPolicies.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Shared\bin\Debug\net8.0\BookingSystem.AuthorizationPolicies.pdb
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Shared\obj\Debug\net8.0\BookingS.DE514E57.Up2Date
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Shared\bin\Debug\net8.0\BookingSystem.ClassLibrary.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Shared\bin\Debug\net8.0\BookingSystem.ClassLibrary.pdb

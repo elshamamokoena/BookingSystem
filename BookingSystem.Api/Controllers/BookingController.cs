@@ -1,4 +1,5 @@
 ﻿using BookingSystem.Application.Features.Bookings.Commands.CreateBooking;
+using BookingSystem.Application.Features.Bookings.Commands.UpdateBooking;
 using BookingSystem.Application.Features.Bookings.Queries.GetBooking;
 using BookingSystem.Application.Features.Bookings.Queries.GetBookings;
 using BookingSystem.Domain.Entities.Bookings;
@@ -36,6 +37,15 @@ namespace BookingSystem.Api.Controllers
         {
             var bookingId = await _mediator.Send(command);
             return Ok(bookingId);
+        }
+
+        [HttpPut(Name = "UpdateBookingAsync")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult> UpdateBookingAsync([FromBody] UpdateBookingCommand command)
+        {
+            await _mediator.Send(command);
+            return NoContent();
         }
     }
 }

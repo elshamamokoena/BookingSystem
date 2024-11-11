@@ -1,4 +1,5 @@
 ﻿using BookingSystem.Application.Contracts.Services;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
 namespace BookingSystem.Api.Services
@@ -24,7 +25,7 @@ namespace BookingSystem.Api.Services
         { 
             get 
             {
-                return _httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier);
+                return _httpContextAccessor.HttpContext?.User?.FindFirstValue(JwtRegisteredClaimNames.Sub);
             } 
         }
     }

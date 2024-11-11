@@ -71,11 +71,10 @@ namespace BookingSystem.Api
                     };
                 });
 
-            //builder.Services.AddAuthorization(options=>
-            //{
-            //    options.AddPolicy(Policies.IsManager, Policies.ManagerPolicy());
-            //});
-            builder.Services.AddAuthorization();
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy(Policies.IsManager, Policies.ManagerPolicy());
+            });
 
             return builder.Build();
         }

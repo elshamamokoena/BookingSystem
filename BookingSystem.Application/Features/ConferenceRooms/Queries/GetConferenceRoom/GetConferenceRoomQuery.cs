@@ -10,11 +10,9 @@ namespace BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferen
     public class GetConferenceRoomQuery:IRequest<ConferenceRoomVm>
     {
         public Guid ConferenceRoomId { get; set; }
-        public GetConferenceRoomQuery() { }
-        public GetConferenceRoomQuery(Guid conferenceRoomId)
-        {
-            ConferenceRoomId = conferenceRoomId;
-        }
+        public bool? IncludeAmenities { get; set; }
+        public bool? IncludeBookings { get; set; }
+
 
     }
 }

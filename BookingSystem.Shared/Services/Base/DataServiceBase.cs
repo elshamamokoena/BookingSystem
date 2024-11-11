@@ -20,17 +20,18 @@ namespace BookingSystem.Shared.Services.Base
             _navigationManager = navigationManager;
         }
 
-        protected virtual ApiResponse<Guid> ConvertApiExceptions<Guid>(ApiException ex)
+        protected  ApiResponse<Guid> ConvertApiExceptions<Guid>(ApiException ex)
         { 
             if(ex.StatusCode== 400)
                 return new ApiResponse<Guid> { IsSuccess = false, 
                     Message = "validation errors occured", 
-                    ValidationErrors = ex.Response };
+                    ValidationErrors = ex.Response 
+                };
        
             else if(ex.StatusCode == 404)
                 return new ApiResponse<Guid> { IsSuccess = false, 
                     Message = "The requested resource was not found" };
-            else if(ex.StatusCode == 401)
+            else if(ex.StatusCode == 401 || ex.StatusCode == 403)
             {
                 _navigationManager.NavigateTo("/AccessDenied");
                 return new ApiResponse<Guid>
@@ -39,11 +40,12 @@ namespace BookingSystem.Shared.Services.Base
                     Message = "You are not authorized to perform this action",
                 };
             }
-     
             else
+                _navigationManager.NavigateTo("/Error");
+
                 return new ApiResponse<Guid> { IsSuccess = false, 
-                    Message = "Something went wrong. Please try again later or contact support." };
-        }
+                        Message = "Something went wrong. Please try again later or contact support." };
+        } 
 
     }
 }

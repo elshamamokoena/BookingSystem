@@ -1,0 +1,317 @@
+﻿@page "/edit-consumable"
+@using BookingSystem.Shared.Components.Pages.Consumables.EditConsumablePage.EditConsumablePageComponents
+
+
+<div class="card mb-3">
+    <div class="card-body">
+        <div class="row flex-between-center">
+            <div class="col-md">
+                <h5 class="mb-2 mb-md-0">Edit Product</h5>
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-falcon-default btn-sm me-2" type="submit" form="edit-consumable-form" role="button">Save</button>
+                @* <button class="btn btn-falcon-primary btn-sm" role="button">Make your event live </button> *@
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-0">
+    <div class="col-lg-8 pe-lg-2">
+
+
+        @if(Consumable is not null)
+        {
+            
+
+
+        <div class="card mb-3">
+            <div class="card-header">
+                <h5 class="mb-0">Product Details</h5>
+            </div>
+            <div class="card-body bg-light">
+                <EditForm Model="@Consumable" OnValidSubmit="HandleValidSubmit" id="edit-consumable-form">
+                    <DataAnnotationsValidator></DataAnnotationsValidator>
+                    <ValidationSummary></ValidationSummary>
+                    <div class="row gx-2">
+                        <div class="col-12 mb-3">
+                            <label class="form-label" for="product-name">Name</label>
+                            <InputText @bind-Value="@Consumable.Name" class="form-control" id="product-name" type="text" placeholder="Product Name" />
+                            <ValidationMessage For="@(()=> Consumable.Name)" />
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label class="form-label" for="basic-url">Image URL</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon3">https://example.com/assets/1.jpg</span>
+                                <InputText @bind-Value="@Consumable.ImageUrl" class="form-control" id="basic-url" type="text" aria-describedby="basic-addon3" />
+                                <ValidationMessage For="@(()=> Consumable.ImageUrl)" />
+
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label" for="product-description">Description</label>
+                            <InputTextArea @bind-Value="@Consumable.Description" class="form-control" id="product-description" rows="6"></InputTextArea>
+                            <ValidationMessage For="@(()=> Consumable.Description)" />
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check custom-checkbox mb-0">
+                                <input class="form-check-input" id="customRadio6" type="checkbox">
+                                <label class="form-label mb-0" for="customRadio6">Visible</label>
+                            </div>
+                        </div>
+                    </div>
+                </EditForm>
+            </div>
+        </div>        
+        
+        }
+
+
+
+        @*         <div class="card mb-3">
+            <div class="card-header">
+                <h5 class="mb-0">Ticket Price</h5>
+            </div>
+            <div class="card-body bg-light">
+                <button class="btn btn-falcon-default btn-sm" type="button">Free<span class="d-none d-sm-inline"> Ticket</span></button>
+                <button class="btn btn-falcon-primary btn-sm ms-2" type="button">Paid<span class="d-none d-sm-inline"> Ticket</span></button>
+                <button class="btn btn-falcon-default btn-sm ms-2" type="button">Donation</button>
+                <hr>
+                <h6 class="fs-0">Pricing Options:</h6>
+                <div class="form-check">
+                    <input class="form-check-input" id="customCheck1" type="checkbox" checked="checked">
+                    <label class="form-check-label align-top" for="customCheck1">Enable varible pricing</label>
+                </div>
+                <div class="form-check mt-2">
+                    <input class="form-check-input" id="customCheck2" type="checkbox">
+                    <label class="form-check-label align-top" for="customCheck2">Enable multi-option purchase mode.</label>
+                </div>
+                <table class="table table-bordered mt-3 bg-white dark__bg-1100">
+                    <thead>
+                        <tr class="fs--1">
+                            <th>Option Name</th>
+                            <th>Price</th>
+                            <th>Default</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input class="form-control form-control-sm" type="text" placeholder="Option Name" value="Front desks">
+                            </td>
+                            <td>
+                                <input class="form-control form-control-sm" type="text" placeholder="Price" value="$0.00">
+                            </td>
+                            <td class="text-center align-middle">
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input float-none" id="customRadio1" type="radio" name="customRadio" checked="checked">
+                                    <label class="form-check-label" for="customRadio1"></label>
+                                </div>
+                            </td>
+                            <td class="text-center align-middle">
+                                <button class="btn btn-link btn-sm"><svg class="svg-inline--fa fa-times-circle fa-w-16 text-danger" data-fa-transform="shrink-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.5em;"><g transform="translate(256 256)"><g transform="translate(0, 0)  scale(0.875, 0.875)  rotate(0 0 0)"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" transform="translate(-256 -256)"></path></g></g></svg><!-- <span class="fas fa-times-circle text-danger" data-fa-transform="shrink-2"></span> Font Awesome fontawesome.com --></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="form-control form-control-sm" type="text" placeholder="Option Name" value="Green gallery">
+                            </td>
+                            <td>
+                                <input class="form-control form-control-sm" type="text" placeholder="Price" value="$5.00">
+                            </td>
+                            <td class="text-center align-middle">
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input float-none" id="customRadio2" type="radio" name="customRadio">
+                                    <label class="form-check-label" for="customRadio2"></label>
+                                </div>
+                            </td>
+                            <td class="text-center align-middle">
+                                <button class="btn btn-link btn-sm"><svg class="svg-inline--fa fa-times-circle fa-w-16 text-danger" data-fa-transform="shrink-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.5em;"><g transform="translate(256 256)"><g transform="translate(0, 0)  scale(0.875, 0.875)  rotate(0 0 0)"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" transform="translate(-256 -256)"></path></g></g></svg><!-- <span class="fas fa-times-circle text-danger" data-fa-transform="shrink-2"></span> Font Awesome fontawesome.com --></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="form-control form-control-sm" type="text" placeholder="VIP" value="VIP">
+                            </td>
+                            <td>
+                                <input class="form-control form-control-sm" type="text" placeholder="Price" value="$20.00">
+                            </td>
+                            <td class="text-center align-middle">
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input float-none" id="customRadio3" type="radio" name="customRadio">
+                                    <label class="form-check-label" for="customRadio3"></label>
+                                </div>
+                            </td>
+                            <td class="text-center align-middle">
+                                <button class="btn btn-link btn-sm"><svg class="svg-inline--fa fa-times-circle fa-w-16 text-danger" data-fa-transform="shrink-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.5em;"><g transform="translate(256 256)"><g transform="translate(0, 0)  scale(0.875, 0.875)  rotate(0 0 0)"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" transform="translate(-256 -256)"></path></g></g></svg><!-- <span class="fas fa-times-circle text-danger" data-fa-transform="shrink-2"></span> Font Awesome fontawesome.com --></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> *@
+@*         <div class="card mb-3">
+            <div class="card-header">
+                <h5 class="mb-0">Schedule</h5>
+            </div>
+            <div class="card-body bg-light">
+                <div class="border rounded-1 position-relative bg-white dark__bg-1100 p-3">
+                    <div class="position-absolute end-0 top-0 mt-2 me-3 z-index-1">
+                        <button class="btn btn-link btn-sm p-0" type="button"><svg class="svg-inline--fa fa-times-circle fa-w-16 text-danger" data-fa-transform="shrink-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.5em;"><g transform="translate(256 256)"><g transform="translate(0, 0)  scale(0.9375, 0.9375)  rotate(0 0 0)"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" transform="translate(-256 -256)"></path></g></g></svg><!-- <span class="fas fa-times-circle text-danger" data-fa-transform="shrink-1"></span> Font Awesome fontawesome.com --></button>
+                    </div>
+                    <div class="row gx-2">
+                        <div class="col-12 mb-3">
+                            <label class="form-label" for="schedule-title">Title</label>
+                            <input class="form-control form-control-sm" id="schedule-title" type="text" placeholder="Title">
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <label class="form-label" for="schedule-start-date">Start Date</label>
+                            <input class="form-control form-control-sm datetimepicker flatpickr-input" id="schedule-start-date" type="text" placeholder="d/m/y" data-options="{&quot;dateFormat&quot;:&quot;d/m/y&quot;,&quot;enableTime&quot;:false}" readonly="readonly">
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <label class="form-label" for="schedule-start-time">Start Time</label>
+                            <input class="form-control form-control-sm datetimepicker flatpickr-input" id="schedule-start-time" type="text" placeholder="H:i" data-options="{&quot;enableTime&quot;:true,&quot;noCalendar&quot;:true,&quot;dateFormat&quot;:&quot;H:i&quot;}" readonly="readonly">
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <label class="form-label" for="schedule-end-date">End Date</label>
+                            <input class="form-control form-control-sm datetimepicker flatpickr-input" id="schedule-end-date" type="text" placeholder="d/m/y" data-options="{&quot;dateFormat&quot;:&quot;d/m/y&quot;,&quot;enableTime&quot;:false}" readonly="readonly">
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label" for="schedule-end-time">End Time</label>
+                            <input class="form-control form-control-sm datetimepicker flatpickr-input" id="schedule-end-time" type="text" placeholder="H:i" data-options="{&quot;enableTime&quot;:true,&quot;noCalendar&quot;:true,&quot;dateFormat&quot;:&quot;H:i&quot;}" readonly="readonly">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-falcon-default btn-sm mt-2" type="button"><svg class="svg-inline--fa fa-plus fa-w-14 fs--2 me-1" data-fa-transform="up-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="" style="transform-origin: 0.4375em 0.4375em;"><g transform="translate(224 256)"><g transform="translate(0, -32)  scale(1, 1)  rotate(0 0 0)"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" transform="translate(-224 -256)"></path></g></g></svg><!-- <span class="fas fa-plus fs--2 me-1" data-fa-transform="up-1"></span> Font Awesome fontawesome.com -->Add Item </button>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-header">
+                <h5 class="mb-0">Upload Photos</h5>
+            </div>
+            <div class="card-body bg-light">
+                <form class="dropzone dropzone-multiple p-0 dz-clickable" id="my-awesome-dropzone" data-dropzone="data-dropzone" action="#!">
+
+                    <div class="dz-message" data-dz-message="data-dz-message"> <img class="me-2" src="../../assets/img/icons/cloud-upload.svg" width="25" alt="">Drop your files here</div>
+                    <div class="dz-preview dz-preview-multiple m-0 d-flex flex-column"></div>
+                </form>
+            </div>
+        </div>
+        <div class="card mb-3 mb-lg-0">
+            <div class="card-header">
+                <h5 class="mb-0">Custom Fields</h5>
+            </div>
+            <div class="card-body bg-light">
+                <div class="position-relative rounded-1 border bg-white dark__bg-1100 p-3">
+                    <div class="position-absolute end-0 top-0 mt-2 me-3 z-index-1">
+                        <button class="btn btn-link btn-sm p-0" type="button"><svg class="svg-inline--fa fa-times-circle fa-w-16 text-danger" data-fa-transform="shrink-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.5em;"><g transform="translate(256 256)"><g transform="translate(0, 0)  scale(0.9375, 0.9375)  rotate(0 0 0)"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" transform="translate(-256 -256)"></path></g></g></svg><!-- <span class="fas fa-times-circle text-danger" data-fa-transform="shrink-1"></span> Font Awesome fontawesome.com --></button>
+                    </div>
+                    <div class="row gx-2">
+                        <div class="col-sm-6 mb-3">
+                            <label class="form-label" for="field-name">Name</label>
+                            <input class="form-control form-control-sm" id="field-name" type="text" placeholder="Name (e.g. T-shirt)">
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <label class="form-label" for="field-type">Type</label>
+                            <select class="form-select form-select-sm" id="field-type">
+                                <option>Select a type</option>
+                                <option>Text</option>
+                                <option>Checkboxes</option>
+                                <option>Radio Buttons</option>
+                                <option>Textarea</option>
+                                <option>Date</option>
+                                <option>Dropdowns</option>
+                                <option>File</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="field-options">Field Options</label>
+                            <textarea class="form-control form-control-sm" id="field-options" rows="3"></textarea>
+                            <div class="form-text fs--1 text-warning">* Separate your options with comma</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-falcon-default btn-sm mt-2" type="submit"><svg class="svg-inline--fa fa-plus fa-w-14 fs--2 me-1" data-fa-transform="up-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="" style="transform-origin: 0.4375em 0.4375em;"><g transform="translate(224 256)"><g transform="translate(0, -32)  scale(1, 1)  rotate(0 0 0)"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" transform="translate(-224 -256)"></path></g></g></svg><!-- <span class="fas fa-plus fs--2 me-1" data-fa-transform="up-1"></span> Font Awesome fontawesome.com -->Add Item</button>
+            </div>
+        </div> *@
+    </div>
+
+    @if(Consumable is not null)
+    {
+        
+    <div class="col-lg-4 ps-lg-2">
+        <div class="sticky-sidebar">
+            <div class="card mb-lg-0">
+                <div class="card-header">
+                    <h5 class="mb-0">Other Info</h5>
+                </div>
+                <div class="card-body bg-light">
+                    @*         <div class="mb-3">
+                    <div class="d-flex flex-between-center">
+                    <label class="form-label" for="organizer">Organizer</label>
+                    <button class="btn btn-link btn-sm pe-0" type="button">Add New</button>
+                    </div>
+                    <div class="choices" data-type="select-multiple" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="choices__inner"><select class="form-select js-choice choices__input" id="organizer" multiple="multiple" size="1" name="organizer" data-options="{&quot;removeItemButton&quot;:true,&quot;placeholder&quot;:true}" hidden="" tabindex="-1" data-choice="active"></select><div class="choices__list choices__list--multiple"></div><input type="text" class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" aria-label="Select organizer..." placeholder="Select organizer..." style="min-width: 20ch; width: 1ch;"></div><div class="choices__list choices__list--dropdown" aria-expanded="false"><div class="choices__list" aria-multiselectable="true" role="listbox"><div id="choices--organizer-item-choice-1" class="choices__item choices__item--choice choices__item--selectable is-highlighted" role="option" data-choice="" data-id="1" data-value="California Institute of Technology" data-select-text="" data-choice-selectable="" aria-selected="true">California Institute of Technology</div><div id="choices--organizer-item-choice-2" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="2" data-value="GSAS Open Labs At Harvard" data-select-text="" data-choice-selectable="">GSAS Open Labs At Harvard</div><div id="choices--organizer-item-choice-3" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="3" data-value="Massachusetts Institute of Technology" data-select-text="" data-choice-selectable="">Massachusetts Institute of Technology</div><div id="choices--organizer-item-choice-5" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="5" data-value="University of Chicago" data-select-text="" data-choice-selectable="">University of Chicago</div></div></div></div>
+                    </div> *@
+                    @*              <div class="mb-3">
+                    <div class="d-flex flex-between-center">
+                    <label class="form-label" for="sponsors">Sponsors</label>
+                    <button class="btn btn-link btn-sm pe-0" type="button">Add New</button>
+                    </div>
+                    <div class="choices" data-type="select-multiple" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="choices__inner"><select class="form-select js-choice choices__input" id="sponsors" multiple="multiple" size="1" name="sponsors" data-options="{&quot;removeItemButton&quot;:true,&quot;placeholder&quot;:true}" hidden="" tabindex="-1" data-choice="active"></select><div class="choices__list choices__list--multiple"></div><input type="text" class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" aria-label="Select sponsors..." placeholder="Select sponsors..." style="min-width: 19ch; width: 1ch;"></div><div class="choices__list choices__list--dropdown" aria-expanded="false"><div class="choices__list" aria-multiselectable="true" role="listbox"><div id="choices--sponsors-item-choice-1" class="choices__item choices__item--choice choices__item--selectable is-highlighted" role="option" data-choice="" data-id="1" data-value="Hewlett-Packard" data-select-text="" data-choice-selectable="" aria-selected="true">Hewlett-Packard</div><div id="choices--sponsors-item-choice-2" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="2" data-value="Microsoft Corporation" data-select-text="" data-choice-selectable="">Microsoft Corporation</div><div id="choices--sponsors-item-choice-4" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="4" data-value="Technext Limited" data-select-text="" data-choice-selectable="">Technext Limited</div></div></div></div>
+                    </div> *@
+                    <div class="mb-3">
+                        <label class="form-label" for="event-type">Category</label>
+                        <InputSelect @bind-Value="@SelectedCategoryId"  class="form-select" id="event-type" name="event-type">
+                            <option>Select consumable category...</option>
+                            @foreach(var category in Categories)
+                            {
+                                <option value="@category.ConsumableCategoryId.ToString()">@category.Name</option>
+                            }
+                        </InputSelect>
+                    </div>
+         @*            <div class="mb-3">
+                        <label class="form-label" for="event-topic">Event Topic</label>
+                        <select class="form-select" id="event-topic" name="even-topic">
+                            <option value="" selected="selected">Select a topic</option>
+                            <option>Auto, Boat &amp; Air</option>
+                            <option>Business &amp; Professional</option>
+                            <option>Charity &amp; Causes</option>
+                            <option>Community &amp; Culture</option>
+                            <option>Family &amp; Education</option>
+                            <option>Fashion &amp; Beauty</option>
+                            <option>Film, Media &amp; Entertainment</option>
+                            <option>Food &amp; Drink</option>
+                            <option>Government &amp; Politics</option>
+                        </select>
+                    </div> *@
+         @*            <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <label class="mb-0" for="event-tags">Tags</label>
+                            <button class="btn btn-link btn-sm pe-0" type="button">Add New</button>
+                        </div>
+                        <div class="choices" data-type="select-multiple" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="choices__inner"><select class="form-select js-choice choices__input" id="event-tags" multiple="multiple" size="1" name="tags" data-options="{&quot;removeItemButton&quot;:true,&quot;placeholder&quot;:true}" hidden="" tabindex="-1" data-choice="active"></select><div class="choices__list choices__list--multiple"></div><input type="text" class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" aria-label="Select tags..." placeholder="Select tags..." style="min-width: 15ch; width: 1ch;"></div><div class="choices__list choices__list--dropdown" aria-expanded="false"><div class="choices__list" aria-multiselectable="true" role="listbox"><div id="choices--event-tags-item-choice-1" class="choices__item choices__item--choice choices__item--selectable is-highlighted" role="option" data-choice="" data-id="1" data-value="Concert" data-select-text="" data-choice-selectable="" aria-selected="true">Concert</div><div id="choices--event-tags-item-choice-2" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="2" data-value="New Year" data-select-text="" data-choice-selectable="">New Year</div><div id="choices--event-tags-item-choice-3" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="3" data-value="Party" data-select-text="" data-choice-selectable="">Party</div></div></div></div>
+                    </div>
+                    <div class="border-bottom border-dashed my-3"></div> *@
+@*                     <h6>Listing Privacy</h6>
+                    <div class="mb-3 form-check">
+                        <input class="form-check-input" id="customRadio4" type="radio" name="listingPrivacy" checked="checked">
+                        <label class="form-label mb-0" for="customRadio4"> <strong>:</strong></label>
+                        <div class="form-text mt-0">Discoverable by anyone on Falcon, our distribution partners, and search engines.</div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input class="form-check-input" id="customRadio5" type="radio" name="listingPrivacy">
+                        <label class="form-label mb-0" for="customRadio5"> <strong>Private page:</strong></label>
+                        <div class="form-text mt-0">Accessible only by people you specify. </div>
+                    </div> *@
+                    <div class="border-bottom border-dashed my-3"></div>
+                <EditConsumableStockItem ConsumableId ="@SelectedConsumableId.ToString()"/>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+</div>

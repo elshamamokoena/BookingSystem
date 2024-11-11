@@ -1,0 +1,7 @@
+2024-10-24 21:49:39.514 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-24 21:49:39.537 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-24 21:49:39.575 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-24 21:49:39.578 +02:00 [INF] Hosting environment: Development
+2024-10-24 21:49:39.583 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-24 21:50:09.015 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-24 21:50:09.019 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.

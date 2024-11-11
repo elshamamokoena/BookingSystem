@@ -1,4 +1,5 @@
-﻿using BookingSystem.Shared.Components.Pages.Events.EditEvents;
+﻿using BookingSystem.Shared.Components.Pages.Bookings;
+using BookingSystem.Shared.Components.Pages.Events.EditEvents;
 using BookingSystem.Shared.Models.Bookings;
 using BookingSystem.Shared.Services.Base;
 using System;
@@ -11,8 +12,9 @@ namespace BookingSystem.Shared.Contracts
 {
     public interface IBookingDataService
     {
-        Task<IEnumerable<BookingViewModel>> GetBookingsAsync(Guid eventId, int ? pageNumber, int? pageSize);
+        Task<IEnumerable<BookingViewModel>> GetBookingsAsync(Guid? eventId, int ? pageNumber, int? pageSize);
         Task<ApiResponse<Guid>> CreateBookingAsync(AddBookingViewModel booking);
         Task<BookingViewModel> GetBookingAsync(Guid bookingId, bool ? includeEvent, bool ? includeRoom);
+        Task<ApiResponse<Guid>> UpdateBookingAsync(UpdateBookingViewModel booking);
     }
 }

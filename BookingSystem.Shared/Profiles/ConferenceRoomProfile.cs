@@ -14,7 +14,12 @@ namespace BookingSystem.Shared.Profiles
         public ConferenceRoomProfile()
         {
             CreateMap<ConferenceRoomVm, RoomViewModel>().ReverseMap();
+            CreateMap<RoomViewModel, CreateConferenceRoomCommand>();
+            CreateMap<RoomViewModel, UpdateConferenceRoomCommand>();
+            CreateMap<ConferenceRoomListDto, RoomViewModel>();
+            CreateMap<ConferenceRoomDto, RoomViewModel>();
 
+            CreateMap<ConferenceRoomListVm, ConferenceRoomListViewModel>();
         }
     }
 }

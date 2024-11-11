@@ -41,9 +41,11 @@ namespace BookingSystem.Persistence.Repositories
             ArgumentNullException.ThrowIfNull(query);
             var collection = _context.Bookings.AsQueryable();
 
-            collection = collection
-                .Where(x => x.EventId == query.EventId)
-                .Include(x=>x.ConferenceRoom)
+            if (query.EventId.HasValue)
+                collection = collection.Where(x => x.EventId == query.EventId.Value);
+
+            collection =  collection
+                .Include(x => x.ConferenceRoom)
                 .Include(x => x.Event);
 
             return await collection

@@ -9,6 +9,9 @@ namespace BookingSystem.Application.Contracts.Persistence
 {
     public interface ICartRepository:IAsyncRepository<Cart>
     {
+        Task ClearCart(Guid cartId);
+        Task<Cart> GetCartAsync(Guid cartId, bool? includeCartItems);
+
 
     }
 }

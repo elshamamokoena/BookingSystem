@@ -1,0 +1,220 @@
+2024-10-21 10:56:08.492 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 10:56:08.513 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 10:56:08.550 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 10:56:08.554 +02:00 [INF] Hosting environment: Development
+2024-10-21 10:56:08.556 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 10:57:55.777 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 10:57:55.795 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 10:57:55.836 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 10:57:55.839 +02:00 [INF] Hosting environment: Development
+2024-10-21 10:57:55.840 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 10:58:04.982 +02:00 [ERR] Failed executing DbCommand (61ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[StockItemId], [s].[ConsumableId], [s].[Created], [s].[CreatedBy], [s].[EnableStockManagement], [s].[LastModified], [s].[LastModifiedBy], [s].[Quantity], [s].[Sku], [s].[StockId]
+FROM [StockItems] AS [s]
+WHERE [s].[StockItemId] = @__get_Item_0
+2024-10-21 10:58:05.031 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'BookingSystem.Persistence.DbContexts.BookingSystemDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EnableStockManagement'.
+Invalid column name 'Sku'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:a5d4c867-9165-45be-9a26-2f87b439551e
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EnableStockManagement'.
+Invalid column name 'Sku'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:a5d4c867-9165-45be-9a26-2f87b439551e
+Error Number:207,State:1,Class:16
+2024-10-21 11:06:06.995 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 11:06:07.014 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 11:06:07.050 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 11:06:07.052 +02:00 [INF] Hosting environment: Development
+2024-10-21 11:06:07.054 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 11:10:59.239 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 11:10:59.261 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 11:10:59.312 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 11:10:59.314 +02:00 [INF] Hosting environment: Development
+2024-10-21 11:10:59.316 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 11:12:06.520 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 11:12:06.528 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 11:25:38.960 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 11:25:38.981 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 11:25:39.024 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 11:25:39.026 +02:00 [INF] Hosting environment: Development
+2024-10-21 11:25:39.027 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 12:22:59.402 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 12:22:59.426 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 12:22:59.462 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 12:22:59.464 +02:00 [INF] Hosting environment: Development
+2024-10-21 12:22:59.465 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 12:31:39.785 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 12:31:39.816 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 12:31:39.875 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 12:31:39.876 +02:00 [INF] Hosting environment: Development
+2024-10-21 12:31:39.878 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 12:33:50.680 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 12:33:50.701 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 12:33:50.765 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 12:33:50.766 +02:00 [INF] Hosting environment: Development
+2024-10-21 12:33:50.768 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 12:34:41.146 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 12:34:41.152 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 13:39:09.458 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 13:39:09.474 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 13:39:09.508 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 13:39:09.510 +02:00 [INF] Hosting environment: Development
+2024-10-21 13:39:09.511 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 13:56:23.896 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 13:56:23.912 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 16:25:30.308 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 16:25:30.326 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 16:25:30.365 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 16:25:30.369 +02:00 [INF] Hosting environment: Development
+2024-10-21 16:25:30.370 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 17:02:44.958 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 17:02:44.974 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 17:02:45.012 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 17:02:45.016 +02:00 [INF] Hosting environment: Development
+2024-10-21 17:02:45.018 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 19:23:39.477 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 19:23:39.499 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 19:23:39.536 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 19:23:39.543 +02:00 [INF] Hosting environment: Development
+2024-10-21 19:23:39.564 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 19:28:03.476 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 19:28:03.517 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 19:28:03.553 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 19:28:03.554 +02:00 [INF] Hosting environment: Development
+2024-10-21 19:28:03.555 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 19:45:35.840 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 19:45:35.861 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 19:45:35.914 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 19:45:35.915 +02:00 [INF] Hosting environment: Development
+2024-10-21 19:45:35.916 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 19:56:03.538 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 19:56:03.562 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 19:56:03.604 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 19:56:03.620 +02:00 [INF] Hosting environment: Development
+2024-10-21 19:56:03.624 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 20:00:45.254 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 20:00:45.274 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 20:00:45.313 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 20:00:45.314 +02:00 [INF] Hosting environment: Development
+2024-10-21 20:00:45.319 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 20:02:45.984 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 20:02:46.002 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 20:02:46.044 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 20:02:46.045 +02:00 [INF] Hosting environment: Development
+2024-10-21 20:02:46.048 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 20:03:42.046 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 20:03:42.062 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 20:03:42.100 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 20:03:42.101 +02:00 [INF] Hosting environment: Development
+2024-10-21 20:03:42.102 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 20:08:05.882 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 20:08:05.899 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 20:08:05.937 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 20:08:05.939 +02:00 [INF] Hosting environment: Development
+2024-10-21 20:08:05.940 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 20:08:50.387 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 20:08:50.405 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 20:08:50.451 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 20:08:50.453 +02:00 [INF] Hosting environment: Development
+2024-10-21 20:08:50.455 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 20:34:38.853 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 20:34:38.872 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 20:34:38.923 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 20:34:38.928 +02:00 [INF] Hosting environment: Development
+2024-10-21 20:34:38.932 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 20:37:14.741 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 20:37:14.759 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 20:37:14.797 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 20:37:14.800 +02:00 [INF] Hosting environment: Development
+2024-10-21 20:37:14.804 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 20:41:15.199 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 20:41:15.222 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 20:41:15.276 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 20:41:15.278 +02:00 [INF] Hosting environment: Development
+2024-10-21 20:41:15.280 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 20:43:09.228 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 20:43:09.245 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 20:43:09.318 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 20:43:09.320 +02:00 [INF] Hosting environment: Development
+2024-10-21 20:43:09.322 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 20:44:10.899 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 20:44:10.924 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 20:44:10.988 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 20:44:10.991 +02:00 [INF] Hosting environment: Development
+2024-10-21 20:44:10.993 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 20:46:31.400 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 20:46:31.418 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 20:46:31.458 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 20:46:31.460 +02:00 [INF] Hosting environment: Development
+2024-10-21 20:46:31.465 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 20:53:57.340 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 20:53:57.362 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 20:53:57.416 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 20:53:57.427 +02:00 [INF] Hosting environment: Development
+2024-10-21 20:53:57.430 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 21:35:04.061 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 21:35:04.086 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 21:35:04.147 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 21:35:04.149 +02:00 [INF] Hosting environment: Development
+2024-10-21 21:35:04.151 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 22:09:09.187 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 22:09:09.193 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 22:11:42.507 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 22:11:42.525 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 22:11:42.572 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 22:11:42.573 +02:00 [INF] Hosting environment: Development
+2024-10-21 22:11:42.576 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 22:12:01.546 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 22:12:01.555 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 22:26:53.230 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 22:26:53.250 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 22:26:53.296 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 22:26:53.299 +02:00 [INF] Hosting environment: Development
+2024-10-21 22:26:53.303 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 22:27:24.534 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 22:27:24.542 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 22:27:58.902 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 22:27:58.921 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 22:27:58.962 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 22:27:58.968 +02:00 [INF] Hosting environment: Development
+2024-10-21 22:27:58.971 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 22:28:10.554 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 22:28:10.561 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 22:43:17.629 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 22:43:17.647 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 22:43:17.692 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 22:43:17.693 +02:00 [INF] Hosting environment: Development
+2024-10-21 22:43:17.695 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 22:43:30.796 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 22:43:30.801 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 23:03:37.393 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-21 23:03:37.448 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-21 23:03:37.517 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-21 23:03:37.527 +02:00 [INF] Hosting environment: Development
+2024-10-21 23:03:37.529 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-21 23:04:08.523 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-21 23:04:08.532 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.

@@ -1,4 +1,5 @@
 ﻿@page "/booking-detail/{bookingId}"
+@using BookingSystem.ClassLibrary
 @inherits BaseComponent
 
 @if(Booking !=null)
@@ -33,7 +34,7 @@
                     <h6 class="mb-2">@Booking.Event.Title</h6>
                     <p class="mb-0 fs-10"><strong>Start: </strong>  @Booking.Event.Start
                         <br /> <strong>End: </strong>  @Booking.Event.End</p>
-                    <div class="text-500 fs-10">(Free Shipping)</div>
+                    @* <div class="text-500 fs-10">(Free Shipping)</div> *@
                 </div>
 
                 }
@@ -63,86 +64,19 @@
 
 
 }
-
-
-
     <div class="card mb-3">
         <div class="card-body">
-            <div class="table-responsive fs-10">
-                <table class="table table-striped border-bottom">
-                    <thead class="bg-200">
-                        <tr>
-                            <th class="text-900 border-0">Products</th>
-                            <th class="text-900 border-0 text-center">Quantity</th>
-                            <th class="text-900 border-0 text-end">Rate</th>
-                            <th class="text-900 border-0 text-end">Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-200">
-                            <td class="align-middle">
-                                <h6 class="mb-0 text-nowrap">Platinum web hosting package9</h6>
-                                <p class="mb-0">Down 35mb, Up 100mb</p>
-                            </td>
-                            <td class="align-middle text-center">2</td>
-                            <td class="align-middle text-end">$65.00</td>
-                            <td class="align-middle text-end">$130.00</td>
-                        </tr>
-                        <tr class="border-200">
-                            <td class="align-middle">
-                                <h6 class="mb-0 text-nowrap">2 Page website design</h6>
-                                <p class="mb-0">Includes basic wireframes and responsive templates</p>
-                            </td>
-                            <td class="align-middle text-center">1</td>
-                            <td class="align-middle text-end">$2,100.00</td>
-                            <td class="align-middle text-end">$2,100.00</td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle">
-                                <h6 class="mb-0 text-nowrap">Mobile App Development</h6>
-                                <p class="mb-0">Includes responsive navigation</p>
-                            </td>
-                            <td class="align-middle text-center">8</td>
-                            <td class="align-middle text-end">$5,00.00</td>
-                            <td class="align-middle text-end">$4,000.00</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="form-check">
+                <input value="@nameof(BookingStatus.Pending)" @onchange="UpdateBookingAsync" class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault" />
+                <label class="form-check-label" for="flexRadioDefault1">@nameof(BookingStatus.Pending)</label>
             </div>
-            <div class="row g-0 justify-content-end">
-                <div class="col-auto">
-                    <table class="table table-sm table-borderless fs-10 text-end">
-                        <tbody>
-                            <tr>
-                                <th class="text-900">Subtotal:</th>
-                                <td class="fw-semi-bold">$6,230.00 </td>
-                            </tr>
-                            <tr>
-                                <th class="text-900">Tax 5%:</th>
-                                <td class="fw-semi-bold">$311.50</td>
-                            </tr>
-                            <tr class="border-top">
-                                <th class="text-900">Total:</th>
-                                <td class="fw-semi-bold">$6541.50</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="form-check">
+                <input value="@nameof(BookingStatus.Cancelled)" @onchange="UpdateBookingAsync" class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" />
+                <label class="form-check-label" for="flexRadioDefault2">@nameof(BookingStatus.Cancelled)</label>
             </div>
-        </div>
+            <div class="form-check">
+                <input value="@nameof(BookingStatus.Approved)" @onchange="UpdateBookingAsync" class="form-check-input" id="flexRadioDefault3" type="radio" name="flexRadioDefault" />
+                <label class="form-check-label" for="flexRadioDefault3">@nameof(BookingStatus.Approved)</label>
+            </div>
+         </div>
     </div>
-
-    
-<div class="card mt-3">
-    <div class="card-body">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-md">
-                <h5 class="mb-2 mb-md-0">You might need some stationery...</h5>
-            </div>
-            <div class="col-auto">
-                <button class="btn btn-falcon-default btn-sm me-2">Save</button>
-                    <button @onclick="()=>GoToStock()" class="btn btn-falcon-primary btn-sm">Browse consumables </button>
-            </div>
-        </div>
-    </div>
-</div>

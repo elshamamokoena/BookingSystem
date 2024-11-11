@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace BookingSyste.Mobile.App.WinUI
+namespace BookingSystem.Mobile.App.WinUI
 {
     public partial class App : global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
     {

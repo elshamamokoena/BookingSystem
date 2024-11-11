@@ -27,7 +27,7 @@
       },
       "Blazored.LocalStorage/4.5.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "8.0.6"
+          "Microsoft.AspNetCore.Components.Web": "8.0.0"
         },
         "runtime": {
           "lib/net8.0/Blazored.LocalStorage.dll": {
@@ -56,7 +56,7 @@
       "Duende.AccessTokenManagement.OpenIdConnect/3.0.0": {
         "dependencies": {
           "Duende.AccessTokenManagement": "3.0.0",
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "8.0.8"
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "8.0.1"
         },
         "runtime": {
           "lib/net8.0/Duende.AccessTokenManagement.OpenIdConnect.dll": {
@@ -73,14 +73,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.8": {
+      "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.1": {
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "7.1.2"
         },
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {
-            "assemblyVersion": "8.0.8.0",
-            "fileVersion": "8.0.824.36908"
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.123.58008"
           }
         }
       },
@@ -122,31 +122,19 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/8.0.6": {
+      "Microsoft.AspNetCore.Components.Forms/8.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "8.0.8"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.AspNetCore.Components.Forms.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.624.26909"
-          }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/8.0.6": {
+      "Microsoft.AspNetCore.Components.Web/8.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "8.0.8",
-          "Microsoft.AspNetCore.Components.Forms": "8.0.6",
+          "Microsoft.AspNetCore.Components.Forms": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0",
-          "Microsoft.JSInterop": "8.0.6",
+          "Microsoft.JSInterop": "8.0.0",
           "System.IO.Pipelines": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.AspNetCore.Components.Web.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.624.26909"
-          }
         }
       },
       "Microsoft.AspNetCore.Metadata/8.0.8": {
@@ -320,14 +308,7 @@
           }
         }
       },
-      "Microsoft.JSInterop/8.0.6": {
-        "runtime": {
-          "lib/net8.0/Microsoft.JSInterop.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.624.26909"
-          }
-        }
-      },
+      "Microsoft.JSInterop/8.0.0": {},
       "System.Diagnostics.DiagnosticSource/8.0.0": {},
       "System.IdentityModel.Tokens.Jwt/7.1.2": {
         "dependencies": {
@@ -353,15 +334,23 @@
           }
         }
       },
+      "BookingSystem.ClassLibrary/1.0.0": {
+        "runtime": {
+          "BookingSystem.ClassLibrary.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "BookingSystem.Shared/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
           "Blazored.LocalStorage": "4.5.0",
           "BookingSystem.AuthorizationPolicies": "1.0.0",
+          "BookingSystem.ClassLibrary": "1.0.0",
           "Duende.AccessTokenManagement.OpenIdConnect": "3.0.0",
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "8.0.8",
           "Microsoft.AspNetCore.Components.Authorization": "8.0.8",
-          "Microsoft.AspNetCore.Components.Web": "8.0.6",
+          "Microsoft.AspNetCore.Components.Web": "8.0.0",
           "Microsoft.Extensions.Http": "8.0.0"
         },
         "runtime": {
@@ -414,12 +403,12 @@
       "path": "identitymodel/7.0.0",
       "hashPath": "identitymodel.7.0.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.8": {
+    "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uPfEVY/Hg1EuggiHcB/l4Y0SwYeG9cNPxZitStZVtty7t2+ezK4+l0eyjXtcqI+rLC1iEpcEVDU3tBcBEzxNvg==",
-      "path": "microsoft.aspnetcore.authentication.openidconnect/8.0.8",
-      "hashPath": "microsoft.aspnetcore.authentication.openidconnect.8.0.8.nupkg.sha512"
+      "sha512": "sha512-gx344DYqTjhotuG56JchlqArEvytZGgYuIuaNP/B+FcvXMuexO3mujamvs4qWXH+5g96poi2+p/Cek5KpVmaQA==",
+      "path": "microsoft.aspnetcore.authentication.openidconnect/8.0.1",
+      "hashPath": "microsoft.aspnetcore.authentication.openidconnect.8.0.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/8.0.8": {
       "type": "package",
@@ -449,19 +438,19 @@
       "path": "microsoft.aspnetcore.components.authorization/8.0.8",
       "hashPath": "microsoft.aspnetcore.components.authorization.8.0.8.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components.Forms/8.0.6": {
+    "Microsoft.AspNetCore.Components.Forms/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-49wIE1ns3ZGDU4NPMcKCSTC716IxujUeaynsUyflM5Qmb2WlF6M6m4pMcJ6UET1Ixmn027nZjMEc8J7pU4BLBg==",
-      "path": "microsoft.aspnetcore.components.forms/8.0.6",
-      "hashPath": "microsoft.aspnetcore.components.forms.8.0.6.nupkg.sha512"
+      "sha512": "sha512-iiYB/7Sl/vTURO4EiTUCmfIXujlJOl+Gh7nknCFhvFQ+kKMFFXYcrszYwLN9aQSolpswc/A9a78KL59/UIezig==",
+      "path": "microsoft.aspnetcore.components.forms/8.0.0",
+      "hashPath": "microsoft.aspnetcore.components.forms.8.0.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components.Web/8.0.6": {
+    "Microsoft.AspNetCore.Components.Web/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xxYlTpcTEWsxaWUscDLN32mM32ysslLFtNQBS6wJOxaKJ9LCvusXDyBVEKL2DPbB8PZdereNvyrVr0deHkuOEw==",
-      "path": "microsoft.aspnetcore.components.web/8.0.6",
-      "hashPath": "microsoft.aspnetcore.components.web.8.0.6.nupkg.sha512"
+      "sha512": "sha512-aokUKvFoNqxR6bf0+iKrDfQ79OLHWYn5UGYp5MU65/il1vuRK7MAF18oGj7QgiZJUu3cMAZjCFkHbsWLhQxCsA==",
+      "path": "microsoft.aspnetcore.components.web/8.0.0",
+      "hashPath": "microsoft.aspnetcore.components.web.8.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Metadata/8.0.8": {
       "type": "package",
@@ -610,12 +599,12 @@
       "path": "microsoft.identitymodel.tokens/7.1.2",
       "hashPath": "microsoft.identitymodel.tokens.7.1.2.nupkg.sha512"
     },
-    "Microsoft.JSInterop/8.0.6": {
+    "Microsoft.JSInterop/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-E1djWS3d41fcd++7sGlbYhOHde5Pb0oBpOcNvUbn+1ga/yCvsjzUfbd/tDRg1qacNKS0iwKWYOIqTZxJnh99dQ==",
-      "path": "microsoft.jsinterop/8.0.6",
-      "hashPath": "microsoft.jsinterop.8.0.6.nupkg.sha512"
+      "sha512": "sha512-qQqASbHxWIddssdEBKUQ/49j21SEstiho6VAepPQa9eISLCBCE6wq0m3YaB6cpdF5U+AWX5F3FvDfmssql3xtw==",
+      "path": "microsoft.jsinterop/8.0.0",
+      "hashPath": "microsoft.jsinterop.8.0.0.nupkg.sha512"
     },
     "System.Diagnostics.DiagnosticSource/8.0.0": {
       "type": "package",
@@ -639,6 +628,11 @@
       "hashPath": "system.io.pipelines.8.0.0.nupkg.sha512"
     },
     "BookingSystem.AuthorizationPolicies/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BookingSystem.ClassLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -3,6 +3,7 @@ using BookingSystem.Application.Features.ConferenceRooms.Commands.DeleteConferen
 using BookingSystem.Application.Features.ConferenceRooms.Commands.UpdateConferenceRoom.UpdateConferenceRoom;
 using BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferenceRoom;
 using BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferenceRooms;
+using BookingSystem.Application.Helpers;
 using BookingSystem.Application.ResourceParameters;
 using BookingSystem.AuthorizationPolicies;
 using MediatR;
@@ -30,31 +31,37 @@ namespace BookingSystem.Api.Controllers
         }
 
         [HttpPut(Name ="UpdateConferenceRoomAsync")]
-        public async Task<ActionResult<UpdateConferenceRoomCommandResponse>> UpdateConferenceRoomAsync([FromBody] UpdateConferenceRoomCommand updateConferenceRoomCommand)
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult> UpdateConferenceRoomAsync([FromBody] UpdateConferenceRoomCommand updateConferenceRoomCommand)
         {
-            return Ok(await _mediator.Send(updateConferenceRoomCommand));
+            await _mediator.Send(updateConferenceRoomCommand);
+            return NoContent();
         }
 
 
-        [HttpGet("{conferenceRoomId}", Name ="GetConferenceRoomAsync")]
-        public async Task<ActionResult<ConferenceRoomVm>> GetConferenceRoomAsync(Guid conferenceRoomId)
+        [HttpGet("detail", Name ="GetConferenceRoomAsync")]
+        public async Task<ActionResult<ConferenceRoomVm>> GetConferenceRoomAsync([FromQuery]GetConferenceRoomQuery query)
         {
-            var query = new GetConferenceRoomQuery(conferenceRoomId);
             return Ok(await _mediator.Send(query));
         }
 
         [HttpGet(Name ="GetConferenceRoomsAsync")]
-        public async Task<ActionResult<IEnumerable<ConferenceRoomVm>>> 
-            GetConferenceRoomsAsync([FromQuery] GetConferenceRoomsQuery query)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesDefaultResponseType]
+        public async Task<ActionResult<ConferenceRoomListVm>> GetConferenceRoomsAsync([FromQuery] GetConferenceRoomsQuery query)
         {
             return Ok(await _mediator.Send(query));
         }
 
         [HttpDelete("{conferenceRoomId}", Name ="DeleteConferenceRoomAsync")]
-        public async Task<ActionResult<bool>> DeleteConferenceRoomAsync(Guid conferenceRoomId)
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesDefaultResponseType]
+        public async Task<ActionResult> DeleteConferenceRoomAsync(Guid conferenceRoomId)
         {
-            return Ok(await _mediator.Send(
-                new DeleteConferenceRoomCommand{ConferenceRoomId=conferenceRoomId }));
+            await _mediator.Send(new DeleteConferenceRoomCommand{ConferenceRoomId=conferenceRoomId });
+            return NoContent();
         }
   
     }

@@ -15,15 +15,15 @@ namespace BookingSystem.Shared.Components.Base
         [Inject]
         public IJsInterop ? JsRuntime { get; set; }
         [Inject]
-        public IEventDataService ? EventDataService { get; set; }
+        public IEventDataService? EventDataService { get; set; }
         [Inject]
-        public IConferenceRoomService ? ConferenceRoomDataService { get; set; }
+        public IConferenceRoomService? ConferenceRoomDataService { get; set; }
         [Inject]
         public IBookingDataService? BookingDataService { get; set; }
         [Inject]
-        public ICategoryDataService ? CategoryDataService { get; set; }
+        public ICategoryDataService? CategoryDataService { get; set; }
         [Inject]
-        public IStockEnquiryDataService ? StockEnquiryDataService { get; set; }
+        public IStockEnquiryDataService? StockEnquiryDataService { get; set; }
         [Inject]
         public NavigationManager ? NavigationManager { get; set; }
         [Inject]

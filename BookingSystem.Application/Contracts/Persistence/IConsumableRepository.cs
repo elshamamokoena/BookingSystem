@@ -1,5 +1,8 @@
-﻿using BookingSystem.Application.Features.Consumables.Queries.GetConsumables;
+﻿using BookingSystem.Application.Features.Consumables.Queries.GetConsumable;
+using BookingSystem.Application.Features.Consumables.Queries.GetConsumables;
+using BookingSystem.Application.Helpers;
 using BookingSystem.Application.ResourceParameters;
+using BookingSystem.ClassLibrary;
 using BookingSystem.Domain.Entities.Consumables;
 using System;
 using System.Collections.Generic;
@@ -11,7 +14,10 @@ namespace BookingSystem.Application.Contracts.Persistence
 {
     public interface IConsumableRepository:IAsyncRepository<Consumable>
     {
-        Task<IEnumerable<Consumable>> GetConsumablesAsync(GetConsumablesQuery query);
+        Task<PaginatedList<Consumable>> GetConsumablesAsync(GetConsumablesQuery query);
+        Task<Consumable> GetConsumableAsync(GetConsumableQuery query);
+
+
         //void AddConsumableCategory(ConsumableCategory consumableCategory);
         //void DeleteConsumableCategory(ConsumableCategory consumableCategory);
         //void UpdateConsumableCategory(ConsumableCategory consumableCategory);

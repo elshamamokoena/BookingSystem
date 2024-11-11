@@ -13,7 +13,7 @@ namespace BookingSystem.Persistence.Configurations.Stock
     {
         public void Configure(EntityTypeBuilder<StockItem> builder)
         {
-            builder.Property(s => s.StockNumber)
+            builder.Property(s => s.Sku)
                 .ValueGeneratedOnAdd()
                 .HasValueGenerator<StockNumberGenerator>();
         }

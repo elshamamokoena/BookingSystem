@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Net.Security;
 
 
-namespace BookingSyste.Mobile.App.Helpers
+namespace BookingSystem.Mobile.App.Helpers
 {
 
 

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BookingSystem.Application.Contracts.Persistence;
 using BookingSystem.Application.Exceptions;
+using BookingSystem.Domain.Entities.Consumables;
 using BookingSystem.Domain.Entities.Inventory;
 using MediatR;
 using System;
@@ -11,48 +12,38 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Features.Inventory.Commands.CreateStockItem
 {
-    public class CreateStockItemCommandHandler:IRequestHandler<CreateStockItemCommand, CreateStockItemCommandResponse>
+    public class CreateStockItemCommandHandler:IRequestHandler<CreateStockItemCommand, Guid>
     {
-     
-        private readonly IStockRepository _stockRepository;
-        private readonly IMapper mapper;
+
+        private readonly IAsyncRepository<StockItem> _stockItemRepository;
+        private readonly IMapper _mapper;
         private readonly IConsumableRepository _consumableRepository;
-        public CreateStockItemCommandHandler(IStockRepository stockRepository, IMapper mapper, IConsumableRepository consumableRepository)
+
+        public CreateStockItemCommandHandler(IAsyncRepository<StockItem> stockItemRepository, 
+            IMapper mapper, IConsumableRepository consumableRepository)
         {
-            _stockRepository = stockRepository;
-            this.mapper = mapper;
+            _stockItemRepository = stockItemRepository;
+            _mapper = mapper;
             _consumableRepository = consumableRepository;
         }
 
-        public async Task<CreateStockItemCommandResponse> Handle(CreateStockItemCommand request, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(CreateStockItemCommand request, CancellationToken cancellationToken)
         {
-            var response = new CreateStockItemCommandResponse();
             var validator = new CreateStockItemCommandValidator();
-            var validationResult = await validator.ValidateAsync(request);
+            var validationResult = await validator.ValidateAsync(request,cancellationToken);
 
             if(validationResult.Errors.Count > 0)
                 throw new ValidationException(validationResult);
 
-            if(! await _stockRepository.StockExistsAsync(request.StockId))
-                throw new NotFoundException("Stock", request.StockId);
+            if (!await _consumableRepository.EntityExistsAsync(request.ConsumableId))
+                    throw new NotFoundException(nameof(Consumable), request.ConsumableId);
 
-            if(! await _consumableRepository.EntityExistsAsync(request.ConsumableId))
-                throw new NotFoundException("Consumable", request.ConsumableId);
+            var stockItem = await _stockItemRepository
+                .AddAsync(_mapper.Map<StockItem>(request));
 
-            var stockItem = mapper.Map<StockItem>(request);
-            stockItem = await _stockRepository.AddStockItem(stockItem);
+            await _stockItemRepository.SaveChangesAsync();
 
-            if (await _stockRepository.SaveChangesAsync())
-            {
-                response.StockItem = mapper.Map<StockItemDto>(stockItem);
-                response.Message = "Stock Item created successfully";
-            }
-            else
-            { 
-                response.Message = "Stock Item creation failed";
-            }
-
-            return response;
+            return stockItem.StockItemId;
         }
     }
    

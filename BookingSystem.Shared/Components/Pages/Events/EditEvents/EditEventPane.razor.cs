@@ -27,7 +27,7 @@ namespace BookingSystem.Shared.Components.Pages.Events.EditEvents
             {
                 Event = await EventDataService!.GetEventAsync(SelectedEventId);
             }
-            var categories = await ConsumableDataService!.GetConsumableCategories();
+            var categories = await ConsumableDataService!.GetConsumableCategoriesAsync();
             Categories = new ObservableCollection<ConsumableCategoryViewModel>(categories);
             SelectedConsumableCategoryId = Categories.FirstOrDefault().ConsumableCategoryId.ToString();
             await base.OnInitializedAsync();

@@ -42,7 +42,7 @@ namespace BookingSystem.Shared.Components.Pages.Events.EditEvents
             {
                 //get booking
             }
-            var categories = await ConsumableDataService!.GetConsumableCategories();
+            var categories = await ConsumableDataService!.GetConsumableCategoriesAsync();
             ConsumableCategories = new ObservableCollection<ConsumableCategoryViewModel>(categories);
 
             await base.OnInitializedAsync();

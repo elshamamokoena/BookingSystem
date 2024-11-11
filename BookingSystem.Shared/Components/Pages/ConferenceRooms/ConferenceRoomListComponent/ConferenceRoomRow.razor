@@ -1,0 +1,75 @@
+﻿
+@if(Room is not null)
+{
+    
+<tr class="btn-reveal-trigger">
+    <!--!-->
+    <td class="align-middle" style="width: 28px;">
+        <div class="form-check mb-0">
+            <input class="form-check-input" type="checkbox" id="simple-pagination-item-12" data-bulk-select-row="data-bulk-select-row">
+        </div>
+    </td>
+    <td class="align-middle white-space-nowrap fw-semi-bold name">
+        <a href="../../app/e-commerce/customer-details.html">@Room.Name</a>
+    </td>
+    <!--!-->
+    <td class="align-middle white-space-nowrap email">@Room.Capacity</td>
+    <!--!-->
+    <td class="align-middle white-space-nowrap product">
+        @Room.Description
+    </td><!--!-->
+    <td class="align-middle text-center fs-9 white-space-nowrap payment">
+        <span class="badge badge rounded-pill @Room.ClassName">
+            @Room.Status
+            <!--!-->
+            <svg class="svg-inline--fa fa-stream fa-w-16 ms-1" data-fa-transform="shrink-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="stream" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" style="transform-origin: 0.5em 0.5em;">
+                <g transform="translate(256 256)">
+                    <g transform="translate(0, 0)  scale(0.875, 0.875)  rotate(0 0 0)">
+                        <path fill="currentColor" d="M16 128h416c8.84 0 16-7.16 16-16V48c0-8.84-7.16-16-16-16H16C7.16 32 0 39.16 0 48v64c0 8.84 7.16 16 16 16zm480 80H80c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h416c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16zm-64 176H16c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h416c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16z" transform="translate(-256 -256)">
+
+                        </path>
+                    </g>
+                </g>
+            </svg>
+            <!-- <span class="ms-1 fas fa-stream" data-fa-transform="shrink-2"></span> Font Awesome fontawesome.com -->
+        </span>
+
+    </td>
+    <!--!-->
+    <td class="align-middle text-end amount">
+        @Room.Capacity
+    </td>
+
+    <!--!-->
+    <!--!-->
+
+    <td class="align-middle white-space-nowrap text-end">
+        <div class="dropstart font-sans-serif position-static d-inline-block">
+            <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal float-end" type="button" id="dropdown-simple-pagination-table-item-12" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+                <svg class="svg-inline--fa fa-ellipsis-h fa-w-16 fs-10" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg><!-- <span class="fas fa-ellipsis-h fs-10"></span> Font Awesome fontawesome.com -->
+            </button>
+            <div class="dropdown-menu dropdown-menu-end border py-2" aria-labelledby="dropdown-simple-pagination-table-item-12">
+                @* <a class="dropdown-item" href="javascript:void(0)">View</a> *@
+                <a class="dropdown-item" @onclick="@(()=> NavigationManager.NavigateTo($"/edit-conference-room?conferenceRoomId={SelectedRoomId}"))" href="javascript:void(0)">View</a>
+                 @if(IsBookingMode)
+                  {
+                    <a class="dropdown-item" @onclick="async()=> await OnBookRoomSelected.InvokeAsync(SelectedRoomId)" href="javascript:void(0)">Book room</a>
+                  }
+
+                <div class="dropdown-divider">
+                </div>
+                @if(IsBookingMode)
+                {
+                    <a class="dropdown-item text-warning" href="#!">Cancel Booking</a>
+                }
+                <AuthorizeView Policy="@AuthorizationPolicies.Policies.IsManager">
+                    <Authorized >
+                <a class="dropdown-item text-danger" @onclick="async()=>await HandleDelete()" href="javascript:void(0)">Delete</a>
+                    </Authorized>
+
+                </AuthorizeView>
+            </div>
+        </div>
+    </td>
+</tr>
+}

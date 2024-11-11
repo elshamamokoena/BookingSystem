@@ -1,0 +1,30 @@
+﻿@inherits CustomComponentBase
+
+<div class="table-responsive scrollbar">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Amount</th>
+                <th class="text-end" scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(Amenities.Count()>0)
+            {
+                @foreach (var amenity in Amenities)
+                {
+                    <RoomAmenityTableRow @key="amenity" Amenity="@amenity"  OnEditAmenityClicked="AmenitySelected"  OnDeleteAmenitySuccessful="async()=>await FetchAmenities()"/>
+                }
+            }else
+            {
+                <tr>
+                    <td>
+                        No Amenties Available For Room
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

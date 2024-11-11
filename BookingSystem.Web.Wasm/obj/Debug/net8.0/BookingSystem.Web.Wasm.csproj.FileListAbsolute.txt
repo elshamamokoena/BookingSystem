@@ -11,13 +11,10 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\Blazored.LocalStorage.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
-C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
-C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\Microsoft.JSInterop.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\BookingSystem.Shared.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\BookingSystem.Shared.pdb
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\obj\Debug\net8.0\BookingSystem.Web.Wasm.csproj.AssemblyReference.cache
@@ -56,3 +53,5 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\BookingSystem.AuthorizationPolicies.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\BookingSystem.AuthorizationPolicies.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\BookingSystem.ClassLibrary.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Web.Wasm\bin\Debug\net8.0\BookingSystem.ClassLibrary.pdb

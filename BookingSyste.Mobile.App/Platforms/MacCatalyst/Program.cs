@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace BookingSyste.Mobile.App.Platforms.MacCatalyst
+namespace BookingSystem.Mobile.App.Platforms.MacCatalyst
 {
     public class Program
     {

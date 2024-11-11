@@ -67,6 +67,63 @@ namespace BookingSystem.Persistence.Migrations
                     b.HasIndex("ConferenceRoomId");
 
                     b.ToTable("Amenities");
+
+                    b.HasData(
+                        new
+                        {
+                            AmenityId = new Guid("ee98f149-e790-5e9f-aa15-18c2292a2ee8"),
+                            AmenityCategoryId = new Guid("ee98f119-e790-5e9f-aa15-18c2292a2ee8"),
+                            Amount = 1,
+                            ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a1ee1"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Video Conferencing Description",
+                            IsAvailable = true,
+                            Name = "Video Conferencing Equipment 1"
+                        },
+                        new
+                        {
+                            AmenityId = new Guid("ee98f159-e790-5e9f-aa15-18c2292a2ee8"),
+                            AmenityCategoryId = new Guid("ee98f119-e790-5e9f-aa15-18c2292a2ee8"),
+                            Amount = 1,
+                            ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a1ee1"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Video Conferencing Description",
+                            IsAvailable = true,
+                            Name = "Video Conferencing Equipment 3"
+                        },
+                        new
+                        {
+                            AmenityId = new Guid("ee98f169-e790-5e9f-aa15-18c2292a2ee8"),
+                            AmenityCategoryId = new Guid("ee98f119-e790-5e9f-aa15-18c2292a2ee8"),
+                            Amount = 1,
+                            ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a1ee1"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Video Conferencing Description",
+                            IsAvailable = true,
+                            Name = "Video Conferencing Equipment 1"
+                        },
+                        new
+                        {
+                            AmenityId = new Guid("ee98f179-e790-5e9f-aa15-18c2292a2ee8"),
+                            AmenityCategoryId = new Guid("ee28f139-e790-5e9f-aa15-18c2292a2ee8"),
+                            Amount = 1,
+                            ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a1ee1"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "The best projector ever",
+                            IsAvailable = true,
+                            Name = "Projector 1"
+                        },
+                        new
+                        {
+                            AmenityId = new Guid("ee98f189-e790-5e9f-aa15-18c2292a2ee8"),
+                            AmenityCategoryId = new Guid("ee18f129-e790-5e9f-aa15-18c2292a2ee8"),
+                            Amount = 1,
+                            ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a1ee1"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "That 6G router",
+                            IsAvailable = true,
+                            Name = "Router 1"
+                        });
                 });
 
             modelBuilder.Entity("BookingSystem.Domain.Entities.Amenities.AmenityCategory", b =>
@@ -98,6 +155,29 @@ namespace BookingSystem.Persistence.Migrations
                     b.HasKey("AmenityCategoryId");
 
                     b.ToTable("AmenityCategories");
+
+                    b.HasData(
+                        new
+                        {
+                            AmenityCategoryId = new Guid("ee98f119-e790-5e9f-aa15-18c2292a2ee8"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Amenity Category 1 Description",
+                            Name = "Video conferencing"
+                        },
+                        new
+                        {
+                            AmenityCategoryId = new Guid("ee18f129-e790-5e9f-aa15-18c2292a2ee8"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Amenity Category 2 Description",
+                            Name = "WiFi"
+                        },
+                        new
+                        {
+                            AmenityCategoryId = new Guid("ee28f139-e790-5e9f-aa15-18c2292a2ee8"),
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Amenity Category 3 Description",
+                            Name = "Digital Projectors"
+                        });
                 });
 
             modelBuilder.Entity("BookingSystem.Domain.Entities.Bookings.Booking", b =>
@@ -147,7 +227,7 @@ namespace BookingSystem.Persistence.Migrations
                         {
                             BookingId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a1ee9"),
                             BookingNumber = 0,
-                            ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a2ee7"),
+                            ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a1ee1"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
                             Status = "Pending"
@@ -156,7 +236,7 @@ namespace BookingSystem.Persistence.Migrations
                         {
                             BookingId = new Guid("ee28f549-e790-5e9f-aa15-18c2292a2ee2"),
                             BookingNumber = 0,
-                            ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a2ee8"),
+                            ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a1ee1"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
                             Status = "Pending"
@@ -165,7 +245,7 @@ namespace BookingSystem.Persistence.Migrations
                         {
                             BookingId = new Guid("ee38f549-e790-5e9f-aa15-18c2292a2ee3"),
                             BookingNumber = 0,
-                            ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a2ee9"),
+                            ConferenceRoomId = new Guid("ee98f549-e790-5e9f-aa15-18c2292a1ee1"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             EventId = new Guid("ee98f549-e190-5e9f-aa15-18c2292a2ee1"),
                             Status = "Pending"
@@ -267,6 +347,10 @@ namespace BookingSystem.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Tags")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -282,8 +366,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 10,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 1 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 1",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -292,8 +377,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 20,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 2 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 2",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -302,8 +388,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 30,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 3 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 3",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -312,8 +399,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 40,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 4 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 4",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -322,8 +410,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 50,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 5 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 5",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -332,8 +421,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 60,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 6 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 6",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -342,8 +432,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 70,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 7 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 7",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -352,8 +443,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 80,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 8 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 8",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -362,8 +454,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 90,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 9 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 9",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -372,8 +465,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 100,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 10 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 10",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -382,8 +476,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 110,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 11 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 11",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -392,8 +487,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 120,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 12 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 12",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -402,8 +498,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 130,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 13 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 13",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -412,8 +509,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 140,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 14 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 14",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -422,8 +520,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 150,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 15 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 15",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -432,8 +531,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 160,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 16 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 16",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         },
                         new
@@ -442,8 +542,9 @@ namespace BookingSystem.Persistence.Migrations
                             Capacity = 170,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Conference Room 17 Description",
-                            IsAvailable = true,
+                            IsAvailable = false,
                             Name = "Conference Room 17",
+                            Status = "VacantAndNotBooked",
                             Tags = ""
                         });
                 });
@@ -467,6 +568,13 @@ namespace BookingSystem.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsVisible")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime?>("LastModified")
                         .HasColumnType("datetime2");
 
@@ -474,6 +582,10 @@ namespace BookingSystem.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Tags")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -490,7 +602,10 @@ namespace BookingSystem.Persistence.Migrations
                             ConsumableCategoryId = new Guid("ee48f549-e790-5e9f-aa15-18c2292a2ee9"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ",
-                            Name = "Marker"
+                            ImageUrl = "",
+                            IsVisible = false,
+                            Name = "Marker",
+                            Tags = ""
                         },
                         new
                         {
@@ -498,7 +613,10 @@ namespace BookingSystem.Persistence.Migrations
                             ConsumableCategoryId = new Guid("ee58f549-e790-5e9f-aa15-18c2292a2ee9"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ",
-                            Name = "Pen"
+                            ImageUrl = "",
+                            IsVisible = false,
+                            Name = "Pen",
+                            Tags = ""
                         },
                         new
                         {
@@ -506,7 +624,10 @@ namespace BookingSystem.Persistence.Migrations
                             ConsumableCategoryId = new Guid("ee58f549-e790-5e9f-aa15-18c2292a2ee9"),
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ",
-                            Name = "Pencil"
+                            ImageUrl = "",
+                            IsVisible = false,
+                            Name = "Pencil",
+                            Tags = ""
                         });
                 });
 
@@ -550,7 +671,7 @@ namespace BookingSystem.Persistence.Migrations
                             AmountOfConsumables = 0,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "",
-                            Name = "Markers"
+                            Name = "Markers & Highlighters"
                         },
                         new
                         {
@@ -558,7 +679,15 @@ namespace BookingSystem.Persistence.Migrations
                             AmountOfConsumables = 0,
                             Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "",
-                            Name = "Pens"
+                            Name = "Pens & Refills"
+                        },
+                        new
+                        {
+                            ConsumableCategoryId = new Guid("ee68f549-e790-5e9f-aa15-18c2292a2ee9"),
+                            AmountOfConsumables = 0,
+                            Created = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "",
+                            Name = "Technical instruments"
                         });
                 });
 
@@ -792,6 +921,69 @@ namespace BookingSystem.Persistence.Migrations
                         });
                 });
 
+            modelBuilder.Entity("BookingSystem.Domain.Entities.InternalCart.Cart", b =>
+                {
+                    b.Property<Guid>("CartId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CartId");
+
+                    b.ToTable("InternalCarts");
+                });
+
+            modelBuilder.Entity("BookingSystem.Domain.Entities.InternalCart.CartItem", b =>
+                {
+                    b.Property<Guid>("CartItemId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CartId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ConsumableId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("CartItemId");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("ConsumableId");
+
+                    b.ToTable("CartItems");
+                });
+
             modelBuilder.Entity("BookingSystem.Domain.Entities.Inventory.Stock", b =>
                 {
                     b.Property<Guid>("StockId")
@@ -860,7 +1052,7 @@ namespace BookingSystem.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("ConsumableId")
+                    b.Property<Guid>("ConsumableId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("Created")
@@ -869,9 +1061,8 @@ namespace BookingSystem.Persistence.Migrations
                     b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("EnableStockManagement")
+                        .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastModified")
                         .HasColumnType("datetime2");
@@ -879,20 +1070,16 @@ namespace BookingSystem.Persistence.Migrations
                     b.Property<string>("LastModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("StockId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("StockNumber")
+                    b.Property<string>("Sku")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("StockId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("StockItemId");
 
@@ -928,6 +1115,41 @@ namespace BookingSystem.Persistence.Migrations
                     b.ToTable("StockItemEnquiries");
                 });
 
+            modelBuilder.Entity("BookingSystem.Domain.Entities.RoomBookingEvents.ConferenceRoomChangeEvent", b =>
+                {
+                    b.Property<Guid>("ConferenceRoomChangeEventId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ChangeType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("ConferenceRoomId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ConferenceRoomChangeEventId");
+
+                    b.HasIndex("ConferenceRoomId");
+
+                    b.ToTable("ConferenceRoomChangeEvents");
+                });
+
             modelBuilder.Entity("BookingSystem.Domain.Entities.Amenities.Amenity", b =>
                 {
                     b.HasOne("BookingSystem.Domain.Entities.Amenities.AmenityCategory", "AmenityCategory")
@@ -937,8 +1159,9 @@ namespace BookingSystem.Persistence.Migrations
                         .IsRequired();
 
                     b.HasOne("BookingSystem.Domain.Entities.ConferenceRooms.ConferenceRoom", "ConferenceRoom")
-                        .WithMany()
-                        .HasForeignKey("ConferenceRoomId");
+                        .WithMany("Amenities")
+                        .HasForeignKey("ConferenceRoomId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("AmenityCategory");
 
@@ -986,6 +1209,25 @@ namespace BookingSystem.Persistence.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("BookingSystem.Domain.Entities.InternalCart.CartItem", b =>
+                {
+                    b.HasOne("BookingSystem.Domain.Entities.InternalCart.Cart", "Cart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BookingSystem.Domain.Entities.Consumables.Consumable", "Consumable")
+                        .WithMany()
+                        .HasForeignKey("ConsumableId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Consumable");
+                });
+
             modelBuilder.Entity("BookingSystem.Domain.Entities.Inventory.StockEnquiry", b =>
                 {
                     b.HasOne("BookingSystem.Domain.Entities.Bookings.Booking", "Booking")
@@ -1001,17 +1243,15 @@ namespace BookingSystem.Persistence.Migrations
                 {
                     b.HasOne("BookingSystem.Domain.Entities.Consumables.Consumable", "Consumable")
                         .WithMany()
-                        .HasForeignKey("ConsumableId");
-
-                    b.HasOne("BookingSystem.Domain.Entities.Inventory.Stock", "Stock")
-                        .WithMany("StockItems")
-                        .HasForeignKey("StockId")
+                        .HasForeignKey("ConsumableId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Consumable");
+                    b.HasOne("BookingSystem.Domain.Entities.Inventory.Stock", null)
+                        .WithMany("StockItems")
+                        .HasForeignKey("StockId");
 
-                    b.Navigation("Stock");
+                    b.Navigation("Consumable");
                 });
 
             modelBuilder.Entity("BookingSystem.Domain.Entities.Inventory.StockItemEnquiry", b =>
@@ -1025,6 +1265,17 @@ namespace BookingSystem.Persistence.Migrations
                     b.Navigation("StockEnquiry");
                 });
 
+            modelBuilder.Entity("BookingSystem.Domain.Entities.RoomBookingEvents.ConferenceRoomChangeEvent", b =>
+                {
+                    b.HasOne("BookingSystem.Domain.Entities.ConferenceRooms.ConferenceRoom", "ConferenceRoom")
+                        .WithMany()
+                        .HasForeignKey("ConferenceRoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ConferenceRoom");
+                });
+
             modelBuilder.Entity("BookingSystem.Domain.Entities.Amenities.AmenityCategory", b =>
                 {
                     b.Navigation("Amenities");
@@ -1032,6 +1283,8 @@ namespace BookingSystem.Persistence.Migrations
 
             modelBuilder.Entity("BookingSystem.Domain.Entities.ConferenceRooms.ConferenceRoom", b =>
                 {
+                    b.Navigation("Amenities");
+
                     b.Navigation("Bookings");
                 });
 
@@ -1048,6 +1301,11 @@ namespace BookingSystem.Persistence.Migrations
             modelBuilder.Entity("BookingSystem.Domain.Entities.Events.Event", b =>
                 {
                     b.Navigation("Bookings");
+                });
+
+            modelBuilder.Entity("BookingSystem.Domain.Entities.InternalCart.Cart", b =>
+                {
+                    b.Navigation("CartItems");
                 });
 
             modelBuilder.Entity("BookingSystem.Domain.Entities.Inventory.Stock", b =>

@@ -1,0 +1,35 @@
+﻿@using BookingSystem.ClassLibrary
+
+@if(Room is not null)
+{
+    
+<div class="mb-3 form-check">
+    <input value="@nameof(ConferenceRoomStatus.VacantAndNotBooked)" @onchange="HandleUpdateRoomStatus" class="form-check-input" id="@($"customRadio4-{ConferenceRoomStatus.VacantAndNotBooked}")" type="radio" name="listingPrivacy" checked="@(SelectedRoomStatus==ConferenceRoomStatus.VacantAndNotBooked)" />
+    <label class="form-label mb-0" for="@($"customRadio4-{ConferenceRoomStatus.VacantAndNotBooked}")">
+        <strong>@nameof(ConferenceRoomStatus.VacantAndNotBooked)</strong>
+    </label>
+    <div class="form-text mt-0">Discoverable by anyone on Falcon, our distribution partners, and search engines.</div>
+</div>
+<div class="mb-3 form-check">
+        <input value="@nameof(ConferenceRoomStatus.OccupiedAndNotBooked)" @onchange="HandleUpdateRoomStatus" class="form-check-input" id="@($"customRadio4-{ConferenceRoomStatus.OccupiedAndNotBooked}")" type="radio" name="listingPrivacy" checked="@(SelectedRoomStatus==ConferenceRoomStatus.OccupiedAndNotBooked)" />
+    <label class="form-label mb-0" for="@($"customRadio4-{ConferenceRoomStatus.OccupiedAndNotBooked}")">
+        <strong>@nameof(ConferenceRoomStatus.OccupiedAndNotBooked)</strong>
+    </label>
+    <div class="form-text mt-0">Discoverable by anyone on Falcon, our distribution partners, and search engines.</div>
+</div>
+
+<div class="mb-3 form-check">
+        <input value="@nameof(ConferenceRoomStatus.BookedAndNotOccupied)" @onchange="HandleUpdateRoomStatus" class="form-check-input" id="@($"customRadio4-{ConferenceRoomStatus.BookedAndNotOccupied}")" type="radio" name="listingPrivacy" checked="@(SelectedRoomStatus == ConferenceRoomStatus.BookedAndNotOccupied)" />
+    <label class="form-label mb-0" for="@($"customRadio4-{ConferenceRoomStatus.BookedAndNotOccupied}")">
+        <strong>@nameof(ConferenceRoomStatus.BookedAndNotOccupied)</strong>
+    </label>
+    <div class="form-text mt-0">Discoverable by anyone on Falcon, our distribution partners, and search engines.</div>
+</div>
+<div class="mb-3 form-check">
+        <input value="@nameof(ConferenceRoomStatus.OccupiedAndBooked)" @onchange="HandleUpdateRoomStatus" class="form-check-input" id="@($"customRadio4-{ConferenceRoomStatus.OccupiedAndBooked}")" type="radio" name="listingPrivacy" checked="@(SelectedRoomStatus == ConferenceRoomStatus.OccupiedAndBooked)" />
+    <label class="form-label mb-0" for="@($"customRadio4-{ConferenceRoomStatus.OccupiedAndBooked}")">
+        <strong>@nameof(ConferenceRoomStatus.OccupiedAndBooked)</strong>
+    </label>
+    <div class="form-text mt-0">Discoverable by anyone on Falcon, our distribution partners, and search engines.</div>
+</div>
+}

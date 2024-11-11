@@ -1,4 +1,4 @@
-﻿namespace BookingSyste.Mobile.App
+﻿namespace BookingSystem.Mobile.App
 {
     public partial class App : Application
     {

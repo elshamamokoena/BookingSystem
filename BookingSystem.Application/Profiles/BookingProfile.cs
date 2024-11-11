@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using BookingSystem.Application.Features.Bookings.Commands.CreateBooking;
+using BookingSystem.Application.Features.Bookings.Commands.UpdateBooking;
 using BookingSystem.Application.Features.Bookings.Queries.GetBookings;
+using BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferenceRoom;
 using BookingSystem.Domain.Entities.Bookings;
 using BookingSystem.Domain.Entities.ConferenceRooms;
 using BookingSystem.Domain.Entities.Events;
@@ -20,6 +22,8 @@ namespace BookingSystem.Application.Profiles
             CreateMap<ConferenceRoom, ConferenceRoomForBookingDto>();
             CreateMap<Event, EventForBookingDto>();
             CreateMap<CreateBookingCommand, Booking>();
+            CreateMap<Booking, BookingDto>();
+            CreateMap<UpdateBookingCommand, Booking>();
         }
     }
 }

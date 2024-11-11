@@ -1,5 +1,6 @@
 ﻿<Router AppAssembly="@typeof(Routes).Assembly" >
     <Found Context="routeData">
+
         <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(Layout.MainLayout)" >
             <NotAuthorized>
                 <RedirectToLogin />
@@ -8,3 +9,19 @@
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
     </Found>
 </Router>
+@code{
+    //General
+    private string DangerClassName= "danger";
+    private string SuccessClassName= "success";
+    private string WarningClassName= "warning";
+    private string PrimaryClassName= "primary";
+    private string SecondaryClassName= "secondary";
+
+    // Background
+    private string DangerBackground= "bg-danger";
+    private string SuccessBackground= "bg-success";
+    private string WarningBackground= "bg-warning";
+    private string PrimaryBackground= "bg-primary";
+    private string SecondaryBackground= "bg-secondary";
+
+}

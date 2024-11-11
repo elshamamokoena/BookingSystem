@@ -12,7 +12,8 @@ namespace BookingSystem.Shared.Components.Base
         public IEnumerable<RoomViewModel> Rooms { get; set; } = new List<RoomViewModel>();
         protected override async Task OnInitializedAsync()
         {
-            Rooms = await ConferenceRoomDataService!.GetConferenceRooms(null, null, null, 1, 20);
+            var rooms = await ConferenceRoomDataService!.GetConferenceRoomsAsync(null, null, null, 1, 20);
+            Rooms = rooms.ConferenceRooms;
             await base.OnInitializedAsync();
         }
 

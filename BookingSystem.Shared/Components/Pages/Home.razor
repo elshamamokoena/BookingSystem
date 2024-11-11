@@ -1,9 +1,11 @@
 ﻿@page "/"
+@using BookingSystem.Shared.Components.Pages.Consumables.EditConsumablePage
+@using BookingSystem.Shared.Components.Pages.Dashboard
 @using Microsoft.AspNetCore.Authorization
-@attribute [Authorize(Policy = AuthorizationPolicies.Policies.IsManager)]
+@* @attribute [Authorize(Policy = AuthorizationPolicies.Policies.IsManager)] *@
 <PageTitle>Home</PageTitle>
 
- <Calendar/> 
+ <DashboardPage/> 
 
 @code{
     [CascadingParameter] 

@@ -14,6 +14,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BookingSystem.Domain.Entities.InternalCart;
+using BookingSystem.Application.Models;
+using BookingSystem.ClassLibrary;
+using Microsoft.EntityFrameworkCore.Metadata;
+using BookingSystem.Domain.Entities.RoomBookingEvents;
 
 namespace BookingSystem.Persistence.DbContexts
 {
@@ -37,10 +42,13 @@ namespace BookingSystem.Persistence.DbContexts
         public DbSet<AmenityCategory> AmenityCategories { get; set; }
         public DbSet<Consumable> Consumables { get; set; }
         public DbSet<ConsumableCategory> ConsumableCategories { get; set; }
+
+        public DbSet<Cart> InternalCarts { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
         public DbSet<Stock> Stocks { get; set; }
         public DbSet<StockItem> StockItems { get; set; }
         public DbSet<StockEnquiry> StockEnquiries { get; set; }
-
+        public DbSet<ConferenceRoomChangeEvent> ConferenceRoomChangeEvents { get; set; }
         public DbSet<StockItemEnquiry> StockItemEnquiries { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -48,7 +56,28 @@ namespace BookingSystem.Persistence.DbContexts
             modelBuilder.ApplyConfiguration(new BookingConfiguration());
             modelBuilder.ApplyConfiguration(new StockConfiguration());
 
+            modelBuilder.Entity<Booking>()
+                .Property(b => b.BookingNumber)
+                .ValueGeneratedOnUpdate()
+                .Metadata
+                .SetBeforeSaveBehavior(PropertySaveBehavior.Ignore);
 
+            modelBuilder.Entity<Booking>()
+                .Property(b => b.BookingNumber)
+                .ValueGeneratedOnAdd()
+                .Metadata
+                .SetAfterSaveBehavior(PropertySaveBehavior.Ignore);
+
+            modelBuilder.Entity<ConferenceRoom>()
+                .HasMany(c => c.Bookings)
+                .WithOne(b => b.ConferenceRoom)
+                .HasForeignKey(b => b.ConferenceRoomId)
+                .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<ConferenceRoom>()
+                .HasMany(c => c.Amenities)
+                .WithOne(a => a.ConferenceRoom)
+                .HasForeignKey(a => a.ConferenceRoomId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<ConferenceRoom>().HasData(
                 new ConferenceRoom
@@ -57,6 +86,7 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 1",
                     Description = "Conference Room 1 Description",
                     Capacity = 10,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
                 },
                 new ConferenceRoom
                 {
@@ -64,6 +94,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 2",
                     Description = "Conference Room 2 Description",
                     Capacity = 20,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -71,6 +103,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 3",
                     Description = "Conference Room 3 Description",
                     Capacity = 30,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -78,6 +112,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 4",
                     Description = "Conference Room 4 Description",
                     Capacity = 40,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -85,6 +121,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 5",
                     Description = "Conference Room 5 Description",
                     Capacity = 50,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 }, 
                 new ConferenceRoom
                 {
@@ -92,6 +130,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 6",
                     Description = "Conference Room 6 Description",
                     Capacity = 60,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -99,6 +139,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 7",
                     Description = "Conference Room 7 Description",
                     Capacity = 70,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -106,6 +148,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 8",
                     Description = "Conference Room 8 Description",
                     Capacity = 80,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -113,6 +157,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 9",
                     Description = "Conference Room 9 Description",
                     Capacity = 90,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -120,6 +166,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 10",
                     Description = "Conference Room 10 Description",
                     Capacity = 100,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -127,6 +175,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 11",
                     Description = "Conference Room 11 Description",
                     Capacity = 110,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -134,6 +184,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 12",
                     Description = "Conference Room 12 Description",
                     Capacity = 120,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -141,6 +193,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 13",
                     Description = "Conference Room 13 Description",
                     Capacity = 130,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -148,6 +202,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 14",
                     Description = "Conference Room 14 Description",
                     Capacity = 140,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -155,6 +211,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 15",
                     Description = "Conference Room 15 Description",
                     Capacity = 150,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                 new ConferenceRoom
                 {
@@ -162,6 +220,8 @@ namespace BookingSystem.Persistence.DbContexts
                     Name = "Conference Room 16",
                     Description = "Conference Room 16 Description",
                     Capacity = 160,
+                    Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                 },
                     new ConferenceRoom
                     {
@@ -169,11 +229,84 @@ namespace BookingSystem.Persistence.DbContexts
                         Name = "Conference Room 17",
                         Description = "Conference Room 17 Description",
                         Capacity = 170,
+                        Status = nameof(ConferenceRoomStatus.VacantAndNotBooked),
+
                     }
 
                 );
 
-modelBuilder.Entity<Category>().HasData(
+            modelBuilder.Entity<AmenityCategory>().HasData(
+                new AmenityCategory
+                {
+                    AmenityCategoryId = Guid.Parse("EE98F119-E790-5E9F-AA15-18C2292A2EE8"),
+                    Name = "Video conferencing",
+                    Description = "Amenity Category 1 Description"
+                },
+                new AmenityCategory
+                {
+                    AmenityCategoryId = Guid.Parse("EE18F129-E790-5E9F-AA15-18C2292A2EE8"),
+                    Name = "WiFi",
+                    Description = "Amenity Category 2 Description"
+                },
+                new AmenityCategory
+                {
+                    AmenityCategoryId = Guid.Parse("EE28F139-E790-5E9F-AA15-18C2292A2EE8"),
+                    Name = "Digital Projectors",
+                    Description = "Amenity Category 3 Description"
+                }
+                );
+
+            modelBuilder.Entity<Amenity>().HasData(new Amenity
+            {
+                AmenityId = Guid.Parse("EE98F149-E790-5E9F-AA15-18C2292A2EE8"),
+                Name = "Video Conferencing Equipment 1",
+                Description = "Video Conferencing Description",
+                AmenityCategoryId = Guid.Parse("EE98F119-E790-5E9F-AA15-18C2292A2EE8"),
+                ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A1EE1"),
+                Amount = 1,
+                IsAvailable = true
+            }, new Amenity
+            {
+                AmenityId = Guid.Parse("EE98F159-E790-5E9F-AA15-18C2292A2EE8"),
+                Name = "Video Conferencing Equipment 3",
+                Description = "Video Conferencing Description",
+                AmenityCategoryId = Guid.Parse("EE98F119-E790-5E9F-AA15-18C2292A2EE8"),
+                ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A1EE1"),
+                Amount = 1,
+                IsAvailable = true
+            }, new Amenity
+            {
+                AmenityId = Guid.Parse("EE98F169-E790-5E9F-AA15-18C2292A2EE8"),
+                Name = "Video Conferencing Equipment 1",
+                Description = "Video Conferencing Description",
+                AmenityCategoryId = Guid.Parse("EE98F119-E790-5E9F-AA15-18C2292A2EE8"),
+                ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A1EE1"),
+                Amount = 1,
+                IsAvailable = true
+            }, new Amenity
+            {
+                AmenityId = Guid.Parse("EE98F179-E790-5E9F-AA15-18C2292A2EE8"),
+                Name = "Projector 1",
+                Description = "The best projector ever",
+                AmenityCategoryId = Guid.Parse("EE28F139-E790-5E9F-AA15-18C2292A2EE8"),
+                ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A1EE1"),
+                Amount = 1,
+                IsAvailable = true
+            },new Amenity
+            {
+                AmenityId = Guid.Parse("EE98F189-E790-5E9F-AA15-18C2292A2EE8"),
+                Name = "Router 1",
+                Description = "That 6G router",
+                AmenityCategoryId = Guid.Parse("EE18F129-E790-5E9F-AA15-18C2292A2EE8"),
+                ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A1EE1"),
+                Amount = 1,
+                IsAvailable = true
+            }
+            );
+
+
+
+            modelBuilder.Entity<Category>().HasData(
     new Category
 {
     CategoryId = Guid.Parse("EE98F549-E110-5E9F-AA15-18C2292A2EE1"),
@@ -328,14 +461,14 @@ new Category
                 {
                     BookingId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A1EE9"),
                     EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE7"),
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A1EE1"),
                     Status = nameof(BookingStatus.Pending)
                 },
                 new Booking
                 {
                     BookingId = Guid.Parse("EE28F549-E790-5E9F-AA15-18C2292A2EE2"),
                     EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE8"),
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A1EE1"),
                     Status = nameof(BookingStatus.Pending)
 
                 },
@@ -343,7 +476,7 @@ new Category
                 {
                     BookingId = Guid.Parse("EE38F549-E790-5E9F-AA15-18C2292A2EE3"),
                     EventId = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1"),
-                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A2EE9"),
+                    ConferenceRoomId = Guid.Parse("EE98F549-E790-5E9F-AA15-18C2292A1EE1"),
                     Status = nameof(BookingStatus.Pending)
                 },
                 new Booking
@@ -403,12 +536,17 @@ new Category
                 new ConsumableCategory
                 {
                     ConsumableCategoryId = Guid.Parse("EE48F549-E790-5E9F-AA15-18C2292A2EE9"),
-                    Name = "Markers"
+                    Name = "Markers & Highlighters"
                 },
                 new ConsumableCategory
                 {
                     ConsumableCategoryId = Guid.Parse("EE58F549-E790-5E9F-AA15-18C2292A2EE9"),
-                    Name = "Pens"
+                    Name = "Pens & Refills"
+                },
+                new ConsumableCategory
+                {
+                    ConsumableCategoryId = Guid.Parse("EE68F549-E790-5E9F-AA15-18C2292A2EE9"),
+                    Name = "Technical instruments"
                 }
                 );
 
@@ -450,6 +588,7 @@ new Category
                     Name = "Marker",
                     ConsumableCategoryId = Guid.Parse("EE48F549-E790-5E9F-AA15-18C2292A2EE9"),
                     Description = "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's "
+             
                 },
                 new Consumable
                 {

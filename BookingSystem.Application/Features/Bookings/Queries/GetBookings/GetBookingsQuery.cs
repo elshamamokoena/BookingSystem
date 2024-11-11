@@ -10,7 +10,7 @@ namespace BookingSystem.Application.Features.Bookings.Queries.GetBookings
 {
     public class GetBookingsQuery :ResourceParameterBase, IRequest<IEnumerable<BookingVm>>
     {
-        public Guid EventId { get; set; }
+        public Guid ? EventId { get; set; }
 
     }
 }

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Features.Consumables.Commands.CreateConsumable
 {
-    public class CreateConsumableCommandHandler : IRequestHandler<CreateConsumableCommand, CreateConsumableCommandResponse>
+    public class CreateConsumableCommandHandler : IRequestHandler<CreateConsumableCommand, Guid>
     {
         //private readonly IConsumableRepository _consumableRepository;
         private readonly IAsyncRepository<Consumable> _consumableRepository;
@@ -25,9 +25,8 @@ namespace BookingSystem.Application.Features.Consumables.Commands.CreateConsumab
             _consumableCategoryRepository = consumableCategoryRepository;
             _mapper = mapper;
         }
-        public async Task<CreateConsumableCommandResponse> Handle(CreateConsumableCommand request, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(CreateConsumableCommand request, CancellationToken cancellationToken)
         {
-            var response = new CreateConsumableCommandResponse();
             var validator = new CreateConsumableCommandValidator();
             var validationResult = await validator.ValidateAsync(request);
 
@@ -39,11 +38,8 @@ namespace BookingSystem.Application.Features.Consumables.Commands.CreateConsumab
 
             var consumable = await _consumableRepository.AddAsync(_mapper.Map<Consumable>(request));
             await _consumableRepository.SaveChangesAsync();
-            response.Consumable = _mapper.Map<ConsumableDto>(consumable);
-            return response;
 
-
-      
+            return consumable.ConsumableId;
         }
     }
     

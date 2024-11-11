@@ -23,12 +23,9 @@ namespace BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferen
         }
         public async Task<ConferenceRoomVm> Handle(GetConferenceRoomQuery request, CancellationToken cancellationToken)
         {
-
                 if(!await _conferenceRoomRepository.EntityExistsAsync(request.ConferenceRoomId))
                     throw new NotFoundException(nameof(ConferenceRoom), request.ConferenceRoomId);
-
-                var conferenceRoom = await _conferenceRoomRepository.GetEntityAsync(request.ConferenceRoomId);
-                
+                var conferenceRoom = await _conferenceRoomRepository.GetConferenceRoomAsync(request);
                 return  _mapper.Map<ConferenceRoomVm>(conferenceRoom);
         }
     }

@@ -1,14 +1,11 @@
-﻿using BookingSystem.Application.Features.Consumables.Commands.CreateConsumableCategory;
+﻿
+using BookingSystem.Application.Models;
 
 namespace BookingSystem.Application.Features.Consumables.Queries.GetConsumables
 {
-    public class ConsumableListVm
+    public class ConsumableListVm:PagedVm
     {
-        public Guid ConsumableId { get; set; }
-        public string Name { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-        public Guid ConsumableCategoryId { get; set; }
-        public ConsumableCategoryForListDto Category { get; set; } = default!;
+        public IEnumerable<ConsumableListDto>? Consumables { get; set; }
 
     }
 }

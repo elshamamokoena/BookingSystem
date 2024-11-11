@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "BookingSystem.Domain/1.0.0": {
+        "dependencies": {
+          "BookingSystem.ClassLibrary": "1.0.0"
+        },
         "runtime": {
           "BookingSystem.Domain.dll": {}
+        }
+      },
+      "BookingSystem.ClassLibrary/1.0.0": {
+        "runtime": {
+          "BookingSystem.ClassLibrary.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "BookingSystem.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BookingSystem.ClassLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

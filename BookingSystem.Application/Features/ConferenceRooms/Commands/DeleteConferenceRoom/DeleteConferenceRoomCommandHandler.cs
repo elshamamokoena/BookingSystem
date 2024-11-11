@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using BookingSystem.Application.Contracts.Persistence;
+using BookingSystem.Application.Exceptions;
+using BookingSystem.Domain.Entities.ConferenceRooms;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -9,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Features.ConferenceRooms.Commands.DeleteConferenceRoom
 {
-    public class DeleteConferenceRoomCommandHandler : IRequestHandler<DeleteConferenceRoomCommand, bool>
+    public class DeleteConferenceRoomCommandHandler : IRequestHandler<DeleteConferenceRoomCommand, Unit>
     {
         private readonly IConferenceRoomRepository _conferenceRoomRepository;
         private readonly IMapper _mapper;
@@ -19,11 +21,14 @@ namespace BookingSystem.Application.Features.ConferenceRooms.Commands.DeleteConf
             _mapper = mapper;
             _conferenceRoomRepository = conferenceRoomRepository;
         }
-        public async Task<bool> Handle(DeleteConferenceRoomCommand request, CancellationToken cancellationToken)
+        public async Task<Unit> Handle(DeleteConferenceRoomCommand request, CancellationToken cancellationToken)
         {
             var conferenceRoomToDelete = await _conferenceRoomRepository.GetEntityAsync(request.ConferenceRoomId);
-             _conferenceRoomRepository.DeleteEntity(conferenceRoomToDelete);
-            return await _conferenceRoomRepository.SaveChangesAsync();
+            if (conferenceRoomToDelete == null)
+                throw new NotFoundException(nameof(ConferenceRoom), request.ConferenceRoomId);
+            _conferenceRoomRepository.DeleteEntity(conferenceRoomToDelete);
+             await _conferenceRoomRepository.SaveChangesAsync();
+            return Unit.Value;
         }
     }
 }

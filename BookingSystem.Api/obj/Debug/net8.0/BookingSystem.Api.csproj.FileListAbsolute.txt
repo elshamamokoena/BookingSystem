@@ -173,3 +173,5 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Mic
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\BookingSystem.AuthorizationPolicies.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\BookingSystem.AuthorizationPolicies.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\BookingSystem.ClassLibrary.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\BookingSystem.ClassLibrary.pdb

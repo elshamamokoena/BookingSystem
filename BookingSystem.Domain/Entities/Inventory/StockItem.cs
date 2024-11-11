@@ -16,13 +16,11 @@ namespace BookingSystem.Domain.Entities.Inventory
     {
         public Guid StockItemId { get; set; }
 
-        public string StockNumber { get; set; } = string.Empty;
-        public string Name { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-        public Guid StockId { get; set; } 
-        public Stock Stock { get; set; } = default!;
-        public Guid ? ConsumableId { get; set; } 
+        public string Sku { get; set; } = string.Empty;
+        public Guid ConsumableId { get; set; } 
         public Consumable Consumable { get; set; }= default!;
         public int Quantity { get; set; }
+        public bool EnableStockManagement { get; set; }
+
     }
 }

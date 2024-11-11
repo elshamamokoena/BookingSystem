@@ -1,0 +1,30 @@
+﻿@inherits CustomComponentBase
+<EditRoomAmenityTableRowModal @key="Amenity" AmenityId="@SelectedAmenityId.ToString()" />
+
+@if(Amenity is not null)
+
+{
+
+<tr class="@(Amenity.IsAvailable ?  "table-success":"table-warning")">
+    <td>@Amenity.Name</td>
+    @if (Amenity.AmenityCategory is not null)
+    {
+        <td>@Amenity.AmenityCategory.Name</td>
+
+    }
+    else
+    {
+        <td>Not Available</td>
+    }
+    <td>@Amenity.Amount</td>
+    <td class="text-end">
+        <div>
+                <button class="btn btn-link p-0" type="button" data-bs-toggle="modal" data-bs-target="@($"#edit-amenity-modal-{SelectedAmenityId}")" @onclick="async()=>await OnEditAmenityClicked.InvokeAsync(SelectedAmenityId.ToString())"><span class="text-500 fas fa-edit"></span></button>
+            <button class="btn btn-link p-0 ms-2" @onclick="async()=>await HandleDeleteAmenity()" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="text-500 fas fa-trash-alt"></span></button>
+        </div>
+    </td>
+    </tr>
+}else
+{
+    <Loader></Loader>
+}

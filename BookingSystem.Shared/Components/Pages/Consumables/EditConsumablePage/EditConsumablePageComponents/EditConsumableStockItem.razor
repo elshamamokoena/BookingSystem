@@ -1,0 +1,17 @@
+﻿<h6>Inventory</h6>
+
+@if(StockItem is not null)
+{
+    <div class="mb-0">
+        <label class="form-label" for="exampleFormControlInput3">SKU</label>
+        <InputText @bind-Value="@StockItem.Sku" class="form-control" id="exampleFormControlInput3" type="text" placeholder="MRK1234" />
+    </div>
+    <div class="mb-0">
+        <label class="form-label" for="exampleFormControlInput2">Stock Quantity</label>
+        <InputNumber @bind-Value="@StockItem.Quantity" class="form-control" id="exampleFormControlInput2" type="number" placeholder="0" />
+    </div>
+
+    <div class="card-footer border-top border-200 py-x1">
+        <button class="btn btn-primary w-100" @onclick="async ()=> await UpdateStockItemAsync()" >Update Stock</button>
+    </div>
+}

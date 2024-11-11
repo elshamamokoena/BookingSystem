@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using BookingSystem.Application.Contracts.Persistence;
 using BookingSystem.Application.Exceptions;
+using BookingSystem.Application.Models;
+using BookingSystem.ClassLibrary;
 using BookingSystem.Domain.Entities.ConferenceRooms;
 using MediatR;
 using System;
@@ -30,7 +32,8 @@ namespace BookingSystem.Application.Features.ConferenceRooms.Commands.CreateConf
                 throw new ValidationException(validationResult);
 
             var conferenceRoom = _mapper.Map<ConferenceRoom>(request);
-            conferenceRoom= await _conferenceRoomRepository.AddAsync(conferenceRoom);
+            conferenceRoom.Status = nameof(ConferenceRoomStatus.VacantAndNotBooked);
+            conferenceRoom = await _conferenceRoomRepository.AddAsync(conferenceRoom);
             await _conferenceRoomRepository.SaveChangesAsync();
             return conferenceRoom.ConferenceRoomId;
         }

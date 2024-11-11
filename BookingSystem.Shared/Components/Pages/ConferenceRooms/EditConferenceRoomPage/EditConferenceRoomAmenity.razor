@@ -1,0 +1,18 @@
+﻿@inherits CustomComponentBase
+
+@if(Amenity is not null)
+{
+    if(IsError)
+    {
+     <Toast Success="false" Message="@Message"/>
+    }
+    @if(IsSuccess)
+    {
+        <Toast Success="true" Message="@Message"/>
+    }
+
+    <div class="form-check custom-checkbox mb-0">
+        <input @bind-value="@Amenity.IsAvailable" @bind-value:event="oninput"  @onchange="OnAmenityAvailableChanged" checked="@Amenity.IsAvailable" class="form-check-input" id="@($"customRadio-{Amenity.AmenityId}")" type="checkbox" />
+        <label class="form-label mb-0" for="@($"customRadio-{Amenity.AmenityId}")"> @Amenity.Name </label>
+    </div>
+}

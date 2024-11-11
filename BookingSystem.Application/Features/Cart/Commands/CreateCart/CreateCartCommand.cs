@@ -9,6 +9,6 @@ namespace BookingSystem.Application.Features.Cart.Commands.CreateCart
 {
     public class CreateCartCommand:IRequest<Guid>
     {
-        public Guid UserId { get; set; }
+        public string UserId { get; set; } = default!;
     }
 }

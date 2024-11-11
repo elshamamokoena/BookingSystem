@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace BookingSyste.Mobile.App
+namespace BookingSystem.Mobile.App
 {
     internal class Program : MauiApplication
     {

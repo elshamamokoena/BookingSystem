@@ -13,13 +13,13 @@ namespace BookingSystem.Application.Features.Amenities.Commands.CreateAmenityCat
 {
     public class CreateAmenityCategoryCommandHandler : IRequestHandler<CreateAmenityCategoryCommand, CreateAmenityCategoryCommandResponse>
     {
-        private readonly IAmenityRepository _amenityRepository;
+        private readonly IAsyncRepository<AmenityCategory> _amenityCategoryRepository;
         private readonly IMapper _mapper;
 
-        public CreateAmenityCategoryCommandHandler(IAmenityRepository amenityRepository, 
+        public CreateAmenityCategoryCommandHandler(IAsyncRepository<AmenityCategory> amenityCategoryRepository, 
             IMapper mapper)
         {
-            _amenityRepository = amenityRepository;
+            _amenityCategoryRepository = amenityCategoryRepository;
             _mapper = mapper;
         }
         public async Task<CreateAmenityCategoryCommandResponse> Handle(CreateAmenityCategoryCommand request, CancellationToken cancellationToken)
@@ -32,8 +32,8 @@ namespace BookingSystem.Application.Features.Amenities.Commands.CreateAmenityCat
             throw new ValidationException(validationResult);
 
             var amenityCategory = _mapper.Map<AmenityCategory>(request);
-            amenityCategory= await _amenityRepository.AddMenityCategory(amenityCategory);
-            await _amenityRepository.SaveChangesAsync();
+            amenityCategory= await _amenityCategoryRepository.AddAsync(amenityCategory);
+            await _amenityCategoryRepository.SaveChangesAsync();
             response.AmenityCategory = _mapper.Map<AmenityCategoryDto>(amenityCategory);
             response.Message = "Amenity Category Created Successfully";
             return response;

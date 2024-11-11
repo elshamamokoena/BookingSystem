@@ -15,10 +15,10 @@ namespace BookingSystem.Domain.Entities.Amenities
         public string Description { get; set; } = string.Empty;
         public Guid AmenityCategoryId { get; set; }
         public AmenityCategory? AmenityCategory { get; set; }
-        public Guid ?ConferenceRoomId { get; set; }
+        public Guid ? ConferenceRoomId { get; set; }
         public ConferenceRoom? ConferenceRoom { get; set; }
         public int Amount { get; set; }
-        public bool IsAvailable { get; set; } = true;
+        public bool IsAvailable { get; set; }
 
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Blazored.LocalStorage;
+using BookingSystem.Shared.Components.Pages.Bookings;
 using BookingSystem.Shared.Components.Pages.Events.EditEvents;
 using BookingSystem.Shared.Contracts;
 using BookingSystem.Shared.Models.Bookings;
@@ -46,12 +47,29 @@ namespace BookingSystem.Shared.Services
             return _mapper.Map<BookingViewModel>(booking);
         }
 
-        public async Task<IEnumerable<BookingViewModel>> GetBookingsAsync(Guid eventId, int? pageNumber, int? pageSize)
+        public async Task<IEnumerable<BookingViewModel>> GetBookingsAsync(Guid? eventId, int? pageNumber, int? pageSize)
         {
             var bookings = await _client.GetBookingsAsync(eventId, pageNumber,pageSize);
             return _mapper.Map<IEnumerable<BookingViewModel>>(bookings.ToList());
         }
 
-    
+        public async Task<ApiResponse<Guid>> UpdateBookingAsync(UpdateBookingViewModel booking)
+        {
+            try
+            {
+                UpdateBookingCommand command = new UpdateBookingCommand
+                {
+                    BookingId = booking.BookingId,
+                    Status = booking.Status,
+                };
+                await _client.UpdateBookingAsync(command);
+                return new ApiResponse<Guid> { IsSuccess = true, Message = "Booking updated successfully" };
+
+            }
+            catch (ApiException ex)
+            {
+                return ConvertApiExceptions<Guid>(ex);
+            }
+        }
     }
 }

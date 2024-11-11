@@ -1,0 +1,307 @@
+2024-11-03 14:13:15.655 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 14:13:15.680 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 14:13:15.732 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 14:13:15.734 +02:00 [INF] Hosting environment: Development
+2024-11-03 14:13:15.735 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 14:14:50.925 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 14:14:50.952 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 14:14:51.009 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 14:14:51.011 +02:00 [INF] Hosting environment: Development
+2024-11-03 14:14:51.014 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 14:42:25.289 +02:00 [ERR] Failed executing DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy], [Status])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-11-03 14:47:04.383 +02:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy], [Status])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-11-03 14:55:23.342 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 14:55:23.363 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 14:55:23.416 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 14:55:23.425 +02:00 [INF] Hosting environment: Development
+2024-11-03 14:55:23.431 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 14:55:45.979 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-03 14:55:45.985 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-03 14:56:33.999 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-03 14:56:34.003 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-03 20:23:10.302 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 20:23:10.338 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 20:23:10.424 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 20:23:10.445 +02:00 [INF] Hosting environment: Development
+2024-11-03 20:23:10.474 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 20:23:47.391 +02:00 [ERR] Failed executing DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ConferenceRoomChangeEvents] AS [c]
+2024-11-03 20:23:47.438 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'BookingSystem.Persistence.DbContexts.BookingSystemDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ConferenceRoomChangeEvents'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:11a230e5-e032-4a51-a131-d9d071350740
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'ConferenceRoomChangeEvents'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:11a230e5-e032-4a51-a131-d9d071350740
+Error Number:208,State:1,Class:16
+2024-11-03 20:27:33.277 +02:00 [ERR] Failed executing DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy], [Status])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-11-03 20:28:08.140 +02:00 [ERR] Failed executing DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy], [Status])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-11-03 20:28:24.796 +02:00 [ERR] Failed executing DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy], [Status])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-11-03 20:30:16.678 +02:00 [ERR] Failed executing DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy], [Status])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-11-03 20:31:44.826 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 20:31:44.850 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 20:31:44.902 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 20:31:44.906 +02:00 [INF] Hosting environment: Development
+2024-11-03 20:31:44.909 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 20:31:47.258 +02:00 [ERR] Failed executing DbCommand (46ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[BookingId], [t].[BookingNumber], [t].[ConferenceRoomId], [t].[Created], [t].[CreatedBy], [t].[EventId], [t].[LastModified], [t].[LastModifiedBy], [t].[Status], [c].[ConferenceRoomId], [c].[Capacity], [c].[Created], [c].[CreatedBy], [c].[Description], [c].[IsAvailable], [c].[LastModified], [c].[LastModifiedBy], [c].[Name], [c].[Status], [c].[Tags], [e].[EventId], [e].[CategoryId], [e].[Created], [e].[CreatedBy], [e].[Description], [e].[End], [e].[Label], [e].[LastModified], [e].[LastModifiedBy], [e].[Start], [e].[Title]
+FROM (
+    SELECT [b].[BookingId], [b].[BookingNumber], [b].[ConferenceRoomId], [b].[Created], [b].[CreatedBy], [b].[EventId], [b].[LastModified], [b].[LastModifiedBy], [b].[Status]
+    FROM [Bookings] AS [b]
+    ORDER BY [b].[BookingNumber]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+INNER JOIN [ConferenceRooms] AS [c] ON [t].[ConferenceRoomId] = [c].[ConferenceRoomId]
+INNER JOIN [Events] AS [e] ON [t].[EventId] = [e].[EventId]
+ORDER BY [t].[BookingNumber]
+2024-11-03 20:31:47.290 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'BookingSystem.Persistence.DbContexts.BookingSystemDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Bookings'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:ed341f50-91ae-47fc-8cd2-2ae3f2e76b9d
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Bookings'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:ed341f50-91ae-47fc-8cd2-2ae3f2e76b9d
+Error Number:208,State:1,Class:16
+2024-11-03 20:32:04.719 +02:00 [ERR] Failed executing DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy], [Status])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-11-03 20:32:36.596 +02:00 [ERR] Failed executing DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy], [Status])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-11-03 20:33:39.740 +02:00 [ERR] Failed executing DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] ON;
+INSERT INTO [Bookings] ([BookingId], [ConferenceRoomId], [Created], [CreatedBy], [EventId], [LastModified], [LastModifiedBy], [Status])
+VALUES ('ee08f549-e790-5e9f-aa15-18c2292a2ee4', 'ee98f549-e790-5e9f-aa15-11c2292a1ee0', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee28f549-e790-5e9f-aa15-18c2292a2ee2', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee38f549-e790-5e9f-aa15-18c2292a2ee3', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee48f549-e790-5e9f-aa15-18c2292a2ee5', 'ee98f549-e790-5e9f-aa15-11c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee58f549-e790-5e9f-aa15-18c2292a2ee6', 'ee98f549-e790-5e9f-aa15-11c2292a1ee2', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee68f549-e790-5e9f-aa15-18c2292a2ee7', 'ee98f549-e790-5e9f-aa15-11c2292a1ee3', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Cancelled'),
+('ee78f549-e790-5e9f-aa15-18c2292a2ee8', 'ee98f549-e790-5e9f-aa15-11c2292a1ee4', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee88f549-e790-5e9f-aa15-18c2292a2ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee5', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending'),
+('ee91f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-11c2292a1ee6', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Approved'),
+('ee98f549-e790-5e9f-aa15-18c2292a1ee9', 'ee98f549-e790-5e9f-aa15-18c2292a1ee1', '0001-01-01T00:00:00.0000000', NULL, 'ee98f549-e190-5e9f-aa15-18c2292a2ee1', NULL, NULL, N'Pending');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'BookingId', N'ConferenceRoomId', N'Created', N'CreatedBy', N'EventId', N'LastModified', N'LastModifiedBy', N'Status') AND [object_id] = OBJECT_ID(N'[Bookings]'))
+    SET IDENTITY_INSERT [Bookings] OFF;
+2024-11-03 21:02:04.498 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 21:02:04.516 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 21:02:04.557 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 21:02:04.560 +02:00 [INF] Hosting environment: Development
+2024-11-03 21:02:04.561 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 21:03:58.284 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 21:03:58.313 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 21:03:58.375 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 21:03:58.376 +02:00 [INF] Hosting environment: Development
+2024-11-03 21:03:58.377 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 21:10:26.520 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-03 21:10:26.541 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-03 21:16:05.504 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 21:16:05.526 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 21:16:05.570 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 21:16:05.571 +02:00 [INF] Hosting environment: Development
+2024-11-03 21:16:05.572 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 21:16:36.366 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-03 21:16:36.371 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-03 21:17:58.606 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 21:17:58.632 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 21:17:58.705 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 21:17:58.752 +02:00 [INF] Hosting environment: Development
+2024-11-03 21:17:58.754 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 21:20:19.445 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-03 21:20:19.450 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-03 21:40:51.394 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 21:40:51.414 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 21:40:51.458 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 21:40:51.460 +02:00 [INF] Hosting environment: Development
+2024-11-03 21:40:51.462 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 21:41:51.836 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 21:41:51.853 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 21:41:51.897 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 21:41:51.899 +02:00 [INF] Hosting environment: Development
+2024-11-03 21:41:51.900 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 21:46:47.952 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 21:46:47.978 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 21:46:48.023 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 21:46:48.025 +02:00 [INF] Hosting environment: Development
+2024-11-03 21:46:48.026 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 21:52:38.636 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 21:52:38.695 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 21:52:38.814 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 21:52:38.855 +02:00 [INF] Hosting environment: Development
+2024-11-03 21:52:38.857 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 21:55:49.572 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 21:55:49.611 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 21:55:49.668 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 21:55:49.671 +02:00 [INF] Hosting environment: Development
+2024-11-03 21:55:49.672 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-11-03 21:56:08.185 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-03 21:56:08.190 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-11-03 22:01:34.009 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-03 22:01:34.027 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-03 22:01:34.060 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-03 22:01:34.062 +02:00 [INF] Hosting environment: Development
+2024-11-03 22:01:34.063 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api

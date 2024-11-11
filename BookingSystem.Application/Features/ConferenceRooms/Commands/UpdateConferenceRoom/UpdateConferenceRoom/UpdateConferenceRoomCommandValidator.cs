@@ -33,6 +33,8 @@ namespace BookingSystem.Application.Features.ConferenceRooms.Commands.UpdateConf
 
             RuleFor(p => p.IsAvailable)
                 .NotNull();
+
+          
         }
     }
 }

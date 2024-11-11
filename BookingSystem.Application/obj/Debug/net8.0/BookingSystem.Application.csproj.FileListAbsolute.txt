@@ -14,3 +14,5 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\ne
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\BookingSystem.Application.pdb
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\ref\BookingSystem.Application.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\obj\Debug\net8.0\BookingSystem.Application.sourcelink.json
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\bin\Debug\net8.0\BookingSystem.ClassLibrary.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Application\bin\Debug\net8.0\BookingSystem.ClassLibrary.pdb

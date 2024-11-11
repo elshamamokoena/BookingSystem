@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:BookingSyste.Mobile.App"
+             xmlns:local="clr-namespace:BookingSystem.Mobile.App"
              xmlns:shared="clr-namespace:BookingSystem.Shared;assembly=BookingSystem.Shared"
-             x:Class="BookingSyste.Mobile.App.MainPage"
+             x:Class="BookingSystem.Mobile.App.MainPage"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
 
     <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">

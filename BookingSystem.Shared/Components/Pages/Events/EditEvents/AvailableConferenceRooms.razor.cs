@@ -61,7 +61,7 @@ namespace BookingSystem.Shared.Components.Pages.Events.EditEvents
         private async Task<IEnumerable<RoomViewModel>> FetchRooms()
         {
             var @event = await EventDataService!.GetEventAsync(SelectedEventId);
-            return await ConferenceRoomDataService!.GetConferenceRooms(null, @event.Start, @event.End, 1, 15);
+            return (await ConferenceRoomDataService!.GetConferenceRoomsAsync(null, @event.Start, @event.End, 1, 15)).ConferenceRooms;
         }
   
     }

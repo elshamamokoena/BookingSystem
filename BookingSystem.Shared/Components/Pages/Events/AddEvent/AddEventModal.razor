@@ -22,13 +22,13 @@
                         <label class="fs-0" for="eventEndDate">End Date</label>
                         <input @bind-value="@Event.End" @bind-value:event="oninput" class="form-control " id="eventEndDate" type="datetime-local" name="endDate" placeholder="yyyy/mm/dd hh:mm" data-options='{"enableTime":"true","dateFormat":"Y/m/d H:i"}' />
                     </div>
-                    <div class="form-check">
+                    <div class="form-check" hidden>
                         <input class="form-check-input" type="checkbox" id="eventAllDay" name="allDay" />
                         <label class="form-check-label" for="eventAllDay">
                             All Day
                         </label>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3" hidden>
                         <label class="fs-0">Schedule Meeting</label>
                         <div><a class="btn badge-soft-success btn-sm" href="#!"><span class="fas fa-video me-2"></span>Add video conference link</a></div>
                     </div>

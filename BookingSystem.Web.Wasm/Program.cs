@@ -64,6 +64,10 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy(Policies.IsManager,Policies.ManagerPolicy());
+    options.AddPolicy(Policies.IsClerk, Policies.ClerkPolicy());
+    options.AddPolicy(Policies.IsEmployee, Policies.EmployeePolicy());
+
+
 });
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -73,9 +77,12 @@ builder.Services.AddScoped<IBookingDataService, BookingDataService>();
 builder.Services.AddScoped<ICategoryDataService, CategoryDataService>();
 builder.Services.AddScoped<IStockEnquiryDataService, StockEnquiryDataService>();
 builder.Services.AddScoped<IConsumableDataService, ConsumableDataService>();
+builder.Services.AddScoped<ICartDataService, CartDataService>();
+builder.Services.AddScoped<IAmenityDataService, AmenityDataService>();
+builder.Services.AddScoped<IStockDataService, StockDataService>();
+builder.Services.AddScoped<IAnalyticsDataService, AnalyticsDataService>();
 builder.Services.AddScoped<IJsInterop, JsInterop>();
 builder.Services.AddBlazoredLocalStorage();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -95,7 +102,6 @@ app.UseAntiforgery();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddAdditionalAssemblies(typeof(BookingSystem.Shared._Imports).Assembly);
-
 
 
 app.MapGet("/login", (string? returnUrl, HttpContext httpContext) =>

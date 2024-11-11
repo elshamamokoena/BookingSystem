@@ -1,9 +1,11 @@
-﻿using BookingSystem.Shared.Components.Base;
+﻿using BookingSystem.ClassLibrary;
+using BookingSystem.Shared.Components.Base;
 using BookingSystem.Shared.Models.Bookings;
 using BookingSystem.Shared.Services;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,22 +16,35 @@ namespace BookingSystem.Shared.Components.Pages.Bookings
     {
 
         [Parameter]
-        public Guid EventId { get; set; } = Guid.Parse("EE98F549-E190-5E9F-AA15-18C2292A2EE1");
+        public string EventId { get; set; }
+        public Guid SelectedEventId = Guid.Empty;
 
-        public IEnumerable<BookingViewModel>? Bookings { get; set; } 
+        public ObservableCollection<BookingViewModel>? Bookings { get; set; } 
+            = new ObservableCollection<BookingViewModel>();
 
+        private IEnumerable<BookingViewModel> bookings =
+            new List<BookingViewModel>();
+
+        public BookingStatus SelectedBookingStatus = default!;
         protected override async Task OnInitializedAsync()
         {
-            Bookings = await BookingDataService!.GetBookingsAsync(EventId, 1, 10);
+            if(Guid.TryParse(EventId, out SelectedEventId) && SelectedEventId != Guid.Empty)
+                bookings = await BookingDataService!.GetBookingsAsync(SelectedEventId, 1, 100);
+            else
+                bookings = await BookingDataService!.GetBookingsAsync(null,1, 100);
+
+            Bookings = new ObservableCollection<BookingViewModel>(bookings);
             await base.OnInitializedAsync();
         }
 
-        protected override async Task OnAfterRenderAsync(bool firstRender)
-        {
-            if (Bookings != null)
-                await JsRuntime!.InitiAdvanceAjaxTable(firstRender, Bookings, this);
 
-            await base.OnAfterRenderAsync(firstRender);
-        }
+
+        //protected override async Task OnAfterRenderAsync(bool firstRender)
+        //{
+        //    if (Bookings != null)
+        //        await JsRuntime!.InitiAdvanceAjaxTable(firstRender, Bookings, this);
+
+        //    await base.OnAfterRenderAsync(firstRender);
+        //}
     }
 }

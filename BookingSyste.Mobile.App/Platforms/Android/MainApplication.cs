@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace BookingSyste.Mobile.App.Platforms.Android
+namespace BookingSystem.Mobile.App.Platforms.Android
 {
     [Application]
     public class MainApplication : MauiApplication

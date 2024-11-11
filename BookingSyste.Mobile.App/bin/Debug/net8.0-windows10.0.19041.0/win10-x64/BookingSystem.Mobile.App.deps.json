@@ -10,25 +10,25 @@
       "BookingSystem.Mobile.App/1.0": {
         "dependencies": {
           "BookingSystem.Shared": "1.0.0",
-          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.80",
+          "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.82",
           "Microsoft.Extensions.Logging.Debug": "8.0.0",
-          "Microsoft.Maui.Controls": "8.0.72",
-          "Microsoft.Maui.Controls.Compatibility": "8.0.72",
-          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.34"
+          "Microsoft.Maui.Controls": "8.0.82",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.82",
+          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.44"
         },
         "runtime": {
           "BookingSystem.Mobile.App.dll": {}
         }
       },
-      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.34": {
+      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.44": {
         "runtime": {
           "Microsoft.Windows.SDK.NET.dll": {
-            "assemblyVersion": "10.0.19041.24",
-            "fileVersion": "10.0.19041.34"
+            "assemblyVersion": "10.0.19041.38",
+            "fileVersion": "10.0.19041.43"
           },
           "WinRT.Runtime.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.8.46841"
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.2.47512"
           }
         }
       },
@@ -45,7 +45,7 @@
       },
       "Blazored.LocalStorage/4.5.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "8.0.6"
+          "Microsoft.AspNetCore.Components.Web": "8.0.0"
         },
         "runtime": {
           "lib/net8.0/Blazored.LocalStorage.dll": {
@@ -74,7 +74,7 @@
       "Duende.AccessTokenManagement.OpenIdConnect/3.0.0": {
         "dependencies": {
           "Duende.AccessTokenManagement": "3.0.0",
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "8.0.8"
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "8.0.1"
         },
         "runtime": {
           "lib/net8.0/Duende.AccessTokenManagement.OpenIdConnect.dll": {
@@ -91,14 +91,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.8": {
+      "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.1": {
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "7.1.2"
         },
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {
-            "assemblyVersion": "8.0.8.0",
-            "fileVersion": "8.0.824.36908"
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.123.58008"
           }
         }
       },
@@ -140,36 +140,24 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/8.0.6": {
+      "Microsoft.AspNetCore.Components.Forms/8.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "8.0.8"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.AspNetCore.Components.Forms.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.624.26909"
-          }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/8.0.6": {
+      "Microsoft.AspNetCore.Components.Web/8.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "8.0.8",
-          "Microsoft.AspNetCore.Components.Forms": "8.0.6",
+          "Microsoft.AspNetCore.Components.Forms": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0",
-          "Microsoft.JSInterop": "8.0.6",
+          "Microsoft.JSInterop": "8.0.0",
           "System.IO.Pipelines": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.AspNetCore.Components.Web.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.624.26909"
-          }
         }
       },
       "Microsoft.AspNetCore.Components.WebView/8.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "8.0.6",
+          "Microsoft.AspNetCore.Components.Web": "8.0.0",
           "Microsoft.Extensions.Configuration.Binder": "8.0.0",
           "Microsoft.Extensions.Configuration.Json": "8.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "8.0.0",
@@ -183,16 +171,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.WebView.Maui/8.0.80": {
+      "Microsoft.AspNetCore.Components.WebView.Maui/8.0.82": {
         "dependencies": {
           "Microsoft.AspNetCore.Authorization": "8.0.8",
           "Microsoft.AspNetCore.Components.WebView": "8.0.0",
-          "Microsoft.JSInterop": "8.0.6"
+          "Microsoft.JSInterop": "8.0.0"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.AspNetCore.Components.WebView.Maui.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.8024.40620"
+            "fileVersion": "8.0.8224.42604"
           }
         }
       },
@@ -353,7 +341,7 @@
       "Microsoft.Extensions.Primitives/8.0.0": {},
       "Microsoft.Graphics.Win2D/1.2.0": {
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.5.240607001"
+          "Microsoft.WindowsAppSDK": "1.5.240627000"
         },
         "runtime": {
           "lib/net6.0-windows10.0.19041.0/Microsoft.Graphics.Canvas.Interop.dll": {
@@ -432,54 +420,55 @@
           }
         }
       },
-      "Microsoft.JSInterop/8.0.6": {
+      "Microsoft.IO.RecyclableMemoryStream/3.0.1": {
         "runtime": {
-          "lib/net8.0/Microsoft.JSInterop.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.624.26909"
+          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
           }
         }
       },
-      "Microsoft.Maui.Controls/8.0.72": {
+      "Microsoft.JSInterop/8.0.0": {},
+      "Microsoft.Maui.Controls/8.0.82": {
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "8.0.72",
-          "Microsoft.Maui.Controls.Core": "8.0.72",
-          "Microsoft.Maui.Controls.Xaml": "8.0.72",
-          "Microsoft.Maui.Resizetizer": "8.0.72"
+          "Microsoft.Maui.Controls.Build.Tasks": "8.0.82",
+          "Microsoft.Maui.Controls.Core": "8.0.82",
+          "Microsoft.Maui.Controls.Xaml": "8.0.82",
+          "Microsoft.Maui.Resizetizer": "8.0.82"
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/8.0.72": {
+      "Microsoft.Maui.Controls.Build.Tasks/8.0.82": {
         "dependencies": {
-          "Microsoft.Maui.Controls.Core": "8.0.72",
-          "Microsoft.Maui.Controls.Xaml": "8.0.72"
+          "Microsoft.Maui.Controls.Core": "8.0.82",
+          "Microsoft.Maui.Controls.Xaml": "8.0.82"
         }
       },
-      "Microsoft.Maui.Controls.Compatibility/8.0.72": {
+      "Microsoft.Maui.Controls.Compatibility/8.0.82": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
-          "Microsoft.Maui.Controls.Core": "8.0.72",
-          "Microsoft.Maui.Controls.Xaml": "8.0.72"
+          "Microsoft.Maui.Controls.Core": "8.0.82",
+          "Microsoft.Maui.Controls.Xaml": "8.0.82"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Compatibility.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8224.42604"
           }
         }
       },
-      "Microsoft.Maui.Controls.Core/8.0.72": {
+      "Microsoft.Maui.Controls.Core/8.0.82": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
-          "Microsoft.Maui.Core": "8.0.72"
+          "Microsoft.Maui.Core": "8.0.82"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8224.42604"
           }
         },
         "resources": {
@@ -587,86 +576,87 @@
           }
         }
       },
-      "Microsoft.Maui.Controls.Xaml/8.0.72": {
+      "Microsoft.Maui.Controls.Xaml/8.0.82": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Maui.Controls.Core": "8.0.72",
-          "Microsoft.Maui.Core": "8.0.72"
+          "Microsoft.Maui.Controls.Core": "8.0.82",
+          "Microsoft.Maui.Core": "8.0.82"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Xaml.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8224.42604"
           }
         }
       },
-      "Microsoft.Maui.Core/8.0.72": {
+      "Microsoft.Maui.Core/8.0.82": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
           "Microsoft.Graphics.Win2D": "1.2.0",
-          "Microsoft.Maui.Essentials": "8.0.72",
-          "Microsoft.Maui.Graphics": "8.0.72",
-          "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "8.0.72",
+          "Microsoft.Maui.Essentials": "8.0.82",
+          "Microsoft.Maui.Graphics": "8.0.82",
+          "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "8.0.82",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756",
-          "Microsoft.WindowsAppSDK": "1.5.240607001"
+          "Microsoft.WindowsAppSDK": "1.5.240627000"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8224.42604"
           }
         }
       },
-      "Microsoft.Maui.Essentials/8.0.72": {
+      "Microsoft.Maui.Essentials/8.0.82": {
         "dependencies": {
-          "Microsoft.Maui.Graphics": "8.0.72",
-          "Microsoft.WindowsAppSDK": "1.5.240607001"
+          "Microsoft.Maui.Graphics": "8.0.82",
+          "Microsoft.WindowsAppSDK": "1.5.240627000"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Essentials.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8224.42604"
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.72": {
+      "Microsoft.Maui.Graphics/8.0.82": {
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.2.0",
-          "Microsoft.WindowsAppSDK": "1.5.240607001"
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "Microsoft.WindowsAppSDK": "1.5.240627000"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8224.42604"
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/8.0.72": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/8.0.82": {
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.2.0",
-          "Microsoft.Maui.Graphics": "8.0.72",
-          "Microsoft.WindowsAppSDK": "1.5.240607001"
+          "Microsoft.Maui.Graphics": "8.0.82",
+          "Microsoft.WindowsAppSDK": "1.5.240627000"
         },
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.7224.40507"
+            "fileVersion": "8.0.8224.42604"
           }
         }
       },
-      "Microsoft.Maui.Resizetizer/8.0.72": {},
+      "Microsoft.Maui.Resizetizer/8.0.82": {},
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {},
-      "Microsoft.WindowsAppSDK/1.5.240607001": {
+      "Microsoft.WindowsAppSDK/1.5.240627000": {
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756"
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.26105.1001"
+            "fileVersion": "10.0.26105.1002"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
             "assemblyVersion": "3.0.0.0",
@@ -762,15 +752,23 @@
           }
         }
       },
+      "BookingSystem.ClassLibrary/1.0.0": {
+        "runtime": {
+          "BookingSystem.ClassLibrary.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "BookingSystem.Shared/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
           "Blazored.LocalStorage": "4.5.0",
           "BookingSystem.AuthorizationPolicies": "1.0.0",
+          "BookingSystem.ClassLibrary": "1.0.0",
           "Duende.AccessTokenManagement.OpenIdConnect": "3.0.0",
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "8.0.8",
           "Microsoft.AspNetCore.Components.Authorization": "8.0.8",
-          "Microsoft.AspNetCore.Components.Web": "8.0.6",
+          "Microsoft.AspNetCore.Components.Web": "8.0.0",
           "Microsoft.Extensions.Http": "8.0.0"
         },
         "runtime": {
@@ -788,7 +786,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.34": {
+    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.44": {
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
@@ -828,12 +826,12 @@
       "path": "identitymodel/7.0.0",
       "hashPath": "identitymodel.7.0.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.8": {
+    "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uPfEVY/Hg1EuggiHcB/l4Y0SwYeG9cNPxZitStZVtty7t2+ezK4+l0eyjXtcqI+rLC1iEpcEVDU3tBcBEzxNvg==",
-      "path": "microsoft.aspnetcore.authentication.openidconnect/8.0.8",
-      "hashPath": "microsoft.aspnetcore.authentication.openidconnect.8.0.8.nupkg.sha512"
+      "sha512": "sha512-gx344DYqTjhotuG56JchlqArEvytZGgYuIuaNP/B+FcvXMuexO3mujamvs4qWXH+5g96poi2+p/Cek5KpVmaQA==",
+      "path": "microsoft.aspnetcore.authentication.openidconnect/8.0.1",
+      "hashPath": "microsoft.aspnetcore.authentication.openidconnect.8.0.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/8.0.8": {
       "type": "package",
@@ -863,19 +861,19 @@
       "path": "microsoft.aspnetcore.components.authorization/8.0.8",
       "hashPath": "microsoft.aspnetcore.components.authorization.8.0.8.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components.Forms/8.0.6": {
+    "Microsoft.AspNetCore.Components.Forms/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-49wIE1ns3ZGDU4NPMcKCSTC716IxujUeaynsUyflM5Qmb2WlF6M6m4pMcJ6UET1Ixmn027nZjMEc8J7pU4BLBg==",
-      "path": "microsoft.aspnetcore.components.forms/8.0.6",
-      "hashPath": "microsoft.aspnetcore.components.forms.8.0.6.nupkg.sha512"
+      "sha512": "sha512-iiYB/7Sl/vTURO4EiTUCmfIXujlJOl+Gh7nknCFhvFQ+kKMFFXYcrszYwLN9aQSolpswc/A9a78KL59/UIezig==",
+      "path": "microsoft.aspnetcore.components.forms/8.0.0",
+      "hashPath": "microsoft.aspnetcore.components.forms.8.0.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components.Web/8.0.6": {
+    "Microsoft.AspNetCore.Components.Web/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xxYlTpcTEWsxaWUscDLN32mM32ysslLFtNQBS6wJOxaKJ9LCvusXDyBVEKL2DPbB8PZdereNvyrVr0deHkuOEw==",
-      "path": "microsoft.aspnetcore.components.web/8.0.6",
-      "hashPath": "microsoft.aspnetcore.components.web.8.0.6.nupkg.sha512"
+      "sha512": "sha512-aokUKvFoNqxR6bf0+iKrDfQ79OLHWYn5UGYp5MU65/il1vuRK7MAF18oGj7QgiZJUu3cMAZjCFkHbsWLhQxCsA==",
+      "path": "microsoft.aspnetcore.components.web/8.0.0",
+      "hashPath": "microsoft.aspnetcore.components.web.8.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Components.WebView/8.0.0": {
       "type": "package",
@@ -884,12 +882,12 @@
       "path": "microsoft.aspnetcore.components.webview/8.0.0",
       "hashPath": "microsoft.aspnetcore.components.webview.8.0.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components.WebView.Maui/8.0.80": {
+    "Microsoft.AspNetCore.Components.WebView.Maui/8.0.82": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sKndl+AnDOjCgPvS0Lh8axe7fyPN125iSvKMV58dbRHkAz1drhHHmEm1Axom5cL1fJlhSWNu3JjwwmUM7F54DA==",
-      "path": "microsoft.aspnetcore.components.webview.maui/8.0.80",
-      "hashPath": "microsoft.aspnetcore.components.webview.maui.8.0.80.nupkg.sha512"
+      "sha512": "sha512-D1SBTC+MG0iahD2TrN0TTC3Ey1DbwLI7sq2coF5tfANfQ5njzDK0Bp4fgD5uwsRNxNopoiwcnarbBdR+DUy7OQ==",
+      "path": "microsoft.aspnetcore.components.webview.maui/8.0.82",
+      "hashPath": "microsoft.aspnetcore.components.webview.maui.8.0.82.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Metadata/8.0.8": {
       "type": "package",
@@ -1101,82 +1099,89 @@
       "path": "microsoft.identitymodel.tokens/7.1.2",
       "hashPath": "microsoft.identitymodel.tokens.7.1.2.nupkg.sha512"
     },
-    "Microsoft.JSInterop/8.0.6": {
+    "Microsoft.IO.RecyclableMemoryStream/3.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-E1djWS3d41fcd++7sGlbYhOHde5Pb0oBpOcNvUbn+1ga/yCvsjzUfbd/tDRg1qacNKS0iwKWYOIqTZxJnh99dQ==",
-      "path": "microsoft.jsinterop/8.0.6",
-      "hashPath": "microsoft.jsinterop.8.0.6.nupkg.sha512"
+      "sha512": "sha512-s/s20YTVY9r9TPfTrN5g8zPF1YhwxyqO6PxUkrYTGI2B+OGPe9AdajWZrLhFqXIvqIW23fnUE4+ztrUWNU1+9g==",
+      "path": "microsoft.io.recyclablememorystream/3.0.1",
+      "hashPath": "microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512"
     },
-    "Microsoft.Maui.Controls/8.0.72": {
+    "Microsoft.JSInterop/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fbbdhcttsYnUPCaqKI076H/E4IFG4IkDe060k07SUWxzzNYwKQYXFFA4kY+1tElkz9Bu4ALhk9WYXJsV5BZNdQ==",
-      "path": "microsoft.maui.controls/8.0.72",
-      "hashPath": "microsoft.maui.controls.8.0.72.nupkg.sha512"
+      "sha512": "sha512-qQqASbHxWIddssdEBKUQ/49j21SEstiho6VAepPQa9eISLCBCE6wq0m3YaB6cpdF5U+AWX5F3FvDfmssql3xtw==",
+      "path": "microsoft.jsinterop/8.0.0",
+      "hashPath": "microsoft.jsinterop.8.0.0.nupkg.sha512"
     },
-    "Microsoft.Maui.Controls.Build.Tasks/8.0.72": {
+    "Microsoft.Maui.Controls/8.0.82": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lhvI4OeezTmZo+xbpqPKvJ7fqdE/+Nv0EeCoA8JpQE468Hnf4KyPQdz6Rtd4bg+DXbhhkio0SSn9yNdDgJYO1g==",
-      "path": "microsoft.maui.controls.build.tasks/8.0.72",
-      "hashPath": "microsoft.maui.controls.build.tasks.8.0.72.nupkg.sha512"
+      "sha512": "sha512-wUNQRAvzyhZjD5XLowTcU4OFQ6Tz2bdHz7ZRenKdChqtrxfSltiA84F/aN+M2BwmfVxuEp3zD2Y31paYFK8n1Q==",
+      "path": "microsoft.maui.controls/8.0.82",
+      "hashPath": "microsoft.maui.controls.8.0.82.nupkg.sha512"
     },
-    "Microsoft.Maui.Controls.Compatibility/8.0.72": {
+    "Microsoft.Maui.Controls.Build.Tasks/8.0.82": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lhsT0U6Pnnq/JOrJJzJRll5SGXB+BGlHt6OsEo82rXW8hHvaQkNIDy2RdTuczvAxVSQgjn8RXqw7gNU91ZEWKw==",
-      "path": "microsoft.maui.controls.compatibility/8.0.72",
-      "hashPath": "microsoft.maui.controls.compatibility.8.0.72.nupkg.sha512"
+      "sha512": "sha512-FLtYThqc5tQ7TnNuInJzNsK+jtg2ecjqoOWFYCCWASz4WJn8tN60nyP0drS6wTBj8CJLdrDzr3gxkfJpSh4cng==",
+      "path": "microsoft.maui.controls.build.tasks/8.0.82",
+      "hashPath": "microsoft.maui.controls.build.tasks.8.0.82.nupkg.sha512"
     },
-    "Microsoft.Maui.Controls.Core/8.0.72": {
+    "Microsoft.Maui.Controls.Compatibility/8.0.82": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TDdtgftNTJC+XR/kZ6tlUxGrssqvT5OiO3/SdUy6vi2HJAaFI3VFMyLYPBCMBorV370hrB8u6fQSTSeUGv6o1g==",
-      "path": "microsoft.maui.controls.core/8.0.72",
-      "hashPath": "microsoft.maui.controls.core.8.0.72.nupkg.sha512"
+      "sha512": "sha512-PwsRrH9PuL3UAITU7l6cgKIqzPekios1XlnBLJW8ZemHUnFnZDU4eNpNf9OBmTiZm2pKVT8Ls3YZQ1gZKt9sKA==",
+      "path": "microsoft.maui.controls.compatibility/8.0.82",
+      "hashPath": "microsoft.maui.controls.compatibility.8.0.82.nupkg.sha512"
     },
-    "Microsoft.Maui.Controls.Xaml/8.0.72": {
+    "Microsoft.Maui.Controls.Core/8.0.82": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FSP3XevCUdGmdH+2gH0vFoPKbATxtLQNdC5R2G0UnSYMXAH9iUKWOZTloVVRdM00BjK540K9zaHb4p95rHUcgA==",
-      "path": "microsoft.maui.controls.xaml/8.0.72",
-      "hashPath": "microsoft.maui.controls.xaml.8.0.72.nupkg.sha512"
+      "sha512": "sha512-OA6LfWt6IIQFBXOJIIzef4FeH9kEd1GrN7OjalLqLlxmTrVUoVldAc9fp5e3NTzrLKr6DrvYdhOd+vazx9KvTw==",
+      "path": "microsoft.maui.controls.core/8.0.82",
+      "hashPath": "microsoft.maui.controls.core.8.0.82.nupkg.sha512"
     },
-    "Microsoft.Maui.Core/8.0.72": {
+    "Microsoft.Maui.Controls.Xaml/8.0.82": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pZpITikBUUTd9TmeOWSiJ3VgTdQBZRkzcVY24GNF7mAPtEJ8jOY0QwQKRjqtR2gp+XgDGZfcrhH2IUqAZHBEDw==",
-      "path": "microsoft.maui.core/8.0.72",
-      "hashPath": "microsoft.maui.core.8.0.72.nupkg.sha512"
+      "sha512": "sha512-QFCiX2BOLursL7QXa1KVkUEUsFO6ccxQh7f8rZXMOgAjR1M01Q4YNa9uGJ8vDwfj03snEmIQGrhM/K1ohuBy0Q==",
+      "path": "microsoft.maui.controls.xaml/8.0.82",
+      "hashPath": "microsoft.maui.controls.xaml.8.0.82.nupkg.sha512"
     },
-    "Microsoft.Maui.Essentials/8.0.72": {
+    "Microsoft.Maui.Core/8.0.82": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vREpr0rnqxUI5JeTlUeh1pNtc0wjuh2XpNHELMeWvilJlhgsc9rasJ2iN6/GKvp6Hjx1CU17SJndBSwahH+PfQ==",
-      "path": "microsoft.maui.essentials/8.0.72",
-      "hashPath": "microsoft.maui.essentials.8.0.72.nupkg.sha512"
+      "sha512": "sha512-cuL7nSqN4HD+AMmgqKS5FW0nGSixRKt5yHCHYBPdcHJSzhGaBkhm3f3QXfus+FfFeKf8wpe24WT3OpakUxOZOQ==",
+      "path": "microsoft.maui.core/8.0.82",
+      "hashPath": "microsoft.maui.core.8.0.82.nupkg.sha512"
     },
-    "Microsoft.Maui.Graphics/8.0.72": {
+    "Microsoft.Maui.Essentials/8.0.82": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8aon/JsbkxEcxWB9gtd5Y5kXY5XB7Bvkm/RFjJ0bQPW39V56tnKQtWt3hz9/S1reIgs/w/q61E3TrPu5HjXCeA==",
-      "path": "microsoft.maui.graphics/8.0.72",
-      "hashPath": "microsoft.maui.graphics.8.0.72.nupkg.sha512"
+      "sha512": "sha512-Rcg+49oW7px7OC4NO0AMFeI0R51kDflyj9V0bFIh3ehY/3kI1Pk9pvHPGt1eRtbiejDOa0VTZKt/tKYme+OXJQ==",
+      "path": "microsoft.maui.essentials/8.0.82",
+      "hashPath": "microsoft.maui.essentials.8.0.82.nupkg.sha512"
     },
-    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/8.0.72": {
+    "Microsoft.Maui.Graphics/8.0.82": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zSmIwluppZjw+2cbA8ULXuuxM63CLJcqLO32MrwafXQuULulnn78wCOLaVhT3v3Gk0p+SN8XvC8rWfh7PCjo6Q==",
-      "path": "microsoft.maui.graphics.win2d.winui.desktop/8.0.72",
-      "hashPath": "microsoft.maui.graphics.win2d.winui.desktop.8.0.72.nupkg.sha512"
+      "sha512": "sha512-l0H7YufzTp8On98mx9BzTp7RQPpGPJNJBJMatIHxtEsDCGX0HSYnsoz07v0+dJsOVkfXMVTQmmmOrDujVNhpYQ==",
+      "path": "microsoft.maui.graphics/8.0.82",
+      "hashPath": "microsoft.maui.graphics.8.0.82.nupkg.sha512"
     },
-    "Microsoft.Maui.Resizetizer/8.0.72": {
+    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/8.0.82": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7MmYYGaA6Hv9mca4+k9B9lJ+fWWO5wytP5PxOwLuC5w6p7J5+w8q7JdgtltqeY677JSQRCNxChgMou1Zy4nzzA==",
-      "path": "microsoft.maui.resizetizer/8.0.72",
-      "hashPath": "microsoft.maui.resizetizer.8.0.72.nupkg.sha512"
+      "sha512": "sha512-IVBp8HvYMKdpJP/hBeJhzd7LeIM9UXOMdhqr/YXAs0XP8PUWp7VSGEVzhvQEexY0fKaBbKdi+dghbJUxfu4aGw==",
+      "path": "microsoft.maui.graphics.win2d.winui.desktop/8.0.82",
+      "hashPath": "microsoft.maui.graphics.win2d.winui.desktop.8.0.82.nupkg.sha512"
+    },
+    "Microsoft.Maui.Resizetizer/8.0.82": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TlWHxNzHvOpILEP3W+8asTaLZAlkISIPFJHY5/ckD9NuHu1vAb2YNsIVkjRe5YxthJQShTbbRFtzhf4sHryp9g==",
+      "path": "microsoft.maui.resizetizer/8.0.82",
+      "hashPath": "microsoft.maui.resizetizer.8.0.82.nupkg.sha512"
     },
     "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
       "type": "package",
@@ -1185,12 +1190,12 @@
       "path": "microsoft.windows.sdk.buildtools/10.0.22621.756",
       "hashPath": "microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512"
     },
-    "Microsoft.WindowsAppSDK/1.5.240607001": {
+    "Microsoft.WindowsAppSDK/1.5.240627000": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hwPYYUGPlneZi7Uwhm2zAIzSnvGGoL1bIqlisba7Adi5fYbwsj1GvGqiFiyYxRV9bhs3ykQNnJ1LW1cdXvvLiQ==",
-      "path": "microsoft.windowsappsdk/1.5.240607001",
-      "hashPath": "microsoft.windowsappsdk.1.5.240607001.nupkg.sha512"
+      "sha512": "sha512-qzzWG8rxZyzKzBuUdwr4ApezMINf+NT2b8EiEE5fchczNJJmDwlHImMWxX1pHK1W8Yby99alqLyC8DB0fIrhuA==",
+      "path": "microsoft.windowsappsdk/1.5.240627000",
+      "hashPath": "microsoft.windowsappsdk.1.5.240627000.nupkg.sha512"
     },
     "System.Diagnostics.DiagnosticSource/8.0.0": {
       "type": "package",
@@ -1228,6 +1233,11 @@
       "hashPath": "system.text.json.8.0.0.nupkg.sha512"
     },
     "BookingSystem.AuthorizationPolicies/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BookingSystem.ClassLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

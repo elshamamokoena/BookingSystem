@@ -43,11 +43,15 @@ namespace BookingSystem.Api.Middleware
                     httpStatusCode = HttpStatusCode.BadRequest;
                     result = badRequestException.Message;
                     break;
-                case NotFoundException:
+                case NotFoundException notFoundException:
                     httpStatusCode = HttpStatusCode.NotFound;
+                    result = notFoundException.Message;
                     break;
                 case UnauthorizedAccessException:
                     httpStatusCode = HttpStatusCode.Unauthorized;
+                    break;
+                case AuthenticationException:
+                    httpStatusCode = HttpStatusCode.Forbidden;
                     break;
                 case Exception:
                     httpStatusCode = HttpStatusCode.InternalServerError;

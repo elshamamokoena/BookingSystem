@@ -21,7 +21,8 @@ namespace BookingSystem.Shared.Components
         }
         public async Task GetEvents()
         {
-            Events = await EventDataService!.GetEventsAsync(DateTime.Parse("2024/08/01 12:00"), DateTime.Parse("2024/10/30 12:00"),1,50);
+            Events = await EventDataService!.GetEventsAsync(DateTime.Parse("2024/01/01 00:00"), DateTime.Parse("2025/01/01 00:00"),1,100);
+       
         }
         public void Dispose()
         {

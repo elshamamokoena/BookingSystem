@@ -10,8 +10,13 @@ namespace BookingSystem.Shared.Contracts
 {
     public interface IConferenceRoomService
     {
-        Task<IEnumerable<RoomViewModel>> GetConferenceRooms(string ? searchQuery, DateTime? start, DateTime? end, int ? pageNumber, int? pageSize  );
+        Task<ConferenceRoomListViewModel> GetConferenceRoomsAsync(string ? searchQuery, DateTime? start, DateTime? end, int ? pageNumber, int? pageSize  );
         Task<ApiResponse<Guid>> CreateConferenceRoomAsync(RoomViewModel room);
+        Task<RoomViewModel> GetConferenceRoomAsync(Guid roomId, bool? includeBookings, bool? includeAmenities);
+        Task<ApiResponse<Guid>> UpdateConferenceRoomAsync(RoomViewModel room);
+
+        Task<ApiResponse<Guid>> DeleteConferenceRoomAsync(Guid roomId);
+
     
     }
 }

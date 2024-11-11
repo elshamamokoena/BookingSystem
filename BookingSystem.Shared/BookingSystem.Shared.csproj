@@ -9,7 +9,7 @@
 
 
 
-  
+
 
   <ItemGroup>
     <None Remove="Profiles\wwwroot\lib\bootstrap\css\bootstrap-grid.css" />
@@ -708,14 +708,18 @@
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
     <PackageReference Include="Duende.AccessTokenManagement.OpenIdConnect" Version="3.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.8" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BookingSystem.AuthorizationPolicies\BookingSystem.AuthorizationPolicies.csproj" />
+    <ProjectReference Include="..\BookingSystem.ClassLibrary\BookingSystem.ClassLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\Pages\Events\EditEvents\NewFolder\" />
   </ItemGroup>
 
 

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace BookingSystem.Application.Features.ConferenceRooms.Commands.UpdateConferenceRoom.UpdateConferenceRoom
 {
     
-    public class UpdateConferenceRoomCommandHandler : IRequestHandler<UpdateConferenceRoomCommand, UpdateConferenceRoomCommandResponse>
+    public class UpdateConferenceRoomCommandHandler : IRequestHandler<UpdateConferenceRoomCommand,Unit>
     {
         private readonly IConferenceRoomRepository _conferenceRoomRepository;
         private readonly IMapper _mapper;
@@ -23,9 +23,8 @@ namespace BookingSystem.Application.Features.ConferenceRooms.Commands.UpdateConf
             _mapper = mapper;
             _conferenceRoomRepository = conferenceRoomRepository;
         }
-        public async Task<UpdateConferenceRoomCommandResponse> Handle(UpdateConferenceRoomCommand request, CancellationToken cancellationToken)
+        public async Task<Unit> Handle(UpdateConferenceRoomCommand request, CancellationToken cancellationToken)
         {
-            var response = new UpdateConferenceRoomCommandResponse();
             var validator = new UpdateConferenceRoomCommandValidator();
             var validationResult = await validator.ValidateAsync(request);
 
@@ -39,9 +38,8 @@ namespace BookingSystem.Application.Features.ConferenceRooms.Commands.UpdateConf
             _mapper.Map(request, room);
             _conferenceRoomRepository.UpdateEntity(room);
             await _conferenceRoomRepository.SaveChangesAsync();
-            response.ConferenceRoom = _mapper.Map<UpdatedConferenceRoomDto>(room);
-            response.Message = "Conference Room Updated Successfully";
-            return response;
+
+            return Unit.Value;
         }
     }
 }

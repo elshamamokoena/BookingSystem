@@ -24,9 +24,5 @@ namespace BookingSystem.Domain.Entities.Bookings
         public Guid ConferenceRoomId { get; set; }
         public ConferenceRoom ConferenceRoom { get; set; } = default!;
         public string Status { get; set; } = string.Empty;
-        //public string Notes { get; set; } = string.Empty;   
-        //public ICollection<StockEnquiry> EnquiryForStocks { get; set; }
-        //= new List<StockEnquiry>();
-
     }
 }

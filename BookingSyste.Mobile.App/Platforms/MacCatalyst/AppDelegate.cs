@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace BookingSyste.Mobile.App.Platforms.MacCatalyst
+namespace BookingSystem.Mobile.App.Platforms.MacCatalyst
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

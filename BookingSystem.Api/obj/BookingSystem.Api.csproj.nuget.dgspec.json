@@ -102,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -135,6 +135,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.ClassLibrary\\BookingSystem.ClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.ClassLibrary\\BookingSystem.ClassLibrary.csproj"
+              },
               "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Domain\\BookingSystem.Domain.csproj": {
                 "projectPath": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Domain\\BookingSystem.Domain.csproj"
               }
@@ -167,6 +170,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.4.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             }
           },
           "imports": [
@@ -185,7 +192,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -256,18 +263,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Domain\\BookingSystem.Domain.csproj": {
+    "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.ClassLibrary\\BookingSystem.ClassLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Domain\\BookingSystem.Domain.csproj",
-        "projectName": "BookingSystem.Domain",
-        "projectPath": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Domain\\BookingSystem.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.ClassLibrary\\BookingSystem.ClassLibrary.csproj",
+        "projectName": "BookingSystem.ClassLibrary",
+        "projectPath": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.ClassLibrary\\BookingSystem.ClassLibrary.csproj",
         "packagesPath": "C:\\Users\\elsha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Domain\\obj\\",
+        "outputPath": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.ClassLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -321,7 +328,76 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Domain\\BookingSystem.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Domain\\BookingSystem.Domain.csproj",
+        "projectName": "BookingSystem.Domain",
+        "projectPath": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Domain\\BookingSystem.Domain.csproj",
+        "packagesPath": "C:\\Users\\elsha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\elsha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.ClassLibrary\\BookingSystem.ClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.ClassLibrary\\BookingSystem.ClassLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -406,7 +482,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -31,8 +31,12 @@ namespace BookingSystem.Persistence
             services.AddScoped<IConsumableCategoryRepository, ConsumableCategoryRepository>();
             services.AddScoped<IBookingRepository, BookingRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<ICartRepository, CartRepository>();
             services.AddScoped<IStockRepository, StockRepository>();
             services.AddScoped<IStockEnquiryRepository, StockEnquiryRepository>();
+            services.AddScoped<IAmenityRepository, AmenityRepository>();
+            services.AddScoped<IStockItemRepository, StockItemRepository>();
+            services.AddScoped<IConferenceRoomChangeEventRepository, ConferenceRoomChangeEventRepository>();
             return services;
         }
     }

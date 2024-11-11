@@ -1,5 +1,8 @@
-﻿using BookingSystem.Application.Contracts.Persistence;
+﻿using Azure.Core;
+using BookingSystem.Application.Contracts.Persistence;
+using BookingSystem.Application.Features.Consumables.Queries.GetConsumable;
 using BookingSystem.Application.Features.Consumables.Queries.GetConsumables;
+using BookingSystem.Application.Helpers;
 using BookingSystem.Application.ResourceParameters;
 using BookingSystem.Domain.Entities.Consumables;
 using BookingSystem.Persistence.DbContexts;
@@ -18,19 +21,47 @@ namespace BookingSystem.Persistence.Repositories
         {
         }
 
-        public async Task<IEnumerable<Consumable>> GetConsumablesAsync(GetConsumablesQuery query)
+        public Task<Consumable> GetConsumableAsync(GetConsumableQuery query)
         {
+            ArgumentNullException.ThrowIfNull(nameof(GetConsumableQuery), nameof(query));
+            var consumable = _context.Consumables as IQueryable<Consumable>;
+
+            if (query.IncludeCategory.HasValue && query.IncludeCategory.Value)
+                consumable = consumable.Include(c => c.Category);
+
+#pragma warning disable CS8619 // Nullability of reference types in value doesn't match target type.
+            return consumable
+                .FirstOrDefaultAsync(c=>c.ConsumableId==query.ConsumableId);
+#pragma warning restore CS8619 // Nullability of reference types in value doesn't match target type.
+
+        }
+
+        public async Task<PaginatedList<Consumable>> GetConsumablesAsync(GetConsumablesQuery query)
+        {
+            ArgumentNullException.ThrowIfNull(nameof(GetConsumablesQuery), nameof(query));
+
             var consumables = _context.Consumables as IQueryable<Consumable>;
+
+            if(query.ConsumableCategoryId.HasValue && query.ConsumableCategoryId != Guid.Empty)
+                consumables = consumables.Where(x => x.ConsumableCategoryId == query.ConsumableCategoryId);
 
             if (query.IncludeCategory.HasValue && query.IncludeCategory.Value)
                 consumables = consumables.Include(x => x.Category);
 
-            return await consumables.
-               OrderBy(x => x.Name)
-                .Skip(query.PageSize * (query.PageNumber - 1))
-                .Take(query.PageSize)
-                .ToListAsync();
+            return await PaginatedList<Consumable>
+                .CreateAsync(consumables, query.PageNumber, query.PageSize);
+
+            //return await consumables.
+            //   OrderBy(x => x.Name)
+            //    .Skip(query.PageSize * (query.PageNumber - 1))
+            //    .Take(query.PageSize)
+
+            //    .ToListAsync();
         }
+
+
+
+
         //        public async Task<Consumable> AddConsumableAsync(Consumable consumable)
         //        {
         //            ArgumentNullException.ThrowIfNull(consumable, nameof(consumable));

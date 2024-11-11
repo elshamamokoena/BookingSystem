@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "BookingSystem.ClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BookingSystem.ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookingSystem.ClassLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BookingSystem.ClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../BookingSystem.ClassLibrary/BookingSystem.ClassLibrary.csproj",
+      "msbuildProject": "../BookingSystem.ClassLibrary/BookingSystem.ClassLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "BookingSystem.ClassLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\elsha\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.ClassLibrary\\BookingSystem.ClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\elsha\\source\\repos\\BookingSystem\\BookingSystem.ClassLibrary\\BookingSystem.ClassLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -72,7 +95,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

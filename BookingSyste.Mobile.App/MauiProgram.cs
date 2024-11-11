@@ -1,12 +1,12 @@
 ﻿
 using Blazored.LocalStorage;
-using BookingSyste.Mobile.App.Helpers;
+using BookingSystem.Mobile.App.Helpers;
 using BookingSystem.Shared;
 using BookingSystem.Shared.Contracts;
 using BookingSystem.Shared.Services;
 using Microsoft.Extensions.Logging;
 
-namespace BookingSyste.Mobile.App
+namespace BookingSystem.Mobile.App
 {
     public static class MauiProgram
     {
@@ -35,6 +35,15 @@ namespace BookingSyste.Mobile.App
 
             builder.Services.AddScoped<IEventDataService, EventDataService>();
             builder.Services.AddScoped<IConferenceRoomService, ConferenceRoomService>();
+            builder.Services.AddScoped<IBookingDataService, BookingDataService>();
+            builder.Services.AddScoped<IStockDataService, StockDataService>();
+            builder.Services.AddScoped<ICategoryDataService, CategoryDataService>();
+            builder.Services.AddScoped<IStockEnquiryDataService, StockEnquiryDataService>();
+            builder.Services.AddScoped<IConsumableDataService, ConsumableDataService>();
+            builder.Services.AddScoped<ICartDataService, CartDataService>();
+            builder.Services.AddScoped<IAmenityDataService, AmenityDataService>();
+            builder.Services.AddScoped<IStockDataService, StockDataService>();
+
             builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             builder.Services.AddBlazoredLocalStorage();
 #if DEBUG

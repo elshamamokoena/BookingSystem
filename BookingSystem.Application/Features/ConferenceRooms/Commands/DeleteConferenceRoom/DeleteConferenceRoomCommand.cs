@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Features.ConferenceRooms.Commands.DeleteConferenceRoom
 {
-    public class DeleteConferenceRoomCommand : IRequest<bool>
+    public class DeleteConferenceRoomCommand : IRequest<Unit>
     {
         public Guid ConferenceRoomId { get;  set; }
     }

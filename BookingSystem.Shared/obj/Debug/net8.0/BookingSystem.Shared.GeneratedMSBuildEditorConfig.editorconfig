@@ -30,6 +30,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVG9wTmF2LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Loader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMb2FkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pager.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Bookings/BookingDetail.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCb29raW5nc1xCb29raW5nRGV0YWlsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,20 +46,96 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCb29raW5nc1xCb29raW5nTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/AddConferenceRoom.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcQWRkQ29uZmVyZW5jZVJvb20ucmF6b3I=
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/CartComponents/CartSummary.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXJ0Q29tcG9uZW50c1xDYXJ0U3VtbWFyeS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/ConferenceRoomList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcQ29uZmVyZW5jZVJvb21MaXN0LnJhem9y
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/AddAmenityModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcQWRkQW1lbml0eU1vZGFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Consumables/ConsumableList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25zdW1hYmxlc1xDb25zdW1hYmxlTGlzdC5yYXpvcg==
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/AddConferenceRoomModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcQWRkQ29uZmVyZW5jZVJvb21Nb2RhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/ConferenceRoomListComponent/ConferenceRoomList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcQ29uZmVyZW5jZVJvb21MaXN0Q29tcG9uZW50XENvbmZlcmVuY2VSb29tTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/ConferenceRoomListComponent/ConferenceRoomRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcQ29uZmVyZW5jZVJvb21MaXN0Q29tcG9uZW50XENvbmZlcmVuY2VSb29tUm93LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/EditConferenceRoomPage/EditConferenceRoom.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcRWRpdENvbmZlcmVuY2VSb29tUGFnZVxFZGl0Q29uZmVyZW5jZVJvb20ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/EditConferenceRoomPage/EditConferenceRoomAmenity.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcRWRpdENvbmZlcmVuY2VSb29tUGFnZVxFZGl0Q29uZmVyZW5jZVJvb21BbWVuaXR5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/EditConferenceRoomPage/EditConferenceRoomBookings.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcRWRpdENvbmZlcmVuY2VSb29tUGFnZVxFZGl0Q29uZmVyZW5jZVJvb21Cb29raW5ncy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/RoomAmenityListRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcUm9vbUFtZW5pdHlMaXN0Um93LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/RoomAmenityTableComponent/EditRoomAmenityTableRowModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcUm9vbUFtZW5pdHlUYWJsZUNvbXBvbmVudFxFZGl0Um9vbUFtZW5pdHlUYWJsZVJvd01vZGFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/RoomAmenityTableComponent/RoomAmenityTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcUm9vbUFtZW5pdHlUYWJsZUNvbXBvbmVudFxSb29tQW1lbml0eVRhYmxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/RoomAmenityTableComponent/RoomAmenityTableRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcUm9vbUFtZW5pdHlUYWJsZUNvbXBvbmVudFxSb29tQW1lbml0eVRhYmxlUm93LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/ConferenceRooms/RoomStatus.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25mZXJlbmNlUm9vbXNcUm9vbVN0YXR1cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Consumables/AddConsumable/AddConsumable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25zdW1hYmxlc1xBZGRDb25zdW1hYmxlXEFkZENvbnN1bWFibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Consumables/ConsumableListComponent/ConsumableList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25zdW1hYmxlc1xDb25zdW1hYmxlTGlzdENvbXBvbmVudFxDb25zdW1hYmxlTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Consumables/ConsumableListComponent/ConsumableRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25zdW1hYmxlc1xDb25zdW1hYmxlTGlzdENvbXBvbmVudFxDb25zdW1hYmxlUm93LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Consumables/EditConsumablePage/EditConsumable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25zdW1hYmxlc1xFZGl0Q29uc3VtYWJsZVBhZ2VcRWRpdENvbnN1bWFibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Consumables/EditConsumablePage/EditConsumablePageComponents/EditConsumableForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25zdW1hYmxlc1xFZGl0Q29uc3VtYWJsZVBhZ2VcRWRpdENvbnN1bWFibGVQYWdlQ29tcG9uZW50c1xFZGl0Q29uc3VtYWJsZUZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Consumables/EditConsumablePage/EditConsumablePageComponents/EditConsumableInfo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25zdW1hYmxlc1xFZGl0Q29uc3VtYWJsZVBhZ2VcRWRpdENvbnN1bWFibGVQYWdlQ29tcG9uZW50c1xFZGl0Q29uc3VtYWJsZUluZm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Consumables/EditConsumablePage/EditConsumablePageComponents/EditConsumableStockItem.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25zdW1hYmxlc1xFZGl0Q29uc3VtYWJsZVBhZ2VcRWRpdENvbnN1bWFibGVQYWdlQ29tcG9uZW50c1xFZGl0Q29uc3VtYWJsZVN0b2NrSXRlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Dashboard/DashboardPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYXNoYm9hcmRcRGFzaGJvYXJkUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Errors/AccessDenied.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvcnNcQWNjZXNzRGVuaWVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Errors/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvcnNcRXJyb3IucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Pages/Events/AddEvent/AddEvent.razor]
@@ -114,8 +198,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSZWRpcmVjdFRvTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/RefreshButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSZWZyZXNoQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/Components/Toast.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUb2FzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/elsha/source/repos/BookingSystem/BookingSystem.Shared/_Imports.razor]

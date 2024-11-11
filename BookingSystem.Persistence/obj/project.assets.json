@@ -1626,9 +1626,11 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "BookingSystem.ClassLibrary": "1.0.0",
           "BookingSystem.Domain": "1.0.0",
           "FluentValidation.DependencyInjectionExtensions": "11.9.2",
-          "MediatR": "12.4.0"
+          "MediatR": "12.4.0",
+          "Microsoft.EntityFrameworkCore": "8.0.7"
         },
         "compile": {
           "bin/placeholder/BookingSystem.Application.dll": {}
@@ -1637,9 +1639,22 @@
           "bin/placeholder/BookingSystem.Application.dll": {}
         }
       },
+      "BookingSystem.ClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BookingSystem.ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookingSystem.ClassLibrary.dll": {}
+        }
+      },
       "BookingSystem.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BookingSystem.ClassLibrary": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/BookingSystem.Domain.dll": {}
         },
@@ -4405,6 +4420,11 @@
       "path": "../BookingSystem.Application/BookingSystem.Application.csproj",
       "msbuildProject": "../BookingSystem.Application/BookingSystem.Application.csproj"
     },
+    "BookingSystem.ClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../BookingSystem.ClassLibrary/BookingSystem.ClassLibrary.csproj",
+      "msbuildProject": "../BookingSystem.ClassLibrary/BookingSystem.ClassLibrary.csproj"
+    },
     "BookingSystem.Domain/1.0.0": {
       "type": "project",
       "path": "../BookingSystem.Domain/BookingSystem.Domain.csproj",
@@ -4504,7 +4524,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using BookingSystem.Application.Contracts.Persistence;
 using BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferenceRoom;
+using BookingSystem.Application.Helpers;
+using BookingSystem.ClassLibrary;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -10,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferenceRooms
 {
-    public class GetConferenceRoomsQueryHandler : IRequestHandler<GetConferenceRoomsQuery, IEnumerable<ConferenceRoomVm>>
+    public class GetConferenceRoomsQueryHandler : IRequestHandler<GetConferenceRoomsQuery, ConferenceRoomListVm>
     {
         private readonly IConferenceRoomRepository _conferenceRoomRepository;
         private readonly IBookingRepository _bookingRepository;
@@ -24,24 +26,27 @@ namespace BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferen
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<ConferenceRoomVm>> Handle(GetConferenceRoomsQuery request, CancellationToken cancellationToken)
+        public async Task<ConferenceRoomListVm> Handle(GetConferenceRoomsQuery request, CancellationToken cancellationToken)
         {
-            // You should be able to get resources without any parameters provided
-            var conferenceRooms = await _conferenceRoomRepository.GetConferenceRoomsAsync(request);
+            //// You should be able to get resources without any parameters provided
+            var pagedRooms = await _conferenceRoomRepository.GetConferenceRoomsAsync(request);
 
-            var rooms = _mapper.Map<IEnumerable<ConferenceRoomVm>>(conferenceRooms);
+            var count = pagedRooms.TotalCount;
+            var rooms = _mapper.Map<List<ConferenceRoomListDto>>(pagedRooms);
+            var listToReturn = new ConferenceRoomListVm()
+            { ConferenceRooms = rooms, Count = count, PageNumber = request.PageNumber, PageSize = request.PageSize };
 
             if (request.StartTime == null || request.EndTime == null)
             {
-                return rooms;
+                return listToReturn;
             }
             foreach (var room in rooms)
             {
                 room.IsAvailable = await _conferenceRoomRepository
                     .IsAvableForBooking(request.StartTime.Value, request.EndTime.Value, room.ConferenceRoomId);
             }
-
-            return rooms;
+            listToReturn.ConferenceRooms = rooms;
+            return listToReturn;
         }
     }
 

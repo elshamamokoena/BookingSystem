@@ -1,5 +1,7 @@
-﻿using BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferenceRooms;
+﻿using BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferenceRoom;
+using BookingSystem.Application.Features.ConferenceRooms.Queries.GetConferenceRooms;
 using BookingSystem.Application.ResourceParameters;
+using BookingSystem.ClassLibrary;
 using BookingSystem.Domain.Entities.ConferenceRooms;
 using System;
 using System.Collections.Generic;
@@ -22,9 +24,11 @@ namespace BookingSystem.Application.Contracts.Persistence
 
         // View all conference rooms
         // Resource parameters are used to filter, sort, search and/or page data in the database.
-        Task<IEnumerable<ConferenceRoom>> GetConferenceRoomsAsync(GetConferenceRoomsQuery resourceParameters);
-      //  Task<IEnumerable<ConferenceRoom>> GetAvailableConferenceRoomsAsync(DateTime startTime, DateTime endTime);
+        Task<PagedList<ConferenceRoom>> GetConferenceRoomsAsync(GetConferenceRoomsQuery query);
 
+        //Task<PagedList<ConferenceRoom>> GetConferenceRoomsAsync( string? searchQuery, DateTime? startTime, DateTime? endTime, int pageNumber,int pageSize);
+        //  Task<IEnumerable<ConferenceRoom>> GetAvailableConferenceRoomsAsync(DateTime startTime, DateTime endTime);
+        Task<ConferenceRoom> GetConferenceRoomAsync(GetConferenceRoomQuery query);
         Task<int> GetConferenceRoomsCountAsync();
         Task<bool> IsAvableForBooking(DateTime starttime, DateTime endTime , Guid roomId);
 

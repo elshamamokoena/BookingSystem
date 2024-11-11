@@ -16,7 +16,14 @@ namespace BookingSystem.Shared.Profiles
         {
             CreateMap<ConsumableCategoryListVm, ConsumableCategoryViewModel>();
             CreateMap<ConsumableListVm, ConsumableViewModel>();
-            //CreateMap<ConsumableCategoryForListDto, ConsumableCategoryViewModel>();
+            CreateMap<ConsumableListCategoryDto, ConsumableCategoryViewModel>();
+            CreateMap<ConsumableViewModel, CreateConsumableCommand>();
+            CreateMap<ConsumableViewModel, UpdateConsumableCommand>();
+            CreateMap<ConsumableDto, ConsumableViewModel>();
+            CreateMap<ConsumableListDto, ConsumableViewModel>();
+            CreateMap<ConsumableVm, ConsumableViewModel>();
+            CreateMap<ConsumableCategoryDto, ConsumableListCategoryDto>();
+
         }
     }
 }

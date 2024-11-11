@@ -27,8 +27,9 @@ namespace BookingSystem.Application.Features.Bookings.Queries.GetBookings
         }
         public async Task<IEnumerable<BookingVm>> Handle(GetBookingsQuery request, CancellationToken cancellationToken)
         {
-            if(!await _asyncRepository.EntityExistsAsync(request.EventId))
+            if(request.EventId.HasValue && !await _asyncRepository.EntityExistsAsync(request.EventId.Value))
                 throw new NotFoundException("Event", request.EventId);
+
             var bookings = await _bookingRepository.GetBookingsAsync(request);
             return _mapper.Map<IEnumerable<BookingVm>>(bookings);
         }

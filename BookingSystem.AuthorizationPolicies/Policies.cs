@@ -16,5 +16,21 @@ namespace BookingSystem.AuthorizationPolicies
                 .RequireClaim("roles","Manager")
                 .Build();
         }
+
+        public static AuthorizationPolicy ClerkPolicy()
+        {
+            return new AuthorizationPolicyBuilder()
+                .RequireAuthenticatedUser()
+                .RequireClaim("roles", "Clerk")
+                .Build();
+        }
+        public static AuthorizationPolicy EmployeePolicy() {
+            return new AuthorizationPolicyBuilder()
+                .RequireAuthenticatedUser()
+                .RequireClaim("roles", "Employee")
+                .Build();
+        }
+
+     
     }
 }

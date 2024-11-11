@@ -1,0 +1,250 @@
+2024-10-30 10:38:12.962 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 10:38:13.024 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 10:38:13.131 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 10:38:13.134 +02:00 [INF] Hosting environment: Development
+2024-10-30 10:38:13.135 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 10:42:13.091 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-30 10:42:13.098 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-30 10:47:12.331 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 10:47:12.357 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 10:47:12.400 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 10:47:12.402 +02:00 [INF] Hosting environment: Development
+2024-10-30 10:47:12.403 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 10:53:36.427 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-30 10:53:36.433 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-30 11:17:23.825 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 11:17:23.846 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 11:17:23.886 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 11:17:23.892 +02:00 [INF] Hosting environment: Development
+2024-10-30 11:17:23.894 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 12:48:32.854 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 12:48:32.913 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 12:48:33.037 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 12:48:33.039 +02:00 [INF] Hosting environment: Development
+2024-10-30 12:48:33.042 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 12:51:06.562 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 12:51:06.581 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 12:51:06.624 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 12:51:06.626 +02:00 [INF] Hosting environment: Development
+2024-10-30 12:51:06.628 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 12:59:01.769 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 12:59:01.791 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 12:59:01.838 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 12:59:01.842 +02:00 [INF] Hosting environment: Development
+2024-10-30 12:59:01.844 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 12:59:34.191 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-30 12:59:34.202 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-30 13:04:28.254 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 13:04:28.286 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 13:04:28.342 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 13:04:28.353 +02:00 [INF] Hosting environment: Development
+2024-10-30 13:04:28.355 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 13:09:44.664 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 13:09:44.686 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 13:09:44.733 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 13:09:44.735 +02:00 [INF] Hosting environment: Development
+2024-10-30 13:09:44.738 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 13:18:05.469 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 13:18:05.526 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 13:18:05.659 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 13:18:05.661 +02:00 [INF] Hosting environment: Development
+2024-10-30 13:18:05.663 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 13:31:21.008 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 13:31:21.032 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 13:31:21.082 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 13:31:21.085 +02:00 [INF] Hosting environment: Development
+2024-10-30 13:31:21.087 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 13:33:26.633 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 13:33:26.665 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 13:33:26.742 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 13:33:26.756 +02:00 [INF] Hosting environment: Development
+2024-10-30 13:33:26.758 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 13:36:01.713 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 13:36:01.766 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 13:36:01.899 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 13:36:01.904 +02:00 [INF] Hosting environment: Development
+2024-10-30 13:36:01.904 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 13:59:22.469 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 13:59:22.490 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 13:59:22.534 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 13:59:22.543 +02:00 [INF] Hosting environment: Development
+2024-10-30 13:59:22.544 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 14:03:22.596 +02:00 [ERR] Failed executing DbCommand (43ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Bookings] SET [BookingNumber] = @p0, [ConferenceRoomId] = @p1, [Created] = @p2, [CreatedBy] = @p3, [EventId] = @p4, [LastModified] = @p5, [LastModifiedBy] = @p6, [Status] = @p7
+OUTPUT 1
+WHERE [BookingId] = @p8;
+2024-10-30 14:03:22.682 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'BookingSystem.Persistence.DbContexts.BookingSystemDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot update identity column 'BookingNumber'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:cb66f70e-872d-491c-a50d-ae629b030996
+Error Number:8102,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot update identity column 'BookingNumber'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:cb66f70e-872d-491c-a50d-ae629b030996
+Error Number:8102,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-10-30 14:08:21.955 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 14:08:21.977 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 14:08:22.023 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 14:08:22.026 +02:00 [INF] Hosting environment: Development
+2024-10-30 14:08:22.029 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 14:09:33.227 +02:00 [ERR] Failed executing DbCommand (69ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Bookings] SET [BookingNumber] = @p0, [ConferenceRoomId] = @p1, [Created] = @p2, [CreatedBy] = @p3, [EventId] = @p4, [LastModified] = @p5, [LastModifiedBy] = @p6, [Status] = @p7
+OUTPUT 1
+WHERE [BookingId] = @p8;
+2024-10-30 14:09:33.344 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'BookingSystem.Persistence.DbContexts.BookingSystemDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot update identity column 'BookingNumber'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:88fce4d6-d6fa-4cfd-ad37-5a21fe3b8794
+Error Number:8102,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot update identity column 'BookingNumber'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:88fce4d6-d6fa-4cfd-ad37-5a21fe3b8794
+Error Number:8102,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-10-30 14:24:09.906 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 14:24:09.966 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 14:24:10.086 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 14:24:10.092 +02:00 [INF] Hosting environment: Development
+2024-10-30 14:24:10.095 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 15:06:34.495 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 15:06:34.521 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 15:06:34.578 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 15:06:34.580 +02:00 [INF] Hosting environment: Development
+2024-10-30 15:06:34.582 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 15:07:06.958 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-30 15:07:06.965 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-30 15:09:44.220 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 15:09:44.240 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 15:09:44.278 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 15:09:44.280 +02:00 [INF] Hosting environment: Development
+2024-10-30 15:09:44.281 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 15:17:54.633 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-30 15:17:54.653 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-10-30 16:36:51.587 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 16:36:51.611 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 16:36:51.663 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 16:36:51.674 +02:00 [INF] Hosting environment: Development
+2024-10-30 16:36:51.675 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 16:47:22.183 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 16:47:22.283 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 16:47:22.498 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 16:47:22.518 +02:00 [INF] Hosting environment: Development
+2024-10-30 16:47:22.519 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 16:49:25.388 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 16:49:25.409 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 16:49:25.452 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 16:49:25.455 +02:00 [INF] Hosting environment: Development
+2024-10-30 16:49:25.460 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 16:51:29.440 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 16:51:29.460 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 16:51:29.500 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 16:51:29.502 +02:00 [INF] Hosting environment: Development
+2024-10-30 16:51:29.505 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 16:56:51.154 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 16:56:51.177 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 16:56:51.227 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 16:56:51.228 +02:00 [INF] Hosting environment: Development
+2024-10-30 16:56:51.229 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 16:57:59.246 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 16:57:59.268 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 16:57:59.310 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 16:57:59.313 +02:00 [INF] Hosting environment: Development
+2024-10-30 16:57:59.316 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 17:01:35.095 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 17:01:35.155 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 17:01:35.283 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 17:01:35.286 +02:00 [INF] Hosting environment: Development
+2024-10-30 17:01:35.287 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 17:03:05.597 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 17:03:05.659 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 17:03:05.823 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 17:03:05.827 +02:00 [INF] Hosting environment: Development
+2024-10-30 17:03:05.829 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api
+2024-10-30 17:32:46.597 +02:00 [INF] Now listening on: https://localhost:7171
+2024-10-30 17:32:46.686 +02:00 [INF] Now listening on: http://localhost:5062
+2024-10-30 17:32:47.067 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-30 17:32:47.393 +02:00 [INF] Hosting environment: Development
+2024-10-30 17:32:47.404 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api

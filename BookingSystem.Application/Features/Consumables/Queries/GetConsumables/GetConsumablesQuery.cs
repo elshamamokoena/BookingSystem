@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace BookingSystem.Application.Features.Consumables.Queries.GetConsumables
 {
-    public partial class GetConsumablesQuery:ResourceParameterBase, IRequest<IEnumerable<ConsumableListVm>>
+    public partial class GetConsumablesQuery:ResourceParameterBase, IRequest<ConsumableListVm>
     {
+        public Guid ? ConsumableCategoryId { get; set; }  
         public bool ? IncludeCategory { get; set; }
     }
 }
