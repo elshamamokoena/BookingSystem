@@ -1,0 +1,13 @@
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\bin\Debug\net8.0\BookingSystem.Identity.deps.json
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\bin\Debug\net8.0\BookingSystem.Identity.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\bin\Debug\net8.0\BookingSystem.Identity.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\BookingSystem.Identity.csproj.AssemblyReference.cache
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\BookingSystem.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\BookingSystem.Identity.AssemblyInfoInputs.cache
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\BookingSystem.Identity.AssemblyInfo.cs
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\BookingSystem.Identity.csproj.CoreCompileInputs.cache
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\BookingSystem.Identity.sourcelink.json
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\BookingSystem.Identity.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\refint\BookingSystem.Identity.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\BookingSystem.Identity.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\ref\BookingSystem.Identity.dll

@@ -42,5 +42,16 @@
     "C:\\Users\\elsha\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.1.2\\system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512",
     "C:\\Users\\elsha\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Duende.AccessTokenManagement.OpenIdConnect' 3.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-7mr7-4f54-vcx5",
+      "libraryId": "Duende.AccessTokenManagement.OpenIdConnect",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
