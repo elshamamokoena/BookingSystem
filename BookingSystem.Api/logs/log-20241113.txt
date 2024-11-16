@@ -1,0 +1,5 @@
+2024-11-13 16:27:11.359 +02:00 [INF] Now listening on: https://localhost:7171
+2024-11-13 16:27:11.398 +02:00 [INF] Now listening on: http://localhost:5062
+2024-11-13 16:27:11.443 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-13 16:27:11.447 +02:00 [INF] Hosting environment: Development
+2024-11-13 16:27:11.451 +02:00 [INF] Content root path: C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api

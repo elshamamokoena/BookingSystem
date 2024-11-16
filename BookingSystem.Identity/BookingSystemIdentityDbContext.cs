@@ -15,5 +15,9 @@ namespace BookingSystem.Identity
             : base(options)
         {
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+            => optionsBuilder
+        .LogTo(Console.WriteLine)
+        .EnableSensitiveDataLogging();
     }
 }

@@ -11,3 +11,12 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\refint\BookingSystem.Identity.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\BookingSystem.Identity.pdb
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\ref\BookingSystem.Identity.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\bin\Debug\net8.0\BookingSystem.Application.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\bin\Debug\net8.0\BookingSystem.ClassLibrary.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\bin\Debug\net8.0\BookingSystem.Domain.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\bin\Debug\net8.0\BookingSystem.Application.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\bin\Debug\net8.0\BookingSystem.ClassLibrary.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\bin\Debug\net8.0\BookingSystem.Domain.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\BookingS.91A39D79.Up2Date
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\bin\Debug\net8.0\BookingSystem.Identity.runtimeconfig.json
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Identity\obj\Debug\net8.0\BookingSystem.Identity.genruntimeconfig.cache

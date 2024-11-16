@@ -15,8 +15,6 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Persistence\obj\Debug\ne
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Persistence\obj\Debug\net8.0\refint\BookingSystem.Persistence.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Persistence\obj\Debug\net8.0\BookingSystem.Persistence.pdb
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Persistence\obj\Debug\net8.0\ref\BookingSystem.Persistence.dll
-C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Persistence\bin\Debug\net8.0\BookingSystem.Persistence.runtimeconfig.json
-C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Persistence\obj\Debug\net8.0\BookingSystem.Persistence.genruntimeconfig.cache
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Persistence\obj\Debug\net8.0\BookingSystem.Persistence.sourcelink.json
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Persistence\bin\Debug\net8.0\BookingSystem.ClassLibrary.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Persistence\bin\Debug\net8.0\BookingSystem.ClassLibrary.pdb

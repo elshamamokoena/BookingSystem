@@ -3,9 +3,9 @@ using BookingSystem.Api.Services;
 using BookingSystem.Application;
 using BookingSystem.Application.Contracts.Services;
 using BookingSystem.AuthorizationPolicies;
+using BookingSystem.Identity;
 using BookingSystem.Persistence;
 using BookingSystem.Persistence.DbContexts;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -24,6 +24,9 @@ namespace BookingSystem.Api
     //        AddSwagger(builder.Services);
             builder.Services.AddApplicationServices();
             builder.Services.AddPersitenceServices(builder.Configuration);
+            builder.Services.AddIdentityServices(builder.Configuration);
+            builder.Services.AddHttpContextAccessor();
+
             builder.Services.AddControllers();
 
             builder.Services.AddScoped<IAuthenticatedUserService, AuthenticatedUserDataService>();
@@ -35,46 +38,33 @@ namespace BookingSystem.Api
 
             builder.Services.AddCors(options =>
             {
-                // the open policy should apply only to the Api domain and the front-end application domain.
+                    //  the open policy should apply only to the Api domain and the front-end application domain.
                     options.AddPolicy("open", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
-                    //allow requests from the front-end application and the current domain
-                    //register the front-end application url in the appsettings.json file
-                    //requests from the domain of the front-end application will be allowed
-
-                    //policyBuilder
-                    //    .WithOrigins(
-                    //    builder.Configuration["ApiUrl"] ?? "https://localhost:7171",
-                    //    builder.Configuration["WebAppUrl"] ?? "https://localhost:7173/")
-                    //    .AllowAnyMethod()
-                    //    .SetIsOriginAllowed(pol => true)
-                    //    .AllowAnyHeader()
-                    //    .AllowCredentials();
+                    //  allow requests from the front-end application and the current domain
+                    //  register the front-end application url in the appsettings.json file
+                    //  requests from the domain of the front-end application will be allowed
             });
 
 
-            builder.Services.AddHttpContextAccessor();
             //add swagger
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options =>
-                {
-                    options.Authority = builder.Configuration["Authority"];
-                    options.Audience = builder.Configuration["Audience"];
-                    options.MapInboundClaims = false;
-                    options.TokenValidationParameters= new TokenValidationParameters
-                    {
-                        NameClaimType = JwtRegisteredClaimNames.Name,
-                        RoleClaimType = "roles",
-                        ValidIssuer = "https://sts.windows.net/d8bf7c18-5725-4b9e-b118-13388f52e44e/",
-                    };
-                });
+            //builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            //    .AddJwtBearer(options =>
+            //    {
+            //        options.Authority = builder.Configuration["Authority"];
+            //        options.Audience = builder.Configuration["Audience"];
+            //        options.MapInboundClaims = false;
+            //        options.TokenValidationParameters= new TokenValidationParameters
+            //        {
+            //            NameClaimType = JwtRegisteredClaimNames.Name,
+            //            RoleClaimType = "roles",
+            //            ValidIssuer = "https://sts.windows.net/d8bf7c18-5725-4b9e-b118-13388f52e44e/",
+            //        };
+            //    });
 
-            builder.Services.AddAuthorization(options =>
-            {
-                options.AddPolicy(Policies.IsManager, Policies.ManagerPolicy());
-            });
+ 
 
             return builder.Build();
         }

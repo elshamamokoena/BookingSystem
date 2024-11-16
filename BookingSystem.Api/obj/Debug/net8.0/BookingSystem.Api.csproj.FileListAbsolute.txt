@@ -175,3 +175,15 @@ C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Boo
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\BookingSystem.AuthorizationPolicies.pdb
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\BookingSystem.ClassLibrary.dll
 C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\BookingSystem.ClassLibrary.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\BookingSystem.Identity.dll
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\BookingSystem.Identity.pdb
+C:\Users\elsha\source\repos\BookingSystem\BookingSystem.Api\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
